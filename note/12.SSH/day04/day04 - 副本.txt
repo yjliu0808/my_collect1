@@ -1,0 +1,74 @@
+#hibernate
+##什么是？
+冬眠。一个不用SQL的数据库框架。
+
+##为什么？
+将java中的对象映射存储到数据库的表中，只需要将对象与表做好关系定义，hibernate能自动生成SQL语句
+
+##如何使用？
+1. 导包
+2. 配置主文件hibernate.cfg.xml
+3. 配置映射文件
+4. 调用API生成SQL访问数据库
+
+show global variables like 'port'
+#hibernate ID 生成规则
+
+##什么是主键？
+唯一标识一条记录的标记
+
+##什么时候用？
+对数据库操作插入记录的时候，需要用到主键
+
+##hibernate主键类型
+
+###自增类型(sqlserver和mysql)
+
+		<generator class="identity" />
+
+练习：自增列
+		create table student(
+					id int not null AUTO_INCREMENT,
+					name varchar(20),
+					PRIMARY KEY(id))
+		insert into student(name) values('Tom')
+		insert into student(id,name) values(
+					null,'Jerry')
+
+
+
+
+###序列类型(Oracle和DB2)
+###UUID
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

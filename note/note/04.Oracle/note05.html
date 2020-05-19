@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	其他数据库对象<br />
+数据库对象包含：表，视图，索引，序列<br />
+<br />
+视图<br />
+视图在SQL语句中体现的角色与表一致，<br />
+但其并非一张真实存在的表，它的数据<br />
+仅来自一条SELECT语句的查询结果集。<br />
+<br />
+CREATE VIEW v_emp_10<br />
+AS<br />
+SELECT empno,ename,sal,deptno<br />
+FROM emp<br />
+WHERE deptno=10<br />
+<br />
+DESC v_emp_10<br />
+<br />
+SELECT *&nbsp;<br />
+FROM v_emp_10<br />
+<br />
+<br />
+视图对应的查询语句中的字段若使用<br />
+别名，那么视图的该字段名就为这个<br />
+别名。对应子查询的字段若含有函数<br />
+或表达式，那么该字段必须给别名<br />
+<br />
+CREATE OR REPLACE VIEW v_emp_10<br />
+AS<br />
+SELECT empno id,ename name,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;sal salary,deptno<br />
+FROM emp<br />
+WHERE deptno=10<br />
+<br />
+<br />
+对视图进行DML操作<br />
+对视图进行DML就是对视图数据来源的<br />
+基础表进行的。并且仅能对简单视图进行，<br />
+复杂视图不可以进行DML操作。<br />
+<br />
+INSERT INTO v_emp_10<br />
+(id,name,salary,deptno)<br />
+VALUES<br />
+(1001,'jack',3000,10)<br />
+<br />
+SELECT * FROM v_emp_10<br />
+SELECT * FROM emp<br />
+<br />
+UPDATE v_emp_10<br />
+SET salary=5000<br />
+WHERE name='jack'<br />
+<br />
+DELETE FROM v_emp_10<br />
+WHERE name='jack'<br />
+<br />
+对视图进行DML操作不当会"污染"基表数据<br />
+所谓污染指的是:<br />
+对视图进行的DML操作就是对基表对应数据<br />
+进行的DML操作，但是当对视图进行DML操作<br />
+并修改基表数据后，视图对该记录不可见!<br />
+INSERT INTO v_emp_10<br />
+(id,name,salary,deptno)<br />
+VALUES<br />
+(1001,'jack',3000,20)<br />
+<br />
+UPDATE v_emp_10<br />
+SET deptno=20<br />
+<br />
+唯一不会污染的是删除<br />
+DELETE FROM v_emp_10<br />
+WHERE deptno=20<br />
+<br />
+<br />
+避免由于对视图进行DML污染基表，可以<br />
+对视图添加检查选项“WITH CHECK OPTION”<br />
+CREATE OR REPLACE VIEW v_emp_10<br />
+AS<br />
+SELECT empno id,ename name,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;sal salary,deptno<br />
+FROM emp<br />
+WHERE deptno=10<br />
+WITH CHECK OPTION<br />
+<br />
+<br />
+WITH READ ONLY 只读选项<br />
+当视图添加了只读选项后，该视图不可以<br />
+进行DML操作<br />
+CREATE OR REPLACE VIEW v_emp_10<br />
+AS<br />
+SELECT empno id,ename name,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;sal salary,deptno<br />
+FROM emp<br />
+WHERE deptno=10<br />
+WITH READ ONLY<br />
+<br />
+<br />
+查看创建过的所有表<br />
+SELECT table_name FROM user_tables<br />
+<br />
+复杂视图<br />
+视图对应的子查询中含有函数，表达式，分组<br />
+或多表关联查询，去重等操作时，该视图就是<br />
+一个复杂视图。<br />
+复杂视图不能进行DML操作。<br />
+<br />
+创建一个部门工资情况的视图<br />
+最高，最低，平均，总和工资，部门名以及部门号<br />
+CREATE VIEW v_emp_dept_sal<br />
+AS<br />
+SELECT MAX(e.sal) max_sal,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;MIN(e.sal) min_sal,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;AVG(e.sal) avg_sal,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;SUM(e.sal) sum_sal,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;d.deptno,d.dname<br />
+FROM emp e,dept d<br />
+WHERE e.deptno=d.deptno<br />
+GROUP BY d.deptno,d.dname<br />
+<br />
+查看谁的工资高于其所在部门平均工资?<br />
+SELECT e.ename,e.sal,e.deptno<br />
+FROM emp e,v_emp_dept_sal v<br />
+WHERE e.deptno=v.deptno<br />
+AND e.sal&gt;v.avg_sal<br />
+<br />
+删除视图<br />
+DROP VIEW v_emp_10<br />
+<br />
+删除视图中的数据会对应的将基表数据删除<br />
+但是删除视图本身，并不会影响基表数据。<br />
+<br />
+<br />
+序列<br />
+序列也是数据库对象之一，作用是生成<br />
+一组数字。<br />
+序列常用于为表的主键字段生成值使用<br />
+<br />
+CREATE SEQUENCE seq_emp_id<br />
+START WITH 100&nbsp;<br />
+INCREMENT BY 10<br />
+<br />
+序列支持两个伪列:<br />
+NEXTVAL:获取序列下一个数字<br />
+CURRVAL:获取序列当前数字<br />
+序列是不能回退的，当使用NEXTVAL获取<br />
+下一个数字就会导致序列发生步进。<br />
+CURRVAL是获取序列最后一次生成的数字，<br />
+不会导致步进，但是新创建的序列必须至少<br />
+调用一次NEXTVAL后才可以使用。<br />
+<br />
+SELECT seq_emp_id.CURRVAL<br />
+FROM dual<br />
+<br />
+INSERT INTO emp<br />
+(empno,ename,sal,job,deptno)<br />
+VALUES<br />
+(seq_emp_id.NEXTVAL,'rose',<br />
+&nbsp;3000,'CLERK',10)<br />
+<br />
+SELECT * FROM emp<br />
+<br />
+UUID:32位不重复字符串<br />
+也是主键生成方式的一种<br />
+<br />
+SELECT SYS_GUID() FROM dual<br />
+<br />
+<br />
+唯一性约束:<br />
+CREATE TABLE employees1 (<br />
+&nbsp;eid NUMBER(6) UNIQUE,<br />
+&nbsp;name VARCHAR2(30),<br />
+&nbsp;email VARCHAR2(50),<br />
+&nbsp;salary NUMBER(7, 2),<br />
+&nbsp;hiredate DATE,<br />
+&nbsp;CONSTRAINT employees1_email_uk UNIQUE(email)<br />
+);<br />
+<br />
+INSERT INTO employees1<br />
+(eid,name,email)<br />
+VALUES<br />
+(null,'jack',null)<br />
+<br />
+SELECT * FROM employees1<br />
+<br />
+<br />
+主键约束<br />
+CREATE TABLE employees2 (<br />
+&nbsp; eid NUMBER(6) PRIMARY KEY,<br />
+&nbsp; name VARCHAR2(30),<br />
+&nbsp; email VARCHAR2(50),<br />
+&nbsp; salary NUMBER(7, 2),<br />
+&nbsp; hiredate DATE<br />
+);<br />
+<br />
+INSERT INTO employees2<br />
+(eid,name)<br />
+VALUES<br />
+(NULL,'jack')<br />
+
+	</body>
+</html>

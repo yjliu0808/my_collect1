@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	<h2>
+	Servlet &amp;&amp; JSP
+</h2>
+<p>
+	<h4>
+		1.什么是Servlet
+	</h4>
+	<p>
+		保存在服务器上，需要满足SUN的规范，拼动态资源（HTML/IMG等）用来处理HTTP协议的组件<br />
+		<p>
+			servlet有良好的生存期的定义，包括加载和实例化、初始化、处理请求以及服务结束。这个生存期由javax.servlet.Servlet接口的init,service和destroy方法表达。
+		</p>
+		<h4>
+			2.Servlet的生命周期，Servlet 和 CGI 的区别?
+		</h4>
+		<p>
+			Web 容器加载 Servlet 并将其实例化后，Servlet 生命周期开始，容器运行其 init 方法进行 Servlet 的初始化，请求到达时运行其 service 方法，service方法自动派遣运行与请求对应的 doXXX 方法（doGet，doPost）等，当服务器决定将实例销毁的时候调用其 destroy 方法。与 cgi 的区别在于 servlet 处于服务器进程中，它通过多线程方式运行其 service 方法，一个实例可以服务于多个请求，并且其实例一般不会销毁，而 CGI 对每个请求都产生新的进程，服务完成后就销毁，所以效率上低于 servlet。
+		</p>
+		<p>
+			<h4>
+				3.JSP和 Servlet 有哪些相同点和不同点，他们之间的联系是什么？
+			</h4>
+			<div>
+				JSP 是 Servlet 技术的扩展，本质上是 Servlet 的简易方式，更强调应用的外表表达。JSP 编译后是"类 servlet"。Servlet 和 JSP 最主要的不同点在于，Servlet 的应用逻辑是在 Java 文件中，并且完全从表示层中的 HTML 里分离开来。而 JSP 的情况是 Java 和 HTML 可以组合成一个扩展名为.jsp 的文件。JSP 侧重于视图，Servlet 主要用于控制逻辑
+			</div>
+		</p>
+		<h4>
+			4. Forward（转发） 和 redirect（重定向） 的区别?
+		</h4>
+		<p>
+			forward 是容器中控制权的转向，是服务器请求资源，服务器直接访问目标地址的 URL，把那个 URL 的响应内容读取过来，然后把这些内容再发给浏览器，浏览器根本不知道服务器发送的内容是从哪儿来的，所以它的地址栏中还是原来的地址。 redirect 就是服务端根据逻辑,发送一个状态码,告诉浏览器重新去请求那个地址，一般来说浏览器会用刚才请求的所有参数重新请求，所以session,request 参数都可以获取，并且从浏览器的地址栏中可以看到跳转后的链接地址。前者更加高效，在前者可以满足需要时，尽量使用 forward()方法，并且，这样也有助于隐藏实际的链接；在有些情况下，比如，需要跳转到一个其它服务器上的资源，则必须使用 sendRedirect()方法。
+		</p>
+		<h4>
+			5. JSP 中动态 INCLUDE 与静态 INCLUDE 的区别？
+		</h4>
+		<p>
+			动态 INCLUDE 用 jsp:include 动作实现 &lt;jsp:include page="included.jsp"flush="true" /&gt;它总是会检查所含文件中的变化，适合用于包含动态页面，并且可以带参数；静态 INCLUDE 用 include 伪码实现,它不会检查所含文件的变化，适用于包含静态页面&lt;%@ include file="included.htm" %&gt;&nbsp;
+		</p>
+		<h4>
+			6. JSP 的内置对象及方法？
+		</h4>
+		<p>
+			request：用户端请求，此请求会包含来自 GET/POST 请求的参数；
+		</p>
+		<p>
+			response：网页传回用户端的回应；
+		</p>
+		<p>
+			pageContext：网页的属性是在这里管理；
+		</p>
+		<p>
+			session：与请求有关的会话期；
+		</p>
+		<p>
+			application：servlet 正在执行的内容；
+		</p>
+		<p>
+			out：用来传送回应的输出；
+		</p>
+		<p>
+			config：servlet 的构架部件；
+		</p>
+		<p>
+			page：JSP 网页本身；
+		</p>
+		<p>
+			exception：针对错误网页，未捕捉的例外。
+		</p>
+		<h4>
+			7. get 和 post 的区别？
+		</h4>
+		<p>
+			Form 中的 get 和 post 方法，在数据传输过程中分别对应了 HTTP 协议中的GET 和 POST 方法。二者主要区别如下：
+		</p>
+		<p>
+			1）Get 是用来从服务器上获得数据，而 Post 是用来向服务器上传递数据；
+		</p>
+		<p>
+			2）Get 将表单中数据按照 variable=value 的形式，添加到 action 所指向的URL 后面，并且两者使用“?”连接，而各个变量之间使用“&amp;”连接；Post 是将表单中的数据放在 form 的数据体中，按照变量和值相对应的方式，传递到 action所指向 URL；
+		</p>
+		<p>
+			3）Get 是不安全的，因为在传输过程，数据被放在请求的 URL 中；Post 的所有操作对用户来说都是不可见的；
+		</p>
+		<p>
+			4）Get 传输的数据量小，这主要是因为受 URL 长度限制；而 Post 可以传输大量的数据，所以在上传文件只能使用 Post；
+		</p>
+		<p>
+			5）Get 限制 Form 表单的数据集必须为 ASCII 字符，而 Post 支持整个 ISO10646字符集；
+		</p>
+		<p>
+			6）Get 是 Form 的默认方法。
+		</p>
+		<h4>
+			8.如何从 form 表单中得取 checkbox 的值?
+		</h4>
+		<p>
+			可在页面把 checkbox 的 name 属性取同一个，value 属性取每个条目的 id,后台用 getParamter(“name”)能取到 checkbox 的一组值。
+		</p>
+		<h4>
+			9.过滤器有哪些作用？
+		</h4>
+		<p>
+			可以验证客户是否来自可信的网络，可以对客户提交的数据进行重新编码，可以从系统里获得配置的信息，可以过滤掉客户的某些不应该出现的词汇，可以验证用户是否登录，可以验证客户的浏览器是否支持当前的应用，可以记录系统的日志等等。
+		</p>
+		<h4>
+			10.过滤器的用法？（对客户端的请求统一编码和对客户端进行认证）
+		</h4>
+		<p>
+			首先要实现（implements）Filter 接口，同时覆盖 Filter 接口的三个方法：
+		</p>
+		<p>
+			init(FilterConfig config) //用于获得 FilterConfig 对象；
+		</p>
+		<p>
+			doFilter(ServletRequest request, ServletResponse response,FilterChain chain) //进行过滤处理一些业务；
+		</p>
+		<p>
+			destroy() //销毁 Filter
+		</p>
+		<h4>
+			11.介绍在 JSP 中如何使用 JavaBeans？
+		</h4>
+		<p>
+			在 JSP 中使用 JavaBean 常用的动作有：
+		</p>
+		<p>
+			1）&lt;jsp:useBean /&gt;：用来创建和查找 bean 对象；
+		</p>
+		<p>
+			2）&lt;jsp:setProperty /&gt;：用来设置 bean 的属性，即调用其 setXxx()方法；
+		</p>
+		<p>
+			3）&lt;jsp:getProperty /&gt;：用来获得 bean 的属性，即调用其 getXxx()方法。
+		</p>
+		<h4>
+			12. JSP 和 Servlet 中的请求转发分别如何实现？
+		</h4>
+		<p>
+			JSP 中的请求转发可利用 forward 动作实现：&lt;jsp:forward /&gt;；Serlvet 中实现请求转发的方式为：getServletContext().getRequestDispatcher(path).forward(req,res)。
+		</p>
+		<h4>
+			13. JSP 标签的作用？如何定义？
+		</h4>
+		<p>
+			作用：分离 jsp 页面的内容和逻辑； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务逻辑开发者可以创建自定义标签； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;封装业务逻辑； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可重用并且易维护； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;易于手工修改、易于工具维护； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提供简洁的语法；
+		</p>
+		<p>
+			定义: &nbsp;写标签处理器； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;写 tld 文件； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;讲标签处理器和 tld 文件放到同一个包里面； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;把 jsp 页面和标签库配置部署在一起。 <br />
+			<h4>
+				14. URL 和 URI 的区别？
+			</h4>
+URL： 统一资源定位符, 指的是 Internet 文件在网上的地址, 用在客户程序和服务器上，定位客户端连接服务器所需要的信息，它不仅定位了这个信息资源，而且定义了如何找到这个资源.
+		</p>
+		<p>
+			URI： 统一资源标识符， Web 上可用的每种资源 ： HTML 文档、图像、视频片段、程序等„是由一个通过通用资源标志(Universal Resource Identifier, 简称"URI")进行定位,不局限于客户端服务器.
+		</p>
+		<p>
+			URI 一般由三部分组成:1.访问资源的命名机制。2.存放资源的主机名。3.资源自身的名称，由路径表示。<br />
+URL 是 URI 的一个子集&nbsp;
+			<h4>
+				15如何实现 servlet 的单线程模式？
+			</h4>
+			<p>
+				&lt;%@page isThreadSafe=”false”%&gt;
+			</p>
+			<p>
+				<h4>
+					16.JSP的常用指令
+				</h4>
+				<div>
+					isErrorPage(是否能使用Exception对象)，isELIgnored(是否忽略表达式)&nbsp;<br />
+				</div>
+				<h4>
+					17.过滤器
+				</h4>
+				<div>
+					web.xml中元素执行的顺序listener-&gt;filter-&gt;struts拦截器-&gt;servlet。<br />
+<br />
+Java中的Filter 并不是一个标准的Servlet ，它不能处理用户请求，也不能对客户端生成响应。 主要用于对HttpServletRequest 进行预处理，也可以对HttpServletResponse 进行后处理，是个典型的处理链。<br />
+优点：过滤链的好处是，执行过程中任何时候都可以打断，只要不执行doFilter()就不会再执行后面的过滤器和请求的内容。而在实际使用时，就要特别注意过滤链的执行顺序问题<br />
+过滤器的作用描述<br />
+&nbsp;1，在HttpServletRequest 到达Servlet 之前，拦截客户的HttpServletRequest 。&nbsp;<br />
+&nbsp;2，根据需要检查HttpServletRequest ，也可以修改HttpServletRequest 头和数据。&nbsp;<br />
+&nbsp;3， 在HttpServletResponse 到达客户端之前，拦截HttpServletResponse 。&nbsp;<br />
+&nbsp;4，根据需要检查HttpServletResponse ，可以修改HttpServletResponse 头和数据。<br />
+				</div>
+				<h4>
+					18.监听器
+				</h4>
+				<div>
+					Servlet监听器用于监听一些重要事件的发生，监听器对象可以在事情发生前、发生后可以做一些必要的处理<br />
+ServletContextListener：用于监听WEB 应用启动和销毁的事件，监听器类需要实现<br />
+ServletContextAttributeListener：用于监听WEB应用属性改变的事件，包括：增加属性、删除属性、修改属性，监听器类需要实现ServletContextAttributeListener接口。<br />
+HttpSessionListener：用于监听Session对象的创建和销毁，监听器类需要实现HttpSessionListener接口或者HttpSessionActivationListener接口，或者两个都实现。<br />
+监听器的部署在web.xml文件中配置，在配置文件中，它的位置应该在过滤器的后面Servlet的前面<br />
+					<h4>
+						19.Cookie和Session的区别和优缺点
+					</h4>
+					<div>
+						cookie用于交互时存放在客户端，即使用你临时文件夹中不存在cookie,但在你的浏览器进程中会临时保存你的cookie!<br />
+session是交互时存放在服务端，即使用不保存，也在服务进程中。<br />
+<br />
+cookie机制采用的是在客户端保持状态的方案，而session机制采用的是在服务器端保持状态的方案。<br />
+					</div>
+					<h4>
+						20.Jsp 的四种会话范围&nbsp;
+					</h4>
+				</div>
+page 是代表与一个页面相关的对象和属性。 作用域在当前页.
+			</p>
+			<p>
+				request 是代表与Web客户机发出的一个请求相关的对象和属性。
+			</p>
+			<p>
+				session 只要访问的浏览器不关闭，作用域就一直存在。
+			</p>
+			<p>
+				application 只要访问的服务器不关闭，作用域就一直存在。
+			</p>
+			<h4>
+				21.MVC 的各个部分都有那些技术来实现?如何实现?&nbsp;
+			</h4>
+			<p>
+				M-Model 模型模型的职责是负责业务逻辑。包含两部分： 业务数据和业务处理逻辑。例如：实体类、 DAO、 Service 等都属于模型层<br />
+V-View 视图<br />
+视图的职责是负责显示界面和用户交互（收集用户信息）。属于视图的类是不包含业务逻辑和控制逻辑的 JSP(如果 JSP 页面中有&lt;% %&gt;就不能算是视图层的类，或者 JSP 中更有转发和重定向的控制逻辑也是不可以的)。
+			</p>
+			<p>
+				C-Controller 控制器控制器是模型层 M 和视图层 V 之间的桥梁，用于控制流程。比如我们之前项目中写的 Action 或 Servlet <br />
+			</p>
+		</p>
+		<h4>
+			<p>
+			</p>
+			<div>
+				<br />
+			</div>
+		</h4>
+	</p>
+</p>
+	</body>
+</html>

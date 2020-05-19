@@ -1,0 +1,751 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	<p>
+	<h3>
+		一、oracle SQL的组成部分
+	</h3>
+	<h4>
+		&nbsp; 1、数据定义语言：DDL，data definition language,包含create,alter,drop等，<br />
+&nbsp; DDL不需要commit，自动提交<br />
+&nbsp; &nbsp; &nbsp;---table、view、sequence、index<br />
+&nbsp; 2、数据操作语言:DML,包含insert、update、delete &nbsp;<br />
+&nbsp; &nbsp; ---一定是对表结构数据产生影响的就是dml操作<br />
+&nbsp; 3、数据控制语言：DCL，包含grant(授权)、revoke(撤销)命令<br />
+&nbsp; &nbsp; &nbsp;---grant create table on user；<br />
+&nbsp; 4、事物控制语句：TCL，包含commit，rollback、savepoint等命令<br />
+&nbsp; 5、数据查询语句：DQL，select&nbsp;
+	</h4>
+	<h3>
+		二、基本数据类型：
+	</h3>
+	<h4>
+		&nbsp; &nbsp;number、char、varchar2、date、<br />
+&nbsp; &nbsp;timestampe(秒可以精确到小数点后6位，同时也有时区)<br />
+&nbsp; &nbsp;clob：存储大的文本，比如存储非结构化的xml文件<br />
+&nbsp; &nbsp;blob：存储二进制对象文件，比如图形、声音和视频等
+	</h4>
+&nbsp; &nbsp;<br />
+	<h3>
+		&nbsp; &nbsp;备注：int数据类型，在数据库内部会自动转换成number(38),
+	</h3>
+&nbsp; &nbsp;<br />
+	<h4>
+		&nbsp; &nbsp;---日期类型、timestamp、sysdate、number(9,2)
+	</h4>
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;<br />
+	<h3>
+		三、DDL操作---表操作
+	</h3>
+	<h4>
+		&nbsp; 1、建表
+	</h4>
+&nbsp; &nbsp; create table &nbsp;表名(字段 类型 约束条件(可选),...)<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;---补充其他创建表的格式:<br />
+&nbsp; &nbsp;1)利用已知表创建新表，主要是会把非空约束带进来，同时会在创建的过程<br />
+&nbsp; &nbsp;中把满足select条件过滤的记录创建成新表中的数据，但是其他约束条件需要自己去添加<br />
+&nbsp; &nbsp;create table s_xx<br />
+&nbsp; &nbsp;as&nbsp;<br />
+&nbsp; &nbsp;select * from s_emp<br />
+&nbsp; &nbsp;where dept_id=42;<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;2)只取表结构，不取表中数据的建表方式<br />
+&nbsp; &nbsp;create table s_xx1&nbsp;<br />
+&nbsp; &nbsp;as<br />
+&nbsp; &nbsp;select * from s_emp<br />
+&nbsp; &nbsp;where 1=2;<br />
+&nbsp; 备注：体会JDBC中where 1=1的形式，这是创建表结构的时候会遵循的一点<br />
+&nbsp;&nbsp;<br />
+	<h4>
+		&nbsp; 2、表的删除
+	</h4>
+&nbsp; &nbsp;drop table &nbsp;表名;<br />
+&nbsp; --- drop用来删除表结构和表中的数据记录，但是默认会放到回收站(user_recyclebin),<br />
+&nbsp; &nbsp;可以使用flashback table 表名 to before &nbsp;drop还原；<br />
+&nbsp; &nbsp; 如果删除表时不想放到回收站，那么就需要一个purge，即drop table 表名 purge;<br />
+&nbsp; &nbsp;<br />
+	<h4>
+		&nbsp; &nbsp;3、表的约束条件
+	</h4>
+&nbsp; &nbsp;---约束分类：<br />
+&nbsp; &nbsp; 主键约束：PK，这个字段的必须满足非空且唯一，一张表只能有一个主键<br />
+&nbsp;&nbsp;&nbsp;&nbsp;外键约束：关联另一张表(对应其主键)，foreign key,references、<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on delete cascade、<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;on delete set null<br />
+非空约束:not null,字段值不为空<br />
+唯一约束：unique，字段值唯一/不能重复<br />
+检查约束：check,字段值要做检查，看是否满足条件<br />
+---约束实现：<br />
+&nbsp;列级约束：建表的过程中直接在字段的后面加约束条件，或者在表创建好之后<br />
+通过grant在字段(列)上加约束条件<br />
+备注：非空约束只能是列级约束<br />
+&nbsp;表级约束：在创建好所有列侯再去在某些列上添加约束条件<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;<br />
+---主键约束条件<br />
+&nbsp;create table yy(c number primary key);//列级约束<br />
+&nbsp;create table yy(c number,primary key(c));表级约束<br />
+&nbsp;create table yy(c number constraints c_pk primary key(c));创建越是名c_pk<br />
+&nbsp;create table yy(c number,c1 number,primary key(c,c1));<br />
+&nbsp;<br />
+&nbsp;<br />
+---外键约束：先定义父表，在创建子表<br />
+create table p(c number primary key);<br />
+create table c(c1 number primary key, c number references p(c));<br />
+&nbsp;外键约束定义成表级约束：<br />
+&nbsp;create table c(c1 number primary key, c number,<br />
+foreign key(c) references p(c)<br />
+&nbsp;);<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;---查看表的约束条件(数据字典)<br />
+&nbsp; &nbsp;desc user_constraints<br />
+&nbsp; &nbsp;select constraint_name,constraint_type from user_constraints<br />
+&nbsp; &nbsp;where table_name='S_EMP'<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;---查看字段约束条件<br />
+&nbsp; &nbsp; &nbsp;desc user_cons_columns<br />
+select column_name,position from user_cons_columns&nbsp;<br />
+where constraint_name='S_EMP_ID_PK';<br />
+&nbsp;&nbsp;<br />
+&nbsp; ---级联删除====》外键约束<br />
+&nbsp; &nbsp; create table parent(pid number primary key,pname varchar2(20));<br />
+create table child(cid number primary key,<br />
+cname varchar2(20),<br />
+pid number,<br />
+constraints pid_fk foreign key(pid) references parent(pid)<br />
+on delete cascade<br />
+);<br />
+insert into parent values(1,'ff');<br />
+insert into parent values(2,'xx');<br />
+insert into child values(1,'ok',1);<br />
+insert into child values(2,'ok',1);<br />
+insert into child values(3,'ok',2);<br />
+<br />
+delete from child where child.pid=1;<br />
+drop table 表名 &nbsp;cascade &nbsp;constraints 直接删除表，且子表的约束不受影响<br />
+<br />
+&nbsp; 练习题：创建3个表<br />
+&nbsp; &nbsp;Q1_S(SID,SN,SD,SA)：学生表，字段分别代表学号、学生姓名、所属单位(班级)，年龄<br />
+&nbsp; &nbsp;Q1_C(CID,CN):课程表，字段分别代表课程编号，课程内容<br />
+&nbsp; &nbsp;Q1_SC(SID,CID,G):成绩表，字段分别学号、课程编号、学习成绩<br />
+&nbsp; &nbsp;<br />
+&nbsp;&nbsp;<br />
+	<h3>
+		四、select操作
+	</h3>
+select sal*12 yearsal from emp;<br />
+&nbsp;select sal*12 "yearsal" from emp;<br />
+select sal*12 as yearsal from emp;<br />
+&nbsp; &nbsp; &nbsp;select sal*12 as "yearsal" from emp;<br />
+&nbsp;&nbsp;<br />
+&nbsp; &nbsp; ---算术运算：+、-、*、/<br />
+emp中，每个员工的年终奖都是2000，找出基本工资在2000以上的员工的工资以及年终工资<br />
+&nbsp;select ename,sal,sal*12+2000 &nbsp;yearsal<br />
+&nbsp;from emp<br />
+&nbsp;where sal&gt;2000<br />
+---字符串拼接：<br />
+&nbsp;||: &nbsp; first_name||last_name &nbsp;<br />
+&nbsp;多个字段之间可以加其他字符(下划线):first_name||'_'||last_name<br />
+&nbsp;一个单引号：select first_name||''''||last_name from s_emp<br />
+&nbsp;2个单引号：select first_name||''''||''''||last_name from s_emp<br />
+select first_name||''''''||last_name from s_emp<br />
+<br />
+select first_name||' is a '||last_name from s_emp<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp; &nbsp; ----null值处理：<br />
+&nbsp;select ename,sal*12*(1+comm/100) from emp;<br />
+&nbsp;备注：任何数和null值做运算，结果都为null,null是最大值<br />
+&nbsp;<br />
+nvl(字符串s,替换值n)：若s为null，那么nvl返回n，否则返回s<br />
+nvl2(s1,s2,s3):s1不为null，返回s2,否则返回s3<br />
+&nbsp; &nbsp; 练习：查询所有员工的年薪？<br />
+select ename,sal*12*(1+nvl(comm,0)/100) from emp;<br />
+&nbsp; &nbsp; &nbsp;<br />
+查找员工编号、姓名、上级领导编号，如果上级领导为null，把mgr显示成0<br />
+&nbsp;select empno,ename,nvl(mgr,0) from emp;<br />
+&nbsp; &nbsp; 显示emp表中empno、ename、mgr，如果mgr为null，显示成BOSS<br />
+&nbsp;select empno,ename,nvl(to_char(mgr),'BOSS') from emp<br />
+&nbsp;<br />
+---去重操作:distinct<br />
+&nbsp;select distinct &nbsp;deptno,job from emp;<br />
+&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp; &nbsp; ---where子句：过滤条件，限定表的数据返回<br />
+&nbsp; 关系运算符： =、!=、&lt;&gt;、&lt;、&lt;=、&gt;、&gt;=<br />
+&nbsp; 逻辑运算符：and、or、not&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;between。。。and &nbsp; 闭区间，含头含尾<br />
+between...and 和&lt;=...&gt;=相等同&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>
+	&nbsp;备注：or和in等同<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;---模糊查询：like<br />
+&nbsp; &nbsp; &nbsp; 可以使用"%"或者"_":前者0或者多个字符，后者必须是任意一个字符<br />
+格式：like &nbsp;'字符串' [escape '字符']：escape对特殊字符的处理<br />
+&nbsp;<br />
+&nbsp;<br />
+emp表中第二个字符为a的员工？<br />
+&nbsp; &nbsp;select &nbsp;ename &nbsp;from emp &nbsp;where ename like '_A%';<br />
+emp表中员工名称有a的员工？<br />
+select ename &nbsp;from emp where ename like '%A%';<br />
+查找user_tables中以S开头的表？<br />
+select &nbsp;table_name from user_tables where table_name like 'S%';<br />
+查找user_tables中以S_开头的表？<br />
+select &nbsp;table_name from user_tables<br />
+where table_name like 'S\_%' escape '\';<br />
+查找user_tables中以S__开头的表？<br />
+select &nbsp;table_name from user_tables<br />
+where table_name like 'S\_\_%' escape '\';<br />
+备注：转义字符不要用&amp;,因为&amp;会产生交互式查询，会让我们输入数值<br />
+<br />
+---空值处理：null是一种状态，不能用=null来进行判断<br />
+&nbsp; &nbsp; &nbsp;is null&nbsp;<br />
+is not null<br />
+&nbsp;<br />
+查询提成为空的员工？<br />
+select * from emp &nbsp;where comm is null<br />
+---排序：order by,永远放在所有sql语句最后<br />
+&nbsp; 空值在排序中的处理？在排序中按照最大值处理<br />
+&nbsp; &nbsp;select ename,comm &nbsp;from emp<br />
+order by comm desc;<br />
+五、组函数/聚合函数<br />
+&nbsp; &nbsp; 单行函数：每条sql语句都会进行处理，并且每一行都返回一个结果<br />
+&nbsp; &nbsp; 组函数：对影响的所有行进程综合处理最终返回一个结果，无论sql<br />
+语句影响多少行都会返回一个结果(组函数会忽略空值)<br />
+常用组函数：avg、count、max、min、sum<br />
+----求工资的平均值、和：去重<br />
+&nbsp;select avg(sal),sum(sal) from emp;<br />
+&nbsp;select avg(distinct sal),sum(distinct sal) from emp;<br />
+&nbsp;<br />
+----组函数对null的处理<br />
+统计emp表中提成的个数，提成的和、提成的平均值？<br />
+select &nbsp;count(comm),sum(comm),avg(comm) from emp;<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp; &nbsp; replace:<br />
+&nbsp;lpad<br />
+&nbsp;rpad<br />
+&nbsp;trim<br />
+&nbsp; &nbsp;<br />
+---处理数字的函数：<br />
+round(1,2):四舍五入，<br />
+&nbsp; &nbsp; 1是要处理的数据，2是处理方式，默认取整<br />
+0：默认四舍五入取整<br />
+1：保留小数点后1位<br />
+-1：直接对小数点钱的1位进行四舍五入<br />
+&nbsp;<br />
+select round(16.98,-2) from dual;<br />
+&nbsp;<br />
+trunc(1,2):截取<br />
+&nbsp; &nbsp;select trunc(119.56,-2) from dual;<br />
+select trunc(119.56) from dual;<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;<br />
+ceil:向上取整，最小数<br />
+floor:向下取整，最大数<br />
+mod:取余<br />
+<br />
+----日期函数：<br />
+&nbsp;sydate<br />
+&nbsp;to_date<br />
+&nbsp;add_months<br />
+&nbsp;months_between:<br />
+&nbsp;last_day；<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp; 以当前系统时间天为单位，获取10分后的时间?<br />
+select sysdate,sysdate+10/(60*24) from dual;<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;---格式转换函数：显示数据类型直接的转换<br />
+&nbsp; &nbsp; &nbsp;to_char(s1[,s2]):要处理的字符串，格式(可以省略)<br />
+备注：将日期、数值类型的数据转换成字符<br />
+&nbsp;1)日期===》字符<br />
+&nbsp; &nbsp; 2017-03-09 11:27:34<br />
+select to_char(sysdate,'dd~mm~yyyy hh24:mi:ss') from dual;<br />
+select to_char(sysdate,'dd~mm~yyyy hh24:mi:sspm') from dual;<br />
+select to_char(sysdate,'year month day') from dual;<br />
+&nbsp; &nbsp;<br />
+查找12月份入职的员工？<br />
+&nbsp; select * from emp where to_char(hiredate,'mm')='2';<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp; &nbsp; 2)数值===&gt;字符串<br />
+&nbsp; 货币符号问题：<br />
+$:<br />
+L:本地符号￥ RMB<br />
+9:小数点前代表0-9的任意数字，小数点后1-9任意数字<br />
+0：小数点前面强制导入零， &nbsp;12345==&gt;000,012,345.00<br />
+&nbsp; 小数点后零，在对应的位置返回对应的字符，如果没有以零填充<br />
+&nbsp;&nbsp;<br />
+select ename,to_char(sal,'$0,000.00') from emp;<br />
+select ename,to_char(sal,'$9,000.00') from emp;<br />
+select ename,to_char(sal,'L9,000.00') from emp;<br />
+select ename,to_char(sal,'L9,999.99') from emp;<br />
+select ename,to_char(sal,'fm$9,999.99') from emp;<br />
+select ename,to_char(sal,'$9,999.99') from emp;<br />
+&nbsp;<br />
+&nbsp;<br />
+---error，无效的数字格式类型<br />
+&nbsp; &nbsp;select ename,to_char(sal,'$8,888.88') from emp;<br />
+<br />
+---to_date:将字符转换成日期<br />
+&nbsp;select to_date('2015-06-19 11:54:23','yyyy-mm-dd hh24:mi:ss') from dual;<br />
+&nbsp;<br />
+---to_number:将字符转换成数值<br />
+to_number(s1,'99'):格式是0或者9<br />
+查询11月份入职的员工？<br />
+&nbsp;select &nbsp;* from emp where&nbsp;<br />
+&nbsp;to_number(to_char(hiredate,'mm'),'99')=11;<br />
+&nbsp;<br />
+&nbsp;select &nbsp;* from emp where&nbsp;<br />
+&nbsp;to_number(to_char(hiredate,'mm'),'00')=11;<br />
+----error，格式不对<br />
+&nbsp;select &nbsp;* from emp where&nbsp;<br />
+&nbsp;to_number(to_char(hiredate,'mm'),'11')=11;<br />
+&nbsp;<br />
+&nbsp;<br />
+六、select查询<br />
+&nbsp; &nbsp;1、基本查询<br />
+where：先过滤后分组<br />
+group by:分组查询，组函数<br />
+having：分组后进行过滤<br />
+备注：出现group by时，select后面所对应的字段类型：要么字段是<br />
+出现在group by子句后，要么是组函数<br />
+select ename,sum(sal) form emp &nbsp;group by ename<br />
+<br />
+一条完整sql语句：<br />
+select &nbsp;5<br />
+form &nbsp; 1<br />
+where &nbsp; 2<br />
+group by &nbsp; 3<br />
+having &nbsp; &nbsp;4<br />
+order by &nbsp;6<br />
+<br />
+----分组查询<br />
+统计每个部门的人数？<br />
+select dept_id,count(id)<br />
+from s_emp<br />
+group by dept_id;<br />
+统计每个部门的人数，显示出人数大于2的部门？<br />
+&nbsp;select dept_id,count(id)<br />
+from s_emp<br />
+group by dept_id<br />
+having count(id)&gt;2;<br />
+统计每个部门的平均工资，显示工资&gt;1300的部门？<br />
+&nbsp;select dept_id,avg(salary)<br />
+&nbsp;from s_emp<br />
+&nbsp;group by dept_id<br />
+&nbsp;having avg(salary)&gt;1300;<br />
+&nbsp;<br />
+2、多表查询：<br />
+&nbsp; 避免笛卡儿积，表中有关联关系<br />
+&nbsp; 1) 内连接：[inner] join<br />
+&nbsp;&nbsp;<br />
+&nbsp; 等值连接：用等号的连接就是等值连接，不适用等号的连接就是<br />
+非等值连接，特殊连接就是自连接<br />
+自连接：表中数据有关联的连接<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+---等值连接：<br />
+&nbsp; 查找出部门编号等于20的员工信息和部门名称？<br />
+select e.ename,d.dname<br />
+from emp e inner &nbsp;join &nbsp;dept d&nbsp;<br />
+on &nbsp;e.deptno=d.deptno<br />
+where e.deptno=20;<br />
+select e.ename,d.dname<br />
+from emp e &nbsp; join &nbsp;dept d&nbsp;<br />
+on &nbsp;e.deptno=d.deptno<br />
+where e.deptno=20;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;查找出1区域的区域名、部门名称和员工姓名？s_emp\s_dept s_region<br />
+&nbsp; select r.name,d.name,e.first_name<br />
+&nbsp; from s_emp e join s_dept d on e.dept_id=d.id&nbsp;<br />
+&nbsp; join s_region r on d.region_id=r.id&nbsp;<br />
+&nbsp; where r.id=1;<br />
+<br />
+&nbsp;select r.name,d.name,e.first_name<br />
+&nbsp;from s_emp e , s_dept d , s_region r<br />
+&nbsp;where e.dept_id=d.id and d.region_id=r.id &nbsp;<br />
+&nbsp;and r.id=1;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;查找员工的id、工资以及其对应的工资级别？<br />
+&nbsp;select e.id,e.salary,s.grade<br />
+&nbsp;from s_emp e,salgrade s<br />
+&nbsp;where e.salary between losal and hisal;<br />
+&nbsp;<br />
+---自连接：<br />
+&nbsp; &nbsp; &nbsp; 查询‘FORD'的上级是谁？<br />
+&nbsp;select worker.ename,worker.mgr,m.ename,m.empno<br />
+&nbsp;from &nbsp;emp worker join emp m<br />
+&nbsp;on worker.mgr=m.empno<br />
+&nbsp;where worker.ename='FORD';<br />
+&nbsp;<br />
+那些人是领导？emp，考虑去重问题<br />
+select distinct m.ename<br />
+from emp worker join &nbsp;emp m<br />
+on worker.mgr=m.empno;<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;<br />
+查找king的直接下属是谁？<br />
+select e.ename,e.mgr,m.ename,m.empno<br />
+from emp e join emp m<br />
+on e.mgr=m.empno&nbsp;<br />
+where m.ename='KING';<br />
+&nbsp;<br />
+&nbsp; &nbsp; 3、外连接：<br />
+&nbsp; &nbsp; 内连接的结果集加上匹配不上的记录(一个不能少)<br />
+left/right/full join、(+)<br />
+(+)把对面表中所有的数据都匹配出来<br />
+&nbsp;<br />
+xx(+)=yy<br />
+select distinct e.first_name ef,m.first_name mf<br />
+from s_emp e,s_emp m<br />
+where e.manager_id(+)=m.id;<br />
+&nbsp; &nbsp;那些部门没有员工？<br />
+select e.deptno,d.deptno<br />
+from emp e,dept d<br />
+where e.deptno(+)=d.deptno<br />
+and e.deptno is null;<br />
+&nbsp;<br />
+显示每个部门的id、部门名称、以及对应的区域名，没有区域编号的部门也要<br />
+显示出来？ s_dept ,s_region<br />
+select d.id,d.name,r.name<br />
+from s_dept d,s_region r<br />
+where d.region_id=r.id(+);<br />
+&nbsp;<br />
+&nbsp;<br />
+练习：每个员工对应的领导ID？<br />
+&nbsp;<br />
+&nbsp;<br />
+七、子查询：可以嵌套在任何sql语句里面的select查询<br />
+select语句中嵌套的子查询，会先执行子查询，一般会将子查询放在<br />
+运算符的右边。<br />
+注意：子查询的结果是多行(in)还是单行(单值)<br />
+<br />
+子查询意义：子查询可以快速的解决一些问题<br />
+一般我们会把子查询的结果做为主查询的查询条件或者或者是子表，<br />
+但是子查询的效率一般来说比较低<br />
+<br />
+分类：<br />
+1、单行子查询：子查询返回的结果是唯一的一个结果<br />
+2、多行子查询：子查询返回的结果是不唯一<br />
+3、多列子查询：子查询返回的结果列有多个，注意区分和2的关系<br />
+4、内嵌视图<br />
+5、关联子查询：<br />
+&nbsp; &nbsp;exists，注意主查询和子查询之间有直接的关联关系<br />
+6、非关联子查询<br />
+in：注意主查询和子查询之间没有直接的关联关系<br />
+----查找出和scott岗位相同的所有员工的信息？单行子查询<br />
+select * from emp<br />
+where &nbsp;job=(select job from emp where ename='SCOTT')<br />
+and ename&lt;&gt;'SCOTT';<br />
+----查找出和10部门岗位相同的员工姓名、岗位、薪水和部门编号？<br />
+1)查找出10部门有哪些职位<br />
+select job from emp where deptno=10;<br />
+2)这些部门对应的有哪些员工<br />
+&nbsp;select ename from emp where job in(<br />
+select job from emp where deptno=10<br />
+&nbsp;);<br />
+<br />
+----那些人是普通员工，并显示名字和职位?(非关联子查询)<br />
+select ename,job from emp<br />
+where empno not in&nbsp;<br />
+(select distinct mgr&nbsp;<br />
+&nbsp;from emp&nbsp;<br />
+&nbsp;where mgr is not null)<br />
+&nbsp;<br />
+----查找SALES部门所有员工的姓名、工资和工种？exists<br />
+select e.ename,e.sal,e.job from emp e<br />
+where exists(<br />
+&nbsp;select 2&nbsp;<br />
+&nbsp;from dept d<br />
+&nbsp;where e.deptno=d.deptno and d.dname='SALES');<br />
+&nbsp;<br />
+练习：那些人是领导，子查询<br />
+----那些部门的平均工资比32部门的平均工资高？<br />
+1)32部门的平均工资<br />
+select avg(salary) from s_emp where dept_id=32<br />
+2)平均工资大于32部门的<br />
+select dept_id,avg(salary) from s_emp<br />
+group by dept_id<br />
+having avg(salary) &gt;(<br />
+select avg(salary)&nbsp;<br />
+from s_emp where dept_id=32);<br />
+<br />
+---查找部门人数大于2的部门名称和编号<br />
+select d.dname,d.deptno<br />
+from dept d<br />
+where&nbsp;<br />
+&nbsp;(select count(*) from emp e<br />
+&nbsp;where e.deptno=d.deptno&nbsp;<br />
+&nbsp;group by deptno)&gt;2;<br />
+<br />
+八、事物控制：<br />
+savepoint &nbsp;位置;<br />
+rollback to &nbsp;位置;<br />
+commit;<br />
+<br />
+<br />
+九、DCL：主要用来创建用户或者更改数据库权限、以及角色权限的语句，<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;包含revoke、grant等<br />
+创建用户:<br />
+create user 用户名 identified by 密码<br />
+default tablespace jsd1610<br />
+temporary tablespace jsd<br />
+备注：如果没有指明表空间，默认在system空间下<br />
+修改密码：alter<br />
+alter &nbsp;user 用户名 identified by 新密码;<br />
+<br />
+修改表空间:<br />
+alter &nbsp;user &nbsp;用户名 default tablespace 新空间名;<br />
+<br />
+加锁/解锁:<br />
+alter &nbsp;user 用户名 account lock/unlock;<br />
+删除用户:drop user 用户名;<br />
+<br />
+<br />
+rownum：<br />
+&nbsp; rownum是什么:伪列，用于返回查询后的总行数<br />
+&nbsp; rownum有什么特点：总是从1开始，不管当前的记录是否满足查询结果，rownum返回值都是1，<br />
+如果这条记录值最终结果都满足所有的条件，rownum递增，<br />
+那么rownum值返回依次递增的数值，否则总是返回1<br />
+&nbsp;---查找rownum等于某个值得记录：<br />
+&nbsp; select rownum,ename from emp where rownum=1; //第一条记录<br />
+&nbsp;<br />
+&nbsp; select rownum,ename from emp where rownum=2;//无返回值<br />
+&nbsp; &nbsp;原因：rownum总是从1开始，1以上的自然数在rownum中判断时都默认是false<br />
+&nbsp;&nbsp;<br />
+&nbsp;---rownum小于某个值的查询：3条记录<br />
+select rownum,ename from emp where rownum&lt;4;<br />
+&nbsp; 原因：rownum&lt;4条件成立，rownum默认1开始<br />
+&nbsp;&nbsp;<br />
+&nbsp;<br />
+&nbsp;---rownum大于某个数值的查询？无返回值，条件不成立，rownum不是从1开始<br />
+&nbsp; &nbsp;select rownum,ename from emp where rownum&gt;4;<br />
+&nbsp; &nbsp;<br />
+&nbsp; 所以要查找&gt;4以后的记录就必须使用子查询，且子查询中rownum必须要<br />
+有别名，否则查不到结果，因为rownum不是表中的字段，如果不起别名的话，<br />
+无法知道rownum是子表还是主表的字段<br />
+&nbsp; &nbsp;select * from (<br />
+&nbsp; &nbsp; &nbsp; select rownum rn,ename from emp)&nbsp;<br />
+&nbsp; &nbsp;where rn&gt;4;<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;<br />
+&nbsp; &nbsp;<br />
+&nbsp;----rownum在某数值区间的问题:<br />
+&nbsp; 5&lt;rownum&lt;10,需要先查找出&lt;10的记录，然后再通过主查询获取&gt;5的记录<br />
+&nbsp; &nbsp;select * from&nbsp;<br />
+&nbsp; &nbsp;(select rownum rn,ename from emp where rownum&lt;10)<br />
+&nbsp; &nbsp;where rn&gt;5;<br />
+&nbsp; &nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;rownum和排序的问题：<br />
+&nbsp; &nbsp;rownum在获取数据的时候会自动产生序列，但是在对某些字段进行排序的<br />
+&nbsp; &nbsp;过程中必须要注意rownum(乱的rownum)<br />
+&nbsp; select rownum,ename from emp order by ename<br />
+&nbsp;&nbsp;<br />
+&nbsp; 原因：ename不是按照rownum来生产序列号的，系统在进行查询的过程中已经<br />
+&nbsp; 给记录分配好了rowid，解决方案就是必须使用子查询<br />
+&nbsp; &nbsp;select rownum ,ename from (<br />
+&nbsp; &nbsp; &nbsp; select * from emp order by ename);<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+rowid用法:<br />
+&nbsp; 查询表中重复的记录？===》根据id进行判断<br />
+&nbsp; select * from emp<br />
+&nbsp; where deptno in (<br />
+select deptno from emp&nbsp;<br />
+group by deptno<br />
+having count(deptno)&gt;1);<br />
+<br />
+&nbsp; 删除表中重复的记录，还是根据单一字段(id)来判断<br />
+&nbsp; &nbsp;delete from emp where deptno in(<br />
+select deptno from emp<br />
+group by deptno<br />
+having count(deptno)&gt;1);<br />
+&nbsp; 注意：删除表中重复记录，如果使用上面的语句，所以满足条件的记录都<br />
+&nbsp; &nbsp; &nbsp; &nbsp;会被删除掉的，但是删除重复记录一般是要求保留一条记录，因此<br />
+&nbsp; 可以使用rowid的方式来保留一条记录<br />
+&nbsp; &nbsp;delete from emp where deptno in(<br />
+select deptno from emp<br />
+group by deptno<br />
+having count(deptno)&gt;1)<br />
+and&nbsp;<br />
+rowid not in(<br />
+&nbsp;select max(rowid) from emp<br />
+&nbsp;group by deptno<br />
+&nbsp;having count(deptno)&gt;1<br />
+&nbsp;);<br />
+<br />
+行列转置：decode &nbsp;case<br />
+&nbsp;decode用法：<br />
+decode(value, if1,then1,other1):如果value条件等于if1时<br />
+&nbsp; &nbsp; 返回then1，否则返回other1<br />
+&nbsp;case..when用法：<br />
+&nbsp; &nbsp; select 字段<br />
+&nbsp; &nbsp; &nbsp;case &nbsp;course<br />
+when 'JAVA' &nbsp;then 'easy'<br />
+when 'C++'	 &nbsp;then 'hard'<br />
+else 'ok' end<br />
+from 表<br />
+<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp; 课程表：cid、course<br />
+&nbsp; &nbsp; &nbsp;1 &nbsp; JAVA<br />
+&nbsp;2	 &nbsp;C++<br />
+&nbsp;3 &nbsp; WEB<br />
+<br />
+name 	course &nbsp;grade<br />
+张三	JAVA	90<br />
+李四	C++		80<br />
+张三	WEB		70<br />
+李四	JAVA	77<br />
+张三	C++		67<br />
+李四	WEB		89<br />
+<br />
+name	C++		JAVA	WEB<br />
+张三	67		90		70<br />
+李四	80		77		89<br />
+select name,<br />
+sum(decode(course,'C++',grade,null)) "C++",<br />
+sum(decode(course,'JAVA',grade,null)) "JAVA",<br />
+sum(decode(course,'WEB',grade,null)) "WEB"<br />
+from 表名<br />
+group by name<br />
+<br />
+grouping用法：<br />
+&nbsp; 接收一列，返回0或者1。如果列值为空，grouping返回1，非空返回0.<br />
+只能放在rollup和cube中使用，<br />
+<br />
+<br />
+select decode(grouping(c1),1,"Total",c1) "C1",<br />
+sum(decode(c2,'B1',c3,null)) "B1",<br />
+sum(decode(c2,'B2',c3,null)) "B2",<br />
+sum(decode(c2,'B3',c3,null)) "B3",<br />
+sum(decode(c2,'B4',c3,null)) "B4",<br />
+sum(c3) "Total"<br />
+from 表名<br />
+group by rollup(c1)<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp; &nbsp;<br />
+&nbsp;&nbsp;<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+问题：13未做知识点讲解<br />
+PROFITS表存储公司不同地区、产品类型和季度的利润信息。下列哪个SQL语句显示不同地区、产品类型和季度的利润的交叉表输出？<br />
+A．select region, product_type, time, sum(profit) from profits group by region, prod_type, time;<br />
+B．select region, product_type, time from profits group by rollup(region, prod_type, time);<br />
+C．select region, product_type, time, from profits group by cube(region, prod_type, time);<br />
+D．select region, product_type, time,sum(profit) from profits group by cube(region, prod_type, time);<br />
+Sql90后可以使用：group by cube<br />
+with cube<br />
+交叉表：交叉列可以产生的高级汇总的结果集<br />
+重点：先了解group by,rollup和cube区别不是很大，都是基于<br />
+group by子句创建和分组后产生的结果集/组合有一定的差异，<br />
+cube返回的是更多的组合，如果group by子句后有n个列或n个<br />
+表达式的话，结果集上会返回2的n-1次方个可能的组合<br />
+备注：oracle不仅支持group by的基本分组查询，也可以用rollup<br />
+和cube，他们都是从分组查询中获取结果的<br />
+cube():2N-1集合对象,显示列中值所有可能的组合的集合<br />
+&nbsp;cube(a,b,c):？<br />
+&nbsp;<br />
+rollup：group by rollup(a,b,c),现对(abc)进行group by，然后<br />
+对(ab)进行分组，然后在对(a)进行分组，最后对全表进行<br />
+group by操作<br />
+
+</p>
+	</body>
+</html>

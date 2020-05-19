@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+回顾:<br />
+1.访问控制修饰符:<br />
+&nbsp; 1)public:公开的，任何类<br />
+&nbsp; 2)private:私有的，本类<br />
+&nbsp; 3)protected:受保护的，本类、子类、同包类<br />
+&nbsp; 4)默认的:什么也不写，本类、同包类<br />
+2.static:静态的<br />
+&nbsp; 1)静态变量:属于类，方法区，一份，类名点<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;所有对象数据都一样(共享一份的数据)<br />
+&nbsp; 2)静态方法:属于类，方法区，一份，类名点<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;没有隐式this传递，不能直接访问实例成员<br />
+方法的操作仅与参数相关而与对象无关<br />
+&nbsp; 3)静态块:属于类，类被加载时自动执行，只执行一次<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;常常用于初始化静态资源<br />
+3.final:最终的<br />
+&nbsp; 1)修饰变量:不可被改变<br />
+&nbsp; 2)修饰方法:不可被重写<br />
+&nbsp; 3)修饰类:不可被继承<br />
+4.static final:常量<br />
+&nbsp; &nbsp; 必须声明同时初始化，类名点来访问，不能改变，大写<br />
+编译时被自动替换为具体的值---效率高<br />
+5.抽象方法:<br />
+&nbsp; &nbsp; abstract，只有方法的定义，没有具体的实现<br />
+6.抽象类:<br />
+&nbsp; 1)由abstract修饰<br />
+&nbsp; 2)包含抽象方法的类必须是抽象类<br />
+&nbsp; 3)抽象类不能被实例化<br />
+&nbsp; 4)抽象类是需要被继承的，子类:<br />
+&nbsp; &nbsp; 4.1)重写抽象类中所有抽象方法<br />
+4.2)也声明为抽象方法<br />
+&nbsp; 5)抽象类意义:<br />
+&nbsp; &nbsp; 5.1)封装所有子类共有的属性和方法--代码复用<br />
+5.2)为所有子类提供一种统一的类型--向上造型<br />
+5.3)可以包含抽象方法，为所有子类提供一个统一的入口<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 子类有不同的实现，但方法的定义是一致的<br />
+7.接口:<br />
+&nbsp; 1)是一个标准、规范<br />
+&nbsp; &nbsp; 遵守这个标准，就能干某件事<br />
+<br />
+笔记:<br />
+1.接口:<br />
+&nbsp; 1)是一个标准、规范----制定方<br />
+&nbsp; &nbsp; 遵守这个标准就能干某件事------API之后<br />
+&nbsp; 2)接口也是一种数据类型(引用类型)<br />
+&nbsp; 3)由interface定义，只能包含常量和抽象方法<br />
+&nbsp; 4)接口不能被实例化<br />
+&nbsp; 5)接口是需要被实现/继承的，实现类/子类:<br />
+&nbsp; &nbsp; &nbsp; 必须重写接口中的所有抽象方法<br />
+&nbsp; 6)一个类可以实现多个接口，用逗号隔开<br />
+&nbsp; &nbsp; 若又继承又实现时，应先继承后实现<br />
+&nbsp; 7)接口可以继承接口<br />
+2.多态:<br />
+&nbsp; 1)多态的意义:<br />
+&nbsp; &nbsp; 1.1)同一类型的引用，指向不同的对象时，有不同的实现<br />
+&nbsp; &nbsp;------行为的多态:cut(),run()...<br />
+1.2)同一个对象，被造型为不同的类型时，有不同的功能<br />
+&nbsp; &nbsp;------对象的多态:我、你、水...<br />
+&nbsp; 2)向上造型:<br />
+&nbsp; &nbsp; 2.1)父类型的引用指向子类的对象<br />
+2.2)能造型成的类型: 父类+所实现的接口<br />
+2.3)能点出来什么，看引用的类型<br />
+&nbsp; 3)强制类型转换，成功的条件有两种:<br />
+&nbsp; &nbsp; 3.1)引用所指向的对象，就是该类型<br />
+3.2)引用所指向的对象，实现了该接口<br />
+&nbsp; 4)不符合那两种条件则转换失败，发生ClassCastException类型转换异常,<br />
+建议在强转之前使用instanceof判断引用指向的对象是否是该类型<br />
+<br />
+任务:<br />
+1.完善银行卡系统---------测试代码不需要写<br />
+2.完善农行ATM机系统------测试代码需要写<br />
+<br />
+interface Inter1{<br />
+}<br />
+abstract class Aoo{<br />
+}<br />
+Aoo o1 = new Aoo();<br />
+Boo o2 = new Boo();<br />
+<br />
+class Aoo{<br />
+&nbsp; int a;<br />
+&nbsp; void show(){<br />
+&nbsp; }<br />
+&nbsp; class Boo{<br />
+&nbsp; }<br />
+}<br />
+<br />
+Scanner scan = new Scanner(System.in);<br />
+int a = scan.nextInt();<br />
+double b = scan.nextDouble();<br />
+卡的钱-要取的钱------------==0(正好够)<br />
+卡的钱-要取的钱------------&gt;0(取完之后还能剩下钱)<br />
+卡的钱-要取的钱------------==-100(可以透支100)<br />
+卡的钱-要取的钱------------&gt;=-2000(最多透支2000)<br />
+<br />
+农行ATM:<br />
+1.什么卡都能插<br />
+2.只有农行卡才能支付电话费<br />
+UnionPay card = new ABCImpl();<br />
+UnionPay card = new ICBCImpl();<br />
+UnionPay card = new CCBImpl();<br />
+<br />
+ABCATM atm = new ABCATM(); //ATM机对象<br />
+UnionPay card = new ABCImpl(); //银联卡<br />
+atm.insertCard(card);<br />
+atm.支付电话费();<br />
+<br />
+class ABCATM{ //农行ATM类<br />
+&nbsp; private UnionPay card; //银联卡<br />
+&nbsp; public void insertCard(UnionPay card){ //插卡<br />
+&nbsp; &nbsp; this.card = card;<br />
+&nbsp; }<br />
+&nbsp; public void 支付电话费(){<br />
+&nbsp; &nbsp; if(card instanceof ABC){ //是农行卡<br />
+&nbsp;ABC abcCard = (ABC)card;<br />
+&nbsp;abcCard.payTelBill("12345678945",500);<br />
+}else{ //不是<br />
+&nbsp;System.out.println("不是农行卡，不能支付电话费");<br />
+}<br />
+&nbsp; }<br />
+<br />
+}<br />
+<br />
+Aoo o1 = new Boo();<br />
+Boo o2 = (Boo)o1; //符合条件1<br />
+Inter1 o3 = (Inter1)o1; //符合条件2<br />
+Coo o4 = (Coo)o1; //ClassCastException类型转换异常<br />
+<br />
+if(o1 instanceof Boo){ //true<br />
+&nbsp; Boo o5 = (Boo)o1;<br />
+}<br />
+<br />
+System.out.println(o1 instanceof Boo); //true<br />
+System.out.println(o1 instanceof Inter1); //true<br />
+System.out.println(o1 instanceof Coo); //false<br />
+<br />
+interface Inter1{<br />
+}<br />
+class Aoo{<br />
+}<br />
+class Boo extends Aoo implements Inter1{<br />
+}<br />
+class Coo extends Aoo{<br />
+}<br />
+<br />
+父类大，子类小<br />
+<br />
+自动:小到大<br />
+强制:大到小<br />
+<br />
+人 p1 = new 理发师(); //向上造型--自动类型转<br />
+<br />
+我 me = new 我();<br />
+讲师 &nbsp; &nbsp; &nbsp; o1 = me;<br />
+孩儿他妈 &nbsp; o2 = me;<br />
+老公的老婆 o3 = me;<br />
+<br />
+me.授课()/揍他()/咬他()/收工资();<br />
+o1.授课();<br />
+o2.揍他();<br />
+o3.咬他();<br />
+o3.收工资();<br />
+<br />
+interface 讲师{<br />
+&nbsp; void 授课();<br />
+}<br />
+interface 孩儿他妈{<br />
+&nbsp; void 揍他();<br />
+}<br />
+interface 老公的老婆{<br />
+&nbsp; void 咬他();<br />
+&nbsp; void 收工资();<br />
+}<br />
+class 我 implements 讲师，孩儿他妈，老公的老婆{<br />
+&nbsp; void 授课(){}<br />
+&nbsp; void 揍他(){}<br />
+&nbsp; void 咬他(){}<br />
+&nbsp; void 收工资(){}<br />
+}<br />
+动物 o1 = new 老虎();<br />
+动物 o2 = new 鱼();<br />
+动物 o3 = new 鸟();<br />
+<br />
+o1.run();<br />
+o2.run();<br />
+o3.run();<br />
+<br />
+<br />
+abstract class 动物{<br />
+&nbsp; abstract void run();<br />
+}<br />
+class 老虎 extends 动物{<br />
+&nbsp; void run(){ 在地上跑 }<br />
+}<br />
+class 鱼 extends 动物{<br />
+&nbsp; void run(){ 在水里游 }<br />
+}<br />
+class 鸟 extends 动物{<br />
+&nbsp; void run(){ 在天上飞 }<br />
+}<br />
+<br />
+人 p1 = new 理发师();<br />
+人 p2 = new 外科医生();<br />
+人 p3 = new 演员();<br />
+<br />
+p1.cut(); //剪发<br />
+p2.cut(); //开刀<br />
+p3.cut(); //停止表演<br />
+<br />
+abstract class 人{<br />
+&nbsp; abstract void cut(){}<br />
+}<br />
+class 理发师 extends 人{<br />
+&nbsp; void cut(){ 剪发 }<br />
+}<br />
+class 外科医生 extends 人{<br />
+&nbsp; void cut(){ 开刀 }<br />
+}<br />
+class 演员 extends 人{<br />
+&nbsp; void cut(){ 停止表演 }<br />
+}<br />
+<br />
+ICBCImpl card1 = new ICBCImpl(); //工行卡<br />
+ICBC &nbsp; &nbsp; card2 = new ICBCImpl(); //工行卡<br />
+UnionPay card3 = new ICBCImpl(); //银联卡--工行卡<br />
+<br />
+<br />
+interface UnionPay{ //银联接口<br />
+&nbsp; void 查询余额();<br />
+&nbsp; void 存款();<br />
+&nbsp; void 取款();<br />
+&nbsp; void 转帐();<br />
+}<br />
+interface ICBC extends UnionPay{ //工行接口<br />
+&nbsp; void 在线支付();<br />
+}<br />
+interface ABC extends UnionPay{ //农行接口<br />
+&nbsp; void 支付电话费();<br />
+}<br />
+interface CCB extends UnionPay{ //建行接口<br />
+&nbsp; void 支付燃气费();<br />
+}<br />
+<br />
+<br />
+class ICBCImpl implements ICBC{ //工行卡<br />
+&nbsp; public void 查询余额(){}<br />
+&nbsp; public void 存款(){}<br />
+&nbsp; public void 取款(){}<br />
+&nbsp; public void 转帐(){}<br />
+&nbsp; public void 在线支付(){}<br />
+}<br />
+class ABCImpl implements ABC{ //农行卡<br />
+&nbsp; public void 查询余额(){}<br />
+&nbsp; public void 存款(){}<br />
+&nbsp; public void 取款(){}<br />
+&nbsp; public void 转帐(){}<br />
+&nbsp; public void 支付电话费(){}<br />
+}<br />
+设计规则:<br />
+1)所有子类共有的属性和行为，抽到父类中<br />
+2)所有子类行为都一样，设计为普通方法<br />
+&nbsp; 所有子类行为不一样，设计为抽象方法<br />
+3)部分子类共有的行为，抽到接口中<br />
+&nbsp; 符合既是也是原则时，使用接口<br />
+&nbsp; 接口是对继承的单根性的扩展<br />
+<br />
+达内教学副总载:<br />
+&nbsp; 解决问题()、培训员工()、编辑稿件()<br />
+达内讲师:<br />
+&nbsp; 解决问题()、培训员工()、编辑稿件()<br />
+达内项目经理:<br />
+&nbsp; 编辑稿件()<br />
+<br />
+interface 企业技术顾问{<br />
+&nbsp; 解决问题()、培训员工()、<br />
+}<br />
+interface 技术图书作者{<br />
+&nbsp; 编辑稿件()<br />
+}<br />
+abstract class 达内职员{<br />
+&nbsp; 姓名，年龄，工资<br />
+&nbsp; void 上班打卡(){ 按个手纹、拍个照 }<br />
+&nbsp; void 下班打卡(){ 按个手纹、拍个照 }<br />
+&nbsp; abstract void 完成工作();<br />
+}<br />
+class 达内教学副总裁 extends 达内职员 implements 企业技术顾问,技术图书作者{<br />
+}<br />
+class 达内讲师 extends 达内职员 implements 企业技术顾问,技术图书作者{<br />
+}<br />
+class 达内项目经理 extends 达内职员 implements 技术图书作者{<br />
+}<br />
+class 达内班主任 extends 达内职员{<br />
+}<br />
+<br />
+类和类--------------继承<br />
+接口和接口----------继承<br />
+类和接口------------实现<br />
+<br />
+InterfaceDemo<br />
+Inter2 o1 = new Inter2(); //编译错误，接口不能被实例化<br />
+Inter2 o2 = new Aoo(); //向上造型--造型为直接父类<br />
+Inter1 o3 = new Aoo(); //向上造型--造型为间接父类<br />
+<br />
+interface Inter1{<br />
+&nbsp; void show();<br />
+}<br />
+interface Inter2 extends Inter1{<br />
+&nbsp; void test();<br />
+}<br />
+class Aoo implements Inter2{<br />
+&nbsp; public void test(){}<br />
+&nbsp; public void show(){}<br />
+}<br />
+<br />
+interface Inter1{<br />
+&nbsp; void show();<br />
+}<br />
+interface Inter2{<br />
+&nbsp; void say();<br />
+}<br />
+abstract class Aoo{<br />
+&nbsp; abstract void test();<br />
+}<br />
+<br />
+class Boo extends Aoo implements Inter1,Inter2{<br />
+&nbsp; public void show(){}<br />
+&nbsp; public void say(){}<br />
+&nbsp; void test(){}<br />
+}<br />
+<br />
+interface Inter1{<br />
+&nbsp; public void show();<br />
+&nbsp; public void say();<br />
+}<br />
+class Aoo implements Inter1{<br />
+&nbsp; public void show(){}<br />
+&nbsp; public void say(){}<br />
+}<br />
+<br />
+new Inter1(); //编译错误，接口不能被实例化<br />
+Inter1 o1; //正确<br />
+<br />
+interface Inter1{<br />
+&nbsp; public static final int NUM = 5;<br />
+&nbsp; public abstract void show();<br />
+&nbsp; int COUNT = 6; //默认public static final<br />
+&nbsp; void say(); //默认public abstract<br />
+<br />
+&nbsp; int NUMBER; //编译错误，常量必须声明同时初始化<br />
+&nbsp; void test(){} //编译错误，抽象方法不能有方法体<br />
+}<br />
+<br />
+package a;<br />
+class Aoo{<br />
+}<br />
+<br />
+package b;<br />
+class Aoo{<br />
+}<br />
+<br />
+package c;<br />
+class Test{<br />
+&nbsp; a.Aoo o1 = new a.Aoo();<br />
+&nbsp; b.Aoo o2 = new b.Aoo(); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+}<br />
+<br />
+class Boo extends Aoo{<br />
+&nbsp; move(int a,int b){<br />
+&nbsp; &nbsp; System.out.println(111);<br />
+move();<br />
+&nbsp; }<br />
+&nbsp; main(){<br />
+&nbsp; &nbsp; Boo o = new Boo();<br />
+o.move(10,20);<br />
+&nbsp; }<br />
+}<br />
+class Aoo{<br />
+&nbsp; move(int a,int b){<br />
+&nbsp; &nbsp; System.out.println(222);<br />
+&nbsp; }<br />
+&nbsp; move(){<br />
+&nbsp; &nbsp; System.out.println(333);<br />
+&nbsp; }<br />
+}<br />
+<br />
+class Aoo{<br />
+&nbsp; void show(){}<br />
+}<br />
+class Boo extends Aoo{<br />
+&nbsp; void show(String name){}<br />
+}<br />
+<br />
+Boo o = new Boo();<br />
+o.show();<br />
+o.show("zhangsan");<br />
+<br />
+class 驼鸟 extends 鸟{<br />
+&nbsp; fly(){<br />
+&nbsp; &nbsp; 奔跑<br />
+&nbsp; }<br />
+&nbsp; main(){<br />
+&nbsp; &nbsp; 鸟 a = new 驼鸟();<br />
+a.fly();<br />
+&nbsp; }<br />
+}<br />
+class 鸟{<br />
+&nbsp; fly(){<br />
+&nbsp; &nbsp; 飞翔<br />
+&nbsp; }<br />
+}<br />
+	</body>		
+</html>

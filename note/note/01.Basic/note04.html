@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	回顾:<br />
+1.运算符:<br />
+&nbsp; 1)算术:+-*/%,++,--<br />
+&nbsp; 2)关系:&gt;,&lt;,&gt;=,&lt;=,==,!= boolean<br />
+&nbsp; 3)逻辑:&amp;&amp;,||,! boolean<br />
+&nbsp; 4)赋值:=,+=,-=,*=,/=,%=<br />
+&nbsp; 5)字符串连接:+<br />
+&nbsp; 6)三目:boolean?数1:数2<br />
+2.分支结构:<br />
+&nbsp; 1)if:1<br />
+&nbsp; 2)if...else:2<br />
+&nbsp; 3)if...else if:多<br />
+&nbsp; 4)switch...case:多<br />
+&nbsp; &nbsp; 优点:效率高、结构清晰<br />
+缺点:整数、相等<br />
+&nbsp; &nbsp; break:跳出switch<br />
+<br />
+笔记:<br />
+1.循环:反复执行一段相同或相似的代码<br />
+2.循环三要素:<br />
+&nbsp; 1)循环变量的初始化<br />
+&nbsp; 2)循环的条件(以循环变量为基础)<br />
+&nbsp; 3)循环变量的改变(向着循环的结束变)<br />
+&nbsp; 循环变量:在循环过程中所反复改变的那个量<br />
+3.循环结构:<br />
+&nbsp; 1)while:先判断后执行，有可能一次都不执行<br />
+&nbsp; 2)do...while:先执行后判断，至少执行一次<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;第1要素与第3要素相同时，首选<br />
+&nbsp; 3)for:应用率最高，固定次数循环<br />
+4.break:跳出循环<br />
+&nbsp; continue:跳过循环体中剩余语句而进入下一次循环<br />
+<br />
+任务:<br />
+1.将今天while、do...while、for的案例至少重写一次<br />
+int score = 0; //得分<br />
+for(int i=1;i&lt;=10;i++){ //10次<br />
+&nbsp; //出题、答题、判题<br />
+}<br />
+System.out.println("总得分为:"+score);<br />
+<br />
+<br />
+(1)56+21=?<br />
+算吧!<br />
+77<br />
+答对了<br />
+<br />
+(2)2+5=?<br />
+算吧!<br />
+9<br />
+答错了<br />
+<br />
+(3)56+98=?<br />
+算吧!<br />
+154<br />
+答对了<br />
+<br />
+(4)56+98=?<br />
+算吧!<br />
+154<br />
+答对了<br />
+<br />
+(5)56+98=?<br />
+算吧!<br />
+154<br />
+答对了<br />
+(6)56+98=?<br />
+算吧!<br />
+154<br />
+答对了<br />
+(7)56+98=?<br />
+算吧!<br />
+154<br />
+答对了<br />
+(8)56+98=?<br />
+算吧!<br />
+154<br />
+答对了<br />
+(9)56+98=?<br />
+算吧!<br />
+154<br />
+答对了<br />
+(10)56+98=?<br />
+算吧!<br />
+154<br />
+答对了<br />
+总得分为:<br />
+<br />
+// &nbsp; &nbsp;1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3<br />
+for(int count=0 ; count&lt;10 ; count++){<br />
+&nbsp; System.out.println("行动是成功的阶梯"); //4<br />
+}<br />
+System.out.println("over");<br />
+<br />
+12432432432432432432<br />
+12432432432432432432<br />
+<br />
+int count=0; &nbsp; &nbsp; //1<br />
+while(count&lt;10){ //2<br />
+&nbsp; System.out.println("行动是成功的阶梯"); //4<br />
+&nbsp; count++; &nbsp; &nbsp; &nbsp; //3<br />
+}<br />
+System.out.println("over");<br />
+<br />
+12432432432432432432<br />
+<br />
+num为1到1000之内的随机整数<br />
+Math.random()----------0.0到0.999999999999...<br />
+*1000------------------0.0到999.9999999999...<br />
++1---------------------1.0到1000.999999999...<br />
+Math.random()----------0.0到0.999999999999...<br />
+*1000------------------0.0到999.9999999999...<br />
+(int)------------------0到999<br />
++1---------------------1到1000<br />
+Math.random()----------0.0到0.999999999999...<br />
+*1000------------------0.0到999.9999999999...<br />
++1---------------------1.0到1000.999999999...<br />
+(int)------------------1到1000<br />
+double a = Math.random(); //0.0到0.999999999...<br />
+int a = 250;<br />
+int a = ?; //接收用户输入的值<br />
+int a = ?; //系统随机生成的值<br />
+int num = 250; //藏起来的那个数<br />
+<br />
+循环变量:用户猜的那个数guess<br />
+1)System.out.println("猜吧!");<br />
+&nbsp; int guess = scan.nextInt();<br />
+2)guess!=num<br />
+3)System.out.println("猜吧!");<br />
+&nbsp; guess = scan.nextInt();<br />
+<br />
+猜吧!<br />
+300<br />
+太大了<br />
+<br />
+猜吧!<br />
+200<br />
+太小了<br />
+<br />
+猜吧!<br />
+251<br />
+太大了<br />
+<br />
+猜吧!<br />
+250<br />
+恭喜你猜对了<br />
+while(boolean){<br />
+&nbsp; 循环体---反复干的那个事<br />
+}<br />
+<br />
+案例一:<br />
+&nbsp; 输出10次"行动是成功的阶梯"<br />
+&nbsp; &nbsp; &nbsp; 行动是成功的阶梯<br />
+&nbsp; &nbsp; &nbsp; 行动是成功的阶梯<br />
+&nbsp;行动是成功的阶梯<br />
+&nbsp; &nbsp; &nbsp; 行动是成功的阶梯<br />
+&nbsp;行动是成功的阶梯<br />
+&nbsp;行动是成功的阶梯<br />
+&nbsp; &nbsp; &nbsp; 行动是成功的阶梯<br />
+&nbsp;行动是成功的阶梯<br />
+&nbsp;行动是成功的阶梯<br />
+&nbsp;行动是成功的阶梯<br />
+&nbsp; &nbsp; 循环变量:次数times<br />
+&nbsp; &nbsp; 1)int times=0<br />
+&nbsp; &nbsp; 2)times&lt;10<br />
+&nbsp; &nbsp; 3)times++;<br />
+<br />
+<br />
+案例二:<br />
+&nbsp; 输出9的乘法表:<br />
+&nbsp; &nbsp; &nbsp;1*9=9<br />
+2*9=18<br />
+3*9=27<br />
+4*9=36<br />
+5*9=45<br />
+6*9=54<br />
+7*9=63<br />
+8*9=72<br />
+9*9=81<br />
+<br />
+&nbsp; &nbsp; 1)int num=1;<br />
+2)num&lt;=9<br />
+3)num+=2;<br />
+<br />
+<br />
+&nbsp; &nbsp; 循环变量:乘数num<br />
+&nbsp; &nbsp; 1)int num=1;<br />
+2)num&lt;=9<br />
+3)num++;<br />
+<br />
+&nbsp; &nbsp; 1)int num=9;<br />
+2)num&gt;=1<br />
+3)num--;<br />
+<br />
+循环变量:份数times<br />
+1)int times=0;<br />
+2)times&lt;10<br />
+3)times++;<br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 份数为0<br />
+够10份吗? 不够 打印一份 份数为1<br />
+够10份吗? 不够 打印一份 份数为2<br />
+够10份吗? 不够 打印一份 份数为3<br />
+够10份吗? 不够 打印一份 份数为4<br />
+够10份吗? 不够 打印一份 份数为5<br />
+够10份吗? 不够 打印一份 份数为6<br />
+够10份吗? 不够 打印一份 份数为7<br />
+够10份吗? 不够 打印一份 份数为8<br />
+够10份吗? 不够 打印一份 份数为9<br />
+够10份吗? 不够 打印一份 份数为10<br />
+够10份吗? 够了<br />
+<br />
+循环变量:圈数count<br />
+1)int count=0;<br />
+2)count&lt;3<br />
+3)count++;<br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 圈数为0<br />
+够3圈吗? 不够 跑一圈 圈数为1<br />
+够3圈吗? 不够 跑一圈 圈数为2<br />
+够3圈吗? 不够 跑一圈 圈数为3<br />
+够3圈吗? 够了<br />
+<br />
+任何复杂程序逻辑都可以通过三种结构来实现:<br />
+1)顺序结构:从上往下逐行执行，每句必走<br />
+2)分支结构:有条件的执行某语句一次，并非每句必走<br />
+3)循环结构:有条件的执行某语句多次，并非每句必走<br />
+<br />
+while(boolean){<br />
+&nbsp; 语句块/循环体-----反复干的那个事<br />
+}<br />
+System.out.println("over");<br />
+<br />
+if(boolean){ //一次<br />
+&nbsp; 语句块<br />
+}<br />
+System.out.println("over");<br />
+<br />
+if(month==1 || month==3 || month==5 || month==7...){<br />
+&nbsp; days=31;<br />
+}else if(month==4 || month==6 || ...){<br />
+&nbsp; days=30;<br />
+}else if(month==2){<br />
+&nbsp; if(...){<br />
+&nbsp; &nbsp; days=29;<br />
+&nbsp; }else{<br />
+&nbsp; &nbsp; days=28;<br />
+&nbsp; }<br />
+}<br />
+<br />
+1/3/5/7/8/10/12-----------31天<br />
+4/6/9/11------------------30天<br />
+2-------------------------28天/29天<br />
+<br />
+int a=5,b=8,c=2,d=1; //a=2,b=5,c=8<br />
+<br />
+若a&gt;b则换，保证a&lt;b<br />
+若a&gt;c则换，保证a&lt;c<br />
+若a&gt;d则换，保证a&lt;d<br />
+若b&gt;c则换，保证b&lt;c<br />
+若b&gt;d则换，保证b&lt;d<br />
+若c&gt;d则换，保证c&lt;d<br />
+int a=8,b=55; &nbsp;//升序---a=8,b=55<br />
+if(a&gt;b){<br />
+&nbsp; int t=a; //t=8<br />
+&nbsp; a=b; &nbsp; &nbsp; //a=5<br />
+&nbsp; b=t; &nbsp; &nbsp; //b=8<br />
+}<br />
+若a&gt;b则换，保证a&lt;b<br />
+int t=a;a=b;b=t;<br />
+int t=b;b=a;a=t;<br />
+System.out.println("请输入第一个数:");<br />
+int a = scan.nextInt();<br />
+System.out.println("请输入第二个数:");<br />
+int b = scan.nextInt();<br />
+<br />
+System.out.println("请输入两个数:");<br />
+int a = scan.nextInt();<br />
+int b = scan.nextInt();<br />
+	</body>
+</html>

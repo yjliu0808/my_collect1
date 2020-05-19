@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	子查询<br />
+子查询是一条查询语句，它是嵌套在<br />
+其他SQL语句当中的，目的是为外层<br />
+SQL语句提供数据使用。<br />
+<br />
+查看谁的工资高于CLARK?<br />
+SELECT ename,sal<br />
+FROM emp<br />
+WHERE sal&gt;(SELECT sal<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM emp<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WHERE ename='CLARK')<br />
+<br />
+SELECT ename,job<br />
+FROM emp<br />
+WHERE job=(SELECT job<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM emp<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WHERE ename='CLARK')<br />
+AND ename&lt;&gt;'CLARK'<br />
+<br />
+查看高于公司平均工资的员工的工资?<br />
+SELECT ename,sal<br />
+FROM emp<br />
+WHERE sal&gt;(SELECT AVG(sal)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM emp)<br />
+&nbsp; &nbsp; &nbsp; &nbsp;<br />
+查看部门的平均工资，前提是该部门<br />
+平均工资要高于20号部门的平均工资<br />
+SELECT AVG(sal),deptno<br />
+FROM emp<br />
+GROUP BY deptno<br />
+HAVING AVG(sal)&gt;(SELECT AVG(sal)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM emp<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WHERE deptno=20)<br />
+<br />
+在DDL与DML中也可以使用子查询:<br />
+1:DDL中使用子查询可以将一个查询结果集<br />
+&nbsp; 当作表快速创建出来<br />
+CREATE TABLE employee<br />
+AS<br />
+SELECT e.empno,e.ename,e.job,e.sal,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;d.deptno,d.dname,d.loc<br />
+FROM emp e,dept d<br />
+WHERE e.deptno=d.deptno(+)<br />
+&nbsp;&nbsp;<br />
+DESC employee<br />
+SELECT * FROM employee<br />
+<br />
+<br />
+DML中使用子查询<br />
+给CLARK所在部门所有员工提高10%的工资<br />
+UPDATE employee<br />
+SET sal=sal*1.1<br />
+WHERE deptno=(SELECT deptno<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FROM employee<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; WHERE ename='CLARK')<br />
+<br />
+<br />
+子查询根据查询结果集分为:<br />
+单行单列子查询:结果集只有一个值<br />
+多行单列子查询:结果集有多个值<br />
+单列通常用于过滤条件<br />
+<br />
+多行多列子查询:常当作表使用<br />
+<br />
+多行单列子查询在过滤时要配合IN，ANY，ALL<br />
+使用<br />
+查看与SALESMAN同部门的员工?<br />
+SELECT ename,deptno<br />
+FROM emp<br />
+WHERE deptno IN(SELECT deptno<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FROM emp<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; WHERE job='SALESMAN')<br />
+<br />
+查看比30号部门所有员工工资都高的员工?<br />
+SELECT ename,sal<br />
+FROM emp<br />
+WHERE sal&gt;ALL(SELECT sal<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FROM emp<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; WHERE deptno=30)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+SELECT ename,sal<br />
+FROM emp<br />
+WHERE sal &gt;(SELECT MAX(sal)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FROM emp<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; WHERE deptno=30)<br />
+<br />
+SELECT * FROM dept<br />
+<br />
+EXISTS关键字<br />
+EXISTS后面要跟一个子查询，作为判断条件<br />
+的依据是该子查询只要可以查询出至少一条<br />
+记录就可以。<br />
+SELECT deptno, dname FROM dept d<br />
+WHERE EXISTS&nbsp;<br />
+&nbsp; &nbsp; &nbsp; (SELECT * FROM emp e<br />
+&nbsp; &nbsp; &nbsp; &nbsp;WHERE d.deptno = e.deptno);<br />
+<br />
+多列子查询通常当作一张表看待出现在<br />
+FROM子句中。<br />
+<br />
+查看那些员工工资高于其所在部门平均工资？<br />
+每个部门平均工资?<br />
+SELECT AVG(sal),deptno<br />
+FROM emp<br />
+GROUP BY deptno<br />
+<br />
+SELECT e.ename,e.sal,e.deptno<br />
+FROM emp e,(SELECT AVG(sal) avg_sal,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;deptno<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FROM emp<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GROUP BY deptno) t<br />
+WHERE e.deptno=t.deptno<br />
+AND e.sal&gt;t.avg_sal<br />
+<br />
+在SELECT子句中使用<br />
+SELECT&nbsp;<br />
+&nbsp; e.ename, e.sal,&nbsp;<br />
+&nbsp; (SELECT d.dname FROM dept d&nbsp;<br />
+&nbsp; &nbsp;WHERE d.deptno=e.deptno) dname<br />
+FROM emp e<br />
+<br />
+分页查询<br />
+当查询的数据量过大时，会导致响应速度慢<br />
+资源消耗大等问题，为此，我们会使用分页<br />
+查询方式，分段将数据查询出来。<br />
+分页的语法标准SQL中没有定义，所以不同的<br />
+数据库分页语句写法可能完全不同。方言。<br />
+<br />
+ROWNUM:伪列，不存在于任何一张表中，但是<br />
+所有的表都可以查询该字段，该字段的值是动态<br />
+生成的，是在查询表生成结果集的过程中产生值<br />
+的。原则是，从1开始，逐次递增。在查询过程<br />
+中只要可以从表中查询出一条记录，ROWNUM字段<br />
+的值就是该记录的行号。<br />
+<br />
+SELECT ROWNUM,ename,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;sal,deptno<br />
+FROM emp<br />
+WHERE ROWNUM &gt; 1<br />
+<br />
+在使用ROWNUM为结果集编行号的查询<br />
+过程中不要使用ROWNUM做&gt;1的过滤<br />
+判断，否则将得不到任何结果。<br />
+SELECT *<br />
+FROM (SELECT ROWNUM rn,ename,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sal,deptno<br />
+&nbsp; &nbsp; &nbsp; FROM emp)<br />
+WHERE rn BETWEEN 6 AND 10<br />
+<br />
+SELECT *<br />
+FROM(SELECT ROWNUM rn,t.*<br />
+&nbsp; &nbsp; &nbsp;FROM(SELECT ename,sal,job<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FROM emp<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ORDER BY sal DESC) t)<br />
+WHERE rn BETWEEN 6 AND 10<br />
+<br />
+SELECT *<br />
+FROM(SELECT ROWNUM rn,t.*<br />
+&nbsp; &nbsp; &nbsp;FROM(SELECT ename,sal,job<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FROM emp<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ORDER BY sal DESC) t<br />
+&nbsp; &nbsp; &nbsp;WHERE ROWNUM&lt;=10)<br />
+WHERE rn&gt;=6<br />
+<br />
+pageSize:每页显示的条目数<br />
+page:页数<br />
+<br />
+start:(page-1)*pageSize+1<br />
+end:pageSize*page<br />
+<br />
+DECODE函数<br />
+DECODE函数可以实现简单的分支效果<br />
+SELECT ename, job, sal,<br />
+&nbsp; &nbsp; &nbsp;DECODE(job, &nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'MANAGER', sal * 1.2,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'ANALYST', sal * 1.1,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'SALESMAN', sal * 1.05,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sal<br />
+&nbsp; &nbsp; &nbsp;) bonus<br />
+FROM emp<br />
+<br />
+DECODE在GROUP BY子句中的应用<br />
+可以将某些记录指定字段不同的值看作同一组<br />
+<br />
+将只为是analyst/manager看作一组，其他<br />
+职位看作另一组，分别统计这两组的人数<br />
+<br />
+SELECT&nbsp;<br />
+&nbsp;COUNT(*), DECODE(job,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'ANALYST','VIP',<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'MANAGER','VIP',<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'OTHER')<br />
+FROM emp<br />
+GROUP BY DECODE(job,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 'ANALYST','VIP',<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 'MANAGER','VIP',<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 'OTHER')<br />
+<br />
+<br />
+排序函数<br />
+排序函数可以将结果集按照给定字段分组<br />
+然后在组内按照给定的字段排序，然后<br />
+生成一个组内编号<br />
+<br />
+ROW_NUMBER函数<br />
+生成组内连续且唯一的数字<br />
+<br />
+查看每个部门工资排名：<br />
+SELECT&nbsp;<br />
+&nbsp;ename,sal,deptno,<br />
+&nbsp;ROW_NUMBER() OVER(<br />
+&nbsp; PARTITION BY deptno<br />
+&nbsp; ORDER BY sal DESC<br />
+&nbsp;) rank<br />
+FROM<br />
+&nbsp;emp<br />
+<br />
+<br />
+RANK函数<br />
+生成组内不连续也不唯一的数字<br />
+SELECT&nbsp;<br />
+&nbsp;ename,sal,deptno,<br />
+&nbsp;RANK() OVER(<br />
+&nbsp; PARTITION BY deptno<br />
+&nbsp; ORDER BY sal DESC<br />
+&nbsp;) rank<br />
+FROM<br />
+&nbsp;emp<br />
+<br />
+<br />
+DENSE_RANK<br />
+生成组内连续但不唯一的数字<br />
+SELECT&nbsp;<br />
+&nbsp;ename,sal,deptno,<br />
+&nbsp;DENSE_RANK() OVER(<br />
+&nbsp; PARTITION BY deptno<br />
+&nbsp; ORDER BY sal DESC<br />
+&nbsp;) rank<br />
+FROM<br />
+&nbsp;emp<br />
+<br />
+高级分组函数:<br />
+SELECT year_id,month_id,day_id,sales_value<br />
+FROM sales_tab<br />
+ORDER BY year_id,month_id,day_id<br />
+<br />
+每天营业额?<br />
+SELECT year_id,month_id,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;day_id,SUM(sales_value)<br />
+FROM sales_tab<br />
+GROUP BY year_id,month_id,day_id<br />
+ORDER BY year_id,month_id,day_id<br />
+<br />
+每月营业额?<br />
+SELECT year_id,month_id,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;SUM(sales_value)<br />
+FROM sales_tab<br />
+GROUP BY year_id,month_id<br />
+ORDER BY year_id,month_id<br />
+<br />
+每年营业额?<br />
+SELECT year_id,SUM(sales_value)<br />
+FROM sales_tab<br />
+GROUP BY year_id<br />
+ORDER BY year_id<br />
+<br />
+全部营业额?<br />
+SELECT SUM(sales_value)<br />
+FROM sales_tab<br />
+<br />
+<br />
+SELECT year_id,month_id,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;day_id,SUM(sales_value)<br />
+FROM sales_tab<br />
+GROUP BY year_id,month_id,day_id<br />
+UNION ALL<br />
+SELECT year_id,month_id,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;NULL,SUM(sales_value)<br />
+FROM sales_tab<br />
+GROUP BY year_id,month_id<br />
+UNION ALL<br />
+SELECT year_id,NULL,NULL,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;SUM(sales_value)<br />
+FROM sales_tab<br />
+GROUP BY year_id<br />
+UNION ALL<br />
+SELECT NULL,NULL,NULL,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;SUM(sales_value)<br />
+FROM sales_tab<br />
+<br />
+ROLLUP函数<br />
+GROUP BY ROLLUP(a,b,c)<br />
+<br />
+GROUP BY a,b,c<br />
+UNION ALL<br />
+GROUP BY a,b<br />
+UNION ALL<br />
+GROUP BY a<br />
+UNION ALL<br />
+全表<br />
+<br />
+SELECT year_id,month_id,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;day_id,SUM(sales_value)<br />
+FROM sales_tab<br />
+GROUP BY&nbsp;<br />
+&nbsp;ROLLUP(year_id,month_id,day_id)<br />
+<br />
+CUBE()<br />
+GROUP BY CUBE(a,b,c)<br />
+<br />
+a,b,c<br />
+a,b<br />
+a,c<br />
+b,c<br />
+a<br />
+b<br />
+c<br />
+全表<br />
+<br />
+SELECT year_id,month_id,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;day_id,SUM(sales_value)<br />
+FROM sales_tab<br />
+GROUP BY&nbsp;<br />
+&nbsp;CUBE(year_id,month_id,day_id)<br />
+ORDER BY year_id,month_id,day_id<br />
+<br />
+<br />
+GROUPING SETS()<br />
+GROUPING SETS的每一个参数就是一种分组<br />
+方式，然后会将这些分组统计的结果并到一个<br />
+结果集中显示<br />
+<br />
+查看每天与每月营业额?<br />
+SELECT year_id,month_id,<br />
+&nbsp; &nbsp; &nbsp; &nbsp;day_id,SUM(sales_value)<br />
+FROM sales_tab<br />
+GROUP BY&nbsp;<br />
+&nbsp;GROUPING SETS(<br />
+&nbsp; &nbsp;(year_id,month_id,day_id),<br />
+&nbsp; &nbsp;(year_id,month_id)<br />
+&nbsp;)<br />
+
+	</body>
+</html>

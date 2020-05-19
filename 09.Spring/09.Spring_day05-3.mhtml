@@ -1,0 +1,3190 @@
+From: <Saved by Blink>
+Subject: EXERCISE
+Date: Thu, 15 Mar 2017 05:00:27 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--jBcZv0CBEGkDYIEVS47XYkuJr1Q9mMSnPsFAKkuH44----"
+
+------MultipartBoundary--jBcZv0CBEGkDYIEVS47XYkuJr1Q9mMSnPsFAKkuH44----
+Content-Type: text/html
+Content-ID: <frame-431-e59874cd-b95d-4eb9-be2b-85095e3f7a56@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/SPRINGMYBATIS01/DAY05/EXERCISE/01/index_answer.html
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head><meta http-equiv=3D"Cont=
+ent-Type" content=3D"text/html; charset=3DUTF-8">=20
+  <title>EXERCISE</title>=20
+  =20
+  =20
+  =20
+  =20
+  <link type=3D"text/css" href=3D"http://pdf7.tarena.com.cn/tts8_source/tts=
+Page/JAVA/JSD_N_V06/SPRINGMYBATIS01/DAY05/EXERCISE/01/index.files/index.css=
+" rel=3D"Stylesheet">=20
+  <link type=3D"text/css" href=3D"http://pdf7.tarena.com.cn/tts8_source/tts=
+Page/JAVA/JSD_N_V06/SPRINGMYBATIS01/DAY05/EXERCISE/01/index.files/jquery.sn=
+ippet.css" rel=3D"Stylesheet">=20
+ </head>=20
+ <body>=20
+  <div class=3D"source_style_exercise">=20
+   <div>=20
+    <h3>1 =E6=8F=8F=E8=BF=B0=E5=88=A9=E7=94=A8Spring MVC=E5=A6=82=E4=BD=95=
+=E5=AE=9E=E7=8E=B0=E7=99=BB=E5=BD=95=E6=A3=80=E6=9F=A5=E6=8E=A7=E5=88=B6=E3=
+=80=82</h3>=20
+    <p class=3D"answerTitle">=E5=8F=82=E8=80=83=E7=AD=94=E6=A1=88</p>=20
+    <p>=E4=BD=BF=E7=94=A8Spring MVC=E6=8B=A6=E6=88=AA=E5=99=A8=E5=AE=9E=E7=
+=8E=B0=E7=99=BB=E5=BD=95=E6=A3=80=E6=9F=A5=E3=80=82</p>=20
+    <p>1=EF=BC=89 =E5=88=9B=E5=BB=BA=E6=8B=A6=E6=88=AA=E5=99=A8=E7=BB=84=E4=
+=BB=B6=EF=BC=8C=E5=AE=9E=E7=8E=B0=E6=8B=A6=E6=88=AA=E5=99=A8=E6=8E=A5=E5=8F=
+=A3HandlerInterceptor=EF=BC=9B</p>=20
+    <p>2=EF=BC=89 =E5=9C=A8preHandle=E6=96=B9=E6=B3=95=E4=B8=AD=EF=BC=8C=E9=
+=80=9A=E8=BF=87session=E8=8E=B7=E5=8F=96=E7=99=BB=E5=BD=95=E4=BF=A1=E6=81=
+=AF=EF=BC=8C=E8=8B=A5=E7=99=BB=E5=BD=95=E4=BF=A1=E6=81=AF=E4=B8=BA=E7=A9=BA=
+=EF=BC=8C=E5=88=99=E9=87=8D=E5=AE=9A=E5=90=91=E5=88=B0=E7=99=BB=E5=BD=95=E5=
+=8A=9F=E8=83=BD=EF=BC=8C=E5=90=A6=E5=88=99=E5=85=81=E8=AE=B8=E7=BB=A7=E7=BB=
+=AD=E8=AE=BF=E9=97=AE=EF=BC=9B</p>=20
+    <p>3=EF=BC=89 =E5=9C=A8Spring=E9=85=8D=E7=BD=AE=E6=96=87=E4=BB=B6=E4=B8=
+=AD=EF=BC=8C=E5=A3=B0=E6=98=8E=E8=AF=A5=E6=8B=A6=E6=88=AA=E5=99=A8=EF=BC=8C=
+=E4=BD=BF=E5=85=B6=E6=8B=A6=E6=88=AA=E9=99=A4=E4=BA=86=E7=99=BB=E5=BD=95=E5=
+=8A=9F=E8=83=BD=E4=B9=8B=E5=A4=96=E7=9A=84=E6=89=80=E6=9C=89=E8=AF=B7=E6=B1=
+=82=EF=BC=9B</p>=20
+   </div>=20
+   <div>=20
+    <h3>2 =E4=BB=8B=E7=BB=8D=E5=87=A0=E7=A7=8DSpring MVC=E7=9A=84=E5=BC=82=
+=E5=B8=B8=E5=A4=84=E7=90=86=E6=96=B9=E6=B3=95=E3=80=82</h3>=20
+    <p class=3D"answerTitle">=E5=8F=82=E8=80=83=E7=AD=94=E6=A1=88</p>=20
+    <p>Spring=E6=8F=90=E4=BE=9B=E4=BA=86=E4=B8=89=E7=A7=8D=E5=BC=82=E5=B8=
+=B8=E5=A4=84=E7=90=86=E6=96=B9=E6=B3=95=EF=BC=8C=E5=85=B7=E4=BD=93=E5=A6=82=
+=E4=B8=8B=EF=BC=9A</p>=20
+    <p>1=EF=BC=89=E4=BD=BF=E7=94=A8SimpleMappingExceptionResolver</p>=20
+    <p>2=EF=BC=89=E4=BD=BF=E7=94=A8=E8=87=AA=E5=AE=9A=E4=B9=89ExceptionReso=
+lver=E7=BB=84=E4=BB=B6</p>=20
+    <p>3=EF=BC=89=E4=BD=BF=E7=94=A8@ExceptionHandler=E6=B3=A8=E8=A7=A3</p>=
+=20
+   </div>=20
+  </div> =20
+=20
+<div id=3D"qb-sougou-search" style=3D"display: none; opacity: 0;"><p>=E6=90=
+=9C=E7=B4=A2</p><p class=3D"last-btn">=E5=A4=8D=E5=88=B6</p><iframe src=3D"=
+cid:frame-433-c2e3ecee-2e4a-4cac-8716-385810e42d87@mhtml.blink"></iframe></=
+div></body></html>
+------MultipartBoundary--jBcZv0CBEGkDYIEVS47XYkuJr1Q9mMSnPsFAKkuH44----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/SPRINGMYBATIS01/DAY05/EXERCISE/01/index.files/index.css
+
+@charset "utf-8";
+
+div.source_style_exercise { font-family: =E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=
+=91, "Times New Roman"; font-size: 14px; min-width: 400px; padding: 10px 20=
+px; color: rgb(0, 0, 0); }
+
+div.source_style_exercise div.wordSection { width: 95%; padding: 5px; margi=
+n: 5px; }
+
+div.source_style_exercise h3 { clear: both; font-size: 18px; font-weight: b=
+old; margin: 20px 0px; text-indent: 0px; }
+
+div.source_style_exercise h4 { font-size: 16px; font-weight: bold; margin: =
+10px 0px 5px 3px; text-indent: 21pt; color: purple; }
+
+div.source_style_exercise p { margin: 3px; padding: 2px 2px 2px 30px; text-=
+indent: 21pt; font-size: 14px; line-height: 25px; }
+
+div.source_style_exercise p.answerTitle { clear: both; font-weight: bold; p=
+adding: 10px 0px; font-size: 16px; }
+
+div.source_style_exercise div.image { text-align: center; padding: 5px 0px;=
+ }
+
+div.source_style_exercise div.image img { max-width: 900px; }
+
+div.source_style_exercise div.image > p { text-align: center; margin: 5px; =
+padding: 3px; font-size: 12px; }
+
+div.source_style_exercise div.table { text-align: center; padding: 5px 0px;=
+ }
+
+div.source_style_exercise div.table img { max-width: 900px; }
+
+div.source_style_exercise div.table > p { text-align: center; margin: 5px; =
+padding: 3px; font-size: 12px; }
+
+div.source_style_exercise p.code, div.source_style_exercise pre { font-size=
+: 14px; margin-left: 60px; }
+
+div.source_style_exercise .code_level1 { text-indent: 21pt; }
+
+div.source_style_exercise .code_level2 { text-indent: 42pt; }
+
+div.source_style_exercise .code_level3 { text-indent: 63pt; }
+
+div.source_style_exercise .code_level4 { text-indent: 84pt; }
+
+div.source_style_exercise ul.list, div.source_style_exercise ol.list { marg=
+in-left: 30px; }
+
+div.source_style_exercise ol.list { padding-left: 45px; }
+
+div.source_style_exercise ul.list li { padding-left: 10px; }
+
+div.source_style_exercise ol.list li { padding-left: 5px; }
+
+div.source_style_exercise p.emphasiz { font-weight: bold; font-style: itali=
+c; }
+
+div.source_style_exercise p.number { font-weight: bold; margin-top: 8px; ma=
+rgin-bottom: 8px; }
+
+div.source_style_exercise ul.index { margin: 0px 0px 20px 40px; font-size: =
+12px; }
+
+div.source_style_exercise ul.index li { padding: 0px; margin: 3px 50px 10px=
+ 0px; list-style-image: url("ph.gif"); list-style-type: none; }
+
+div.source_style_exercise ul.index li a, div.source_style_exercise ul.index=
+ li a:visited { color: blue; text-decoration: underline; }
+
+div.source_style_exercise ul.index li a:hover { color: purple; }
+
+div.source_style_exercise .highlighter { border: 2px solid rgb(221, 221, 22=
+1); padding: 5px; background: rgb(238, 238, 238); }
+
+div.source_style_exercise .command_help { display: none; }
+------MultipartBoundary--jBcZv0CBEGkDYIEVS47XYkuJr1Q9mMSnPsFAKkuH44----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/SPRINGMYBATIS01/DAY05/EXERCISE/01/index.files/jquery.snippet.css
+
+@charset "utf-8";
+
+a.snippet-toggle { margin-right: 40px; }
+
+.bold_code { font-weight: bold; font-size: 11pt; color: blue !important; }
+
+.bold_code > span { font-family: =CE=A2=EF=BF=BD=EF=BF=BD=EF=BF=BD=C5=BA=EF=
+=BF=BD; font-weight: bold; font-size: 11pt; color: blue !important; }
+
+.sh_acid { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_acid .sh_sourceCode { background-color: rgb(238, 238, 238); color: rgb(=
+0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_keyword { color: rgb(187, 121, 119); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_type { color: rgb(128, 128, 192); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_string { color: rgb(166, 133, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_regexp { color: rgb(166, 133, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 255); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_comment { color: rgb(255, 128, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_number { color: rgb(128, 0, 128); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_preproc { color: rgb(0, 128, 192); font-weight:=
+ bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_symbol { color: rgb(255, 0, 128); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_function { color: rgb(0, 68, 102); font-weight:=
+ normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_cbracket { color: rgb(255, 0, 128); font-weight=
+: bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_url { color: rgb(166, 133, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_date { color: rgb(187, 121, 119); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_time { color: rgb(187, 121, 119); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_file { color: rgb(187, 121, 119); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_ip { color: rgb(166, 133, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_name { color: rgb(166, 133, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_variable { color: rgb(0, 128, 192); font-weight=
+: normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 255); font-weight:=
+ bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_newfile { color: rgb(166, 133, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_difflines { color: rgb(187, 121, 119); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_selector { color: rgb(0, 128, 192); font-weight=
+: normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_property { color: rgb(187, 121, 119); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_value { color: rgb(166, 133, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_berries-dark { background: none; padding: 0px; margin: 0px; border: 0px=
+ none; }
+
+.sh_berries-dark .sh_sourceCode { background-color: rgb(128, 191, 255); col=
+or: rgb(64, 0, 128); font-weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_keyword { color: rgb(63, 43, 240); font=
+-weight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_type { color: rgb(63, 43, 240); font-we=
+ight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_string { color: rgb(196, 0, 0); font-we=
+ight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_regexp { color: rgb(196, 0, 0); font-we=
+ight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_specialchar { color: rgb(119, 55, 154);=
+ font-weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_comment { color: rgb(223, 9, 89); font-=
+weight: normal; font-style: italic; }
+
+.sh_berries-dark .sh_sourceCode .sh_number { color: rgb(32, 117, 90); font-=
+weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_preproc { color: rgb(6, 40, 203); font-=
+weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_symbol { color: rgb(0, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_function { color: rgb(144, 17, 100); fo=
+nt-weight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_cbracket { color: rgb(0, 0, 0); font-we=
+ight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_url { color: rgb(196, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_date { color: rgb(63, 43, 240); font-we=
+ight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_time { color: rgb(63, 43, 240); font-we=
+ight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_file { color: rgb(63, 43, 240); font-we=
+ight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_ip { color: rgb(196, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_name { color: rgb(196, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_variable { color: rgb(169, 30, 167); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_oldfile { color: rgb(119, 55, 154); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_newfile { color: rgb(196, 0, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_difflines { color: rgb(63, 43, 240); fo=
+nt-weight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_selector { color: rgb(169, 30, 167); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_property { color: rgb(63, 43, 240); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_value { color: rgb(196, 0, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_berries-light { background: none; padding: 0px; margin: 0px; border: 0p=
+x none; }
+
+.sh_berries-light .sh_sourceCode { background-color: rgb(215, 255, 255); co=
+lor: rgb(71, 64, 109); font-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_keyword { color: rgb(44, 174, 30); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_type { color: rgb(139, 81, 192); font-=
+weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_string { color: rgb(95, 129, 179); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_regexp { color: rgb(95, 129, 179); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_specialchar { color: rgb(95, 129, 179)=
+; font-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_comment { color: rgb(156, 60, 175); fo=
+nt-weight: normal; font-style: italic; }
+
+.sh_berries-light .sh_sourceCode .sh_number { color: rgb(32, 117, 90); font=
+-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_preproc { color: rgb(6, 40, 203); font=
+-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_symbol { color: rgb(210, 7, 59); font-=
+weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_function { color: rgb(144, 17, 100); f=
+ont-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_cbracket { color: rgb(210, 7, 59); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_url { color: rgb(95, 129, 179); font-w=
+eight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_date { color: rgb(44, 174, 30); font-w=
+eight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_time { color: rgb(44, 174, 30); font-w=
+eight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_file { color: rgb(44, 174, 30); font-w=
+eight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_ip { color: rgb(95, 129, 179); font-we=
+ight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_name { color: rgb(95, 129, 179); font-=
+weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_variable { color: rgb(6, 40, 203); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_oldfile { color: rgb(95, 129, 179); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_newfile { color: rgb(95, 129, 179); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_difflines { color: rgb(44, 174, 30); f=
+ont-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_selector { color: rgb(6, 40, 203); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_property { color: rgb(44, 174, 30); fo=
+nt-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_value { color: rgb(95, 129, 179); font=
+-weight: normal; font-style: normal; }
+
+.sh_bipolar { background: none; padding: 0px; margin: 0px; border: 0px none=
+; }
+
+.sh_bipolar .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(209=
+, 73, 166); font-weight: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_keyword { color: rgb(238, 133, 226); font-we=
+ight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_type { color: rgb(170, 221, 139); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_string { color: rgb(158, 244, 87); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_regexp { color: rgb(158, 244, 87); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_specialchar { color: rgb(158, 244, 87); font=
+-weight: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_comment { color: rgb(53, 214, 229); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_bipolar .sh_sourceCode .sh_number { color: rgb(255, 255, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_preproc { color: rgb(7, 246, 191); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_symbol { color: rgb(52, 143, 239); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_function { color: rgb(213, 25, 147); font-we=
+ight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_cbracket { color: rgb(52, 143, 239); font-we=
+ight: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_url { color: rgb(158, 244, 87); font-weight:=
+ normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_date { color: rgb(238, 133, 226); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_time { color: rgb(238, 133, 226); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_file { color: rgb(238, 133, 226); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_ip { color: rgb(158, 244, 87); font-weight: =
+normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_name { color: rgb(158, 244, 87); font-weight=
+: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_variable { color: rgb(114, 212, 44); font-we=
+ight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_oldfile { color: rgb(158, 244, 87); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_newfile { color: rgb(158, 244, 87); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_difflines { color: rgb(238, 133, 226); font-=
+weight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_selector { color: rgb(114, 212, 44); font-we=
+ight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_property { color: rgb(238, 133, 226); font-w=
+eight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_value { color: rgb(158, 244, 87); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_blacknblue { background: none; padding: 0px; margin: 0px; border: 0px n=
+one; }
+
+.sh_blacknblue .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(=
+35, 70, 213); font-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_keyword { color: rgb(30, 222, 220); font-=
+weight: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_type { color: rgb(192, 108, 248); font-we=
+ight: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_string { color: rgb(207, 198, 49); font-w=
+eight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_regexp { color: rgb(207, 198, 49); font-w=
+eight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_specialchar { color: rgb(204, 198, 198); =
+font-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_comment { color: rgb(111, 178, 196); font=
+-weight: normal; font-style: italic; }
+
+.sh_blacknblue .sh_sourceCode .sh_number { color: rgb(196, 172, 96); font-w=
+eight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_preproc { color: rgb(128, 128, 255); font=
+-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_symbol { color: rgb(204, 198, 198); font-=
+weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_function { color: rgb(28, 150, 237); font=
+-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_cbracket { color: rgb(204, 198, 198); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_url { color: rgb(207, 198, 49); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_date { color: rgb(30, 222, 220); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_time { color: rgb(30, 222, 220); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_file { color: rgb(30, 222, 220); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_ip { color: rgb(207, 198, 49); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_name { color: rgb(207, 198, 49); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_variable { color: rgb(236, 234, 38); font=
+-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_oldfile { color: rgb(204, 198, 198); font=
+-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_newfile { color: rgb(207, 198, 49); font-=
+weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_difflines { color: rgb(30, 222, 220); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_selector { color: rgb(236, 234, 38); font=
+-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_property { color: rgb(30, 222, 220); font=
+-weight: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_value { color: rgb(207, 198, 49); font-we=
+ight: normal; font-style: normal; }
+
+.sh_bright { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_bright .sh_sourceCode { background-color: rgb(255, 255, 255); color: rg=
+b(64, 30, 122); font-weight: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_keyword { color: rgb(255, 48, 48); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_type { color: rgb(247, 185, 44); font-weight:=
+ normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_string { color: rgb(24, 97, 167); font-weight=
+: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_regexp { color: rgb(24, 97, 167); font-weight=
+: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_specialchar { color: rgb(24, 97, 167); font-w=
+eight: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_comment { color: rgb(56, 173, 36); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_number { color: rgb(50, 186, 6); font-weight:=
+ normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_preproc { color: rgb(83, 116, 176); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_symbol { color: rgb(48, 48, 238); font-weight=
+: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_function { color: rgb(209, 28, 237); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_cbracket { color: rgb(48, 48, 238); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_url { color: rgb(24, 97, 167); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_date { color: rgb(255, 48, 48); font-weight: =
+bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_time { color: rgb(255, 48, 48); font-weight: =
+bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_file { color: rgb(255, 48, 48); font-weight: =
+bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_ip { color: rgb(24, 97, 167); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_name { color: rgb(24, 97, 167); font-weight: =
+normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_oldfile { color: rgb(24, 97, 167); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_newfile { color: rgb(24, 97, 167); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_difflines { color: rgb(255, 48, 48); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_property { color: rgb(255, 48, 48); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_value { color: rgb(24, 97, 167); font-weight:=
+ normal; font-style: normal; }
+
+.sh_contrast { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_contrast .sh_sourceCode { background-color: rgb(237, 97, 4); color: rgb=
+(0, 0, 255); font-weight: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_keyword { color: rgb(255, 255, 255); font-w=
+eight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_type { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_string { color: rgb(17, 248, 12); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_regexp { color: rgb(17, 248, 12); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_specialchar { color: rgb(17, 248, 12); font=
+-weight: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_comment { color: rgb(0, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_number { color: rgb(151, 26, 216); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_preproc { color: rgb(123, 68, 224); font-we=
+ight: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_symbol { color: rgb(222, 222, 222); font-we=
+ight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_function { color: rgb(255, 247, 0); font-we=
+ight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_cbracket { color: rgb(222, 222, 222); font-=
+weight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_url { color: rgb(17, 248, 12); font-weight:=
+ normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_date { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_time { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_file { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_ip { color: rgb(17, 248, 12); font-weight: =
+normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_name { color: rgb(17, 248, 12); font-weight=
+: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_variable { color: rgb(17, 248, 12); font-we=
+ight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_oldfile { color: rgb(17, 248, 12); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_newfile { color: rgb(17, 248, 12); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_difflines { color: rgb(255, 255, 255); font=
+-weight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_selector { color: rgb(17, 248, 12); font-we=
+ight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_property { color: rgb(255, 255, 255); font-=
+weight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_value { color: rgb(17, 248, 12); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_darkblue { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_darkblue .sh_sourceCode { background-color: rgb(0, 0, 64); color: rgb(1=
+99, 199, 199); font-weight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_keyword { color: rgb(255, 255, 96); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_type { color: rgb(96, 255, 96); font-weight=
+: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_string { color: rgb(255, 160, 160); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_regexp { color: rgb(255, 160, 160); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_specialchar { color: rgb(255, 165, 0); font=
+-weight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_comment { color: rgb(128, 160, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_number { color: rgb(66, 202, 217); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_preproc { color: rgb(255, 128, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_symbol { color: rgb(216, 233, 27); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_function { color: rgb(255, 255, 255); font-=
+weight: bold; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_cbracket { color: rgb(216, 233, 27); font-w=
+eight: bold; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_url { color: rgb(255, 160, 160); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_date { color: rgb(255, 255, 96); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_time { color: rgb(255, 255, 96); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_file { color: rgb(255, 255, 96); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_ip { color: rgb(255, 160, 160); font-weight=
+: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_name { color: rgb(255, 160, 160); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_variable { color: rgb(38, 224, 231); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_oldfile { color: rgb(255, 165, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_newfile { color: rgb(255, 160, 160); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_difflines { color: rgb(255, 255, 96); font-=
+weight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_selector { color: rgb(38, 224, 231); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_property { color: rgb(255, 255, 96); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_value { color: rgb(255, 160, 160); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_darkness { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_darkness .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(25=
+5, 255, 255); font-weight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_keyword { color: rgb(255, 255, 0); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_type { color: rgb(0, 255, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_string { color: rgb(171, 171, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_regexp { color: rgb(171, 171, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_specialchar { color: rgb(191, 191, 191); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_comment { color: rgb(136, 136, 136); font-w=
+eight: normal; font-style: italic; }
+
+.sh_darkness .sh_sourceCode .sh_number { color: rgb(97, 157, 231); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_preproc { color: rgb(29, 163, 207); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_symbol { color: rgb(255, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_function { color: rgb(243, 70, 39); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_cbracket { color: rgb(255, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_url { color: rgb(171, 171, 0); font-weight:=
+ bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_date { color: rgb(255, 255, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_time { color: rgb(255, 255, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_file { color: rgb(255, 255, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_ip { color: rgb(171, 171, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_name { color: rgb(171, 171, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_variable { color: rgb(38, 224, 231); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_oldfile { color: rgb(191, 191, 191); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_newfile { color: rgb(171, 171, 0); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_difflines { color: rgb(255, 255, 0); font-w=
+eight: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_selector { color: rgb(38, 224, 231); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_property { color: rgb(255, 255, 0); font-we=
+ight: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_value { color: rgb(171, 171, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_desert { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_desert .sh_sourceCode { background-color: rgb(175, 148, 126); color: rg=
+b(255, 253, 236); font-weight: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_keyword { color: rgb(254, 248, 188); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_type { color: rgb(254, 248, 188); font-weight=
+: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_string { color: rgb(246, 246, 71); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_regexp { color: rgb(246, 246, 71); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_specialchar { color: rgb(246, 246, 71); font-=
+weight: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_comment { color: rgb(160, 0, 0); font-weight:=
+ normal; font-style: italic; }
+
+.sh_desert .sh_sourceCode .sh_number { color: rgb(62, 63, 37); font-weight:=
+ normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_preproc { color: rgb(131, 57, 20); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_symbol { color: rgb(102, 87, 79); font-weight=
+: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_function { color: rgb(243, 210, 102); font-we=
+ight: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_cbracket { color: rgb(102, 87, 79); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_url { color: rgb(246, 246, 71); font-weight: =
+normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_date { color: rgb(254, 248, 188); font-weight=
+: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_time { color: rgb(254, 248, 188); font-weight=
+: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_file { color: rgb(254, 248, 188); font-weight=
+: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_ip { color: rgb(246, 246, 71); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_name { color: rgb(246, 246, 71); font-weight:=
+ normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_variable { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_oldfile { color: rgb(246, 246, 71); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_newfile { color: rgb(246, 246, 71); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_difflines { color: rgb(254, 248, 188); font-w=
+eight: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_selector { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_property { color: rgb(254, 248, 188); font-we=
+ight: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_value { color: rgb(246, 246, 71); font-weight=
+: normal; font-style: normal; }
+
+.sh_dull { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_dull .sh_sourceCode { background-color: rgb(191, 191, 191); color: rgb(=
+101, 101, 101); font-weight: normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_keyword { color: rgb(53, 53, 53); font-weight: =
+bold; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_type { color: rgb(50, 65, 198); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_string { color: rgb(0, 85, 153); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_regexp { color: rgb(0, 85, 153); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_specialchar { color: rgb(0, 85, 153); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_comment { color: rgb(209, 29, 32); font-weight:=
+ normal; font-style: italic; }
+
+.sh_dull .sh_sourceCode .sh_number { color: rgb(22, 147, 13); font-weight: =
+normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_preproc { color: rgb(0, 0, 51); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_symbol { color: rgb(34, 34, 34); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_function { color: rgb(56, 37, 92); font-weight:=
+ normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_cbracket { color: rgb(34, 34, 34); font-weight:=
+ normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_url { color: rgb(0, 85, 153); font-weight: norm=
+al; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_date { color: rgb(53, 53, 53); font-weight: bol=
+d; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_time { color: rgb(53, 53, 53); font-weight: bol=
+d; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_file { color: rgb(53, 53, 53); font-weight: bol=
+d; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_ip { color: rgb(0, 85, 153); font-weight: norma=
+l; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_name { color: rgb(0, 85, 153); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_variable { color: rgb(174, 90, 22); font-weight=
+: normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_oldfile { color: rgb(0, 85, 153); font-weight: =
+normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_newfile { color: rgb(0, 85, 153); font-weight: =
+normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_difflines { color: rgb(53, 53, 53); font-weight=
+: bold; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_selector { color: rgb(174, 90, 22); font-weight=
+: normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_property { color: rgb(53, 53, 53); font-weight:=
+ bold; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_value { color: rgb(0, 85, 153); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_easter { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_easter .sh_sourceCode { background-color: rgb(255, 255, 128); color: rg=
+b(44, 123, 52); font-weight: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_keyword { color: rgb(29, 69, 214); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_type { color: rgb(237, 15, 85); font-weight: =
+bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_string { color: rgb(202, 75, 227); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_regexp { color: rgb(202, 75, 227); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_specialchar { color: rgb(202, 75, 227); font-=
+weight: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_comment { color: rgb(36, 200, 21); font-weigh=
+t: normal; font-style: italic; }
+
+.sh_easter .sh_sourceCode .sh_number { color: rgb(225, 26, 112); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_preproc { color: rgb(21, 131, 177); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_symbol { color: rgb(250, 71, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_function { color: rgb(29, 69, 214); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_cbracket { color: rgb(250, 71, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_url { color: rgb(202, 75, 227); font-weight: =
+normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_date { color: rgb(29, 69, 214); font-weight: =
+bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_time { color: rgb(29, 69, 214); font-weight: =
+bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_file { color: rgb(29, 69, 214); font-weight: =
+bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_ip { color: rgb(202, 75, 227); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_name { color: rgb(202, 75, 227); font-weight:=
+ normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_variable { color: rgb(38, 170, 231); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_oldfile { color: rgb(202, 75, 227); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_newfile { color: rgb(202, 75, 227); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_difflines { color: rgb(29, 69, 214); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_selector { color: rgb(38, 170, 231); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_property { color: rgb(29, 69, 214); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_value { color: rgb(202, 75, 227); font-weight=
+: normal; font-style: normal; }
+
+.sh_emacs { background: none; padding: 0px; margin: 0px; border: 0px none; =
+}
+
+.sh_emacs .sh_sourceCode { background-color: rgb(255, 255, 255); color: rgb=
+(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_keyword { color: rgb(156, 32, 238); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_type { color: rgb(32, 137, 32); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_string { color: rgb(189, 141, 139); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_regexp { color: rgb(189, 141, 139); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_specialchar { color: rgb(189, 141, 139); font-=
+weight: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_comment { color: rgb(172, 32, 32); font-weight=
+: normal; font-style: italic; }
+
+.sh_emacs .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_preproc { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_url { color: rgb(189, 141, 139); font-weight: =
+normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_date { color: rgb(156, 32, 238); font-weight: =
+bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_time { color: rgb(156, 32, 238); font-weight: =
+bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_file { color: rgb(156, 32, 238); font-weight: =
+bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_ip { color: rgb(189, 141, 139); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_name { color: rgb(189, 141, 139); font-weight:=
+ normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_oldfile { color: rgb(189, 141, 139); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_newfile { color: rgb(189, 141, 139); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_difflines { color: rgb(156, 32, 238); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_property { color: rgb(156, 32, 238); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_value { color: rgb(189, 141, 139); font-weight=
+: normal; font-style: normal; }
+
+.sh_golden { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_golden .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(221,=
+ 187, 0); font-weight: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_keyword { color: rgb(255, 237, 138); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_type { color: rgb(255, 237, 138); font-weight=
+: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_comment { color: rgb(151, 131, 69); font-weig=
+ht: normal; font-style: italic; }
+
+.sh_golden .sh_sourceCode .sh_number { color: rgb(255, 255, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_preproc { color: rgb(255, 221, 170); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_symbol { color: rgb(171, 171, 171); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_function { color: rgb(221, 187, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_cbracket { color: rgb(171, 171, 171); font-we=
+ight: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_date { color: rgb(255, 237, 138); font-weight=
+: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_time { color: rgb(255, 237, 138); font-weight=
+: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_file { color: rgb(255, 237, 138); font-weight=
+: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_variable { color: rgb(222, 222, 222); font-we=
+ight: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_difflines { color: rgb(255, 237, 138); font-w=
+eight: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_selector { color: rgb(222, 222, 222); font-we=
+ight: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_property { color: rgb(255, 237, 138); font-we=
+ight: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_greenlcd { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_greenlcd .sh_sourceCode { background-color: rgb(0, 52, 0); color: rgb(0=
+, 187, 0); font-weight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_keyword { color: rgb(0, 237, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_type { color: rgb(0, 237, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_string { color: rgb(223, 223, 223); font-we=
+ight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_regexp { color: rgb(223, 223, 223); font-we=
+ight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_specialchar { color: rgb(223, 223, 223); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_comment { color: rgb(136, 136, 136); font-w=
+eight: normal; font-style: italic; }
+
+.sh_greenlcd .sh_sourceCode .sh_number { color: rgb(255, 255, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_preproc { color: rgb(191, 191, 191); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_symbol { color: rgb(47, 231, 169); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_function { color: rgb(192, 255, 115); font-=
+weight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_cbracket { color: rgb(47, 231, 169); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_url { color: rgb(223, 223, 223); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_date { color: rgb(0, 237, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_time { color: rgb(0, 237, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_file { color: rgb(0, 237, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_ip { color: rgb(223, 223, 223); font-weight=
+: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_name { color: rgb(223, 223, 223); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_variable { color: rgb(190, 239, 19); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_oldfile { color: rgb(223, 223, 223); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_newfile { color: rgb(223, 223, 223); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_difflines { color: rgb(0, 237, 0); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_selector { color: rgb(190, 239, 19); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_property { color: rgb(0, 237, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_value { color: rgb(223, 223, 223); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-anjuta { background: none; padding: 0px; margin: 0px; border: 0px n=
+one; }
+
+.sh_ide-anjuta .sh_sourceCode { background-color: rgb(255, 255, 255); color=
+: rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_keyword { color: rgb(0, 0, 128); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_type { color: rgb(0, 0, 128); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_string { color: rgb(221, 187, 0); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_regexp { color: rgb(221, 187, 0); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_specialchar { color: rgb(221, 187, 0); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_comment { color: rgb(255, 0, 0); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_number { color: rgb(0, 136, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_preproc { color: rgb(103, 128, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_url { color: rgb(221, 187, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_date { color: rgb(0, 0, 128); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_time { color: rgb(0, 0, 128); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_file { color: rgb(0, 0, 128); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_ip { color: rgb(221, 187, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_name { color: rgb(221, 187, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_oldfile { color: rgb(221, 187, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_newfile { color: rgb(221, 187, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_difflines { color: rgb(0, 0, 128); font-w=
+eight: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_property { color: rgb(0, 0, 128); font-we=
+ight: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_value { color: rgb(221, 187, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-codewarrior { background: none; padding: 0px; margin: 0px; border: =
+0px none; }
+
+.sh_ide-codewarrior .sh_sourceCode { background-color: rgb(255, 255, 255); =
+color: rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_keyword { color: rgb(0, 0, 179); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_type { color: rgb(76, 115, 166); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_string { color: rgb(102, 102, 102); =
+font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_regexp { color: rgb(102, 102, 102); =
+font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_specialchar { color: rgb(102, 102, 1=
+02); font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_comment { color: rgb(179, 0, 0); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_preproc { color: rgb(0, 0, 179); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font=
+-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_url { color: rgb(102, 102, 102); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_date { color: rgb(0, 0, 179); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_time { color: rgb(0, 0, 179); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_file { color: rgb(0, 0, 179); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_ip { color: rgb(102, 102, 102); font=
+-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_name { color: rgb(102, 102, 102); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_variable { color: rgb(0, 0, 179); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_oldfile { color: rgb(102, 102, 102);=
+ font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_newfile { color: rgb(102, 102, 102);=
+ font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_difflines { color: rgb(0, 0, 179); f=
+ont-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_selector { color: rgb(0, 0, 179); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_property { color: rgb(0, 0, 179); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_value { color: rgb(102, 102, 102); f=
+ont-weight: normal; font-style: normal; }
+
+.sh_ide-devcpp { background: none; padding: 0px; margin: 0px; border: 0px n=
+one; }
+
+.sh_ide-devcpp .sh_sourceCode { background-color: rgb(255, 255, 255); color=
+: rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_keyword { color: rgb(0, 0, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_type { color: rgb(0, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 0); font=
+-weight: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_comment { color: rgb(0, 0, 128); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_number { color: rgb(0, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_preproc { color: rgb(0, 128, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_date { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_time { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_file { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_variable { color: rgb(0, 0, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_difflines { color: rgb(0, 0, 0); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_selector { color: rgb(0, 0, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_property { color: rgb(0, 0, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-eclipse { background: none; padding: 0px; margin: 0px; border: 0px =
+none; }
+
+.sh_ide-eclipse .sh_sourceCode { background-color: rgb(255, 255, 255); colo=
+r: rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_keyword { color: rgb(127, 0, 85); font-w=
+eight: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_type { color: rgb(127, 0, 85); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_string { color: rgb(0, 0, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_regexp { color: rgb(0, 0, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 255); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_comment { color: rgb(113, 122, 179); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_preproc { color: rgb(63, 95, 191); font-=
+weight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_url { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_date { color: rgb(127, 0, 85); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_time { color: rgb(127, 0, 85); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_file { color: rgb(127, 0, 85); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_ip { color: rgb(0, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_name { color: rgb(0, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_variable { color: rgb(127, 0, 85); font-=
+weight: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_newfile { color: rgb(0, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_difflines { color: rgb(127, 0, 85); font=
+-weight: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_selector { color: rgb(127, 0, 85); font-=
+weight: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_property { color: rgb(127, 0, 85); font-=
+weight: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_value { color: rgb(0, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-kdev { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_ide-kdev .sh_sourceCode { background-color: rgb(255, 255, 255); color: =
+rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_keyword { color: rgb(96, 0, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_type { color: rgb(96, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_comment { color: rgb(191, 191, 191); font-w=
+eight: normal; font-style: italic; }
+
+.sh_ide-kdev .sh_sourceCode .sh_number { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_preproc { color: rgb(0, 128, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_date { color: rgb(96, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_time { color: rgb(96, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_file { color: rgb(96, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_variable { color: rgb(96, 0, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_difflines { color: rgb(96, 0, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_selector { color: rgb(96, 0, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_property { color: rgb(96, 0, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_ide-msvcpp { background: none; padding: 0px; margin: 0px; border: 0px n=
+one; }
+
+.sh_ide-msvcpp .sh_sourceCode { background-color: rgb(255, 255, 255); color=
+: rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_keyword { color: rgb(0, 0, 255); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_type { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_string { color: rgb(0, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_regexp { color: rgb(0, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_comment { color: rgb(0, 128, 0); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_preproc { color: rgb(0, 0, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_url { color: rgb(0, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_date { color: rgb(0, 0, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_time { color: rgb(0, 0, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_file { color: rgb(0, 0, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_ip { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_name { color: rgb(0, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-we=
+ight: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_newfile { color: rgb(0, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_difflines { color: rgb(0, 0, 255); font-w=
+eight: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-we=
+ight: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_property { color: rgb(0, 0, 255); font-we=
+ight: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_value { color: rgb(0, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_kwrite { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_kwrite .sh_sourceCode { background-color: rgb(255, 255, 255); color: rg=
+b(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_keyword { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_type { color: rgb(131, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_comment { color: rgb(131, 129, 131); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_kwrite .sh_sourceCode .sh_number { color: rgb(41, 40, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_preproc { color: rgb(0, 130, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_function { color: rgb(1, 1, 129); font-weight=
+: normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_date { color: rgb(0, 0, 0); font-weight: bold=
+; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_time { color: rgb(0, 0, 0); font-weight: bold=
+; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_file { color: rgb(0, 0, 0); font-weight: bold=
+; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_variable { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_difflines { color: rgb(0, 0, 0); font-weight:=
+ bold; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_selector { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_property { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_matlab { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_matlab .sh_sourceCode { background-color: rgb(255, 255, 255); color: rg=
+b(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_keyword { color: rgb(0, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_type { color: rgb(0, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_string { color: rgb(128, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_regexp { color: rgb(128, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_url { color: rgb(128, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_date { color: rgb(0, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_time { color: rgb(0, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_file { color: rgb(0, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_ip { color: rgb(128, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_name { color: rgb(128, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_newfile { color: rgb(128, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_difflines { color: rgb(0, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_property { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_value { color: rgb(128, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_navy { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_navy .sh_sourceCode { background-color: rgb(0, 0, 53); color: rgb(0, 13=
+9, 255); font-weight: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_keyword { color: rgb(248, 197, 11); font-weight=
+: bold; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_type { color: rgb(225, 231, 47); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_string { color: rgb(255, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_regexp { color: rgb(255, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_specialchar { color: rgb(255, 255, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_comment { color: rgb(255, 187, 0); font-weight:=
+ normal; font-style: italic; }
+
+.sh_navy .sh_sourceCode .sh_number { color: rgb(248, 127, 244); font-weight=
+: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_preproc { color: rgb(187, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_symbol { color: rgb(255, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_function { color: rgb(255, 255, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_cbracket { color: rgb(255, 255, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_url { color: rgb(255, 255, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_date { color: rgb(248, 197, 11); font-weight: b=
+old; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_time { color: rgb(248, 197, 11); font-weight: b=
+old; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_file { color: rgb(248, 197, 11); font-weight: b=
+old; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_ip { color: rgb(255, 255, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_name { color: rgb(255, 255, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_variable { color: rgb(19, 216, 239); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_oldfile { color: rgb(255, 255, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_newfile { color: rgb(255, 255, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_difflines { color: rgb(248, 197, 11); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_selector { color: rgb(19, 216, 239); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_property { color: rgb(248, 197, 11); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_value { color: rgb(255, 255, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_nedit { background: none; padding: 0px; margin: 0px; border: 0px none; =
+}
+
+.sh_nedit .sh_sourceCode { background-color: rgb(255, 255, 255); color: rgb=
+(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_keyword { color: rgb(0, 0, 0); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_type { color: rgb(165, 42, 42); font-weight: b=
+old; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_string { color: rgb(0, 100, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_regexp { color: rgb(0, 100, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_specialchar { color: rgb(46, 139, 87); font-we=
+ight: normal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_comment { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: italic; }
+
+.sh_nedit .sh_sourceCode .sh_number { color: rgb(0, 100, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_preproc { color: rgb(39, 64, 139); font-weight=
+: normal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_symbol { color: rgb(0, 0, 0); font-weight: bol=
+d; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_cbracket { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_url { color: rgb(0, 100, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_date { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_time { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_file { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_ip { color: rgb(0, 100, 0); font-weight: norma=
+l; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_name { color: rgb(0, 100, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_variable { color: rgb(221, 160, 221); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_oldfile { color: rgb(46, 139, 87); font-weight=
+: normal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_newfile { color: rgb(0, 100, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_difflines { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_selector { color: rgb(221, 160, 221); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_property { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_value { color: rgb(0, 100, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_neon { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_neon .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(255, 2=
+55, 255); font-weight: normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_keyword { color: rgb(0, 255, 255); font-weight:=
+ bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_type { color: rgb(255, 255, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_string { color: rgb(205, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_regexp { color: rgb(205, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_specialchar { color: rgb(205, 0, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_comment { color: rgb(0, 255, 0); font-weight: n=
+ormal; font-style: italic; }
+
+.sh_neon .sh_sourceCode .sh_number { color: rgb(255, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_preproc { color: rgb(255, 187, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_symbol { color: rgb(238, 88, 150); font-weight:=
+ bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_function { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_cbracket { color: rgb(238, 88, 150); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_url { color: rgb(205, 0, 255); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_date { color: rgb(0, 255, 255); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_time { color: rgb(0, 255, 255); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_file { color: rgb(0, 255, 255); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_ip { color: rgb(205, 0, 255); font-weight: norm=
+al; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_name { color: rgb(205, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_variable { color: rgb(239, 19, 71); font-weight=
+: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_oldfile { color: rgb(205, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_newfile { color: rgb(205, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_difflines { color: rgb(0, 255, 255); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_selector { color: rgb(239, 19, 71); font-weight=
+: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_property { color: rgb(0, 255, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_value { color: rgb(205, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_night { background: none; padding: 0px; margin: 0px; border: 0px none; =
+}
+
+.sh_night .sh_sourceCode { background-color: rgb(0, 0, 68); color: rgb(221,=
+ 0, 255); font-weight: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_keyword { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_type { color: rgb(241, 21, 124); font-weight: =
+bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_string { color: rgb(255, 255, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_regexp { color: rgb(255, 255, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_specialchar { color: rgb(130, 214, 109); font-=
+weight: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_comment { color: rgb(191, 191, 191); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_number { color: rgb(142, 225, 25); font-weight=
+: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_preproc { color: rgb(0, 187, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_symbol { color: rgb(231, 238, 92); font-weight=
+: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_function { color: rgb(255, 6, 205); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_cbracket { color: rgb(231, 238, 92); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_url { color: rgb(255, 255, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_date { color: rgb(255, 255, 255); font-weight:=
+ bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_time { color: rgb(255, 255, 255); font-weight:=
+ bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_file { color: rgb(255, 255, 255); font-weight:=
+ bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_ip { color: rgb(255, 255, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_name { color: rgb(255, 255, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_variable { color: rgb(122, 236, 39); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_oldfile { color: rgb(130, 214, 109); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_newfile { color: rgb(255, 255, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_difflines { color: rgb(255, 255, 255); font-we=
+ight: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_selector { color: rgb(122, 236, 39); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_property { color: rgb(255, 255, 255); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_value { color: rgb(255, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_pablo { background: none; padding: 0px; margin: 0px; border: 0px none; =
+}
+
+.sh_pablo .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(255, =
+255, 255); font-weight: normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_keyword { color: rgb(192, 192, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_type { color: rgb(0, 192, 0); font-weight: bol=
+d; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_string { color: rgb(0, 255, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_regexp { color: rgb(0, 255, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_comment { color: rgb(128, 128, 128); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_number { color: rgb(0, 255, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_preproc { color: rgb(0, 255, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_symbol { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_function { color: rgb(255, 34, 185); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_cbracket { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_url { color: rgb(0, 255, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_date { color: rgb(192, 192, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_time { color: rgb(192, 192, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_file { color: rgb(192, 192, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_ip { color: rgb(0, 255, 255); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_name { color: rgb(0, 255, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_variable { color: rgb(0, 0, 192); font-weight:=
+ bold; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_newfile { color: rgb(0, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_difflines { color: rgb(192, 192, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_selector { color: rgb(0, 0, 192); font-weight:=
+ bold; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_property { color: rgb(192, 192, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_value { color: rgb(0, 255, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_peachpuff { background: none; padding: 0px; margin: 0px; border: 0px no=
+ne; }
+
+.sh_peachpuff .sh_sourceCode { background-color: rgb(255, 218, 185); color:=
+ rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_keyword { color: rgb(165, 42, 42); font-we=
+ight: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_type { color: rgb(46, 139, 87); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_string { color: rgb(192, 0, 88); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_regexp { color: rgb(192, 0, 88); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_specialchar { color: rgb(106, 90, 205); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_comment { color: rgb(64, 96, 144); font-we=
+ight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_number { color: rgb(192, 0, 88); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_preproc { color: rgb(205, 0, 205); font-we=
+ight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_function { color: rgb(82, 28, 199); font-w=
+eight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_url { color: rgb(192, 0, 88); font-weight:=
+ normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_date { color: rgb(165, 42, 42); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_time { color: rgb(165, 42, 42); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_file { color: rgb(165, 42, 42); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_ip { color: rgb(192, 0, 88); font-weight: =
+normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_name { color: rgb(192, 0, 88); font-weight=
+: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_variable { color: rgb(39, 95, 236); font-w=
+eight: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_oldfile { color: rgb(106, 90, 205); font-w=
+eight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_newfile { color: rgb(192, 0, 88); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_difflines { color: rgb(165, 42, 42); font-=
+weight: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_selector { color: rgb(39, 95, 236); font-w=
+eight: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_property { color: rgb(165, 42, 42); font-w=
+eight: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_value { color: rgb(192, 0, 88); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_print { background: none; padding: 0px; margin: 0px; border: 0px none; =
+}
+
+.sh_print .sh_sourceCode { background-color: rgb(255, 255, 255); color: rgb=
+(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_keyword { color: rgb(0, 0, 0); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_type { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_string { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_regexp { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_comment { color: rgb(102, 102, 102); font-weig=
+ht: normal; font-style: italic; }
+
+.sh_print .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_preproc { color: rgb(0, 0, 0); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_symbol { color: rgb(0, 0, 0); font-weight: bol=
+d; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_cbracket { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_url { color: rgb(0, 0, 0); font-weight: normal=
+; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_date { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_time { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_file { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_ip { color: rgb(0, 0, 0); font-weight: normal;=
+ font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_name { color: rgb(0, 0, 0); font-weight: norma=
+l; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_variable { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_newfile { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_difflines { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_selector { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_property { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_value { color: rgb(0, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_rand01 { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_rand01 .sh_sourceCode { background-color: rgb(255, 255, 255); color: rg=
+b(18, 27, 40); font-weight: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_keyword { color: rgb(10, 127, 109); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_type { color: rgb(196, 38, 56); font-weight: =
+bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_string { color: rgb(43, 131, 186); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_regexp { color: rgb(43, 131, 186); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_specialchar { color: rgb(167, 100, 203); font=
+-weight: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_comment { color: rgb(171, 171, 171); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_rand01 .sh_sourceCode .sh_number { color: rgb(13, 163, 68); font-weight=
+: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_preproc { color: rgb(98, 10, 198); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_symbol { color: rgb(0, 0, 222); font-weight: =
+normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_cbracket { color: rgb(0, 0, 222); font-weight=
+: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_url { color: rgb(43, 131, 186); font-weight: =
+normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_date { color: rgb(10, 127, 109); font-weight:=
+ bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_time { color: rgb(10, 127, 109); font-weight:=
+ bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_file { color: rgb(10, 127, 109); font-weight:=
+ bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_ip { color: rgb(43, 131, 186); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_name { color: rgb(43, 131, 186); font-weight:=
+ normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_variable { color: rgb(225, 47, 118); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_oldfile { color: rgb(167, 100, 203); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_newfile { color: rgb(43, 131, 186); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_difflines { color: rgb(10, 127, 109); font-we=
+ight: bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_selector { color: rgb(225, 47, 118); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_property { color: rgb(10, 127, 109); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_value { color: rgb(43, 131, 186); font-weight=
+: normal; font-style: normal; }
+
+.sh_the { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_the .sh_sourceCode { background-color: rgb(255, 255, 255); color: rgb(0=
+, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_keyword { color: rgb(0, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_type { color: rgb(136, 0, 136); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_string { color: rgb(0, 0, 136); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_regexp { color: rgb(0, 0, 136); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_comment { color: rgb(0, 255, 0); font-weight: no=
+rmal; font-style: italic; }
+
+.sh_the .sh_sourceCode .sh_number { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_preproc { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_url { color: rgb(0, 0, 136); font-weight: normal=
+; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_date { color: rgb(0, 0, 255); font-weight: norma=
+l; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_time { color: rgb(0, 0, 255); font-weight: norma=
+l; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_file { color: rgb(0, 0, 255); font-weight: norma=
+l; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_ip { color: rgb(0, 0, 136); font-weight: normal;=
+ font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_name { color: rgb(0, 0, 136); font-weight: norma=
+l; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_newfile { color: rgb(0, 0, 136); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_difflines { color: rgb(0, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_property { color: rgb(0, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_value { color: rgb(0, 0, 136); font-weight: norm=
+al; font-style: normal; }
+
+.sh_typical { background: none; padding: 0px; margin: 0px; border: 0px none=
+; }
+
+.sh_typical .sh_sourceCode { background-color: rgb(255, 255, 255); color: r=
+gb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_keyword { color: rgb(0, 0, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_type { color: rgb(0, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_specialchar { color: rgb(196, 45, 168); font=
+-weight: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_comment { color: rgb(102, 102, 102); font-we=
+ight: normal; font-style: italic; }
+
+.sh_typical .sh_sourceCode .sh_number { color: rgb(169, 0, 169); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_preproc { color: rgb(0, 184, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_symbol { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight:=
+ bold; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_cbracket { color: rgb(255, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_date { color: rgb(0, 0, 255); font-weight: b=
+old; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_time { color: rgb(0, 0, 255); font-weight: b=
+old; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_file { color: rgb(0, 0, 255); font-weight: b=
+old; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_variable { color: rgb(236, 127, 21); font-we=
+ight: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_oldfile { color: rgb(196, 45, 168); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_difflines { color: rgb(0, 0, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_selector { color: rgb(236, 127, 21); font-we=
+ight: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_property { color: rgb(0, 0, 255); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_vampire { background: none; padding: 0px; margin: 0px; border: 0px none=
+; }
+
+.sh_vampire .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(255=
+, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_keyword { color: rgb(255, 255, 255); font-we=
+ight: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_type { color: rgb(243, 94, 30); font-weight:=
+ bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_string { color: rgb(187, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_regexp { color: rgb(187, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_specialchar { color: rgb(255, 255, 255); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_comment { color: rgb(171, 171, 171); font-we=
+ight: normal; font-style: italic; }
+
+.sh_vampire .sh_sourceCode .sh_number { color: rgb(187, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_preproc { color: rgb(171, 171, 171); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_symbol { color: rgb(243, 230, 81); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_function { color: rgb(123, 199, 16); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_cbracket { color: rgb(243, 230, 81); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_url { color: rgb(187, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_date { color: rgb(255, 255, 255); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_time { color: rgb(255, 255, 255); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_file { color: rgb(255, 255, 255); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_ip { color: rgb(187, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_name { color: rgb(187, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_variable { color: rgb(255, 255, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_oldfile { color: rgb(255, 255, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_newfile { color: rgb(187, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_difflines { color: rgb(255, 255, 255); font-=
+weight: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_selector { color: rgb(255, 255, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_property { color: rgb(255, 255, 255); font-w=
+eight: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_value { color: rgb(187, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim-dark { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_vim-dark .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(25=
+5, 255, 255); font-weight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_keyword { color: rgb(178, 104, 24); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_type { color: rgb(0, 255, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_specialchar { color: rgb(255, 34, 255); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_comment { color: rgb(0, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_number { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_preproc { color: rgb(255, 34, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_function { color: rgb(255, 255, 255); font-=
+weight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_date { color: rgb(178, 104, 24); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_time { color: rgb(178, 104, 24); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_file { color: rgb(178, 104, 24); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_variable { color: rgb(178, 104, 24); font-w=
+eight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_oldfile { color: rgb(255, 34, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_difflines { color: rgb(178, 104, 24); font-=
+weight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_selector { color: rgb(178, 104, 24); font-w=
+eight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_property { color: rgb(178, 104, 24); font-w=
+eight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_vim { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_vim .sh_sourceCode { background-color: rgb(255, 255, 255); color: rgb(0=
+, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_keyword { color: rgb(178, 104, 24); font-weight:=
+ normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_type { color: rgb(0, 255, 0); font-weight: norma=
+l; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_specialchar { color: rgb(255, 34, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_comment { color: rgb(0, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_number { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_preproc { color: rgb(255, 34, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: normal=
+; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_date { color: rgb(178, 104, 24); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_time { color: rgb(178, 104, 24); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_file { color: rgb(178, 104, 24); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: normal;=
+ font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: norma=
+l; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_variable { color: rgb(178, 104, 24); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_oldfile { color: rgb(255, 34, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_difflines { color: rgb(178, 104, 24); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_selector { color: rgb(178, 104, 24); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_property { color: rgb(178, 104, 24); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_whatis { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_whatis .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(0, 2=
+55, 0); font-weight: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_keyword { color: rgb(250, 90, 3); font-weight=
+: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_type { color: rgb(255, 255, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_string { color: rgb(255, 187, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_regexp { color: rgb(255, 187, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_specialchar { color: rgb(255, 187, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_comment { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_number { color: rgb(255, 255, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_preproc { color: rgb(191, 191, 191); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_symbol { color: rgb(0, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_function { color: rgb(231, 33, 211); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_cbracket { color: rgb(0, 255, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_url { color: rgb(255, 187, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_date { color: rgb(250, 90, 3); font-weight: b=
+old; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_time { color: rgb(250, 90, 3); font-weight: b=
+old; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_file { color: rgb(250, 90, 3); font-weight: b=
+old; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_ip { color: rgb(255, 187, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_name { color: rgb(255, 187, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_variable { color: rgb(239, 226, 25); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_oldfile { color: rgb(255, 187, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_newfile { color: rgb(255, 187, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_difflines { color: rgb(250, 90, 3); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_selector { color: rgb(239, 226, 25); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_property { color: rgb(250, 90, 3); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_value { color: rgb(255, 187, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_whitengrey { background: none; padding: 0px; margin: 0px; border: 0px n=
+one; }
+
+.sh_whitengrey .sh_sourceCode { background-color: rgb(255, 255, 255); color=
+: rgb(105, 105, 105); font-weight: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_keyword { color: rgb(105, 105, 105); font=
+-weight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_type { color: rgb(105, 105, 105); font-we=
+ight: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_string { color: rgb(0, 136, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_regexp { color: rgb(0, 136, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_specialchar { color: rgb(0, 136, 0); font=
+-weight: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_comment { color: rgb(19, 38, 162); font-w=
+eight: normal; font-style: italic; }
+
+.sh_whitengrey .sh_sourceCode .sh_number { color: rgb(187, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_preproc { color: rgb(71, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_url { color: rgb(0, 136, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_date { color: rgb(105, 105, 105); font-we=
+ight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_time { color: rgb(105, 105, 105); font-we=
+ight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_file { color: rgb(105, 105, 105); font-we=
+ight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_ip { color: rgb(0, 136, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_name { color: rgb(0, 136, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_variable { color: rgb(105, 105, 105); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_oldfile { color: rgb(0, 136, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_newfile { color: rgb(0, 136, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_difflines { color: rgb(105, 105, 105); fo=
+nt-weight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_selector { color: rgb(105, 105, 105); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_property { color: rgb(105, 105, 105); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_value { color: rgb(0, 136, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_zellner { background: none; padding: 0px; margin: 0px; border: 0px none=
+; }
+
+.sh_zellner .sh_sourceCode { background-color: rgb(255, 255, 255); color: r=
+gb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_keyword { color: rgb(165, 42, 42); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_type { color: rgb(0, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_string { color: rgb(255, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_regexp { color: rgb(255, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 255); font-=
+weight: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_comment { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_number { color: rgb(255, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_preproc { color: rgb(160, 32, 240); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight:=
+ bold; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_url { color: rgb(255, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_date { color: rgb(165, 42, 42); font-weight:=
+ normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_time { color: rgb(165, 42, 42); font-weight:=
+ normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_file { color: rgb(165, 42, 42); font-weight:=
+ normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_ip { color: rgb(255, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_name { color: rgb(255, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_variable { color: rgb(34, 95, 45); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_newfile { color: rgb(255, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_difflines { color: rgb(165, 42, 42); font-we=
+ight: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_selector { color: rgb(34, 95, 45); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_property { color: rgb(165, 42, 42); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_value { color: rgb(255, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.snippet-wrap { position: relative; }
+
+:first-child + html .snippet-wrap { display: inline-block; }
+
+* html .snippet-wrap { display: inline-block; }
+
+.snippet-reveal { text-decoration: underline; }
+
+.snippet-wrap .snippet-menu, .snippet-wrap .snippet-hide { position: absolu=
+te; top: 10px; right: 15px; font-size: 0.9em; z-index: 1; background-color:=
+ transparent; }
+
+.snippet-wrap .snippet-hide { top: auto; bottom: 10px; }
+
+:first-child + html .snippet-wrap .snippet-hide { bottom: 25px; }
+
+* html .snippet-wrap .snippet-hide { bottom: 25px; }
+
+.snippet-wrap .snippet-menu pre, .snippet-wrap .snippet-hide pre { backgrou=
+nd-color: transparent; margin: 0px; padding: 0px; }
+
+.snippet-wrap .snippet-menu a, .snippet-wrap .snippet-hide a { padding: 0px=
+ 5px; text-decoration: underline; }
+
+.snippet-wrap pre.sh_sourceCode { padding: 1em; line-height: 1.8em; overflo=
+w: auto; position: relative; border-radius: 15px; box-shadow: rgb(0, 0, 0) =
+2px 2px 5px; }
+
+.snippet-wrap pre.snippet-textonly { padding: 2em; }
+
+:first-child + html .snippet-wrap pre.snippet-formatted { padding: 2em 1em;=
+ }
+
+* html .snippet-wrap pre.snippet-formatted { padding: 2em 1em; }
+
+.snippet-reveal pre.sh_sourceCode { padding: 0.5em 1em; text-align: right; =
+}
+
+.snippet-wrap .snippet-num li { padding-left: 1.5em; }
+
+.snippet-wrap .snippet-no-num { list-style: none; padding: 0.6em 1em; margi=
+n: 0px; }
+
+.snippet-wrap .snippet-no-num li { list-style: none; padding-left: 0px; }
+
+.snippet-wrap .snippet-num { margin: 1em 0px 1em 1em; padding-left: 3em; }
+
+.snippet-wrap .snippet-num li { list-style: decimal-leading-zero outside no=
+ne; }
+
+.snippet-wrap .snippet-no-num li.box { padding: 0px 6px; margin-left: -6px;=
+ }
+
+.snippet-wrap .snippet-num li.box { border: 1px solid; list-style-position:=
+ inside; margin-left: -3em; padding-left: 6px; }
+
+:first-child + html .snippet-wrap .snippet-num li.box { margin-left: -2.4em=
+; }
+
+* html .snippet-wrap .snippet-num li.box { margin-left: -2.4em; }
+
+.snippet-wrap li.box-top { border-width: 1px 1px 0px !important; }
+
+.snippet-wrap li.box-bot { border-width: 0px 1px 1px !important; }
+
+.snippet-wrap li.box-mid { border-width: 0px 1px !important; }
+
+.snippet-wrap .snippet-num li .box-sp { width: 18px; display: inline-block;=
+ }
+
+:first-child + html .snippet-wrap .snippet-num li .box-sp { width: 27px; }
+
+* html .snippet-wrap .snippet-num li .box-sp { width: 27px; }
+
+.snippet-wrap .snippet-no-num li.box { border: 1px solid; }
+
+.snippet-wrap .snippet-no-num li .box-sp { display: none; }
+------MultipartBoundary--jBcZv0CBEGkDYIEVS47XYkuJr1Q9mMSnPsFAKkuH44----
+Content-Type: text/html
+Content-ID: <frame-433-c2e3ecee-2e4a-4cac-8716-385810e42d87@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--jBcZv0CBEGkDYIEVS47XYkuJr1Q9mMSnPsFAKkuH44------

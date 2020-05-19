@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	回顾:<br />
+1.适用情况:<br />
+&nbsp; 1)while:当...<br />
+&nbsp; 2)do...while:直到...<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;要素1与要素3相同时首选&nbsp;<br />
+&nbsp; 3)for:固定次数<br />
+2.嵌套循环:<br />
+&nbsp; &nbsp; 循环中套循环<br />
+外层一次，内层所有次<br />
+层数越少越好<br />
+break跳出一层循环<br />
+3.数组:<br />
+&nbsp; &nbsp; 相同数据类型元素的集合<br />
+是数据类型(引用类型)<br />
+int[] arr = new int[4];<br />
+&nbsp; &nbsp; int[] arr = {1,4,6};<br />
+int[] arr = new int[]{1,4,6};<br />
+&nbsp; &nbsp; arr[0] = 55;<br />
+System.out.println(arr[arr.length-1]);<br />
+&nbsp; &nbsp; for(int i=0;i&lt;arr.length;i++){<br />
+&nbsp;arr[i] = 100;<br />
+}<br />
+&nbsp; &nbsp; System.arraycopy(a,0,a1,1,4);<br />
+&nbsp; &nbsp; int[] a1 = Arrays.copyOf(a,6);<br />
+a = Arrays.copyOf(a,a.length+1);<br />
+Arrays.sort(arr);<br />
+冒泡<br />
+<br />
+笔记:<br />
+1.方法:<br />
+&nbsp; 1)封装一段特定的业务逻辑功能<br />
+&nbsp; 2)尽可能的独立，一个方法只干一件事<br />
+&nbsp; 3)方法可以被反复调用多次<br />
+&nbsp; 4)避免代码重复，有利于代码的复用，有利于团队协作开发<br />
+2.方法的定义:<br />
+&nbsp; &nbsp; 修饰词 返回值类型 方法名(参数列表){<br />
+&nbsp;方法体<br />
+}<br />
+3.方法的调用:<br />
+&nbsp; 1)无返回值: 方法名(有参传参);<br />
+&nbsp; 2)有返回值: 数据类型 变量 = 方法名(有参传参);<br />
+4.return的用法:<br />
+&nbsp; 1)return 值; //1)结束方法的执行 2)返回结果给调用方法<br />
+&nbsp; 2)return; &nbsp; &nbsp;//1)结束方法的执行<br />
+<br />
+<br />
+猜字符小游戏:<br />
+一.设计数据结构:变量<br />
+&nbsp; &nbsp;1.char[] chs; &nbsp; //随机字符数组<br />
+&nbsp; &nbsp;2.char[] input; //用户输入的字符数组<br />
+&nbsp; &nbsp;3.int[] result; //对比的结果<br />
+&nbsp; &nbsp;4.int score; &nbsp; &nbsp;//得分<br />
+&nbsp; &nbsp; &nbsp;int count; &nbsp; &nbsp;//猜错的次数<br />
+二.设计程序结构:方法<br />
+&nbsp; &nbsp;1.主方法:<br />
+&nbsp; &nbsp; &nbsp; &nbsp;public static void main(String[] args){<br />
+&nbsp; &nbsp; //...<br />
+&nbsp; }<br />
+&nbsp; &nbsp;2.随机生成字符数组:<br />
+&nbsp; &nbsp; &nbsp; &nbsp;public static char[] generate(){<br />
+&nbsp; &nbsp; char[] chs = new char[5];<br />
+//...<br />
+return chs;<br />
+&nbsp; }<br />
+&nbsp; &nbsp;3.对比:随机字符数组与用户输入的字符数组<br />
+&nbsp; &nbsp; &nbsp; &nbsp;public static int[] check(char[] chs,char[] input){<br />
+&nbsp; &nbsp; int[] result = new int[2];<br />
+//...<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return result;<br />
+&nbsp; }<br />
+三.设计算法:<br />
+<br />
+<br />
+<br />
+每天练习语法-------吃糖豆<br />
+讲项目-------------吃药<br />
+<br />
+String str = "abcde";<br />
+1)将字符串转换为字符数组<br />
+&nbsp; &nbsp; char[] input = str.toCharArray();<br />
+2)将字符串转换为大写字母<br />
+&nbsp; &nbsp; str = str.toUpperCase();<br />
+&nbsp; 将字符串转换为小写字母<br />
+&nbsp; &nbsp; str = str.toLowerCase();<br />
+3)比较字符串内容相同<br />
+&nbsp; &nbsp; if(str.equals("EXIT")){<br />
+}<br />
+<br />
+String str = scan.next();<br />
+char[] input = str.toCharArray();<br />
+<br />
+<br />
+"ABCDE"<br />
+input[0]='A'<br />
+input[1]='B'<br />
+input[2]='C'<br />
+input[3]='D'<br />
+input[4]='E'<br />
+<br />
+1)藏起来一个数chs<br />
+2)提示用户猜吧!接收用户输入的数input<br />
+3)将chs与input对比，得到对比结果判断<br />
+4)若猜对了，则程序结束<br />
+&nbsp; 若未猜对，则重复第234步<br />
+<br />
+基本类型比较相等，用==<br />
+String类型比较内容相等，用equals()方法<br />
+<br />
+EXIT时退出循环<br />
+位置对个数为5<br />
+位置对是在字符对的基础之上的<br />
+<br />
+<br />
+public static char[] generate(){<br />
+&nbsp; char[] chs = new char[5];<br />
+&nbsp;&nbsp;<br />
+&nbsp; char[] letters = {'A','B','C','D',...,'Y','Z'};<br />
+&nbsp; boolean[] flags = new boolean[letters.length]; //开关数组<br />
+&nbsp; for(int i=0;i&lt;chs.length;i++){<br />
+&nbsp; &nbsp; do{<br />
+&nbsp;int index = (int)(Math.random()*26); //0到25的随机数<br />
+&nbsp; &nbsp; }while(flags[index]==true);<br />
+&nbsp; &nbsp; chs[i] = letters[index];<br />
+&nbsp; &nbsp; flags[index] = true;<br />
+&nbsp; }<br />
+&nbsp; i=0 index=0 &nbsp;false chs[0]='A' flags[0]=true<br />
+&nbsp; i=1 index=25 false chs[1]='Z' flags[25]=true<br />
+&nbsp; i=2 index=0/25/0/25/0/1 false chs[2]='B' flags[1]=true<br />
+&nbsp; i=3 index=0/1/25/0/1/25/2 ......<br />
+&nbsp;&nbsp;<br />
+&nbsp; return chs;<br />
+}<br />
+<br />
+i=0 index=0 &nbsp;chs[0]='A'&nbsp;<br />
+i=1 index=25 chs[1]='Z'<br />
+i=2 index=2 &nbsp;chs[2]='C'<br />
+i=3<br />
+i=4<br />
+<br />
+<br />
+位置对是在字符对的基础之上的<br />
+<br />
+public static int[] check(char[] chs,char[] input){<br />
+&nbsp; int[] result = new int[2]; //0,0 &nbsp;result[0]位置对 result[1]字符对<br />
+&nbsp;&nbsp;<br />
+&nbsp; for(int i=0;i&lt;chs.length;i++){<br />
+&nbsp; &nbsp; for(int j=0;j&lt;input.length;j++){<br />
+&nbsp;if(chs[i]==input[j]){ //字符对<br />
+&nbsp; &nbsp;result[1]++; //字符对个数增1<br />
+if(i==j){ //位置对<br />
+&nbsp;result[0]++; //位置对个数增1<br />
+}<br />
+break;<br />
+&nbsp;}<br />
+}<br />
+&nbsp; }<br />
+&nbsp;&nbsp;<br />
+&nbsp; return result;<br />
+}<br />
+<br />
+i=1<br />
+&nbsp; &nbsp; j=0 chs1和input0<br />
+j=1 chs1和input1<br />
+j=2 chs1和input2<br />
+j=3 chs1和input3<br />
+j=4 chs1和input4<br />
+&nbsp; i=0&nbsp;<br />
+&nbsp; &nbsp; j=0 chs0和input0<br />
+j=1 chs0和input1<br />
+j=2 chs0和input2<br />
+j=3 chs0和input3<br />
+j=4 chs0和input4<br />
+<br />
+public static void main(String[] args){<br />
+&nbsp; say();<br />
+&nbsp; sayHi("zhangsan");<br />
+&nbsp; int a = getNum(); 输出a的值<br />
+&nbsp; double b = plus(5.5,6.6); 输出b的值<br />
+&nbsp; double c=5.5,d=6.6;&nbsp;<br />
+&nbsp; double e = plus(c,d); 输出e的值<br />
+}<br />
+public static void say(){}<br />
+public static void sayHi(String name){}<br />
+public static int getNum(){<br />
+&nbsp; return 88;<br />
+}<br />
+public static double plus(double num1,double num2){<br />
+&nbsp; return num1+num2;<br />
+}<br />
+<br />
+<br />
+方法可以嵌套调用<br />
+if(){<br />
+&nbsp; break;<br />
+}<br />
+<br />
+if(){<br />
+&nbsp; return;<br />
+}<br />
+<br />
+<br />
+方法可以有参也可以无参，有参使方法更灵活<br />
+<br />
+System.out. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;println("HelloWorld");<br />
+System. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;arraycopy(a,1,a1,0,4);<br />
+Arrays. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sort(arr);<br />
+double d = Math. &nbsp; &nbsp; sqrt(25);<br />
+int[] a1 = Arrays. &nbsp; copyOf(a,6); &nbsp;//有参数<br />
+<br />
+int a &nbsp; &nbsp;= scan. &nbsp; &nbsp; nextInt();<br />
+double b = scan. &nbsp; &nbsp; nextDouble();<br />
+double c = Math. &nbsp; &nbsp; random(); &nbsp; &nbsp; //无参数<br />
+<br />
+<br />
+double c = Math.random(); //0.0到0.99999999999...<br />
+double d = Math.sqrt(25);<br />
+<br />
+假设random()有参:<br />
+double a = Math.random(1,1000);<br />
+double a = Math.random(0,99);<br />
+double a = Math.random(21,60);<br />
+double a = Math.random(0,26);<br />
+<br />
+方法可以有返回值也可以没有返回值<br />
+&nbsp; 无返回值----返回值类型写成void<br />
+&nbsp; 有返回值----返回值类型写成具体的数据类型<br />
+<br />
+若方法执行完以后，需要方法中的某个数据----有<br />
+若不需要方法中的某个数据------------------没有<br />
+<br />
+System.out.println("HelloWorld");<br />
+System.arraycopy(a,1,a1,0,4);<br />
+Arrays.sort(arr); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 无返回值<br />
+<br />
+int a &nbsp; &nbsp;= scan.nextInt();<br />
+double b = scan.nextDouble();<br />
+double c = Math.random();<br />
+double d = Math.sqrt(25);<br />
+int[] a1 = Arrays.copyOf(a,6); &nbsp;有返回值<br />
+<br />
+A:干一个业务<br />
+B:干一个业务<br />
+C:干一个业务<br />
+<br />
+排序10个地方<br />
+<br />
+排序(){<br />
+&nbsp; 冒泡6句话<br />
+}<br />
+<br />
+System.out.println("HelloWorld");<br />
+<br />
+a(){<br />
+&nbsp; 存<br />
+}<br />
+b(){<br />
+&nbsp; 取<br />
+}<br />
+c(){<br />
+&nbsp; 转<br />
+}<br />
+<br />
+张三-------调a(),b(),c()<br />
+李四-------调a()<br />
+王五-------调b()<br />
+赵六-------调a(),c()<br />
+<br />
+main(){<br />
+&nbsp; 调存----1<br />
+&nbsp; 调取----1<br />
+&nbsp; 调转----1<br />
+}<br />
+存(){<br />
+&nbsp; 500---调检测密码()<br />
+}<br />
+取(){<br />
+&nbsp; 500---调检测密码()<br />
+}<br />
+转(){<br />
+&nbsp; 1000---调检测密码()<br />
+}<br />
+检测密码(){<br />
+&nbsp;&nbsp;<br />
+}<br />
+<br />
+质数:又称素数，只能被1和它本身整除的数<br />
+<br />
+何时是质数?------------取余所有都不得0<br />
+何时不是质数?----------只要有取余为0的<br />
+<br />
+<br />
+并非一次判断得结果----------------开关<br />
+<br />
+<br />
+5是质数:<br />
+&nbsp; 5%2/3/4-------------------都不得0<br />
+7是质数:<br />
+&nbsp; 7%2/3/4/5/6---------------都不得0<br />
+8不是质数:<br />
+&nbsp; 8%2/3/4/5/6/7-------------有取余为0的<br />
+9不是质数:<br />
+&nbsp; 9%2/3/4/5/6/7/8-----------有取余为0的<br />
+<br />
+<br />
+100<br />
+&nbsp; %2/3/4/5/..../98/99<br />
+&nbsp; %2/3/4/5/..../49/50<br />
+&nbsp; %2/3/4/5/..../9/10<br />
+<br />
+100% &nbsp;51/52/53/54/.../98/99<br />
+100% &nbsp;11/12/13/14/.../49/50<br />
+<br />
+<br />
+<br />
+Math.sqrt(100)-----10.0<br />
+<br />
+100平方根是10<br />
+25平方根是5<br />
+81平方根是9<br />
+<br />
+	</body>
+</html>

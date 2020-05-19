@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+回顾:<br />
+1.引用类型数组:<br />
+&nbsp; &nbsp; Cell[] cells = new Cell[4]; //创建格子数组对象<br />
+cells[0] = new Cell(2,5); //创建格子对象<br />
+<br />
+int[][] arr = new int[3][];<br />
+arr[0] = new int[2];<br />
+<br />
+int[][] arr = new int[3][4]; //3行4列<br />
+<br />
+2.继承:<br />
+&nbsp; 1)减少代码重复，有利于代码的复用<br />
+&nbsp; 2)extends<br />
+&nbsp; 3)父类:共有的<br />
+&nbsp; &nbsp; 子类:特有的<br />
+&nbsp; 4)子继承父，子具有: 子+父<br />
+&nbsp; 5)一个父可以多个子，一个子只能一个父--单一继承<br />
+&nbsp; 6)传递性<br />
+&nbsp; 7)java规定:构造子之前必须先构造父<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;子构造方法中不写则默认有个super()调父类无参构造<br />
+若写了则不再默认提供<br />
+3.super:指代当前对象的父类对象<br />
+&nbsp; &nbsp; super.成员变量名<br />
+super.方法名()<br />
+super()<br />
+4.向上造型:<br />
+&nbsp; 1)父类型的引用指向子类的对象<br />
+&nbsp; 2)能点出来什么，看引用的类型<br />
+<br />
+笔记:<br />
+1.内存管理:由JVM来管理------了解<br />
+&nbsp; 1)堆:<br />
+&nbsp; &nbsp; 1.1)存储所有new出来的对象(包括成员变量)<br />
+1.2)成员变量的生命周期:<br />
+&nbsp; &nbsp; &nbsp;创建对象时存在堆中，对象被回收时一并消失<br />
+1.3)没有任何引用所指向的对象就是垃圾，<br />
+&nbsp; &nbsp;垃圾回收器(GC)不定时来清理垃圾，<br />
+&nbsp; &nbsp;回收过程是透明的(看不到的)，不一定一看到垃圾就立刻回收，<br />
+调用System.gc()可以建议它尽快来回收垃圾<br />
+1.4)内存泄漏:不再使用的内存还没有被及时的回收<br />
+&nbsp; &nbsp; &nbsp;建议:不再使用的对象及时将引用设置为null<br />
+&nbsp; 2)栈:<br />
+&nbsp; &nbsp; 2.1)用于存储正在调用的方法中的所有局部变量(包括参数)<br />
+2.2)调用方法时在栈中为该方法分配一块对应的栈帧，<br />
+&nbsp; &nbsp;栈帧中存储该方法中的局部变量(包括参数)<br />
+方法调用结束时，栈帧消失，局部变量也一并消失<br />
+2.3)局部变量的生命周期:<br />
+&nbsp; &nbsp; &nbsp;调用方法时存在栈中，方法结束时与栈帧一并消失<br />
+&nbsp; 3)方法区:<br />
+&nbsp; &nbsp; 3.1)用于存储类的信息(.class，包括方法)<br />
+3.2)方法只有一份，通过this来区分具体的对象<br />
+2.方法的重写(Override):<br />
+&nbsp; 1)发生在父子类中，方法名称相同，参数列表相同，方法体不同<br />
+&nbsp; 2)重写方法被调用时，看对象的类型<br />
+3.重写与重载的区别:------常见面试题<br />
+&nbsp; 1)重写(Override):<br />
+&nbsp; &nbsp; 1.1)发生在父子类中，方法名称相同，参数列表相同，方法体不同<br />
+1.2)遵循"运行期绑定"，根据对象的类型来调用方法<br />
+&nbsp; 2)重载(Overload):<br />
+&nbsp; &nbsp; 2.1)发生在一个类中，方法名称相同，参数列表不同，方法体不同<br />
+2.2)遵循"编译期绑定"，根据引用的类型来绑定调用方法<br />
+4.package:<br />
+&nbsp; 1)作用:避免类名冲突问题<br />
+&nbsp; 2)建议:包名所有字母都小写<br />
+&nbsp; 3)包名可以有层次结构，建议:域名反写.项目名称.模块名称<br />
+&nbsp; 4)类的完全限定名: 包名.类名<br />
+&nbsp; import:<br />
+&nbsp; 1)同包中的类可以直接访问<br />
+&nbsp; &nbsp; 不同包中的类，不能直接访问，有如下两种方式:<br />
+1.1)先import声明类后再使用---建议<br />
+1.2)完全限定名(太长)---------不建议<br />
+5.访问控制修饰符:<br />
+&nbsp; 1)public:公开的，任何类<br />
+&nbsp; 2)private:私有的，本类<br />
+&nbsp; 3)protected:受保护的，本类、子类、同包类<br />
+&nbsp; 4)默认的:什么也不写，本类、同包类<br />
+&nbsp; 类的访问修饰: public和默认的<br />
+&nbsp; 类中成员的访问修饰: 如上4个都可以<br />
+6.static:静态的<br />
+&nbsp; 1)静态变量:<br />
+&nbsp; &nbsp; 1.1)由static修饰<br />
+1.2)属于类的，存在方法区中，只有一份<br />
+1.3)常常通过类名.来访问<br />
+1.4)何时用:所有对象的数据都一样时使用<br />
+&nbsp; 2)静态方法:<br />
+&nbsp; &nbsp; 2.1)由static修饰<br />
+2.2)属于类的，存在方法区中，只有一份<br />
+2.3)常常通过类名.来访问<br />
+2.4)静态方法没有隐式的this传递，<br />
+&nbsp; &nbsp;静态方法中不能直接访问实例成员<br />
+2.5)何时用:方法的操作仅与参数相关而与对象无关<br />
+&nbsp; 3)静态块:<br />
+&nbsp; &nbsp; 3.1)属于类的，在类被加载期间自动执行<br />
+&nbsp; &nbsp;类只被加载一次，所以静态块也只执行一次<br />
+3.2)何时用:常常用于加载/初始化静态资源(图片、音频、视频...)<br />
+7.final:最终的<br />
+&nbsp; 1)修饰变量:变量不能被改变<br />
+&nbsp; 2)修饰方法:方法不能被重写<br />
+&nbsp; 3)修饰类 &nbsp;:类不能被继承<br />
+<br />
+8.static final常量:<br />
+&nbsp; 1)必须声明的同时初始化<br />
+&nbsp; 2)通过类名点来访问，不能被修改<br />
+&nbsp; 3)建议:常量名所有字母都大写<br />
+&nbsp; 4)编译器在编译时被自动替换为具体的值，效率高<br />
+<br />
+<br />
+任务:<br />
+1.练习final的用法<br />
+2.在昨天晚上作业的基础之上，完成print()方法的重写<br />
+&nbsp; 把整个案例顺一顺<br />
+3.完成今天的所有的小代码<br />
+4.第3天的课后作业+第4天的课后作业<br />
+<br />
+map.png----------------地图(一份)------静态资源<br />
+大王叫我来巡山.mp3----音频(一份)-------静态资源<br />
+吸血鬼日记6第1.avi-----视频(一份)-------静态资源<br />
+<br />
+drop()方法-----与对象有关吗?------有关<br />
+<br />
+Cell c1 = new Cell(2,5);<br />
+c1.drop();<br />
+<br />
+Cell c2 = new Cell(0,4);<br />
+c2.drop();<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+&nbsp; static void drop(){<br />
+&nbsp; &nbsp; row++;<br />
+&nbsp; }<br />
+}<br />
+double b = Math.sqrt(25); //静态方法<br />
+<br />
+假设sqrt不是静态的:<br />
+<br />
+无论是m1,m2,m3,m4...m100，<br />
+&nbsp; 调用sqrt(25)方法，最终结果都一样<br />
+----------------sqrt()方法与对象无关，仅与参数相关<br />
+<br />
+<br />
+Math m1 = new Math();<br />
+double a = m1.sqrt(25); //5<br />
+<br />
+Math m2 = new Math();<br />
+double b = m2.sqrt(25); //5<br />
+<br />
+Math m3 = new Math();<br />
+double c = m3.sqrt(25); //5<br />
+<br />
+Math m4 = new Math();<br />
+double d = m4.sqrt(25); //5<br />
+<br />
+double a = Math.random();<br />
+double b = Math.sqrt(25);<br />
+int[] a1 = Arrays.copyOf(a,6);<br />
+Arrays.sort(arr);<br />
+<br />
+class Aoo{<br />
+&nbsp; int a; //实例变量，只能由对象点来访问<br />
+&nbsp; static int b;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp; void show(){ //有this<br />
+&nbsp; &nbsp; System.out.println(this.a);<br />
+System.out.println(Aoo.b);<br />
+&nbsp; }<br />
+&nbsp; static void test(){ //没有this，意味着没有对象<br />
+&nbsp; &nbsp; System.out.println(a); //编译错误<br />
+System.out.println(Aoo.b);<br />
+&nbsp; }<br />
+}<br />
+<br />
+Student zs = new Student();<br />
+zs.name = "zhangsan";<br />
+zs.age = 25;<br />
+zs.address = "lf";<br />
+<br />
+Student ls = new Student();<br />
+ls.name = "lisi";<br />
+ls.age = 26;<br />
+ls.address = "JMS";<br />
+<br />
+Student.className = "JSD1609";<br />
+<br />
+实例多还是静态多------实例多<br />
+<br />
+绝大部分对象的数据都是不一样的<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+}<br />
+<br />
+class Student{<br />
+&nbsp; String name;<br />
+&nbsp; int age;<br />
+&nbsp; String address;<br />
+&nbsp; static String className;<br />
+}<br />
+<br />
+class Aoo{<br />
+&nbsp; int a;<br />
+&nbsp; static int b;<br />
+}<br />
+<br />
+成员变量:<br />
+1)实例变量:<br />
+&nbsp; &nbsp;没有static修饰，属于对象的，存在堆中，有几个对象有几份<br />
+&nbsp; &nbsp;对象.来访问<br />
+2)静态变量:<br />
+&nbsp; &nbsp;由static修饰，属于类的，存在方法区中，只有一份<br />
+&nbsp; &nbsp;类名.来访问<br />
+<br />
+数据(变量)私有化，行为(方法)公开化<br />
+<br />
+class Card{ //银行卡<br />
+&nbsp; private String cardId; //卡号<br />
+&nbsp; private String cardPwd; //密码<br />
+&nbsp; private double balance; //余额<br />
+<br />
+&nbsp; public void 开卡(){<br />
+&nbsp; &nbsp; //1.<br />
+//2.<br />
+//3.<br />
+//4.<br />
+//5.<br />
+//6.<br />
+//7.<br />
+&nbsp; }<br />
+<br />
+<br />
+&nbsp; public boolean payMoney(double money){ //付款<br />
+&nbsp; &nbsp; if(balance&gt;=money){<br />
+&nbsp;balace-=money;<br />
+&nbsp;return true;<br />
+}<br />
+return false;<br />
+&nbsp; }<br />
+<br />
+&nbsp; public boolean checkPwd(String pwd){ //检查密码<br />
+&nbsp; &nbsp; if(cardPwd.equals(pwd)){<br />
+&nbsp;return true;<br />
+}<br />
+return false;<br />
+&nbsp; }<br />
+<br />
+&nbsp;&nbsp;<br />
+<br />
+}<br />
+<br />
+package a.b.c.d.e.f;<br />
+class Aoo{<br />
+}<br />
+class Boo{<br />
+&nbsp; Aoo o = new Aoo();<br />
+}<br />
+<br />
+package b;<br />
+import a.b.c.d.e.f.Aoo; //声明类<br />
+class Coo{<br />
+&nbsp; Aoo o = new Aoo();<br />
+}<br />
+<br />
+A公司:<br />
+&nbsp; package com.jd.b.c;<br />
+&nbsp; class Aoo{<br />
+&nbsp; }<br />
+<br />
+B公司:<br />
+&nbsp; package com.taobao.b.c;<br />
+&nbsp; class Aoo{<br />
+&nbsp; }<br />
+<br />
+<br />
+可移植性<br />
+<br />
+建议:<br />
+&nbsp; &nbsp;域名反写 &nbsp; . 项目名称 &nbsp; &nbsp; &nbsp; . 模块名称 . 类名<br />
+&nbsp; &nbsp;cn.tedu &nbsp; &nbsp;. studentmanager . &nbsp;teacher &nbsp;. Teacher<br />
+<br />
+package a.b.c;<br />
+class Aoo{&nbsp;<br />
+}<br />
+<br />
+package a.b.c;<br />
+class Aoo{<br />
+}<br />
+<br />
+包-------同包内的类不重名就可以了<br />
+<br />
+class Tetromino{<br />
+&nbsp; void print(){<br />
+&nbsp; &nbsp; 输出4个格子的行号和列号<br />
+&nbsp; }<br />
+}<br />
+class T extends Tetromino{<br />
+&nbsp; void print(){<br />
+&nbsp; &nbsp; I am a T<br />
+&nbsp; &nbsp; super.print();<br />
+&nbsp; }<br />
+}<br />
+class J extends Tetromino{<br />
+&nbsp; void print(){<br />
+&nbsp; &nbsp; I am a J<br />
+&nbsp; &nbsp; super.print();<br />
+&nbsp; }<br />
+}<br />
+<br />
+Student zs = new Student();<br />
+zs.sayHi(); //调Student类的<br />
+<br />
+Person p1 = new Student();<br />
+p1.sayHi(); //调Student类的<br />
+<br />
+Student zs = new Student();<br />
+zs.name = "zhangsan";<br />
+zs.age = 25;<br />
+zs.address = "langfang";<br />
+zs.className = "JSD1609";<br />
+zs.sayHi(); &nbsp;//zhangsan,25,langfang,JSD1609<br />
+<br />
+Teacher wkj = new Teacher();<br />
+wkj.name = "wangkejing";<br />
+wkj.age = 37;<br />
+wkj.address = "jiamusi";<br />
+wkj.salary = 5000;<br />
+wkj.sayHi(); //wangkejing,37,jiamusi,5000<br />
+<br />
+Doctor ls = new Doctor();<br />
+ls.name = "lisi";<br />
+ls.age = 45;<br />
+ls.address = "shandong";<br />
+ls.level = "主任医师";<br />
+ls.sayHi(); //lisi,45,shandong<br />
+<br />
+class Person{<br />
+&nbsp; String name;<br />
+&nbsp; int age;<br />
+&nbsp; String address;<br />
+&nbsp; void sayHi(){<br />
+&nbsp; &nbsp; System.out.println(name+","+age+","+address);<br />
+&nbsp; }<br />
+}<br />
+class Student extends Person{<br />
+&nbsp; String className;<br />
+&nbsp; void sayHi(){ //重写父类的sayHi()方法<br />
+&nbsp; &nbsp; System.out.println(name+","+age+","+address+","+className);<br />
+&nbsp; }<br />
+}<br />
+<br />
+class Teacher extends Person{<br />
+&nbsp; double salary;<br />
+&nbsp; void sayHi(){ //重写父类的sayHi()方法<br />
+&nbsp; &nbsp; System.out.println(name+","+age+","+address+","+salary);<br />
+&nbsp; }<br />
+}<br />
+class Doctor extends Person{<br />
+&nbsp; String level;<br />
+}<br />
+<br />
+成员变量:有几个对象就有几份<br />
+方法:只有一份<br />
+<br />
+在drop()中是如何区分，是c在drop()在cc在drop()<br />
+<br />
+this<br />
+<br />
+Cell c = new Cell();<br />
+c.row = 2;<br />
+c.col = 5;<br />
+c.drop(); //c.row=3<br />
+<br />
+Cell cc = new Cell();<br />
+cc.row = 1;<br />
+cc.col = 3;<br />
+cc.drop(); //cc.row=2;<br />
+<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+&nbsp; void drop(){<br />
+&nbsp; &nbsp; row++;<br />
+&nbsp; }<br />
+}<br />
+<br />
+Aoo o = new Aoo();<br />
+<br />
+class Aoo{<br />
+&nbsp; int a;<br />
+&nbsp; void show(){<br />
+&nbsp; &nbsp; int b;<br />
+System.out.println(a); //0<br />
+System.out.println(b); //编译错误<br />
+&nbsp; }<br />
+}<br />
+<br />
+class Aoo{<br />
+&nbsp; int a;<br />
+&nbsp; void show(int b){<br />
+&nbsp; &nbsp; int c=5;<br />
+&nbsp; }<br />
+}<br />
+<br />
+C++面向对象---------创建对象后，得手动释放对象<br />
+Java面向对象--------垃圾回收器<br />
+<br />
+java，运行运行运行，报内存不足错误<br />
+中关村买了一个2G的内存条，装到我的电脑上了<br />
+<br />
+运行，内存就足了吗------报内存不足<br />
+<br />
+2G内存-----------------------给电脑加的<br />
+java程序报内存不足-----------JVM的内存不足<br />
+<br />
+class Cell{<br />
+}<br />
+class Tetromino{<br />
+&nbsp; Cell[] cells;<br />
+&nbsp; Tetromino(){<br />
+&nbsp; &nbsp; cells = new Cell[4];<br />
+&nbsp; }<br />
+&nbsp; void drop(){}<br />
+&nbsp; void moveLeft(){}<br />
+&nbsp; void moveRight(){}<br />
+&nbsp; void print(){}<br />
+}<br />
+class T extends Tetromino{<br />
+&nbsp; T(int row,int col){<br />
+&nbsp; &nbsp; cells[0] = new Cell();<br />
+cells[1] = new Cell();<br />
+cells[2] = new Cell();<br />
+cells[3] = new Cell();<br />
+&nbsp; }<br />
+}<br />
+class J extends Tetromino{<br />
+&nbsp; J(int row,int col){<br />
+&nbsp; &nbsp; cells[0] = new Cell();<br />
+cells[1] = new Cell();<br />
+cells[2] = new Cell();<br />
+cells[3] = new Cell();<br />
+&nbsp; }<br />
+}<br />
+class O extends Tetromino{<br />
+&nbsp; O(int row,int col){<br />
+&nbsp; &nbsp; cells[0] = new Cell();<br />
+cells[1] = new Cell();<br />
+cells[2] = new Cell();<br />
+cells[3] = new Cell();<br />
+&nbsp; }<br />
+}<br />
+class TJTest{<br />
+}<br />
+<br />
+Tetromino t1 = new T();<br />
+Tetromino t2 = new J();<br />
+Tetromino t3 = new O();<br />
+<br />
+Person p1 = new Student();<br />
+Person p2 = new Teacher();<br />
+Person p3 = new Doctor();<br />
+	</body>		
+</html>

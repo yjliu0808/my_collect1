@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+<h2>
+	回顾:<br />
+1.什么是类？什么是对象？<br />
+2.如何创建类？如何创建对象？如何访问类的成员？<br />
+3.引用类型画等号:指向同一个对象 影响<br />
+&nbsp; 基本类型画等号:赋值 不会影响<br />
+4.null:空，没有指向任何对象<br />
+&nbsp; &nbsp; &nbsp; &nbsp;引用值为null则不能再进行任何操作了<br />
+&nbsp; 若操作则空指针异常NullPointerException<br />
+<br />
+笔记:<br />
+1.方法的签名:方法名+参数列表<br />
+2.方法的重载(Overload):<br />
+&nbsp; 1)发生在一个类中，方法名称相同，参数列表不同<br />
+&nbsp; 2)编译器在编译时会根据方法的签名自动绑定调用不同的方法<br />
+3.构造方法:构造函数、构造器、构建器<br />
+&nbsp; 1)常常用于给成员变量赋初值<br />
+&nbsp; 2)与类同名，没有返回值类型<br />
+&nbsp; 3)在创建(new)对象时被自动调用<br />
+&nbsp; 4)若自己不写构造，则编译器默认提供一个无参空构造<br />
+&nbsp; &nbsp; 若自己写了构造，则不再默认提供<br />
+&nbsp; 5)构造方法可以重载<br />
+4.this:指代当前对象，哪个对象调指的就是哪个对象<br />
+&nbsp; &nbsp; &nbsp; &nbsp;this只能用在方法中，<br />
+&nbsp; 方法中访问成员变量之前默认有个this.<br />
+&nbsp; this的用法:<br />
+&nbsp; &nbsp; 1)this.成员变量名--------访问成员变量<br />
+2)this.方法名()----------调用方法<br />
+3)this()-----------------调用构造方法<br />
+5.引用类型数组:<br />
+&nbsp; 1)Cell[] cells = new Cell[4];<br />
+&nbsp; &nbsp; cells[0] = new Cell(2,5);<br />
+cells[1] = new Cell(2,6);<br />
+cells[2] = new Cell(2,7);<br />
+cells[3] = new Cell(3,6);<br />
+&nbsp; 2)Cell[] cells = new Cell[]{<br />
+&nbsp; &nbsp; &nbsp; new Cell(2,5),<br />
+&nbsp;new Cell(2,6),<br />
+&nbsp;new Cell(2,7),<br />
+&nbsp;new Cell(3,6)<br />
+&nbsp; &nbsp; };<br />
+&nbsp; 3)int[][] arr = new int[3][];<br />
+&nbsp; &nbsp; arr[0] = new int[2];<br />
+&nbsp; &nbsp; arr[1] = new int[3];<br />
+arr[2] = new int[2];<br />
+arr[1][0] = 100; //给arr中第2个元素中的第1个元素赋值为100<br />
+&nbsp; 4)int[][] arr = new int[3][4];<br />
+&nbsp; &nbsp; for(int i=0;i&lt;arr.length;i++){<br />
+&nbsp;for(int j=0;j&lt;arr[i].length;j++){<br />
+&nbsp; &nbsp;arr[i][j] = 100;<br />
+&nbsp;}<br />
+}<br />
+<br />
+任务:<br />
+1.创建T类和J类并测试<br />
+2.创建L类并测试<br />
+3.创建O类并测试<br />
+4.创建I类并测试<br />
+<br />
+1)找对象:一堆T/J/L/I/O/S/Z型对象<br />
+2)抽类:T/J/L/I/O/S/Z类<br />
+3)设计类中的成员变量和方法<br />
+4)创建对象并测试<br />
+<br />
+<br />
+T t = new T(); &nbsp;//00,01,02,11<br />
+T t1 = new T(); //00,01,02,11<br />
+T t2 = new T(); //00,01,02,11<br />
+<br />
+<br />
+T t1 = new T(0,0); //00,01,02,11<br />
+T t2 = new T(2,5); //25,26,27,36<br />
+T t3 = new T(1,6); //16,17,18,27<br />
+T t = new T(); //00,01,02,11<br />
+<br />
+<br />
+TJTest<br />
+<br />
+<br />
+class T{<br />
+&nbsp; Cell[] cells;<br />
+&nbsp; T(){<br />
+&nbsp; &nbsp; this(0,0);<br />
+&nbsp; }<br />
+&nbsp; T(int row,int col){<br />
+&nbsp; &nbsp; cells = new Cell[4];<br />
+cells[0] = new Cell(row,col);<br />
+cells[1] = new Cell(row,col+1);<br />
+cells[2] = new Cell(row,col+2);<br />
+cells[3] = new Cell(row+1,col+1);<br />
+&nbsp; }<br />
+&nbsp; void drop(){<br />
+&nbsp; &nbsp; for(int i=0;i&lt;cells.length;i++){<br />
+&nbsp;cells[i].row++;<br />
+}<br />
+&nbsp; }<br />
+&nbsp; void moveLeft(){<br />
+&nbsp; &nbsp; for(int i=0;i&lt;cells.length;i++){<br />
+&nbsp;cells[i].col--;<br />
+}<br />
+&nbsp; }<br />
+&nbsp; void moveRight(){<br />
+&nbsp; &nbsp; for(int i=0;i&lt;cells.length;i++){<br />
+&nbsp;cells[i].col++;<br />
+}<br />
+&nbsp; }<br />
+&nbsp; void print(){<br />
+&nbsp; &nbsp; for(int i=0;i&lt;cells.length;i++){<br />
+&nbsp;String str = cells[i].getCellInfo();<br />
+&nbsp;System.out.println(str);<br />
+}<br />
+&nbsp; }<br />
+}<br />
+<br />
+class J{<br />
+&nbsp; Cell[] cells;<br />
+&nbsp; J(){<br />
+&nbsp; &nbsp; this(0,0);<br />
+&nbsp; }<br />
+&nbsp; J(int row,int col){<br />
+&nbsp; &nbsp; cells = new Cell[4];<br />
+&nbsp; &nbsp; cells[0] = new Cell(row,col);<br />
+cells[1] = new Cell(row,col+1);<br />
+cells[2] = new Cell(row,col+2);<br />
+cells[3] = new Cell(row+1,col+2);<br />
+&nbsp; }<br />
+&nbsp; void drop(){<br />
+&nbsp; &nbsp; for(int i=0;i&lt;cells.length;i++){<br />
+&nbsp;cells[i].row++;<br />
+}<br />
+&nbsp; }<br />
+&nbsp; void moveLeft(){<br />
+&nbsp; &nbsp; for(int i=0;i&lt;cells.length;i++){<br />
+&nbsp;cells[i].col--;<br />
+}<br />
+&nbsp; }<br />
+&nbsp; void moveRight(){<br />
+&nbsp; &nbsp; for(int i=0;i&lt;cells.length;i++){<br />
+&nbsp;cells[i].col++;<br />
+}<br />
+&nbsp; }<br />
+&nbsp; void print(){<br />
+&nbsp; &nbsp; for(int i=0;i&lt;cells.length;i++){<br />
+&nbsp;String str = cells[i].getCellInfo();<br />
+&nbsp;System.out.println(str);<br />
+}<br />
+&nbsp; }<br />
+}<br />
+<br />
+<br />
+Cell<br />
+cells[i].row = 2;<br />
+cells[i].col = 5;<br />
+cells[i].drop();<br />
+cells[i].moveLeft();<br />
+cells[i].moveRight();<br />
+cells[i].getCellInfo();<br />
+<br />
+int[] arr = new int[3];<br />
+int[][] arr = new int[3][];<br />
+<br />
+Cell[][] cells = new Cell[4][];<br />
+<br />
+数据结构<br />
+<br />
+4为----arr数组中每一个元素的长度<br />
+<br />
+int[][] arr = new int[3][4]; //3行4列<br />
+for(int i=0;i&lt;arr.length;i++){<br />
+&nbsp; for(int j=0;j&lt;arr[i].length;j++){<br />
+&nbsp; &nbsp; arr[i][j] = 100;&nbsp;<br />
+&nbsp; }<br />
+}<br />
+<br />
+int[][] arr = new int[3][];<br />
+arr[0] = new int[4];<br />
+arr[1] = new int[4];<br />
+arr[2] = new int[4];<br />
+<br />
+//声明整型数组的数组arr，包含3个元素<br />
+//每个元素都是int[]型，默认值为null<br />
+<br />
+int[][] arr = new int[3][];<br />
+arr[0] = new int[2];<br />
+arr[1] = new int[3];<br />
+arr[2] = new int[2];<br />
+//给arr中第2个元素中的第1个元素赋值为100<br />
+arr[1][0] = 100;<br />
+<br />
+arr--------------------int[][]<br />
+arr[0]-----------------int[]<br />
+arr[0][0]--------------int<br />
+<br />
+int &nbsp; [] arr &nbsp; = new int[4];<br />
+Cell &nbsp;[] cells = new Cell[4];<br />
+int[] [] arr &nbsp; = new int[3][];<br />
+<br />
+int[] arr = new int[]{<br />
+&nbsp; 1,<br />
+&nbsp; 4,<br />
+&nbsp; 6,<br />
+&nbsp; 8<br />
+};<br />
+Cell[] cells = new Cell[]{<br />
+&nbsp; new Cell(2,5),<br />
+&nbsp; new Cell(2,6),<br />
+&nbsp; new Cell(2,7),<br />
+&nbsp; new Cell(3,6)<br />
+};<br />
+<br />
+int[] arr = new int[4];<br />
+arr[0] = 100;<br />
+<br />
+Cell[] cells = new Cell[4]; //创建Cell数组对象<br />
+cells[0] = new Cell(); //创建Cell对象<br />
+cells[1] = new Cell();<br />
+cells[2] = new Cell();<br />
+cells[3] = new Cell();<br />
+<br />
+//声明Cell型数组cells，包含4个元素<br />
+//每个元素都是Cell型，默认值为null<br />
+Cell[] cells = new Cell[4];<br />
+<br />
+Student[] stus = new Student[20];<br />
+<br />
+//声明整型数组arr，包含4个元素<br />
+//每个元素都是int类型，默认值为0<br />
+int[] arr = new int[4];<br />
+<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+&nbsp; Cell(){<br />
+&nbsp; &nbsp; this(0);<br />
+&nbsp; }<br />
+&nbsp; Cell(int n){<br />
+&nbsp; &nbsp; this(n,n); //调用构造方法<br />
+&nbsp; }<br />
+&nbsp; Cell(int row,int col){<br />
+&nbsp; &nbsp; this.row = row;	//this.row = 0;<br />
+this.col = col; //this.col = 0;<br />
+&nbsp; }<br />
+}<br />
+<br />
+class Cell{<br />
+&nbsp; int row; //成员变量<br />
+&nbsp; int col;<br />
+&nbsp; Cell(int row,int col){ //局部变量<br />
+&nbsp; &nbsp; this.row = row;<br />
+this.col = col;<br />
+&nbsp; }<br />
+}<br />
+<br />
+Cell c = new Cell(2,5);<br />
+Cell cc = new Cell(1,6);<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+&nbsp; Cell(int row1,int col1){<br />
+&nbsp; &nbsp; this.row = row1; //cc.row=1;<br />
+this.col = col1; //cc.col=6;<br />
+&nbsp; }<br />
+}<br />
+<br />
+Cell c = new Cell();<br />
+c.row = 2;<br />
+c.col = 5;<br />
+c.drop();<br />
+c.moveLeft(3);<br />
+String str = c.getCellInfo();<br />
+<br />
+<br />
+<br />
+<br />
+Cell cc = new Cell();<br />
+cc.row = 1;<br />
+cc.col = 6;<br />
+cc.drop();<br />
+cc.moveLeft(2);<br />
+String str = cc.getCellInfo();<br />
+<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+&nbsp; void drop(){<br />
+&nbsp; &nbsp; this.row++; //cc.row++;----2<br />
+&nbsp; }<br />
+&nbsp; void moveLeft(int n){<br />
+&nbsp; &nbsp; this.col-=n; //cc.col-=2;-----4<br />
+&nbsp; }<br />
+&nbsp; String getCellInfo(){<br />
+&nbsp; &nbsp; return this.row+","+this.col; //cc.row+","+cc.col----2,4<br />
+&nbsp; }<br />
+}<br />
+Cell c1 = new Cell(); &nbsp; &nbsp; //0,0<br />
+Cell c2 = new Cell(3); &nbsp; &nbsp;//3,3<br />
+Cell c3 = new Cell(2,5); &nbsp;//2,5<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+&nbsp; Cell(){<br />
+&nbsp; &nbsp; row = 0;<br />
+col = 0;<br />
+&nbsp; }<br />
+&nbsp; Cell(int n){<br />
+&nbsp; &nbsp; row = n;<br />
+col = n;<br />
+&nbsp; }<br />
+&nbsp; Cell(int row1,int col1){<br />
+&nbsp; &nbsp; row = row1;<br />
+col = col1;<br />
+&nbsp; }<br />
+}<br />
+<br />
+Cell c = new Cell(2,5);<br />
+Cell c = new Cell(); //编译错误<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+&nbsp; Cell(int row1,int col1){<br />
+&nbsp; &nbsp; row = row1;<br />
+col = col1;<br />
+&nbsp; }<br />
+}<br />
+<br />
+Student zs = new Student();<br />
+<br />
+<br />
+<br />
+<br />
+Student zs = new Student("zhangsan",25,"廊坊");<br />
+Student ls = new Student("lisi",26,"佳木斯");<br />
+<br />
+class Student{<br />
+&nbsp; String name;<br />
+&nbsp; int age;<br />
+&nbsp; String address;<br />
+&nbsp; //给成员变量初始化<br />
+&nbsp; Student(String name1,int age1,String address1){<br />
+&nbsp; &nbsp; name = name1;<br />
+age = age1;<br />
+address = address1;<br />
+&nbsp; }<br />
+}<br />
+<br />
+//1.创建学生对象<br />
+//2.调用了Student类的无参构造方法<br />
+Student zs = new Student();<br />
+<br />
+Student zs = new Student();<br />
+zs.setInfo("zhangsan",25,"廊坊");<br />
+<br />
+Student ls = new Student();<br />
+ls.setInfo("lisi",26,"佳木斯");<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Student zs = new Student();<br />
+zs.name = "zhangsan";<br />
+zs.age = 25;<br />
+zs.address = "廊坊";<br />
+<br />
+Student ls = new Student();<br />
+ls.name = "lisi";<br />
+ls.age = 26;<br />
+ls.address = "佳木斯";<br />
+<br />
+void println(){<br />
+}<br />
+void println(String str){<br />
+}<br />
+void println(int a){<br />
+}<br />
+void println(double b){<br />
+}<br />
+<br />
+System.out.println();<br />
+System.out.println("Hello");<br />
+System.out.println(245);<br />
+<br />
+System.out.println();<br />
+System.out.println(145);<br />
+System.out.println(5.6);<br />
+System.out.println('c');<br />
+System.out.println(true);<br />
+System.out.println("HelloWorld");<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+&nbsp; void drop(){<br />
+&nbsp; &nbsp; row++;<br />
+&nbsp; }<br />
+&nbsp; void moveLeft(int n){<br />
+&nbsp; &nbsp; col-=n;<br />
+&nbsp; }<br />
+&nbsp; void moveRight(int n){<br />
+&nbsp; &nbsp; col+=n;<br />
+&nbsp; }<br />
+&nbsp; String getCellInfo(){<br />
+&nbsp; &nbsp; return row+","+col;<br />
+&nbsp; }<br />
+}<br />
+<br />
+new Cell();<br />
+Cell c = new Cell();<br />
+c.row = 2;<br />
+	<div>
+		<br />
+	</div>
+<br />
+</h2>
+	</body>		
+</html>

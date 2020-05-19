@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	查看当前系统时间<br />
+SELECT SYSDATE FROM dual<br />
+<br />
+SQL，结构化查询语言<br />
+SQL有一套标准，所有数据库都支持该标准<br />
+所以SQL也是数据库界的"普通话"<br />
+所有数据库操作都是基于SQL语句进行的<br />
+<br />
+SQL根据不同的操作分为5类:<br />
+DDL数据定义语言,用于维护数据库对象使用<br />
+表是数据库对象之一。<br />
+<br />
+创建表employee<br />
+CREATE TABLE employee(<br />
+id NUMBER(4),<br />
+name VARCHAR2(20),<br />
+gender CHAR(1),<br />
+birth DATE,<br />
+&nbsp; salary NUMBER(6,2),<br />
+&nbsp; job VARCHAR2(30),<br />
+&nbsp; deptno NUMBER(2)<br />
+)<br />
+<br />
+查看表结构<br />
+DESC employee<br />
+<br />
+数据库中字符串的字面量是使用单引号括起来的<br />
+并且字符串内容是区分大小写的。<br />
+<br />
+数据库中所有数据类型默认值都是NULL<br />
+可以通过DEFAULT关键字为字段单独指定默认值。<br />
+<br />
+删除表<br />
+DROP TABLE employee<br />
+<br />
+CREATE TABLE employee(<br />
+id NUMBER(4),<br />
+name VARCHAR2(20) NOT NULL,<br />
+gender CHAR(1) DEFAULT 'M',<br />
+birth DATE,<br />
+&nbsp; salary NUMBER(6,2) DEFAULT 5000,<br />
+&nbsp; job VARCHAR2(30),<br />
+&nbsp; deptno NUMBER(2)<br />
+)<br />
+<br />
+DESC employee<br />
+<br />
+<br />
+修改表<br />
+1:修改表名<br />
+RENAME old_name TO new_name<br />
+RENAME employee TO myemp<br />
+<br />
+DESC myemp<br />
+<br />
+2:修改表结构<br />
+2.1:添加新字段<br />
+添加hiredate字段<br />
+ALTER TABLE myemp<br />
+ADD(<br />
+&nbsp; hiredate DATE DEFAULT SYSDATE<br />
+)<br />
+<br />
+字段只能被追加到表的最后<br />
+DESC myemp<br />
+<br />
+2.2:删除现有字段<br />
+删除hiredate字段<br />
+ALTER TABLE myemp<br />
+DROP(hiredate)<br />
+<br />
+DESC myemp<br />
+<br />
+2.3:修改现有字段<br />
+修改字段的类型，长度，添加默认值，约束等<br />
+修改表结构时尽量在表中没有数据的时候进行。<br />
+当有数据时，尽量不要修改字段的类型，修改<br />
+长度时尽量增大不要减小，否则都可能修改失败。<br />
+<br />
+ALTER TABLE myemp<br />
+MODIFY(<br />
+&nbsp; job VARCHAR2(40) DEFAULT 'CLERK'<br />
+)<br />
+<br />
+<br />
+DML语句<br />
+DML是对表中数据进行维护的语句，包含<br />
+增，删，改操作。DML是伴随事务操作的。<br />
+<br />
+INSERT语句，用于向表中插入数据:<br />
+<br />
+INSERT INTO myemp<br />
+(id,name,salary,deptno)<br />
+VALUES<br />
+(1001,'jack',5000,10)<br />
+<br />
+SELECT * FROM myemp<br />
+<br />
+COMMIT<br />
+<br />
+不指定字段则是全列插入<br />
+<br />
+插入日期类型数据，推荐使用TO_DATE函数进行<br />
+INSERT INTO myemp&nbsp;<br />
+(id, name, job,birth)&nbsp;<br />
+VALUES<br />
+(1003,'donna','MANAGER',&nbsp;<br />
+&nbsp;TO_DATE('2009-09-01','YYYY-MM-DD')<br />
+)<br />
+<br />
+SELECT * FROM myemp<br />
+<br />
+UPDATE语句<br />
+修改表中数据<br />
+修改数据通常要添加WHERE子句来限定要修改<br />
+数据的条件。否则是整张表数据全部修改。<br />
+UPDATE myemp<br />
+SET gender='F',salary=4000<br />
+WHERE name='jack'<br />
+<br />
+DELETE语句，删除数据<br />
+同样的，删除也需要WHERE，否则是清空表操作!<br />
+<br />
+DELETE FROM myemp<br />
+WHERE name='jack'<br />
+
+	</body>
+</html>

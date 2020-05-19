@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>day01</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>SSH</h1>
+<h2>是什么？</h2>
+<p>Struts2+Spring+Hibernate</p>
+<h2>阶段安排</h2>
+<ul>
+<li>
+<p>day01:Struts2简介/消息传递/Session的使用</p>
+</li>
+<li>
+<p>day02:Struts2+Spring/result常用类型/拦截器</p>
+</li>
+<li>
+<p>day03:ValueStack/Struts2+Spring+Mybatis/hibernate</p>
+</li>
+<li>
+<p>day04:ID生成规则/对象声明周期/HQL查询</p>
+</li>
+<li>
+<p>day05:Struts2+Spring+Hibernate</p>
+</li>
+</ul>
+<h1>Struts2简介</h1>
+<h2>是什么？</h2>
+<p>基于MVC设计模式的web应用框架</p>
+<ol>
+<li>来自于Apache</li>
+<li>Struts1 和Struts2没有任何关系</li>
+<li>Struts2的前身是WebWork<br />
+   Struts1/Struts2/SpringMVC都是MVC设计模式的表现层框架</li>
+</ol>
+<h2>怎么用？</h2>
+<ol>
+<li>
+<p>导包 Struts2-core</p>
+</li>
+<li>
+<p>配置主控制器(web.xml)</p>
+</li>
+<li>
+<p>配置struts.xml(名字不可更改)</p>
+</li>
+</ol>
+<h2>手动创建struts.xml模板</h2>
+<ol>
+<li>
+<p>创建空Struts.xml文件</p>
+</li>
+<li>
+<p>从Struts-default中抽取DTD文件声明，追加到Struts.xml中</p>
+</li>
+<li>
+<p>输入<struts><struts/>根标签</p>
+</li>
+</ol>
+<h2>Struts.xml常用标签</h2>
+<ul>
+<li>
+<p>package-namespace=&quot;&quot; 匹配请求路径 </p>
+</li>
+<li>
+<p>extends=&quot;struts-default&quot; 必须指定</p>
+</li>
+<li>
+<p>action-name=&quot;&quot; 匹配具体请求名</p>
+</li>
+<li>
+<p>action-class=&quot;&quot; 指定处理该请求的类</p>
+</li>
+<li>
+<p>result-name=&quot;&quot; 匹配返回结果</p>
+</li>
+</ul>
+<h2>案例：HelloWorld</h2>
+<p><strong>步骤：</strong></p>
+<ol>
+<li>创建项目-导包-配置(web.xml)</li>
+<li>配置Struts.xml</li>
+<li>实现处理类HelloAction</li>
+<li>显示效果(msg.jsp)</li>
+</ol>
+<h1>消息传递</h1>
+<h2>什么是？</h2>
+<p>浏览器与服务器之间的数据传递。</p>
+<h2>有控制器向浏览器发送数据</h2>
+<h3>怎么实现？</h3>
+<ol>
+<li>在控制器(HelloAction类)中增加属性，并针对属性增加GET()方法</li>
+<li>在控制器方法中为属性赋值</li>
+<li>JSP采用EL表达式获取属性值</li>
+</ol>
+<h2>从浏览器向控制器传递数据</h2>
+<h3>基本属性的传递方式(个体传递)</h3>
+<ul>
+<li>在控制器中定义与浏览器页面元素name属性一致的Bean属性</li>
+<li>针对新增的Bean属性，增加SET/GET方法</li>
+</ul>
+<h3>域模型传递方式(打包的传递)</h3>
+<ul>
+<li>便捷的处理表单项目</li>
+<li>表单被重用时，优势尤其明显</li>
+</ul>
+<h1>登录逻辑</h1>
+<ol>
+<li>获取数据</li>
+<li>调用service，验证数据信息</li>
+<li>登录成功：保存用户信息(Session)</li>
+<li>登录失败：保留在登录页面，提示登录失败</li>
+</ol>
+<h2>回顾Session：是什么？会话对象，共享数据。</h2>
+<h2>Struts2下获取Session对象的方式</h2>
+<ul>
+<li>
+<p>通过工厂类获取对象</p>
+</li>
+<li>
+<p>通过注入方式获取对象</p>
+</li>
+</ul>
+<h2>怎么用？</h2>
+<ul>
+<li>
+<p>控制器实现 implements SessionAware</p>
+</li>
+<li>
+<p>注入Session（定义属性/定义SET/GET）</p>
+</li>
+<li>
+<p>调用Session API</p>
+</li>
+</ul>
+<h1>作业：</h1>
+<ul>
+<li>搭建Struts2环境</li>
+<li>利用基本属性传递方式实现登录需求</li>
+<li>利用域模型传递方式实现登录需求</li>
+</ul>
+<h1>面试题：springMVC和Struts2的区别？</h1>
+<ul>
+<li>Struts2是类级别拦截，springMVC是方法级别的拦截</li>
+<li>springMVC方法之间是独立的，变量不共享；Struts2的方法虽然独立，但Action变量是共享的</li>
+<li>Struts2为保证线程安全，每一个请求都生成一个action为其服务，比较消耗内存</li>
+<li>springMVC与Spring框架整合是无缝，在项目管理和安全性上比Struts2好。</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

@@ -1,0 +1,4327 @@
+From: <Saved by Blink>
+Subject: SUPERDOC
+Date: Wed, 28 Feb 2017 10:37:16 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--sRzuvbV4hRR4vWFvn6cfEBioAvo480Wq99a8Bwbh8B----"
+
+------MultipartBoundary--sRzuvbV4hRR4vWFvn6cfEBioAvo480Wq99a8Bwbh8B----
+Content-Type: text/html
+Content-ID: <frame-135-3273afda-d8ab-48e9-8d12-63bb22705b6f@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head><meta http-equiv=3D"Cont=
+ent-Type" content=3D"text/html; charset=3DUTF-8">
+    <title>SUPERDOC</title>
+   =20
+   =20
+   =20
+   =20
+    <link type=3D"text/css" href=3D"http://pdf7.tarena.com.cn/tts8_source/t=
+tsPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.files/index.css" rel=
+=3D"Stylesheet">
+    <link type=3D"text/css" href=3D"http://pdf7.tarena.com.cn/tts8_source/t=
+tsPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.files/jquery.snippet=
+.css" rel=3D"Stylesheet">
+  </head>
+  <body>
+    <div class=3D"source_style_superdoc">
+      <a name=3D"page_top_superdoc" id=3D"top_anchor">
+      </a><a id=3D"link_top" href=3D"http://pdf7.tarena.com.cn/tts8_source/=
+ttsPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#page_top_super=
+doc">Top</a>
+      <a name=3D"Key01">
+      </a>
+      <ol class=3D"index">
+        <li>
+          <a href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD=
+_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#Key01">=E6=97=A5=E6=9C=9F=E6=
+=93=8D=E4=BD=9C</a>
+        </li>
+        <li>
+          <a href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD=
+_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#Key02">=E9=9B=86=E5=90=88=E6=
+=A1=86=E6=9E=B6</a>
+        </li>
+      </ol>
+      <h1>1. =E6=97=A5=E6=9C=9F=E6=93=8D=E4=BD=9C</h1>
+      <a name=3D"Key01_01">
+      </a>
+      <h2>1.1. Date=E5=8F=8A=E5=85=B6=E5=B8=B8=E7=94=A8API</h2>
+      <a name=3D"Key01_01_01">
+      </a>
+      <h3>1.1.1. JAVA =E4=B8=AD=E7=9A=84=E6=97=B6=E9=97=B4</h3>
+      <p>Java=E4=B8=AD=E7=9A=84=E6=97=B6=E9=97=B4=E4=BD=BF=E7=94=A8=E6=A0=
+=87=E5=87=86=E7=B1=BB=E5=BA=93=E7=9A=84Date=E7=B1=BB=E8=A1=A8=E7=A4=BA=EF=
+=BC=8C=E6=98=AF=E7=94=A8=E8=B7=9D=E7=A6=BB=E4=B8=80=E4=B8=AA=E5=9B=BA=E5=AE=
+=9A=E6=97=B6=E9=97=B4=E7=82=B9=E7=9A=84=E6=AF=AB=E7=A7=92=E6=95=B0=EF=BC=88=
+=E5=8F=AF=E6=AD=A3=E5=8F=AF=E8=B4=9F=EF=BC=8Clong=E7=B1=BB=E5=9E=8B=EF=BC=
+=89=E8=A1=A8=E8=BE=BE=E4=B8=80=E4=B8=AA=E7=89=B9=E5=AE=9A=E7=9A=84=E6=97=B6=
+=E9=97=B4=E7=82=B9=E3=80=82</p>
+      <p>=E5=9B=BA=E5=AE=9A=E7=9A=84=E6=97=B6=E9=97=B4=E7=82=B9=E5=8F=AB=E7=
+=BA=AA=E5=85=83=EF=BC=88epoch=EF=BC=89=EF=BC=8C=E6=98=AFUTC=E6=97=B6=E9=97=
+=B41970=E5=B9=B4 1=E6=9C=88 1=E6=97=A5  00:00:00=E3=80=82</p>
+      <p>UTC=EF=BC=88Universal Time Coordinated=E4=B8=96=E7=95=8C=E8=B0=83=
+=E6=95=B4=E6=97=B6=E9=97=B4=EF=BC=89=E4=B8=8EGMT=EF=BC=88Greenwich Mean Tim=
+e=E6=A0=BC=E6=9E=97=E5=A8=81=E6=B2=BB=E6=97=B6=E9=97=B4=EF=BC=89=E4=B8=80=
+=E6=A0=B7=EF=BC=8C=E6=98=AF=E4=B8=80=E7=A7=8D=E5=85=B7=E6=9C=89=E5=AE=9E=E9=
+=99=85=E7=9B=AE=E7=9A=84=E7=9A=84=E7=A7=91=E5=AD=A6=E6=A0=87=E5=87=86=E6=97=
+=B6=E9=97=B4=E3=80=82</p>
+      <a name=3D"Key01_01_02">
+      </a>
+      <h3>1.1.2. Date=E7=B1=BB=E7=AE=80=E4=BB=8B</h3>
+      <p>java.util.Date =E7=B1=BB=E5=B0=81=E8=A3=85=E6=97=A5=E6=9C=9F=E5=8F=
+=8A=E6=97=B6=E9=97=B4=E4=BF=A1=E6=81=AF=E3=80=82</p>
+      <p>Date=E7=B1=BB=E7=9A=84=E5=A4=A7=E5=A4=9A=E6=95=B0=E7=94=A8=E4=BA=
+=8E=E8=BF=9B=E8=A1=8C=E6=97=B6=E9=97=B4=E5=88=86=E9=87=8F=E8=AE=A1=E7=AE=97=
+=E7=9A=84=E6=96=B9=E6=B3=95=E5=B7=B2=E7=BB=8F=E8=A2=ABCalendar=E5=8F=96=E4=
+=BB=A3=E3=80=82=E6=9F=A5=E7=9C=8B=E5=A6=82=E4=B8=8B=E4=BB=A3=E7=A0=81=EF=BC=
+=9A</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li>    <span class=3D"sh_usertype">Date</span><span cla=
+ss=3D"sh_normal"> </span>date <span class=3D"sh_symbol">=3D</span> <span cl=
+ass=3D"sh_keyword">new</span> <span class=3D"sh_function">Date</span><span =
+class=3D"sh_symbol">();</span>         </li><li>    <span class=3D"sh_comme=
+nt">// =E7=B3=BB=E7=BB=9F=E5=BD=93=E5=89=8D=E7=9A=84=E6=97=A5=E6=9C=9F=E5=
+=8F=8A=E6=97=B6=E9=97=B4=E4=BF=A1=E6=81=AF</span></li><li>   System<span cl=
+ass=3D"sh_symbol">.</span>out<span class=3D"sh_symbol">.</span><span class=
+=3D"sh_function">println</span><span class=3D"sh_symbol">(</span>date<span =
+class=3D"sh_symbol">);</span>        </li><li>   <span class=3D"sh_comment"=
+>// Sun Jan 06 11:52:55 CST 2013</span></li><li>   <span class=3D"sh_type">=
+long</span> time <span class=3D"sh_symbol">=3D</span> date<span class=3D"sh=
+_symbol">.</span><span class=3D"sh_function">getTime</span><span class=3D"s=
+h_symbol">();</span>   </li><li>    <span class=3D"sh_comment">//1970=E5=B9=
+=B41=E6=9C=881=E6=97=A5=E8=87=B3=E4=BB=8A=E7=9A=84=E6=AF=AB=E7=A7=92=E6=95=
+=B0</span></li></ol></pre><pre class=3D"snippet-textonly sh_sourceCode" sty=
+le=3D"display:none;">    Date date =3D new Date();        =20
+    // =E7=B3=BB=E7=BB=9F=E5=BD=93=E5=89=8D=E7=9A=84=E6=97=A5=E6=9C=9F=E5=
+=8F=8A=E6=97=B6=E9=97=B4=E4=BF=A1=E6=81=AF
+   System.out.println(date);       =20
+   // Sun Jan 06 11:52:55 CST 2013
+   long time =3D date.getTime();  =20
+    //1970=E5=B9=B41=E6=9C=881=E6=97=A5=E8=87=B3=E4=BB=8A=E7=9A=84=E6=AF=AB=
+=E7=A7=92=E6=95=B0
+</pre></div></div>
+      <p>=E5=9B=A0=E4=B8=BADate=E7=9A=84=E8=AE=BE=E8=AE=A1=E5=85=B7=E6=9C=
+=89"=E5=8D=83=E5=B9=B4=E8=99=AB"=E4=BB=A5=E5=8F=8A"=E6=97=B6=E5=8C=BA"=E7=
+=9A=84=E9=97=AE=E9=A2=98=EF=BC=8C=E6=89=80=E4=BB=A5Date=E4=B8=AD=E7=9A=84=
+=E5=A4=A7=E9=83=A8=E5=88=86=E6=96=B9=E6=B3=95=E5=B7=B2=E7=BB=8F=E4=B8=8D=E5=
+=BB=BA=E8=AE=AE=E4=BD=BF=E7=94=A8=E4=BA=86=EF=BC=8C=E5=AE=83=E4=BB=AC=E9=83=
+=BD=E8=A2=ABjava.util.Calendar=E7=B1=BB=E6=89=80=E5=8F=96=E4=BB=A3=EF=BC=8C=
+=E8=AF=A5=E7=B1=BB=E6=88=91=E4=BB=AC=E7=A8=8D=E5=90=8E=E4=BC=9A=E8=AE=B2=E8=
+=A7=A3=E3=80=82</p>
+      <a name=3D"Key01_01_03">
+      </a>
+      <h3>1.1.3. setTime=E4=B8=8EgetTime=E6=96=B9=E6=B3=95</h3>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_type">void</span> <span class=3D"s=
+h_function">setTime</span><span class=3D"sh_symbol">(</span><span class=3D"=
+sh_type">long</span> time<span class=3D"sh_symbol">):</span></li></ol></pre=
+><pre class=3D"snippet-textonly sh_sourceCode" style=3D"display:none;">void=
+ setTime(long time):
+</pre></div></div>
+      <p>=E8=AF=A5=E6=96=B9=E6=B3=95=E7=94=A8=E4=BA=8E=E4=B8=BA=E4=B8=80=E4=
+=B8=AADate=E5=AF=B9=E8=B1=A1=E8=AE=BE=E7=BD=AE=E5=85=B6=E9=9C=80=E8=A6=81=
+=E8=A1=A8=E7=A4=BA=E7=9A=84=E6=97=B6=E9=97=B4=EF=BC=8C=E8=AF=A5=E5=8F=82=E6=
+=95=B0=E4=B8=BA=E4=B8=80=E4=B8=AAlong=E5=80=BC=EF=BC=8C=E5=85=B6=E5=90=AB=
+=E4=B9=89=E6=98=AF=E9=9C=80=E8=A6=81=E8=A1=A8=E7=A4=BA=E7=9A=84=E8=BF=99=E4=
+=B8=AA=E6=97=B6=E9=97=B4=E7=82=B9=E8=B7=9D=E7=A6=BB1970=E5=B9=B41=E6=9C=881=
+=E6=97=A5 00:00:00=E4=B9=8B=E9=97=B4=E7=9A=84=E6=AF=AB=E7=A7=92=E5=B7=AE=E3=
+=80=82</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_type">long</span> <span class=3D"s=
+h_function">getTime</span><span class=3D"sh_symbol">()</span></li></ol></pr=
+e><pre class=3D"snippet-textonly sh_sourceCode" style=3D"display:none;">lon=
+g getTime()
+</pre></div></div>
+      <p>=E8=AF=A5=E6=96=B9=E6=B3=95=E7=94=A8=E4=BA=8E=E8=8E=B7=E5=8F=96=E4=
+=B8=80=E4=B8=AADate=E5=AF=B9=E8=B1=A1=E6=89=80=E8=A1=A8=E7=A4=BA=E7=9A=84=
+=E6=97=B6=E9=97=B4=E7=82=B9=EF=BC=8C=E8=AF=A5=E8=BF=94=E5=9B=9E=E5=80=BC=E4=
+=B8=BA=E4=B8=80=E4=B8=AAlong=E5=80=BC=EF=BC=8C=E8=A1=A8=E7=A4=BA=E8=AF=A5=
+=E6=97=B6=E9=97=B4=E7=82=B9=E8=B7=9D=E7=A6=BB1970=E5=B9=B41=E6=9C=881=E6=97=
+=A5 00:00:00=E4=B9=8B=E9=97=B4=E7=9A=84=E6=AF=AB=E7=A7=92=E5=B7=AE=E3=80=82=
+</p>
+      <a name=3D"Key01_01_04">
+      </a>
+      <h3>1.1.4. Date =E9=87=8D=E5=86=99 toString=E6=96=B9=E6=B3=95</h3>
+      <p>Date=E9=87=8D=E5=86=99=E4=BA=86toString()=E6=96=B9=E6=B3=95=EF=BC=
+=8C=E7=94=A8=E4=B8=80=E4=B8=AA=E5=AD=97=E7=AC=A6=E4=B8=B2=E6=9D=A5=E6=8F=8F=
+=E8=BF=B0=E5=BD=93=E5=89=8DDate=E5=AF=B9=E8=B1=A1=E6=89=80=E8=A1=A8=E7=A4=
+=BA=E7=9A=84=E6=97=B6=E9=97=B4=E3=80=82</p>
+      <p>=E6=A0=BC=E5=BC=8F=E5=A6=82=E4=B8=8B:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li>&nbsp;&nbsp;&nbsp;&nbsp;Mon Feb <span class=3D"sh_nu=
+mber">17</span> <span class=3D"sh_number">15</span><span class=3D"sh_symbol=
+">:</span><span class=3D"sh_number">36</span><span class=3D"sh_symbol">:</s=
+pan><span class=3D"sh_number">55</span> CST <span class=3D"sh_number">2014<=
+/span></li></ol></pre><pre class=3D"snippet-textonly sh_sourceCode" style=
+=3D"display:none;">	Mon Feb 17 15:36:55 CST 2014
+</pre></div></div>
+      <p>=E7=94=B1=E6=AD=A4=E6=88=91=E4=BB=AC=E5=8F=AF=E4=BB=A5=E7=9C=8B=E5=
+=87=BA=EF=BC=8C=E5=AE=9E=E9=99=85=E4=B8=8ADate=E7=9A=84toString()=E6=96=B9=
+=E6=B3=95=E8=BF=94=E5=9B=9E=E7=9A=84=E5=AD=97=E7=AC=A6=E4=B8=B2=E8=99=BD=E7=
+=84=B6=E5=BE=88=E6=B8=85=E6=99=B0=E7=9A=84=E6=8F=8F=E8=BF=B0=E4=BA=86=E6=97=
+=B6=E9=97=B4=EF=BC=8C=E4=BD=86=E6=98=AF=E5=AF=B9=E4=BA=8E=E9=9D=9E=E8=8B=B1=
+=E8=AF=AD=E5=9C=B0=E5=8C=BA=E6=9D=A5=E8=AE=B2=EF=BC=8C=E8=AF=A5=E5=AD=97=E7=
+=AC=A6=E4=B8=B2=E4=B8=8D=E5=A4=9F=E5=8F=8B=E5=A5=BD=EF=BC=8C=E6=88=91=E4=BB=
+=AC=E6=9B=B4=E5=B8=8C=E6=9C=9B=E6=8C=89=E7=85=A7=E7=89=B9=E5=AE=9A=E5=9C=B0=
+=E5=8C=BA=E8=A1=A8=E7=A4=BA=E6=97=B6=E9=97=B4=E7=9A=84=E6=96=B9=E5=BC=8F=E3=
+=80=82=E6=AF=94=E5=A6=82=E6=88=91=E4=BB=AC=E6=9B=B4=E4=B9=A0=E6=83=AF=E4=BB=
+=A5=E4=B8=8B=E7=9A=84=E9=A3=8E=E6=A0=BC:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class=3D"sh_number">20=
+14-02-17</span> <span class=3D"sh_number">15</span><span class=3D"sh_symbol=
+">:</span><span class=3D"sh_number">36</span><span class=3D"sh_symbol">:</s=
+pan><span class=3D"sh_number">55</span> =E6=98=9F=E6=9C=9F=E4=B8=80</li></o=
+l></pre><pre class=3D"snippet-textonly sh_sourceCode" style=3D"display:none=
+;">	2014-02-17 15:36:55 =E6=98=9F=E6=9C=9F=E4=B8=80
+</pre></div></div>
+      <p>=E9=82=A3=E4=B9=88=E6=9C=89=E6=B2=A1=E6=9C=89=E6=96=B9=E5=BC=8F=E5=
+=8F=AF=E4=BB=A5=E4=BB=A3=E6=9B=BF Date=E7=9A=84toString()=E6=96=B9=E6=B3=95=
+=E6=9D=A5=E8=8E=B7=E5=8F=96=E4=B8=80=E4=B8=AA=E7=89=B9=E5=AE=9A=E6=A0=BC=E5=
+=BC=8F=E7=9A=84=E5=AD=97=E7=AC=A6=E4=B8=B2=E5=91=A2=EF=BC=9F=E7=AD=94=E6=A1=
+=88=E6=98=AF=E8=82=AF=E5=AE=9A=E7=9A=84,java=E4=B8=BA=E6=88=91=E4=BB=AC=E6=
+=8F=90=E4=BE=9B=E4=BA=86=E4=B8=80=E4=B8=AA=E7=B1=BB=EF=BC=8C=E5=8F=AB=E5=81=
+=9ASimpleDateFormat,=E8=AF=A5=E7=B1=BB=E5=B0=B1=E5=8F=AF=E4=BB=A5=E5=AE=8C=
+=E6=88=90=E3=80=82=E4=B8=8B=E9=9D=A2=E6=88=91=E4=BB=AC=E6=9D=A5=E5=AD=A6=E4=
+=B9=A0=E4=B8=80=E4=B8=8B=E8=BF=99=E4=B8=AA=E7=B1=BB=E3=80=82</p>
+      <a name=3D"Key01_02">
+      </a>
+      <h2>1.2. SimpleDateFormat</h2>
+      <a name=3D"Key01_02_01">
+      </a>
+      <h3>1.2.1. SimpleDateFormat=E7=AE=80=E4=BB=8B</h3>
+      <p>SimpleDateFormat =E6=98=AF=E4=B8=80=E4=B8=AA=E4=BB=A5=E4=B8=8E=E8=
+=AF=AD=E8=A8=80=E7=8E=AF=E5=A2=83=E6=9C=89=E5=85=B3=E7=9A=84=E6=96=B9=E5=BC=
+=8F=E6=9D=A5=E6=A0=BC=E5=BC=8F=E5=8C=96=E5=92=8C=E8=A7=A3=E6=9E=90=E6=97=A5=
+=E6=9C=9F=E7=9A=84=E5=85=B7=E4=BD=93=E7=B1=BB=E3=80=82=E5=AE=83=E5=85=81=E8=
+=AE=B8=E8=BF=9B=E8=A1=8C=E6=A0=BC=E5=BC=8F=E5=8C=96=EF=BC=88=E6=97=A5=E6=9C=
+=9F -&gt; =E6=96=87=E6=9C=AC=EF=BC=89=E3=80=81=E8=A7=A3=E6=9E=90=EF=BC=88=
+=E6=96=87=E6=9C=AC -&gt; =E6=97=A5=E6=9C=9F=EF=BC=89=E5=92=8C=E8=A7=84=E8=
+=8C=83=E5=8C=96=E3=80=82</p>
+      <p>=E7=AE=80=E5=8D=95=E7=9A=84=E8=AF=B4=EF=BC=8CSimpleDateFormat=E5=
+=B0=B1=E6=98=AF=E6=A0=B9=E6=8D=AE=E4=B8=80=E4=B8=AA=E7=89=B9=E5=AE=9A=E7=9A=
+=84=E6=97=A5=E6=9C=9F=E6=A0=BC=E5=BC=8F=E5=9C=A8=E5=AD=97=E7=AC=A6=E4=B8=B2=
+=E4=B8=8EDate=E4=B9=8B=E9=97=B4=E7=9B=B8=E4=BA=92=E8=BD=AC=E6=8D=A2=E3=80=
+=82=E9=82=A3=E4=B9=88=E8=BF=99=E4=B8=AA=E7=89=B9=E5=AE=9A=E7=9A=84=E6=97=A5=
+=E6=9C=9F=E6=A0=BC=E5=BC=8F=E6=98=AF=E6=80=8E=E6=A0=B7=E5=AE=9A=E4=B9=89=E7=
+=9A=84=E5=91=A2=EF=BC=9F=E4=B8=8B=E9=9D=A2=E6=88=91=E4=BB=AC=E6=9D=A5=E5=AD=
+=A6=E4=B9=A0=E4=B8=80=E4=B8=8B=E5=A6=82=E4=BD=95=E5=AE=9A=E4=B9=89=E6=97=A5=
+=E6=9C=9F=E6=A0=BC=E5=BC=8F=E5=AD=97=E7=AC=A6=E4=B8=B2=E3=80=82</p>
+      <a name=3D"Key01_02_02">
+      </a>
+      <h3>1.2.2. =E6=97=A5=E6=9C=9F=E6=A8=A1=E5=BC=8F=E5=8C=B9=E9=85=8D=E5=
+=AD=97=E7=AC=A6=E4=B8=B2</h3>
+      <p>=E6=97=A5=E6=9C=9F=E6=A8=A1=E5=BC=8F=E7=9A=84=E5=8C=B9=E9=85=8D=E5=
+=AD=97=E7=AC=A6=E4=B8=B2=E5=A6=82=E8=A1=A8=EF=BC=8D1=E6=89=80=E7=A4=BA=E3=
+=80=82</p>
+      <div class=3D"table">
+        <p>=E8=A1=A8=EF=BC=8D1 =E6=97=A5=E6=9C=9F=E6=A8=A1=E5=BC=8F=E5=8C=
+=B9=E9=85=8D=E5=AD=97=E7=AC=A6=E4=B8=B2</p>
+        <img src=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_=
+N_V06/JAVASE01/DAY03/SUPERDOC/01/index.files/table001.png">
+      </div>
+      <p>=E4=BE=8B=E5=A6=82: yyyy=E5=B9=B4MM=E6=9C=88dd=E6=97=A5--HH:mm:ss =
+ =E5=8F=AF=E4=BB=A5=E5=8C=B9=E9=85=8D 2014=E5=B9=B401=E6=9C=8806=E6=97=A5--=
+13:22:41</p>
+      <a name=3D"Key01_02_03">
+      </a>
+      <h3>1.2.3. =E5=B0=86Date=E6=A0=BC=E5=BC=8F=E5=8C=96=E4=B8=BAString</h=
+3>
+      <p>=E5=B0=86Date=E6=A0=BC=E5=BC=8F=E5=8C=96=E4=B8=BAString=EF=BC=8C=
+=E6=88=91=E4=BB=AC=E9=9C=80=E8=A6=81=E4=BD=BF=E7=94=A8SimpleDateFormat=E6=
+=8F=90=E4=BE=9B=E7=9A=84=E6=96=B9=E6=B3=95:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class=3D"sh_usertype">=
+String</span><span class=3D"sh_normal"> </span><span class=3D"sh_function">=
+format</span><span class=3D"sh_symbol">(</span><span class=3D"sh_usertype">=
+Date</span><span class=3D"sh_normal"> </span>d<span class=3D"sh_symbol">)</=
+span></li></ol></pre><pre class=3D"snippet-textonly sh_sourceCode" style=3D=
+"display:none;">	String format(Date d)
+</pre></div></div>
+      <p>=E4=BE=8B=E5=A6=82:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_usertype">Date</span><span class=
+=3D"sh_normal"> </span>now <span class=3D"sh_symbol">=3D</span> <span class=
+=3D"sh_keyword">new</span> <span class=3D"sh_function">Date</span><span cla=
+ss=3D"sh_symbol">();</span><span class=3D"sh_comment">//=E9=BB=98=E8=AE=A4=
+=E5=AE=9E=E4=BE=8B=E5=8C=96=E7=9A=84Date=E8=A1=A8=E7=A4=BA=E5=BD=93=E5=89=
+=8D=E7=B3=BB=E7=BB=9F=E6=97=B6=E9=97=B4</span></li><li><span class=3D"sh_us=
+ertype">SimpleDateFormat</span><span class=3D"sh_normal"> </span>sdf <span =
+class=3D"sh_symbol">=3D</span> <span class=3D"sh_keyword">new</span> <span =
+class=3D"sh_function">SimpleDateFormat</span><span class=3D"sh_symbol">(</s=
+pan><span class=3D"sh_string">"yyyy-MM-dd HH:mm:ss"</span><span class=3D"sh=
+_symbol">);</span></li><li><span class=3D"sh_usertype">String</span><span c=
+lass=3D"sh_normal"> </span>str <span class=3D"sh_symbol">=3D</span> sdf<spa=
+n class=3D"sh_symbol">.</span><span class=3D"sh_function">format</span><spa=
+n class=3D"sh_symbol">(</span>now<span class=3D"sh_symbol">);</span></li><l=
+i>System<span class=3D"sh_symbol">.</span>out<span class=3D"sh_symbol">.</s=
+pan><span class=3D"sh_function">println</span><span class=3D"sh_symbol">(</=
+span>str<span class=3D"sh_symbol">);</span><span class=3D"sh_comment">//201=
+4-01-06 13:21:12</span></li></ol></pre><pre class=3D"snippet-textonly sh_so=
+urceCode" style=3D"display:none;">Date now =3D new Date();//=E9=BB=98=E8=AE=
+=A4=E5=AE=9E=E4=BE=8B=E5=8C=96=E7=9A=84Date=E8=A1=A8=E7=A4=BA=E5=BD=93=E5=
+=89=8D=E7=B3=BB=E7=BB=9F=E6=97=B6=E9=97=B4
+SimpleDateFormat sdf =3D new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+String str =3D sdf.format(now);
+System.out.println(str);//2014-01-06 13:21:12
+</pre></div></div>
+      <a name=3D"Key01_02_04">
+      </a>
+      <h3>1.2.4. =E5=B0=86String=E8=A7=A3=E6=9E=90=E4=B8=BADate</h3>
+      <p>=E5=B0=86String=E6=A0=BC=E5=BC=8F=E5=8C=96=E4=B8=BADate=EF=BC=8C=
+=E6=88=91=E4=BB=AC=E9=9C=80=E8=A6=81=E4=BD=BF=E7=94=A8SimpleDateFormat=E6=
+=8F=90=E4=BE=9B=E7=9A=84=E6=96=B9=E6=B3=95:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class=3D"sh_usertype">=
+Date</span><span class=3D"sh_normal"> </span><span class=3D"sh_function">pa=
+rse</span><span class=3D"sh_symbol">(</span><span class=3D"sh_usertype">Str=
+ing</span><span class=3D"sh_normal"> </span>s<span class=3D"sh_symbol">)</s=
+pan></li></ol></pre><pre class=3D"snippet-textonly sh_sourceCode" style=3D"=
+display:none;">	Date parse(String s)
+</pre></div></div>
+      <p>=E4=BE=8B=E5=A6=82:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_usertype">String</span><span class=
+=3D"sh_normal"> </span>str <span class=3D"sh_symbol">=3D</span> <span class=
+=3D"sh_string">"2008=E5=B9=B408=E6=9C=8808=E6=97=A5 12:22:46"</span><span c=
+lass=3D"sh_symbol">;</span></li><li>SimpleDateFormat sdf </li><li>&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=
+=3D"sh_symbol">=3D</span> <span class=3D"sh_keyword">new</span> <span class=
+=3D"sh_function">SimpleDateFormat</span><span class=3D"sh_symbol">(</span><=
+span class=3D"sh_string">"yyyy=E5=B9=B4MM=E6=9C=88dd=E6=97=A5 HH:mm:ss"</sp=
+an><span class=3D"sh_symbol">);</span></li><li><span class=3D"sh_usertype">=
+Date</span><span class=3D"sh_normal"> </span>date <span class=3D"sh_symbol"=
+>=3D</span> sdf<span class=3D"sh_symbol">.</span><span class=3D"sh_function=
+">parse</span><span class=3D"sh_symbol">(</span>str<span class=3D"sh_symbol=
+">);</span></li><li>System<span class=3D"sh_symbol">.</span>out<span class=
+=3D"sh_symbol">.</span><span class=3D"sh_function">println</span><span clas=
+s=3D"sh_symbol">(</span>date<span class=3D"sh_symbol">);</span><span class=
+=3D"sh_comment">// Fri Aug 08 12:22:46 CST 2008</span></li></ol></pre><pre =
+class=3D"snippet-textonly sh_sourceCode" style=3D"display:none;">String str=
+ =3D "2008=E5=B9=B408=E6=9C=8808=E6=97=A5 12:22:46";
+SimpleDateFormat sdf=20
+			=3D new SimpleDateFormat("yyyy=E5=B9=B4MM=E6=9C=88dd=E6=97=A5 HH:mm:ss")=
+;
+Date date =3D sdf.parse(str);
+System.out.println(date);// Fri Aug 08 12:22:46 CST 2008
+</pre></div></div>
+      <a name=3D"Key01_03">
+      </a>
+      <h2>1.3. Calendar=E7=B1=BB</h2>
+      <a name=3D"Key01_03_01">
+      </a>
+      <h3>1.3.1. Calendar =E7=AE=80=E4=BB=8B</h3>
+      <p>java.util.Calendar =E7=B1=BB=E7=94=A8=E4=BA=8E=E5=B0=81=E8=A3=85=
+=E6=97=A5=E5=8E=86=E4=BF=A1=E6=81=AF=EF=BC=8C=E5=85=B6=E4=B8=BB=E8=A6=81=E4=
+=BD=9C=E7=94=A8=E5=9C=A8=E4=BA=8E=E5=85=B6=E6=96=B9=E6=B3=95=E5=8F=AF=E4=BB=
+=A5=E5=AF=B9=E6=97=B6=E9=97=B4=E5=88=86=E9=87=8F=E8=BF=9B=E8=A1=8C=E8=BF=90=
+=E7=AE=97=E3=80=82</p>
+      <p>Calendar=E6=98=AF=E6=8A=BD=E8=B1=A1=E7=B1=BB=EF=BC=8C=E5=85=B6=E5=
+=85=B7=E4=BD=93=E5=AD=90=E7=B1=BB=E9=92=88=E5=AF=B9=E4=B8=8D=E5=90=8C=E5=9B=
+=BD=E5=AE=B6=E7=9A=84=E6=97=A5=E5=8E=86=E7=B3=BB=E7=BB=9F=EF=BC=8C=E5=85=B6=
+=E4=B8=AD=E5=BA=94=E7=94=A8=E6=9C=80=E5=B9=BF=E6=B3=9B=E7=9A=84=E6=98=AFGre=
+gorianCalendar=EF=BC=88=E6=A0=BC=E9=87=8C=E9=AB=98=E9=87=8C=E5=8E=86=EF=BC=
+=8C=E5=8D=B3=E9=80=9A=E7=94=A8=E7=9A=84=E9=98=B3=E5=8E=86=EF=BC=89=EF=BC=8C=
+=E5=AF=B9=E5=BA=94=E4=B8=96=E7=95=8C=E4=B8=8A=E7=BB=9D=E5=A4=A7=E5=A4=9A=E6=
+=95=B0=E5=9B=BD=E5=AE=B6/=E5=9C=B0=E5=8C=BA=E4=BD=BF=E7=94=A8=E7=9A=84=E6=
+=A0=87=E5=87=86=E6=97=A5=E5=8E=86=E7=B3=BB=E7=BB=9F=E3=80=82</p>
+      <a name=3D"Key01_03_02">
+      </a>
+      <h3>1.3.2. getInstance()=E6=96=B9=E6=B3=95</h3>
+      <p>Calendar=E6=98=AF=E6=8A=BD=E8=B1=A1=E7=B1=BB=EF=BC=8C=E5=85=B6=E6=
+=8F=90=E4=BE=9B=E4=BA=86=E4=B8=80=E4=B8=AA=E5=B7=A5=E5=8E=82=E6=96=B9=E6=B3=
+=95:Calendar getInstance()=E3=80=82=E8=AF=A5=E6=96=B9=E6=B3=95=E5=8F=AF=E4=
+=BB=A5=E6=A0=B9=E6=8D=AE=E5=BD=93=E5=89=8D=E7=B3=BB=E7=BB=9F=E6=89=80=E5=9C=
+=A8=E5=9C=B0=E5=8C=BA=E8=8E=B7=E5=8F=96=E4=B8=80=E4=B8=AA=E9=80=82=E5=BD=93=
+=E7=9A=84Calendar=E7=9A=84=E5=AD=90=E7=B1=BB=E5=AE=9E=E7=8E=B0=E3=80=82</p>
+      <p>=E5=9C=A8=E5=AE=9E=E9=99=85=E5=BC=80=E5=8F=91=E4=B8=AD=EF=BC=8C=E4=
+=B9=9F=E6=8E=A8=E8=8D=90=E4=BD=BF=E7=94=A8=E8=AF=A5=E6=96=B9=E6=B3=95=E6=9D=
+=A5=E5=AE=9E=E4=BE=8B=E5=8C=96Calendar=E7=9A=84=E5=AF=B9=E8=B1=A1=E3=80=82<=
+/p>
+      <a name=3D"Key01_03_03">
+      </a>
+      <h3>1.3.3. =E8=AE=BE=E7=BD=AE=E6=97=A5=E6=9C=9F=E5=8F=8A=E6=97=B6=E9=
+=97=B4=E5=88=86=E9=87=8F</h3>
+      <p>Calendar=E6=8F=90=E4=BE=9B=E4=BA=86=E4=B8=80=E7=A7=8D=E9=80=9A=E7=
+=94=A8=E7=9A=84=E8=AE=BE=E7=BD=AE=E6=97=B6=E9=97=B4=E7=9A=84=E6=96=B9=E5=BC=
+=8F:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class=3D"sh_type">void=
+</span> <span class=3D"sh_function">set</span><span class=3D"sh_symbol">(</=
+span><span class=3D"sh_type">int</span> field<span class=3D"sh_symbol">,</s=
+pan><span class=3D"sh_type">int</span> value<span class=3D"sh_symbol">)</sp=
+an></li></ol></pre><pre class=3D"snippet-textonly sh_sourceCode" style=3D"d=
+isplay:none;">	void set(int field,int value)
+</pre></div></div>
+      <p>=E8=AF=A5=E6=96=B9=E6=B3=95=E5=8F=AF=E4=BB=A5=E9=80=9A=E8=BF=87=E5=
+=AF=B9=E4=B8=8D=E5=90=8C=E7=9A=84=E6=97=B6=E9=97=B4=E5=88=86=E9=87=8F=E5=88=
+=86=E5=88=AB=E8=AE=BE=E7=BD=AE=E4=B8=8D=E5=90=8C=E7=9A=84=E5=80=BC=E3=80=82=
+Calendar=E5=AF=B9=E4=B8=8D=E5=90=8C=E7=9A=84=E6=97=B6=E9=97=B4=E5=88=86=E9=
+=87=8F=E6=8F=90=E4=BE=9B=E4=BA=86=E7=9B=B8=E5=BA=94=E7=9A=84=E5=B8=B8=E9=87=
+=8F=EF=BC=8C=E6=88=91=E4=BB=AC=E5=9C=A8=E4=BD=BF=E7=94=A8set=E6=96=B9=E6=B3=
+=95=E8=AE=BE=E7=BD=AE=E6=97=B6=EF=BC=8C=E7=AC=AC=E4=B8=80=E4=B8=AA=E5=8F=82=
+=E6=95=B0=E5=B0=B1=E5=BA=94=E5=BD=93=E4=BD=BF=E7=94=A8=E5=AF=B9=E5=BA=94=E7=
+=9A=84=E5=B8=B8=E9=87=8F=E4=BD=9C=E4=B8=BA=E6=97=B6=E9=97=B4=E5=88=86=E9=87=
+=8F=E3=80=82</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_usertype">Calendar</span><span cla=
+ss=3D"sh_normal"> </span>calendar <span class=3D"sh_symbol">=3D</span> Cale=
+ndar<span class=3D"sh_symbol">.</span><span class=3D"sh_function">getInstan=
+ce</span><span class=3D"sh_symbol">();</span><span class=3D"sh_comment">//=
+=E5=88=9B=E5=BB=BA=E5=87=BA=E7=9A=84Calendar=E8=A1=A8=E7=A4=BA=E5=BD=93=E5=
+=89=8D=E7=B3=BB=E7=BB=9F=E6=97=B6=E9=97=B4</span></li><li><span class=3D"sh=
+_comment">//=E8=AE=BE=E7=BD=AE=E5=B9=B4=E4=B8=BA2008=E5=B9=B4</span></li><l=
+i>calendar<span class=3D"sh_symbol">.</span><span class=3D"sh_function">set=
+</span><span class=3D"sh_symbol">(</span>Calendar<span class=3D"sh_symbol">=
+.</span>YEAR<span class=3D"sh_symbol">,</span><span class=3D"sh_number">200=
+8</span><span class=3D"sh_symbol">);</span></li><li><span class=3D"sh_comme=
+nt">//=E8=AE=BE=E7=BD=AE=E6=9C=88=E4=B8=BA5=E6=9C=88</span></li><li>calenda=
+r<span class=3D"sh_symbol">.</span><span class=3D"sh_function">set</span><s=
+pan class=3D"sh_symbol">(</span>Calendar<span class=3D"sh_symbol">.</span>M=
+onth<span class=3D"sh_symbol">,</span><span class=3D"sh_number">4</span><sp=
+an class=3D"sh_symbol">);</span><span class=3D"sh_comment">//=E6=9C=88=E4=
+=BB=BD=E4=BB=8E0=E5=BC=80=E5=A7=8B</span></li><li>calendar<span class=3D"sh=
+_symbol">.</span><span class=3D"sh_function">set</span><span class=3D"sh_sy=
+mbol">(</span>Calendar<span class=3D"sh_symbol">.</span>Month<span class=3D=
+"sh_symbol">,</span>Calendar<span class=3D"sh_symbol">.</span>MAY<span clas=
+s=3D"sh_symbol">);</span><span class=3D"sh_comment">//=E4=B9=9F=E5=8F=AF=E4=
+=BB=A5=E4=BD=BF=E7=94=A8=E5=B8=B8=E9=87=8F=E6=9D=A5=E8=AE=BE=E7=BD=AE</span=
+></li><li><span class=3D"sh_comment">//=E8=AE=BE=E7=BD=AE=E6=97=A5=E4=B8=BA=
+30=E6=97=A5</span></li><li>caneldar<span class=3D"sh_symbol">.</span><span =
+class=3D"sh_function">set</span><span class=3D"sh_symbol">(</span>Calendar<=
+span class=3D"sh_symbol">.</span>DAY_OF_MONTH<span class=3D"sh_symbol">,</s=
+pan><span class=3D"sh_number">30</span><span class=3D"sh_symbol">);</span><=
+/li></ol></pre><pre class=3D"snippet-textonly sh_sourceCode" style=3D"displ=
+ay:none;">Calendar calendar =3D Calendar.getInstance();//=E5=88=9B=E5=BB=BA=
+=E5=87=BA=E7=9A=84Calendar=E8=A1=A8=E7=A4=BA=E5=BD=93=E5=89=8D=E7=B3=BB=E7=
+=BB=9F=E6=97=B6=E9=97=B4
+//=E8=AE=BE=E7=BD=AE=E5=B9=B4=E4=B8=BA2008=E5=B9=B4
+calendar.set(Calendar.YEAR,2008);
+//=E8=AE=BE=E7=BD=AE=E6=9C=88=E4=B8=BA5=E6=9C=88
+calendar.set(Calendar.Month,4);//=E6=9C=88=E4=BB=BD=E4=BB=8E0=E5=BC=80=E5=
+=A7=8B
+calendar.set(Calendar.Month,Calendar.MAY);//=E4=B9=9F=E5=8F=AF=E4=BB=A5=E4=
+=BD=BF=E7=94=A8=E5=B8=B8=E9=87=8F=E6=9D=A5=E8=AE=BE=E7=BD=AE
+//=E8=AE=BE=E7=BD=AE=E6=97=A5=E4=B8=BA30=E6=97=A5
+caneldar.set(Calendar.DAY_OF_MONTH,30);
+</pre></div></div>
+      <a name=3D"Key01_03_04">
+      </a>
+      <h3>1.3.4. =E8=8E=B7=E5=8F=96=E6=97=B6=E9=97=B4=E5=88=86=E9=87=8F=E5=
+=AF=B9=E5=BA=94=E7=9A=84=E5=80=BC</h3>
+      <p>Calendar=E6=8F=90=E4=BE=9B=E4=BA=86=E4=B8=80=E7=A7=8D=E9=80=9A=E7=
+=94=A8=E7=9A=84=E8=8E=B7=E5=8F=96=E6=97=B6=E9=97=B4=E5=88=86=E9=87=8F=E7=9A=
+=84=E6=96=B9=E5=BC=8F:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class=3D"sh_type">int<=
+/span> <span class=3D"sh_function">get</span><span class=3D"sh_symbol">(</s=
+pan><span class=3D"sh_type">int</span> field<span class=3D"sh_symbol">)</sp=
+an></li></ol></pre><pre class=3D"snippet-textonly sh_sourceCode" style=3D"d=
+isplay:none;">	int get(int field)
+</pre></div></div>
+      <p>=E8=AF=A5=E6=96=B9=E6=B3=95=E5=8F=AF=E4=BB=A5=E9=80=9A=E8=BF=87=E5=
+=AF=B9=E4=B8=8D=E5=90=8C=E7=9A=84=E6=97=B6=E9=97=B4=E5=88=86=E9=87=8F=E8=8E=
+=B7=E5=8F=96=E7=9B=B8=E5=BA=94=E7=9A=84=E5=80=BC=E3=80=82Calendar=E5=AF=B9=
+=E4=B8=8D=E5=90=8C=E7=9A=84=E6=97=B6=E9=97=B4=E5=88=86=E9=87=8F=E6=8F=90=E4=
+=BE=9B=E4=BA=86=E7=9B=B8=E5=BA=94=E7=9A=84=E5=B8=B8=E9=87=8F=EF=BC=8C=E6=88=
+=91=E4=BB=AC=E5=9C=A8=E4=BD=BF=E7=94=A8get=E6=96=B9=E6=B3=95=E8=8E=B7=E5=8F=
+=96=E6=97=B6=EF=BC=8C=E5=8F=82=E6=95=B0=E5=B0=B1=E5=BA=94=E5=BD=93=E4=BD=BF=
+=E7=94=A8=E5=AF=B9=E5=BA=94=E7=9A=84=E5=B8=B8=E9=87=8F=E4=BD=9C=E4=B8=BA=E6=
+=97=B6=E9=97=B4=E5=88=86=E9=87=8F=E3=80=82</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_usertype">Calendar</span><span cla=
+ss=3D"sh_normal"> </span>calendar <span class=3D"sh_symbol">=3D</span> Cale=
+ndar<span class=3D"sh_symbol">.</span><span class=3D"sh_function">getInstan=
+ce</span><span class=3D"sh_symbol">();</span></li><li><span class=3D"sh_typ=
+e">int</span> year <span class=3D"sh_symbol">=3D</span> calendar<span class=
+=3D"sh_symbol">.</span><span class=3D"sh_function">get</span><span class=3D=
+"sh_symbol">(</span>Calendar<span class=3D"sh_symbol">.</span>YEAR<span cla=
+ss=3D"sh_symbol">);</span></li><li><span class=3D"sh_type">int</span> month=
+ <span class=3D"sh_symbol">=3D</span> calednar<span class=3D"sh_symbol">.</=
+span><span class=3D"sh_function">get</span><span class=3D"sh_symbol">(</spa=
+n>Calendar<span class=3D"sh_symbol">.</span>Month<span class=3D"sh_symbol">=
+);</span></li><li><span class=3D"sh_type">int</span> date <span class=3D"sh=
+_symbol">=3D</span> calendar<span class=3D"sh_symbol">.</span><span class=
+=3D"sh_function">get</span><span class=3D"sh_symbol">(</span>Calendar<span =
+class=3D"sh_symbol">.</span>DAY_OF_MONTH<span class=3D"sh_symbol">);</span>=
+</li><li><span class=3D"sh_comment">//=E9=9C=80=E8=A6=81=E6=B3=A8=E6=84=8F=
+=EF=BC=8C=E6=9C=88=E4=BB=BD=E8=A6=81=E5=8A=A01=EF=BC=8C=E5=9B=A0=E4=B8=BA=
+=E6=9C=88=E4=BB=BD=E6=98=AF=E4=BB=8E0=E5=BC=80=E5=A7=8B=E7=9A=84</span></li=
+><li>System<span class=3D"sh_symbol">.</span>out<span class=3D"sh_symbol">.=
+</span><span class=3D"sh_function">println</span><span class=3D"sh_symbol">=
+(</span>year<span class=3D"sh_symbol">+</span><span class=3D"sh_string">"-"=
+</span><span class=3D"sh_symbol">+(</span>month<span class=3D"sh_number">+1=
+</span><span class=3D"sh_symbol">)+</span><span class=3D"sh_string">"-"</sp=
+an><span class=3D"sh_symbol">+</span>date<span class=3D"sh_symbol">);</span=
+><span class=3D"sh_comment">//2014-1-4</span></li></ol></pre><pre class=3D"=
+snippet-textonly sh_sourceCode" style=3D"display:none;">Calendar calendar =
+=3D Calendar.getInstance();
+int year =3D calendar.get(Calendar.YEAR);
+int month =3D calednar.get(Calendar.Month);
+int date =3D calendar.get(Calendar.DAY_OF_MONTH);
+//=E9=9C=80=E8=A6=81=E6=B3=A8=E6=84=8F=EF=BC=8C=E6=9C=88=E4=BB=BD=E8=A6=81=
+=E5=8A=A01=EF=BC=8C=E5=9B=A0=E4=B8=BA=E6=9C=88=E4=BB=BD=E6=98=AF=E4=BB=8E0=
+=E5=BC=80=E5=A7=8B=E7=9A=84
+System.out.println(year+"-"+(month+1)+"-"+date);//2014-1-4
+</pre></div></div>
+      <a name=3D"Key01_03_05">
+      </a>
+      <h3>1.3.5. getActualMaximum=E6=96=B9=E6=B3=95</h3>
+      <p>int getActualMaximum(int field)=E6=96=B9=E6=B3=95=E7=94=A8=E4=BA=
+=8E=E8=8E=B7=E5=8F=96=E7=BB=99=E5=AE=9A=E6=97=B6=E9=97=B4=E5=88=86=E9=87=8F=
+=E6=89=80=E5=85=81=E8=AE=B8=E7=9A=84=E6=9C=80=E5=A4=A7=E5=80=BC</p>
+      <p>=E4=BE=8B=E5=A6=82:</p>
+      <p>=E8=8E=B7=E5=8F=96=E5=BD=93=E5=89=8D=E7=B3=BB=E7=BB=9F=E6=97=B6=E9=
+=97=B4=E4=B8=AD=E5=BD=93=E6=9C=88=E7=9A=84=E6=9C=80=E5=90=8E=E4=B8=80=E5=A4=
+=A9(=E6=97=A5=E6=89=80=E5=85=81=E8=AE=B8=E7=9A=84=E6=9C=80=E5=A4=A7=E5=80=
+=BC)</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_usertype">Calendar</span><span cla=
+ss=3D"sh_normal"> </span>calendar <span class=3D"sh_symbol">=3D</span> Cale=
+ndar<span class=3D"sh_symbol">.</span><span class=3D"sh_function">getInstan=
+ce</span><span class=3D"sh_symbol">();</span></li><li><span class=3D"sh_typ=
+e">int</span> max <span class=3D"sh_symbol">=3D</span> calendar<span class=
+=3D"sh_symbol">.</span> <span class=3D"sh_function">getActualMaximum</span>=
+<span class=3D"sh_symbol">(</span>Calendar<span class=3D"sh_symbol">.</span=
+>DAY_OF_MONTH<span class=3D"sh_symbol">);</span></li><li>System<span class=
+=3D"sh_symbol">.</span>out<span class=3D"sh_symbol">.</span><span class=3D"=
+sh_function">println</span><span class=3D"sh_symbol">(</span><span class=3D=
+"sh_string">"=E5=BD=93=E5=89=8D=E6=9C=88=E7=9A=84=E6=9C=80=E5=90=8E=E4=B8=
+=80=E5=A4=A9=E4=B8=BA:"</span><span class=3D"sh_symbol">+</span>max<span cl=
+ass=3D"sh_symbol">+</span><span class=3D"sh_string">"=E6=97=A5"</span><span=
+ class=3D"sh_symbol">);</span><span class=3D"sh_comment">//=E5=BD=93=E5=89=
+=8D=E6=9C=88=E7=9A=84=E6=9C=80=E5=90=8E=E4=B8=80=E5=A4=A9=E4=B8=BA31=E6=97=
+=A5</span></li></ol></pre><pre class=3D"snippet-textonly sh_sourceCode" sty=
+le=3D"display:none;">Calendar calendar =3D Calendar.getInstance();
+int max =3D calendar. getActualMaximum(Calendar.DAY_OF_MONTH);
+System.out.println("=E5=BD=93=E5=89=8D=E6=9C=88=E7=9A=84=E6=9C=80=E5=90=8E=
+=E4=B8=80=E5=A4=A9=E4=B8=BA:"+max+"=E6=97=A5");//=E5=BD=93=E5=89=8D=E6=9C=
+=88=E7=9A=84=E6=9C=80=E5=90=8E=E4=B8=80=E5=A4=A9=E4=B8=BA31=E6=97=A5
+</pre></div></div>
+      <a name=3D"Key01_03_06">
+      </a>
+      <h3>1.3.6. add=E6=96=B9=E6=B3=95</h3>
+      <p>Calendar=E8=BF=98=E5=85=81=E8=AE=B8=E6=88=91=E4=BB=AC=E4=BD=BF=E7=
+=94=A8=E7=BB=9F=E4=B8=80=E7=9A=84=E6=96=B9=E5=BC=8F=E6=9D=A5=E5=AF=B9=E6=9F=
+=90=E4=B8=AA=E6=97=B6=E9=97=B4=E5=88=86=E9=87=8F=E7=9A=84=E5=80=BC=E8=BF=9B=
+=E8=A1=8C=E8=AE=A1=E7=AE=97=E3=80=82=E6=88=91=E4=BB=AC=E9=9C=80=E8=A6=81=E4=
+=BD=BF=E7=94=A8=E6=96=B9=E6=B3=95 void add(int field,int amount)=E3=80=82=
+=E8=AF=A5=E6=96=B9=E6=B3=95=E5=8F=AF=E4=BB=A5=E4=B8=BA=E6=9F=90=E4=B8=AA=E6=
+=97=B6=E9=97=B4=E5=88=86=E9=87=8F=E7=9A=84=E5=80=BC=E5=8A=A0=E4=B8=8A=E7=BB=
+=99=E5=AE=9A=E7=9A=84=E5=80=BC=EF=BC=8C=E8=8B=A5=E6=83=B3=E5=87=8F=E5=8E=BB=
+=E7=BB=99=E5=AE=9A=E7=9A=84=E5=80=BC=EF=BC=8C=E9=82=A3=E4=B9=88=E4=BC=A0=E5=
+=85=A5=E7=9A=84=E5=80=BC=E9=9C=80=E8=A6=81=E6=98=AF=E8=B4=9F=E6=95=B0=E5=8D=
+=B3=E5=8F=AF=E3=80=82=E5=B9=B6=E4=B8=94=E8=AE=A1=E7=AE=97=E5=90=8E=E4=BC=9A=
+=E8=87=AA=E5=8A=A8=E8=BF=9B=E8=A1=8C=E7=9B=B8=E5=BA=94=E7=9A=84=E8=BF=9B=E4=
+=BD=8D=EF=BC=8C=E4=BE=8B=E5=A6=82=E8=8B=A5=E5=BD=93=E5=89=8D=E4=B8=BA=E6=9C=
+=88=E5=BA=95=EF=BC=8C=E9=82=A3=E4=B9=88=E5=8A=A0=E4=B8=80=E5=A4=A9=E5=90=8E=
+=EF=BC=8C=E4=B8=BA=E4=B8=8B=E4=B8=AA=E6=9C=88=E7=9A=84=E6=9C=88=E5=88=9D=EF=
+=BC=8C=E8=80=8C=E6=9C=88=E5=B0=B1=E4=BC=9A=E8=BF=9B=E4=BD=8D=E3=80=82</p>
+      <p>=E4=BE=8B=E5=A6=82:  =E5=BD=93=E5=89=8D=E7=B3=BB=E7=BB=9F=E6=97=B6=
+=E9=97=B4=E4=B8=BA 2014-01-31=E6=97=A5</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_usertype">Calendar</span><span cla=
+ss=3D"sh_normal"> </span>calendar <span class=3D"sh_symbol">=3D</span> Cale=
+ndar<span class=3D"sh_symbol">.</span><span class=3D"sh_function">getInstan=
+ce</span><span class=3D"sh_symbol">();</span></li><li><span class=3D"sh_com=
+ment">//=E8=AE=A1=E7=AE=97=E6=98=8E=E5=A4=A9(=E5=9C=A8=E6=97=A5=E7=9A=84=E5=
+=9F=BA=E7=A1=80=E4=B8=8A=E5=8A=A0=E4=B8=80=E5=A4=A9)&nbsp;&nbsp;&nbsp;&nbsp=
+;</span></li><li>calendar<span class=3D"sh_symbol">.</span><span class=3D"s=
+h_function">add</span><span class=3D"sh_symbol">(</span>Calendar<span class=
+=3D"sh_symbol">.</span>DAY_OF_YEAR<span class=3D"sh_symbol">,</span><span c=
+lass=3D"sh_number">1</span><span class=3D"sh_symbol">);</span><span class=
+=3D"sh_comment">//=E5=BD=93=E5=89=8DCalendar=E8=A1=A8=E7=A4=BA=E7=9A=84=E4=
+=B8=BA2014-02-01=EF=BC=8C=E6=9C=88=E8=BF=9B=E4=BD=8D=E4=BA=86</span></li></=
+ol></pre><pre class=3D"snippet-textonly sh_sourceCode" style=3D"display:non=
+e;">Calendar calendar =3D Calendar.getInstance();
+//=E8=AE=A1=E7=AE=97=E6=98=8E=E5=A4=A9(=E5=9C=A8=E6=97=A5=E7=9A=84=E5=9F=BA=
+=E7=A1=80=E4=B8=8A=E5=8A=A0=E4=B8=80=E5=A4=A9)=09
+calendar.add(Calendar.DAY_OF_YEAR,1);//=E5=BD=93=E5=89=8DCalendar=E8=A1=A8=
+=E7=A4=BA=E7=9A=84=E4=B8=BA2014-02-01=EF=BC=8C=E6=9C=88=E8=BF=9B=E4=BD=8D=
+=E4=BA=86
+</pre></div></div>
+      <a name=3D"Key01_03_07">
+      </a>
+      <h3>1.3.7. setTime=E4=B8=8EgetTime=E6=96=B9=E6=B3=95</h3>
+      <p>Calendar=E7=9A=84void setTime(Date date),=E5=85=81=E8=AE=B8=E6=88=
+=91=E4=BB=AC=E4=B8=BACalendar=E8=AE=BE=E7=BD=AEDate=E5=AF=B9=E8=B1=A1=E6=89=
+=80=E8=A1=A8=E7=A4=BA=E7=9A=84=E6=97=B6=E9=97=B4=E3=80=82</p>
+      <p>Calendar=E7=9A=84 Date getTime(),=E5=85=81=E8=AE=B8=E6=88=91=E4=BB=
+=AC=E8=8E=B7=E5=8F=96=E4=B8=80=E4=B8=AA=E4=BD=BF=E7=94=A8Date=E5=AF=B9=E8=
+=B1=A1=E6=8F=8F=E8=BF=B0=E7=9A=84Calendar=E6=89=80=E8=A1=A8=E7=A4=BA=E7=9A=
+=84=E6=97=B6=E9=97=B4=E3=80=82</p>
+      <p>=E4=BE=8B=E5=A6=82:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_usertype">Calendar</span><span cla=
+ss=3D"sh_normal"> </span>calendar <span class=3D"sh_symbol">=3D</span> Cale=
+ndar<span class=3D"sh_symbol">.</span><span class=3D"sh_function">getInstan=
+ce</span><span class=3D"sh_symbol">();</span></li><li><span class=3D"sh_use=
+rtype">Date</span><span class=3D"sh_normal"> </span>date <span class=3D"sh_=
+symbol">=3D</span> calendar<span class=3D"sh_symbol">.</span><span class=3D=
+"sh_function">getTime</span><span class=3D"sh_symbol">();</span></li><li>Sy=
+stem<span class=3D"sh_symbol">.</span>out<span class=3D"sh_symbol">.</span>=
+<span class=3D"sh_function">println</span><span class=3D"sh_symbol">(</span=
+>date<span class=3D"sh_symbol">);</span><span class=3D"sh_comment">// Mon F=
+eb 17 15:36:55 CST 2014</span></li></ol></pre><pre class=3D"snippet-textonl=
+y sh_sourceCode" style=3D"display:none;">Calendar calendar =3D Calendar.get=
+Instance();
+Date date =3D calendar.getTime();
+System.out.println(date);// Mon Feb 17 15:36:55 CST 2014
+</pre></div></div>
+      <a name=3D"Key02">
+      </a>
+      <h1>2. =E9=9B=86=E5=90=88=E6=A1=86=E6=9E=B6</h1>
+      <a name=3D"Key02_01">
+      </a>
+      <h2>2.1. Collection</h2>
+      <p>java=E6=8F=90=E4=BE=9B=E4=BA=86=E4=B8=80=E7=A7=8D=E5=8F=AF=E4=BB=
+=A5=E5=AD=98=E6=95=B0=E4=B8=80=E7=BB=84=E6=95=B0=E6=8D=AE=E7=9A=84=E6=95=B0=
+=E6=8D=AE=E7=BB=93=E6=9E=84=EF=BC=8C=E5=85=B6=E6=8F=90=E4=BE=9B=E4=BA=86=E4=
+=B8=B0=E5=AF=8C=E7=9A=84=E6=96=B9=E6=B3=95=EF=BC=8C=E5=9C=A8=E5=AE=9E=E9=99=
+=85=E5=BC=80=E5=8F=91=E4=B8=AD=E5=BE=80=E5=BE=80=E6=AF=94=E6=95=B0=E7=BB=84=
+=E4=BD=BF=E7=94=A8=E7=9A=84=E5=B9=BF=E6=B3=9B=E3=80=82=E8=BF=99=E7=A7=8D=E6=
+=95=B0=E6=8D=AE=E7=BB=93=E6=9E=84=E6=88=90=E4=B8=BA=E9=9B=86=E5=90=88:Colle=
+ction=E3=80=82</p>
+      <p>Collection=E6=98=AF=E4=B8=80=E4=B8=AA=E6=8E=A5=E5=8F=A3=EF=BC=8C=
+=E5=85=B6=E5=AE=9A=E4=B9=89=E4=BA=86=E9=9B=86=E5=90=88=E7=9A=84=E7=9B=B8=E5=
+=85=B3=E5=8A=9F=E8=83=BD=E6=96=B9=E6=B3=95=E3=80=82</p>
+      <a name=3D"Key02_01_01">
+      </a>
+      <h3>2.1.1. List=E5=92=8CSet</h3>
+      <p>Collection=E6=B4=BE=E7=94=9F=E5=87=BA=E4=BA=86=E4=B8=A4=E4=B8=AA=
+=E5=AD=90=E6=8E=A5=E5=8F=A3=EF=BC=8C=E4=B8=80=E4=B8=AA=E6=98=AFList=E5=8F=
+=A6=E4=B8=80=E4=B8=AA=E5=88=99=E6=98=AFSet=E3=80=82</p>
+      <p>List:=E7=A7=B0=E4=B8=BA=E5=8F=AF=E9=87=8D=E5=A4=8D=E9=9B=86=EF=BC=
+=8C=E9=A1=BE=E5=90=8D=E6=80=9D=E4=B9=89=EF=BC=8C=E8=AF=A5=E9=9B=86=E5=90=88=
+=E4=B8=AD=E6=98=AF=E5=85=81=E8=AE=B8=E5=AD=98=E6=94=BE=E9=87=8D=E5=A4=8D=E5=
+=85=83=E7=B4=A0=E7=9A=84=EF=BC=8C=E9=82=A3=E4=B9=88=E4=BD=95=E4=B8=BA=E9=87=
+=8D=E5=A4=8D=E5=85=83=E7=B4=A0=EF=BC=9F=E9=87=8D=E5=A4=8D=E5=85=83=E7=B4=A0=
+=E6=8C=87=E7=9A=84=E5=B9=B6=E9=9D=9E=E6=98=AF=E5=90=8C=E4=B8=80=E4=B8=AA=E5=
+=85=83=E7=B4=A0=EF=BC=8C=E8=80=8C=E6=98=AF=E6=8C=87equals=E6=96=B9=E6=B3=95=
+=E6=AF=94=E8=BE=83=E4=B8=BAtrue=E7=9A=84=E5=85=83=E7=B4=A0=E3=80=82</p>
+      <p>Set:=E7=A7=B0=E4=B8=BA=E4=B8=8D=E5=8F=AF=E9=87=8D=E5=A4=8D=E9=9B=
+=86=EF=BC=8C=E6=89=80=E4=BB=A5=EF=BC=8C=E8=AF=A5=E9=9B=86=E5=90=88=E4=B8=AD=
+=E6=98=AF=E4=B8=8D=E8=83=BD=E5=B0=86=E7=9B=B8=E5=90=8C=E7=9A=84=E5=85=83=E7=
+=B4=A0=E5=AD=98=E5=85=A5=E9=9B=86=E5=90=88=E4=B8=A4=E6=AC=A1=EF=BC=8C=E5=90=
+=8CList=EF=BC=8C=E8=BF=99=E9=87=8C=E7=9B=B8=E5=90=8C=E6=8C=87=E7=9A=84=E4=
+=B9=9F=E6=98=AF=E4=B8=A4=E4=B8=AA=E5=85=83=E7=B4=A0=E7=9A=84equals=E6=AF=94=
+=E8=BE=83=E7=BB=93=E6=9E=9C=E4=B8=BAtrue=E3=80=82</p>
+      <a name=3D"Key02_01_02">
+      </a>
+      <h3>2.1.2. =E9=9B=86=E5=90=88=E6=8C=81=E6=9C=89=E5=AF=B9=E8=B1=A1=E7=
+=9A=84=E5=BC=95=E7=94=A8</h3>
+      <p>=E9=9B=86=E5=90=88=E4=B8=AD=E5=AD=98=E5=82=A8=E7=9A=84=E9=83=BD=E6=
+=98=AF=E5=BC=95=E7=94=A8=E7=B1=BB=E5=9E=8B=E7=9A=84=E5=85=83=E7=B4=A0=EF=BC=
+=8C=E9=82=A3=E4=B9=88=E5=BC=95=E7=94=A8=E7=B1=BB=E5=9E=8B=E5=8F=98=E9=87=8F=
+=E5=AE=9E=E9=99=85=E4=B8=8A=E5=AD=98=E5=82=A8=E7=9A=84=E6=98=AF=E5=AF=B9=E8=
+=B1=A1=E7=9A=84=E2=80=9C=E5=9C=B0=E5=9D=80=E2=80=9D=EF=BC=8C=E6=89=80=E4=BB=
+=A5=E5=AE=9E=E9=99=85=E4=B8=8A=E9=9B=86=E5=90=88=E5=8F=AA=E5=AD=98=E5=82=A8=
+=E4=BA=86=E5=85=83=E7=B4=A0=E5=AF=B9=E8=B1=A1=E5=9C=A8=E5=A0=86=E4=B8=AD=E7=
+=9A=84=E5=9C=B0=E5=9D=80=E3=80=82=E8=80=8C=E5=B9=B6=E4=B8=8D=E6=98=AF=E5=B0=
+=86=E5=AF=B9=E8=B1=A1=E6=9C=AC=E8=BA=AB=E5=AD=98=E5=85=A5=E4=BA=86=E9=9B=86=
+=E5=90=88=E4=B8=AD=E3=80=82</p>
+      <a name=3D"Key02_01_03">
+      </a>
+      <h3>2.1.3. add()=E6=96=B9=E6=B3=95</h3>
+      <p>Collection=E5=AE=9A=E4=B9=89=E4=BA=86=E4=B8=80=E4=B8=AAadd=E6=96=
+=B9=E6=B3=95=E7=94=A8=E4=BA=8E=E5=90=91=E9=9B=86=E5=90=88=E4=B8=AD=E6=B7=BB=
+=E5=8A=A0=E6=96=B0=E5=85=83=E7=B4=A0=E3=80=82 =E8=AF=A5=E6=96=B9=E6=B3=95=
+=E5=AE=9A=E4=B9=89=E4=B8=BA:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_type">boolean</span> <span class=
+=3D"sh_function">add</span><span class=3D"sh_symbol">(</span><span class=3D=
+"sh_usertype">E</span><span class=3D"sh_normal"> </span>e<span class=3D"sh_=
+symbol">)</span></li></ol></pre><pre class=3D"snippet-textonly sh_sourceCod=
+e" style=3D"display:none;">boolean add(E e)
+</pre></div></div>
+      <p>=E8=AF=A5=E6=96=B9=E6=B3=95=E4=BC=9A=E5=B0=86=E7=BB=99=E5=AE=9A=E7=
+=9A=84=E5=85=83=E7=B4=A0=E6=B7=BB=E5=8A=A0=E8=BF=9B=E9=9B=86=E5=90=88=EF=BC=
+=8C=E8=8B=A5=E6=B7=BB=E5=8A=A0=E6=88=90=E5=8A=9F=E5=88=99=E8=BF=94=E5=9B=9E=
+true,=E5=90=A6=E5=88=99=E8=BF=94=E5=9B=9Efalse</p>
+      <p>=E4=BE=8B=E5=A6=82:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_usertype">Collection&lt;String&gt;=
+</span><span class=3D"sh_normal"> </span>c <span class=3D"sh_symbol">=3D</s=
+pan> <span class=3D"sh_keyword">new</span> ArrayList<span class=3D"sh_symbo=
+l">&lt;</span>String<span class=3D"sh_symbol">&gt;();</span></li><li>System=
+<span class=3D"sh_symbol">.</span>out<span class=3D"sh_symbol">.</span><spa=
+n class=3D"sh_function">println</span><span class=3D"sh_symbol">(</span>c<s=
+pan class=3D"sh_symbol">);</span> <span class=3D"sh_comment">// []</span></=
+li><li>c<span class=3D"sh_symbol">.</span><span class=3D"sh_function">add</=
+span><span class=3D"sh_symbol">(</span><span class=3D"sh_string">"a"</span>=
+<span class=3D"sh_symbol">);</span></li><li>c<span class=3D"sh_symbol">.</s=
+pan><span class=3D"sh_function">add</span><span class=3D"sh_symbol">(</span=
+><span class=3D"sh_string">"b"</span><span class=3D"sh_symbol">);</span></l=
+i><li>c<span class=3D"sh_symbol">.</span><span class=3D"sh_function">add</s=
+pan><span class=3D"sh_symbol">(</span><span class=3D"sh_string">"c"</span><=
+span class=3D"sh_symbol">);</span></li><li>System<span class=3D"sh_symbol">=
+.</span>out<span class=3D"sh_symbol">.</span><span class=3D"sh_function">pr=
+intln</span><span class=3D"sh_symbol">(</span>c<span class=3D"sh_symbol">);=
+</span> <span class=3D"sh_comment">// [a, b, c]</span></li></ol></pre><pre =
+class=3D"snippet-textonly sh_sourceCode" style=3D"display:none;">Collection=
+&lt;String&gt; c =3D new ArrayList&lt;String&gt;();
+System.out.println(c); // []
+c.add("a");
+c.add("b");
+c.add("c");
+System.out.println(c); // [a, b, c]
+</pre></div></div>
+      <p>=E8=BF=99=E9=87=8CCollection=E5=90=8E=E9=9D=A2=E7=9A=84&lt;String&=
+gt;=E6=98=AF=E6=B3=9B=E5=9E=8B=EF=BC=8C=E6=88=91=E4=BB=AC=E5=90=8E=E9=9D=A2=
+=E4=BC=9A=E8=AE=B2=E8=A7=A3=EF=BC=8C=E8=BF=99=E9=87=8C=E4=B8=8D=E5=86=99=E4=
+=B9=9F=E6=B2=A1=E6=9C=89=E5=85=B3=E7=B3=BB=E3=80=82</p>
+      <a name=3D"Key02_01_04">
+      </a>
+      <h3>2.1.4. contains=E6=96=B9=E6=B3=95</h3>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_type">boolean</span> <span class=
+=3D"sh_function">contains</span><span class=3D"sh_symbol">(</span><span cla=
+ss=3D"sh_usertype">Object</span><span class=3D"sh_normal"> </span>o<span cl=
+ass=3D"sh_symbol">)</span></li></ol></pre><pre class=3D"snippet-textonly sh=
+_sourceCode" style=3D"display:none;">boolean contains(Object o)
+</pre></div></div>
+      <p>=E8=AF=A5=E6=96=B9=E6=B3=95=E4=BC=9A=E7=94=A8=E4=BA=8E=E5=88=A4=E6=
+=96=AD=E7=BB=99=E5=AE=9A=E7=9A=84=E5=85=83=E7=B4=A0=E6=98=AF=E5=90=A6=E8=A2=
+=AB=E5=8C=85=E5=90=AB=E5=9C=A8=E9=9B=86=E5=90=88=E4=B8=AD=E3=80=82=E8=8B=A5=
+=E5=8C=85=E5=90=AB=E5=88=99=E8=BF=94=E5=9B=9Etrue,=E5=90=A6=E5=88=99=E8=BF=
+=94=E5=9B=9Efalse=E3=80=82</p>
+      <p>=E8=BF=99=E9=87=8C=E9=9C=80=E8=A6=81=E6=B3=A8=E6=84=8F=E7=9A=84=E6=
+=98=AF=EF=BC=8C=E9=9B=86=E5=90=88=E5=9C=A8=E5=88=A4=E6=96=AD=E5=85=83=E7=B4=
+=A0=E6=98=AF=E5=90=A6=E8=A2=AB=E5=8C=85=E5=90=AB=E5=9C=A8=E9=9B=86=E5=90=88=
+=E4=B8=AD=E6=98=AF=E4=BD=BF=E7=94=A8=E5=85=83=E7=B4=A0=E7=9A=84equals=E7=9A=
+=84=E6=AF=94=E8=BE=83=E7=BB=93=E6=9E=9C=E3=80=82</p>
+      <p>(o=3D=3Dnull&nbsp;?&nbsp;e=3D=3Dnull&nbsp;:&nbsp;o.equals(e))  =E5=
+=85=B6=E4=B8=ADe=E6=98=AF=E9=9B=86=E5=90=88=E4=B8=AD=E7=9A=84=E5=85=83=E7=
+=B4=A0=E3=80=82</p>
+      <p>=E4=BE=8B=E5=A6=82:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_usertype">Collection&lt;Cell&gt;</=
+span><span class=3D"sh_normal"> </span>cells <span class=3D"sh_symbol">=3D<=
+/span> <span class=3D"sh_keyword">new</span> ArrayList<span class=3D"sh_sym=
+bol">&lt;</span>Cell<span class=3D"sh_symbol">&gt;();</span> </li><li>cells=
+<span class=3D"sh_symbol">.</span><span class=3D"sh_function">add</span><sp=
+an class=3D"sh_symbol">(</span><span class=3D"sh_keyword">new</span> <span =
+class=3D"sh_function">Cell</span><span class=3D"sh_symbol">(</span><span cl=
+ass=3D"sh_number">1</span><span class=3D"sh_symbol">,</span> <span class=3D=
+"sh_number">2</span><span class=3D"sh_symbol">));</span></li><li>cells<span=
+ class=3D"sh_symbol">.</span><span class=3D"sh_function">add</span><span cl=
+ass=3D"sh_symbol">(</span><span class=3D"sh_keyword">new</span> <span class=
+=3D"sh_function">Cell</span><span class=3D"sh_symbol">(</span><span class=
+=3D"sh_number">1</span><span class=3D"sh_symbol">,</span> <span class=3D"sh=
+_number">3</span><span class=3D"sh_symbol">));</span></li><li>cells<span cl=
+ass=3D"sh_symbol">.</span><span class=3D"sh_function">add</span><span class=
+=3D"sh_symbol">(</span><span class=3D"sh_keyword">new</span> <span class=3D=
+"sh_function">Cell</span><span class=3D"sh_symbol">(</span><span class=3D"s=
+h_number">2</span><span class=3D"sh_symbol">,</span> <span class=3D"sh_numb=
+er">2</span><span class=3D"sh_symbol">));</span></li><li>cells<span class=
+=3D"sh_symbol">.</span><span class=3D"sh_function">add</span><span class=3D=
+"sh_symbol">(</span><span class=3D"sh_keyword">new</span> <span class=3D"sh=
+_function">Cell</span><span class=3D"sh_symbol">(</span><span class=3D"sh_n=
+umber">2</span><span class=3D"sh_symbol">,</span> <span class=3D"sh_number"=
+>3</span><span class=3D"sh_symbol">));</span>&nbsp;&nbsp;&nbsp;&nbsp; </li>=
+<li><span class=3D"sh_usertype">Cell</span><span class=3D"sh_normal"> </spa=
+n>cell <span class=3D"sh_symbol">=3D</span> <span class=3D"sh_keyword">new<=
+/span> <span class=3D"sh_function">Cell</span><span class=3D"sh_symbol">(</=
+span><span class=3D"sh_number">1</span><span class=3D"sh_symbol">,</span> <=
+span class=3D"sh_number">3</span><span class=3D"sh_symbol">);</span> </li><=
+li><span class=3D"sh_comment">// List=E9=9B=86=E5=90=88contains=E6=96=B9=E6=
+=B3=95=E5=92=8C=E5=AF=B9=E8=B1=A1=E7=9A=84equals=E6=96=B9=E6=B3=95=E7=9B=B8=
+=E5=85=B3</span></li><li><span class=3D"sh_type">boolean</span> flag <span =
+class=3D"sh_symbol">=3D</span> cells<span class=3D"sh_symbol">.</span><span=
+ class=3D"sh_function">contains</span><span class=3D"sh_symbol">(</span>cel=
+l<span class=3D"sh_symbol">);</span></li><li><span class=3D"sh_comment">// =
+=E5=A6=82=E6=9E=9CCell=E4=B8=8D=E9=87=8D=E5=86=99equals=E6=96=B9=E6=B3=95=
+=E5=B0=86=E4=B8=BAfalse</span></li><li>System<span class=3D"sh_symbol">.</s=
+pan>out<span class=3D"sh_symbol">.</span><span class=3D"sh_function">printl=
+n</span><span class=3D"sh_symbol">(</span>flag<span class=3D"sh_symbol">);<=
+/span> <span class=3D"sh_comment">// true </span></li></ol></pre><pre class=
+=3D"snippet-textonly sh_sourceCode" style=3D"display:none;">Collection&lt;C=
+ell&gt; cells =3D new ArrayList&lt;Cell&gt;();=20
+cells.add(new Cell(1, 2));
+cells.add(new Cell(1, 3));
+cells.add(new Cell(2, 2));
+cells.add(new Cell(2, 3));	=20
+Cell cell =3D new Cell(1, 3);=20
+// List=E9=9B=86=E5=90=88contains=E6=96=B9=E6=B3=95=E5=92=8C=E5=AF=B9=E8=B1=
+=A1=E7=9A=84equals=E6=96=B9=E6=B3=95=E7=9B=B8=E5=85=B3
+boolean flag =3D cells.contains(cell);
+// =E5=A6=82=E6=9E=9CCell=E4=B8=8D=E9=87=8D=E5=86=99equals=E6=96=B9=E6=B3=
+=95=E5=B0=86=E4=B8=BAfalse
+System.out.println(flag); // true=20
+</pre></div></div>
+      <a name=3D"Key02_01_05">
+      </a>
+      <h3>2.1.5. size,clear,isEmpty=E6=96=B9=E6=B3=95</h3>
+      <p>size=E6=96=B9=E6=B3=95=E7=94=A8=E4=BA=8E=E8=8E=B7=E5=8F=96=E5=BD=
+=93=E5=89=8D=E9=9B=86=E5=90=88=E4=B8=AD=E7=9A=84=E5=85=83=E7=B4=A0=E6=80=BB=
+=E6=95=B0=E3=80=82=E8=AF=A5=E6=96=B9=E6=B3=95=E5=AE=9A=E4=B9=89=E4=B8=BA:in=
+t size()</p>
+      <p>clear=E6=96=B9=E6=B3=95=E7=94=A8=E4=BA=8E=E6=B8=85=E7=A9=BA=E9=9B=
+=86=E5=90=88=E3=80=82=E8=AF=A5=E6=96=B9=E6=B3=95=E5=AE=9A=E4=B9=89=E4=B8=BA=
+:void clear()</p>
+      <p>isEmpty=E6=96=B9=E6=B3=95=E7=94=A8=E4=BA=8E=E5=88=A4=E6=96=AD=E5=
+=BD=93=E5=89=8D=E9=9B=86=E5=90=88=E4=B8=AD=E6=98=AF=E5=90=A6=E4=B8=8D =E5=
+=8C=85=E5=90=AB=E5=85=83=E7=B4=A0=E3=80=82=E8=AF=A5=E6=96=B9=E6=B3=95=E5=AE=
+=9A=E4=B9=89=E4=B8=BA:boolean isEmpty()</p>
+      <p>=E4=BE=8B=E5=A6=82:</p>
+      <div class=3D"snippet-container" style=3D"undefined;"><div class=3D"s=
+h_acid snippet-wrap"><div class=3D"snippet-menu sh_sourceCode" style=3D"dis=
+play:none;"><pre style=3D"display: none;"><a class=3D"snippet-copy sh_url" =
+href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE=
+01/DAY03/SUPERDOC/01/index.html#" style=3D"display: none;">copy</a><a class=
+=3D"snippet-text sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/ttsP=
+age/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">text</a><a class=
+=3D"snippet-window sh_url" href=3D"http://pdf7.tarena.com.cn/tts8_source/tt=
+sPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.html#">pop-up</a></pr=
+e></div><pre class=3D"code sh_java snippet-formatted sh_sourceCode"><ol cla=
+ss=3D"snippet-num"><li><span class=3D"sh_usertype">Collection&lt;String&gt;=
+</span><span class=3D"sh_normal"> </span>c <span class=3D"sh_symbol">=3D</s=
+pan> <span class=3D"sh_keyword">new</span> HashSet<span class=3D"sh_symbol"=
+>&lt;</span>String<span class=3D"sh_symbol">&gt;();</span></li><li>System<s=
+pan class=3D"sh_symbol">.</span>out<span class=3D"sh_symbol">.</span><span =
+class=3D"sh_function">println</span><span class=3D"sh_symbol">(</span>c<spa=
+n class=3D"sh_symbol">.</span><span class=3D"sh_function">isEmpty</span><sp=
+an class=3D"sh_symbol">());</span> <span class=3D"sh_comment">// true </spa=
+n></li><li>c<span class=3D"sh_symbol">.</span><span class=3D"sh_function">a=
+dd</span><span class=3D"sh_symbol">(</span><span class=3D"sh_string">"java"=
+</span><span class=3D"sh_symbol">);</span>&nbsp;&nbsp;&nbsp;&nbsp;</li><li>=
+c<span class=3D"sh_symbol">.</span><span class=3D"sh_function">add</span><s=
+pan class=3D"sh_symbol">(</span><span class=3D"sh_string">"cpp"</span><span=
+ class=3D"sh_symbol">);</span>&nbsp;&nbsp;&nbsp;&nbsp;</li><li>c<span class=
+=3D"sh_symbol">.</span><span class=3D"sh_function">add</span><span class=3D=
+"sh_symbol">(</span><span class=3D"sh_string">"php"</span><span class=3D"sh=
+_symbol">);</span></li><li>c<span class=3D"sh_symbol">.</span><span class=
+=3D"sh_function">add</span><span class=3D"sh_symbol">(</span><span class=3D=
+"sh_string">"c#"</span><span class=3D"sh_symbol">);</span>&nbsp;&nbsp;&nbsp=
+;&nbsp;</li><li>c<span class=3D"sh_symbol">.</span><span class=3D"sh_functi=
+on">add</span><span class=3D"sh_symbol">(</span><span class=3D"sh_string">"=
+objective-c"</span><span class=3D"sh_symbol">);</span> </li><li><span style=
+=3D"display:none;">&nbsp;</span></li><li><span class=3D"sh_comment">// isEm=
+pty:false, size: 5</span></li><li>System<span class=3D"sh_symbol">.</span>o=
+ut<span class=3D"sh_symbol">.</span><span class=3D"sh_function">println</sp=
+an><span class=3D"sh_symbol">(</span><span class=3D"sh_string">"isEmpty:"</=
+span> <span class=3D"sh_symbol">+</span> c<span class=3D"sh_symbol">.</span=
+><span class=3D"sh_function">isEmpty</span><span class=3D"sh_symbol">()</sp=
+an> <span class=3D"sh_symbol">+</span> <span class=3D"sh_string">",size: "<=
+/span> <span class=3D"sh_symbol">+</span> c<span class=3D"sh_symbol">.</spa=
+n><span class=3D"sh_function">size</span><span class=3D"sh_symbol">());</sp=
+an>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>c<span class=3D=
+"sh_symbol">.</span><span class=3D"sh_function">clear</span><span class=3D"=
+sh_symbol">();</span></li><li><span style=3D"display:none;">&nbsp;</span></=
+li><li><span class=3D"sh_comment">// isEmpty:true, size: 0</span></li><li>S=
+ystem<span class=3D"sh_symbol">.</span>out<span class=3D"sh_symbol">.</span=
+><span class=3D"sh_function">println</span><span class=3D"sh_symbol">(</spa=
+n><span class=3D"sh_string">"isEmpty:"</span> <span class=3D"sh_symbol">+</=
+span> c<span class=3D"sh_symbol">.</span><span class=3D"sh_function">isEmpt=
+y</span><span class=3D"sh_symbol">()</span> <span class=3D"sh_symbol">+</sp=
+an> <span class=3D"sh_string">", size: "</span> <span class=3D"sh_symbol">+=
+</span> c<span class=3D"sh_symbol">.</span><span class=3D"sh_function">size=
+</span><span class=3D"sh_symbol">());</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;=
+&nbsp;&nbsp;&nbsp;</li></ol></pre><pre class=3D"snippet-textonly sh_sourceC=
+ode" style=3D"display:none;">Collection&lt;String&gt; c =3D new HashSet&lt;=
+String&gt;();
+System.out.println(c.isEmpty()); // true=20
+c.add("java");=09
+c.add("cpp");=09
+c.add("php");
+c.add("c#");=09
+c.add("objective-c");=20
+
+// isEmpty:false, size: 5
+System.out.println("isEmpty:" + c.isEmpty() + ",size: " + c.size());	=09
+c.clear();
+
+// isEmpty:true, size: 0
+System.out.println("isEmpty:" + c.isEmpty() + ", size: " + c.size());	 =09
+</pre></div></div>
+    </div>
+ =20
+<div id=3D"qb-sougou-search" style=3D"display: none; opacity: 0;"><p>=E6=90=
+=9C=E7=B4=A2</p><p class=3D"last-btn">=E5=A4=8D=E5=88=B6</p><iframe src=3D"=
+cid:frame-136-37457e9b-42d8-4b58-9dbd-f1e59e9168b7@mhtml.blink"></iframe></=
+div></body></html>
+------MultipartBoundary--sRzuvbV4hRR4vWFvn6cfEBioAvo480Wq99a8Bwbh8B----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.files/index.css
+
+@charset "utf-8";
+
+div.source_style_superdoc { font-family: =E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=
+=91, "Times New Roman"; font-size: 14px; min-width: 400px; padding: 10px 20=
+px; background-color: rgb(35, 31, 32); color: rgb(175, 170, 163); position:=
+ relative; }
+
+div.source_style_superdoc div.wordSection { width: 95%; padding: 5px; margi=
+n: 5px; }
+
+div.source_style_superdoc h1 { text-align: left; font-size: 24px; color: rg=
+b(74, 144, 36); }
+
+div.source_style_superdoc h2 { margin: 16.3px 0px 0px; text-indent: 0px; fo=
+nt-weight: bold; font-size: 20px; color: rgb(255, 149, 0); }
+
+div.source_style_superdoc h3 { font-size: 18px; font-weight: bold; margin: =
+10px 0px; text-indent: 0px; color: rgb(255, 149, 0); }
+
+div.source_style_superdoc p { margin: 3px; padding: 2px; text-indent: 21pt;=
+ font-size: 15px; }
+
+div.source_style_superdoc div.image { text-align: center; padding: 5px 0px;=
+ }
+
+div.source_style_superdoc div.image img { max-width: 900px; }
+
+div.source_style_superdoc div.image > p { text-align: center; margin: 5px; =
+padding: 3px; font-size: 12px; }
+
+div.source_style_superdoc div.table { text-align: center; padding: 5px 0px;=
+ }
+
+div.source_style_superdoc div.table img { max-width: 900px; }
+
+div.source_style_superdoc div.table > p { text-align: center; margin: 5px; =
+padding: 3px; font-size: 12px; }
+
+div.source_style_superdoc p.code, div.source_style_superdoc pre { font-size=
+: 14px; margin-left: 40px; }
+
+div.source_style_superdoc .code_level1 { text-indent: 21pt; }
+
+div.source_style_superdoc .code_level2 { text-indent: 42pt; }
+
+div.source_style_superdoc .code_level3 { text-indent: 63pt; }
+
+div.source_style_superdoc .code_level4 { text-indent: 84pt; }
+
+div.source_style_superdoc ul.list, div.source_style_superdoc ol.list { marg=
+in-left: 30px; }
+
+div.source_style_superdoc ol.list { padding-left: 45px; }
+
+div.source_style_superdoc ul.list li { padding-left: 10px; }
+
+div.source_style_superdoc ol.list li { padding-left: 5px; }
+
+div.source_style_superdoc p.emphasiz { font-weight: bold; font-style: itali=
+c; }
+
+div.source_style_superdoc p.number { font-weight: bold; margin-top: 8px; ma=
+rgin-bottom: 8px; font-size: 15px; }
+
+div.source_style_superdoc #top_anchor { position: absolute; }
+
+div.source_style_superdoc #link_top { position: fixed; bottom: 60px; right:=
+ 80px; z-index: 20; font-weight: bold; color: rgb(223, 92, 56); }
+
+div.source_style_superdoc ol.index { padding: 10px; margin-left: 40px; }
+
+div.source_style_superdoc ol.index li a { color: rgb(255, 149, 0); text-dec=
+oration: none; border-bottom: 1px dashed gray; font-size: 15px; }
+
+div.source_style_superdoc ol.index li a:hover { color: rgb(234, 73, 3); }
+
+div.source_style_superdoc .highlighter { border: 2px solid rgb(221, 221, 22=
+1); padding: 5px; background: rgb(238, 238, 238); }
+
+div.source_style_superdoc .command_help { display: none; }
+------MultipartBoundary--sRzuvbV4hRR4vWFvn6cfEBioAvo480Wq99a8Bwbh8B----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.files/jquery.snippet.css
+
+@charset "utf-8";
+
+.sh_acid { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_acid .sh_sourceCode { background-color: rgb(238, 238, 238); color: rgb(=
+0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_keyword { color: rgb(187, 121, 119); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_type { color: rgb(128, 128, 192); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_string { color: rgb(166, 133, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_regexp { color: rgb(166, 133, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 255); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_comment { color: rgb(255, 128, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_number { color: rgb(128, 0, 128); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_preproc { color: rgb(0, 128, 192); font-weight:=
+ bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_symbol { color: rgb(255, 0, 128); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_function { color: rgb(0, 68, 102); font-weight:=
+ normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_cbracket { color: rgb(255, 0, 128); font-weight=
+: bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_url { color: rgb(166, 133, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_date { color: rgb(187, 121, 119); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_time { color: rgb(187, 121, 119); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_file { color: rgb(187, 121, 119); font-weight: =
+bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_ip { color: rgb(166, 133, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_name { color: rgb(166, 133, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_variable { color: rgb(0, 128, 192); font-weight=
+: normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 255); font-weight:=
+ bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_newfile { color: rgb(166, 133, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_difflines { color: rgb(187, 121, 119); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_selector { color: rgb(0, 128, 192); font-weight=
+: normal; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_property { color: rgb(187, 121, 119); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_acid .sh_sourceCode .sh_value { color: rgb(166, 133, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_berries-dark { background: none; padding: 0px; margin: 0px; border: 0px=
+ none; }
+
+.sh_berries-dark .sh_sourceCode { background-color: rgb(128, 191, 255); col=
+or: rgb(64, 0, 128); font-weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_keyword { color: rgb(63, 43, 240); font=
+-weight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_type { color: rgb(63, 43, 240); font-we=
+ight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_string { color: rgb(196, 0, 0); font-we=
+ight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_regexp { color: rgb(196, 0, 0); font-we=
+ight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_specialchar { color: rgb(119, 55, 154);=
+ font-weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_comment { color: rgb(223, 9, 89); font-=
+weight: normal; font-style: italic; }
+
+.sh_berries-dark .sh_sourceCode .sh_number { color: rgb(32, 117, 90); font-=
+weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_preproc { color: rgb(6, 40, 203); font-=
+weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_symbol { color: rgb(0, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_function { color: rgb(144, 17, 100); fo=
+nt-weight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_cbracket { color: rgb(0, 0, 0); font-we=
+ight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_url { color: rgb(196, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_date { color: rgb(63, 43, 240); font-we=
+ight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_time { color: rgb(63, 43, 240); font-we=
+ight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_file { color: rgb(63, 43, 240); font-we=
+ight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_ip { color: rgb(196, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_name { color: rgb(196, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_variable { color: rgb(169, 30, 167); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_oldfile { color: rgb(119, 55, 154); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_newfile { color: rgb(196, 0, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_difflines { color: rgb(63, 43, 240); fo=
+nt-weight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_selector { color: rgb(169, 30, 167); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_property { color: rgb(63, 43, 240); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_berries-dark .sh_sourceCode .sh_value { color: rgb(196, 0, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_berries-light { background: none; padding: 0px; margin: 0px; border: 0p=
+x none; }
+
+.sh_berries-light .sh_sourceCode { background-color: rgb(215, 255, 255); co=
+lor: rgb(71, 64, 109); font-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_keyword { color: rgb(44, 174, 30); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_type { color: rgb(139, 81, 192); font-=
+weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_string { color: rgb(95, 129, 179); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_regexp { color: rgb(95, 129, 179); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_specialchar { color: rgb(95, 129, 179)=
+; font-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_comment { color: rgb(156, 60, 175); fo=
+nt-weight: normal; font-style: italic; }
+
+.sh_berries-light .sh_sourceCode .sh_number { color: rgb(32, 117, 90); font=
+-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_preproc { color: rgb(6, 40, 203); font=
+-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_symbol { color: rgb(210, 7, 59); font-=
+weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_function { color: rgb(144, 17, 100); f=
+ont-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_cbracket { color: rgb(210, 7, 59); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_url { color: rgb(95, 129, 179); font-w=
+eight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_date { color: rgb(44, 174, 30); font-w=
+eight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_time { color: rgb(44, 174, 30); font-w=
+eight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_file { color: rgb(44, 174, 30); font-w=
+eight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_ip { color: rgb(95, 129, 179); font-we=
+ight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_name { color: rgb(95, 129, 179); font-=
+weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_variable { color: rgb(6, 40, 203); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_oldfile { color: rgb(95, 129, 179); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_newfile { color: rgb(95, 129, 179); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_difflines { color: rgb(44, 174, 30); f=
+ont-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_selector { color: rgb(6, 40, 203); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_property { color: rgb(44, 174, 30); fo=
+nt-weight: bold; font-style: normal; }
+
+.sh_berries-light .sh_sourceCode .sh_value { color: rgb(95, 129, 179); font=
+-weight: normal; font-style: normal; }
+
+.sh_bipolar { background: none; padding: 0px; margin: 0px; border: 0px none=
+; }
+
+.sh_bipolar .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(209=
+, 73, 166); font-weight: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_keyword { color: rgb(238, 133, 226); font-we=
+ight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_type { color: rgb(170, 221, 139); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_string { color: rgb(158, 244, 87); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_regexp { color: rgb(158, 244, 87); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_specialchar { color: rgb(158, 244, 87); font=
+-weight: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_comment { color: rgb(53, 214, 229); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_bipolar .sh_sourceCode .sh_number { color: rgb(255, 255, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_preproc { color: rgb(7, 246, 191); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_symbol { color: rgb(52, 143, 239); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_function { color: rgb(213, 25, 147); font-we=
+ight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_cbracket { color: rgb(52, 143, 239); font-we=
+ight: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_url { color: rgb(158, 244, 87); font-weight:=
+ normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_date { color: rgb(238, 133, 226); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_time { color: rgb(238, 133, 226); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_file { color: rgb(238, 133, 226); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_ip { color: rgb(158, 244, 87); font-weight: =
+normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_name { color: rgb(158, 244, 87); font-weight=
+: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_variable { color: rgb(114, 212, 44); font-we=
+ight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_oldfile { color: rgb(158, 244, 87); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_newfile { color: rgb(158, 244, 87); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_difflines { color: rgb(238, 133, 226); font-=
+weight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_selector { color: rgb(114, 212, 44); font-we=
+ight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_property { color: rgb(238, 133, 226); font-w=
+eight: bold; font-style: normal; }
+
+.sh_bipolar .sh_sourceCode .sh_value { color: rgb(158, 244, 87); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_blacknblue { background: none; padding: 0px; margin: 0px; border: 0px n=
+one; }
+
+.sh_blacknblue .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(=
+35, 70, 213); font-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_keyword { color: rgb(30, 222, 220); font-=
+weight: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_type { color: rgb(192, 108, 248); font-we=
+ight: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_string { color: rgb(207, 198, 49); font-w=
+eight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_regexp { color: rgb(207, 198, 49); font-w=
+eight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_specialchar { color: rgb(204, 198, 198); =
+font-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_comment { color: rgb(111, 178, 196); font=
+-weight: normal; font-style: italic; }
+
+.sh_blacknblue .sh_sourceCode .sh_number { color: rgb(196, 172, 96); font-w=
+eight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_preproc { color: rgb(128, 128, 255); font=
+-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_symbol { color: rgb(204, 198, 198); font-=
+weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_function { color: rgb(28, 150, 237); font=
+-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_cbracket { color: rgb(204, 198, 198); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_url { color: rgb(207, 198, 49); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_date { color: rgb(30, 222, 220); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_time { color: rgb(30, 222, 220); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_file { color: rgb(30, 222, 220); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_ip { color: rgb(207, 198, 49); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_name { color: rgb(207, 198, 49); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_variable { color: rgb(236, 234, 38); font=
+-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_oldfile { color: rgb(204, 198, 198); font=
+-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_newfile { color: rgb(207, 198, 49); font-=
+weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_difflines { color: rgb(30, 222, 220); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_selector { color: rgb(236, 234, 38); font=
+-weight: normal; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_property { color: rgb(30, 222, 220); font=
+-weight: bold; font-style: normal; }
+
+.sh_blacknblue .sh_sourceCode .sh_value { color: rgb(207, 198, 49); font-we=
+ight: normal; font-style: normal; }
+
+.sh_bright { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_bright .sh_sourceCode { background-color: rgb(255, 255, 255); color: rg=
+b(64, 30, 122); font-weight: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_keyword { color: rgb(255, 48, 48); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_type { color: rgb(247, 185, 44); font-weight:=
+ normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_string { color: rgb(24, 97, 167); font-weight=
+: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_regexp { color: rgb(24, 97, 167); font-weight=
+: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_specialchar { color: rgb(24, 97, 167); font-w=
+eight: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_comment { color: rgb(56, 173, 36); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_number { color: rgb(50, 186, 6); font-weight:=
+ normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_preproc { color: rgb(83, 116, 176); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_symbol { color: rgb(48, 48, 238); font-weight=
+: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_function { color: rgb(209, 28, 237); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_cbracket { color: rgb(48, 48, 238); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_url { color: rgb(24, 97, 167); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_date { color: rgb(255, 48, 48); font-weight: =
+bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_time { color: rgb(255, 48, 48); font-weight: =
+bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_file { color: rgb(255, 48, 48); font-weight: =
+bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_ip { color: rgb(24, 97, 167); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_name { color: rgb(24, 97, 167); font-weight: =
+normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_oldfile { color: rgb(24, 97, 167); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_newfile { color: rgb(24, 97, 167); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_difflines { color: rgb(255, 48, 48); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_property { color: rgb(255, 48, 48); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_bright .sh_sourceCode .sh_value { color: rgb(24, 97, 167); font-weight:=
+ normal; font-style: normal; }
+
+.sh_contrast { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_contrast .sh_sourceCode { background-color: rgb(237, 97, 4); color: rgb=
+(0, 0, 255); font-weight: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_keyword { color: rgb(255, 255, 255); font-w=
+eight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_type { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_string { color: rgb(17, 248, 12); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_regexp { color: rgb(17, 248, 12); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_specialchar { color: rgb(17, 248, 12); font=
+-weight: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_comment { color: rgb(0, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_number { color: rgb(151, 26, 216); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_preproc { color: rgb(123, 68, 224); font-we=
+ight: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_symbol { color: rgb(222, 222, 222); font-we=
+ight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_function { color: rgb(255, 247, 0); font-we=
+ight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_cbracket { color: rgb(222, 222, 222); font-=
+weight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_url { color: rgb(17, 248, 12); font-weight:=
+ normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_date { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_time { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_file { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_ip { color: rgb(17, 248, 12); font-weight: =
+normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_name { color: rgb(17, 248, 12); font-weight=
+: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_variable { color: rgb(17, 248, 12); font-we=
+ight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_oldfile { color: rgb(17, 248, 12); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_newfile { color: rgb(17, 248, 12); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_difflines { color: rgb(255, 255, 255); font=
+-weight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_selector { color: rgb(17, 248, 12); font-we=
+ight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_property { color: rgb(255, 255, 255); font-=
+weight: bold; font-style: normal; }
+
+.sh_contrast .sh_sourceCode .sh_value { color: rgb(17, 248, 12); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_darkblue { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_darkblue .sh_sourceCode { background-color: rgb(0, 0, 64); color: rgb(1=
+99, 199, 199); font-weight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_keyword { color: rgb(255, 255, 96); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_type { color: rgb(96, 255, 96); font-weight=
+: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_string { color: rgb(255, 160, 160); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_regexp { color: rgb(255, 160, 160); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_specialchar { color: rgb(255, 165, 0); font=
+-weight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_comment { color: rgb(128, 160, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_number { color: rgb(66, 202, 217); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_preproc { color: rgb(255, 128, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_symbol { color: rgb(216, 233, 27); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_function { color: rgb(255, 255, 255); font-=
+weight: bold; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_cbracket { color: rgb(216, 233, 27); font-w=
+eight: bold; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_url { color: rgb(255, 160, 160); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_date { color: rgb(255, 255, 96); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_time { color: rgb(255, 255, 96); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_file { color: rgb(255, 255, 96); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_ip { color: rgb(255, 160, 160); font-weight=
+: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_name { color: rgb(255, 160, 160); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_variable { color: rgb(38, 224, 231); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_oldfile { color: rgb(255, 165, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_newfile { color: rgb(255, 160, 160); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_difflines { color: rgb(255, 255, 96); font-=
+weight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_selector { color: rgb(38, 224, 231); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_property { color: rgb(255, 255, 96); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkblue .sh_sourceCode .sh_value { color: rgb(255, 160, 160); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_darkness { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_darkness .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(25=
+5, 255, 255); font-weight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_keyword { color: rgb(255, 255, 0); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_type { color: rgb(0, 255, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_string { color: rgb(171, 171, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_regexp { color: rgb(171, 171, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_specialchar { color: rgb(191, 191, 191); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_comment { color: rgb(136, 136, 136); font-w=
+eight: normal; font-style: italic; }
+
+.sh_darkness .sh_sourceCode .sh_number { color: rgb(97, 157, 231); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_preproc { color: rgb(29, 163, 207); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_symbol { color: rgb(255, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_function { color: rgb(243, 70, 39); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_cbracket { color: rgb(255, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_url { color: rgb(171, 171, 0); font-weight:=
+ bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_date { color: rgb(255, 255, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_time { color: rgb(255, 255, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_file { color: rgb(255, 255, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_ip { color: rgb(171, 171, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_name { color: rgb(171, 171, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_variable { color: rgb(38, 224, 231); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_oldfile { color: rgb(191, 191, 191); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_newfile { color: rgb(171, 171, 0); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_difflines { color: rgb(255, 255, 0); font-w=
+eight: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_selector { color: rgb(38, 224, 231); font-w=
+eight: normal; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_property { color: rgb(255, 255, 0); font-we=
+ight: bold; font-style: normal; }
+
+.sh_darkness .sh_sourceCode .sh_value { color: rgb(171, 171, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_desert { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_desert .sh_sourceCode { background-color: rgb(175, 148, 126); color: rg=
+b(255, 253, 236); font-weight: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_keyword { color: rgb(254, 248, 188); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_type { color: rgb(254, 248, 188); font-weight=
+: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_string { color: rgb(246, 246, 71); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_regexp { color: rgb(246, 246, 71); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_specialchar { color: rgb(246, 246, 71); font-=
+weight: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_comment { color: rgb(160, 0, 0); font-weight:=
+ normal; font-style: italic; }
+
+.sh_desert .sh_sourceCode .sh_number { color: rgb(62, 63, 37); font-weight:=
+ normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_preproc { color: rgb(131, 57, 20); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_symbol { color: rgb(102, 87, 79); font-weight=
+: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_function { color: rgb(243, 210, 102); font-we=
+ight: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_cbracket { color: rgb(102, 87, 79); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_url { color: rgb(246, 246, 71); font-weight: =
+normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_date { color: rgb(254, 248, 188); font-weight=
+: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_time { color: rgb(254, 248, 188); font-weight=
+: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_file { color: rgb(254, 248, 188); font-weight=
+: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_ip { color: rgb(246, 246, 71); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_name { color: rgb(246, 246, 71); font-weight:=
+ normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_variable { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_oldfile { color: rgb(246, 246, 71); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_newfile { color: rgb(246, 246, 71); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_difflines { color: rgb(254, 248, 188); font-w=
+eight: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_selector { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_property { color: rgb(254, 248, 188); font-we=
+ight: bold; font-style: normal; }
+
+.sh_desert .sh_sourceCode .sh_value { color: rgb(246, 246, 71); font-weight=
+: normal; font-style: normal; }
+
+.sh_dull { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_dull .sh_sourceCode { background-color: rgb(191, 191, 191); color: rgb(=
+101, 101, 101); font-weight: normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_keyword { color: rgb(53, 53, 53); font-weight: =
+bold; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_type { color: rgb(50, 65, 198); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_string { color: rgb(0, 85, 153); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_regexp { color: rgb(0, 85, 153); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_specialchar { color: rgb(0, 85, 153); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_comment { color: rgb(209, 29, 32); font-weight:=
+ normal; font-style: italic; }
+
+.sh_dull .sh_sourceCode .sh_number { color: rgb(22, 147, 13); font-weight: =
+normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_preproc { color: rgb(0, 0, 51); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_symbol { color: rgb(34, 34, 34); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_function { color: rgb(56, 37, 92); font-weight:=
+ normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_cbracket { color: rgb(34, 34, 34); font-weight:=
+ normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_url { color: rgb(0, 85, 153); font-weight: norm=
+al; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_date { color: rgb(53, 53, 53); font-weight: bol=
+d; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_time { color: rgb(53, 53, 53); font-weight: bol=
+d; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_file { color: rgb(53, 53, 53); font-weight: bol=
+d; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_ip { color: rgb(0, 85, 153); font-weight: norma=
+l; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_name { color: rgb(0, 85, 153); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_variable { color: rgb(174, 90, 22); font-weight=
+: normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_oldfile { color: rgb(0, 85, 153); font-weight: =
+normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_newfile { color: rgb(0, 85, 153); font-weight: =
+normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_difflines { color: rgb(53, 53, 53); font-weight=
+: bold; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_selector { color: rgb(174, 90, 22); font-weight=
+: normal; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_property { color: rgb(53, 53, 53); font-weight:=
+ bold; font-style: normal; }
+
+.sh_dull .sh_sourceCode .sh_value { color: rgb(0, 85, 153); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_easter { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_easter .sh_sourceCode { background-color: rgb(255, 255, 128); color: rg=
+b(44, 123, 52); font-weight: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_keyword { color: rgb(29, 69, 214); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_type { color: rgb(237, 15, 85); font-weight: =
+bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_string { color: rgb(202, 75, 227); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_regexp { color: rgb(202, 75, 227); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_specialchar { color: rgb(202, 75, 227); font-=
+weight: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_comment { color: rgb(36, 200, 21); font-weigh=
+t: normal; font-style: italic; }
+
+.sh_easter .sh_sourceCode .sh_number { color: rgb(225, 26, 112); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_preproc { color: rgb(21, 131, 177); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_symbol { color: rgb(250, 71, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_function { color: rgb(29, 69, 214); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_cbracket { color: rgb(250, 71, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_url { color: rgb(202, 75, 227); font-weight: =
+normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_date { color: rgb(29, 69, 214); font-weight: =
+bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_time { color: rgb(29, 69, 214); font-weight: =
+bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_file { color: rgb(29, 69, 214); font-weight: =
+bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_ip { color: rgb(202, 75, 227); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_name { color: rgb(202, 75, 227); font-weight:=
+ normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_variable { color: rgb(38, 170, 231); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_oldfile { color: rgb(202, 75, 227); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_newfile { color: rgb(202, 75, 227); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_difflines { color: rgb(29, 69, 214); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_selector { color: rgb(38, 170, 231); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_property { color: rgb(29, 69, 214); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_easter .sh_sourceCode .sh_value { color: rgb(202, 75, 227); font-weight=
+: normal; font-style: normal; }
+
+.sh_emacs { background: none; padding: 0px; margin: 0px; border: 0px none; =
+}
+
+.sh_emacs .sh_sourceCode { background-color: rgb(255, 255, 255); color: rgb=
+(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_keyword { color: rgb(156, 32, 238); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_type { color: rgb(32, 137, 32); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_string { color: rgb(189, 141, 139); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_regexp { color: rgb(189, 141, 139); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_specialchar { color: rgb(189, 141, 139); font-=
+weight: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_comment { color: rgb(172, 32, 32); font-weight=
+: normal; font-style: italic; }
+
+.sh_emacs .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_preproc { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_url { color: rgb(189, 141, 139); font-weight: =
+normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_date { color: rgb(156, 32, 238); font-weight: =
+bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_time { color: rgb(156, 32, 238); font-weight: =
+bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_file { color: rgb(156, 32, 238); font-weight: =
+bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_ip { color: rgb(189, 141, 139); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_name { color: rgb(189, 141, 139); font-weight:=
+ normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_oldfile { color: rgb(189, 141, 139); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_newfile { color: rgb(189, 141, 139); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_difflines { color: rgb(156, 32, 238); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_property { color: rgb(156, 32, 238); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_emacs .sh_sourceCode .sh_value { color: rgb(189, 141, 139); font-weight=
+: normal; font-style: normal; }
+
+.sh_golden { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_golden .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(221,=
+ 187, 0); font-weight: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_keyword { color: rgb(255, 237, 138); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_type { color: rgb(255, 237, 138); font-weight=
+: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_comment { color: rgb(151, 131, 69); font-weig=
+ht: normal; font-style: italic; }
+
+.sh_golden .sh_sourceCode .sh_number { color: rgb(255, 255, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_preproc { color: rgb(255, 221, 170); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_symbol { color: rgb(171, 171, 171); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_function { color: rgb(221, 187, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_cbracket { color: rgb(171, 171, 171); font-we=
+ight: normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_date { color: rgb(255, 237, 138); font-weight=
+: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_time { color: rgb(255, 237, 138); font-weight=
+: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_file { color: rgb(255, 237, 138); font-weight=
+: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_variable { color: rgb(222, 222, 222); font-we=
+ight: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_difflines { color: rgb(255, 237, 138); font-w=
+eight: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_selector { color: rgb(222, 222, 222); font-we=
+ight: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_property { color: rgb(255, 237, 138); font-we=
+ight: bold; font-style: normal; }
+
+.sh_golden .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_greenlcd { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_greenlcd .sh_sourceCode { background-color: rgb(0, 52, 0); color: rgb(0=
+, 187, 0); font-weight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_keyword { color: rgb(0, 237, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_type { color: rgb(0, 237, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_string { color: rgb(223, 223, 223); font-we=
+ight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_regexp { color: rgb(223, 223, 223); font-we=
+ight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_specialchar { color: rgb(223, 223, 223); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_comment { color: rgb(136, 136, 136); font-w=
+eight: normal; font-style: italic; }
+
+.sh_greenlcd .sh_sourceCode .sh_number { color: rgb(255, 255, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_preproc { color: rgb(191, 191, 191); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_symbol { color: rgb(47, 231, 169); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_function { color: rgb(192, 255, 115); font-=
+weight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_cbracket { color: rgb(47, 231, 169); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_url { color: rgb(223, 223, 223); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_date { color: rgb(0, 237, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_time { color: rgb(0, 237, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_file { color: rgb(0, 237, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_ip { color: rgb(223, 223, 223); font-weight=
+: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_name { color: rgb(223, 223, 223); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_variable { color: rgb(190, 239, 19); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_oldfile { color: rgb(223, 223, 223); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_newfile { color: rgb(223, 223, 223); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_difflines { color: rgb(0, 237, 0); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_selector { color: rgb(190, 239, 19); font-w=
+eight: normal; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_property { color: rgb(0, 237, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_greenlcd .sh_sourceCode .sh_value { color: rgb(223, 223, 223); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-anjuta { background: none; padding: 0px; margin: 0px; border: 0px n=
+one; }
+
+.sh_ide-anjuta .sh_sourceCode { background-color: rgb(255, 255, 255); color=
+: rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_keyword { color: rgb(0, 0, 128); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_type { color: rgb(0, 0, 128); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_string { color: rgb(221, 187, 0); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_regexp { color: rgb(221, 187, 0); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_specialchar { color: rgb(221, 187, 0); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_comment { color: rgb(255, 0, 0); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_number { color: rgb(0, 136, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_preproc { color: rgb(103, 128, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_url { color: rgb(221, 187, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_date { color: rgb(0, 0, 128); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_time { color: rgb(0, 0, 128); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_file { color: rgb(0, 0, 128); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_ip { color: rgb(221, 187, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_name { color: rgb(221, 187, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_oldfile { color: rgb(221, 187, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_newfile { color: rgb(221, 187, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_difflines { color: rgb(0, 0, 128); font-w=
+eight: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_property { color: rgb(0, 0, 128); font-we=
+ight: bold; font-style: normal; }
+
+.sh_ide-anjuta .sh_sourceCode .sh_value { color: rgb(221, 187, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-codewarrior { background: none; padding: 0px; margin: 0px; border: =
+0px none; }
+
+.sh_ide-codewarrior .sh_sourceCode { background-color: rgb(255, 255, 255); =
+color: rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_keyword { color: rgb(0, 0, 179); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_type { color: rgb(76, 115, 166); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_string { color: rgb(102, 102, 102); =
+font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_regexp { color: rgb(102, 102, 102); =
+font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_specialchar { color: rgb(102, 102, 1=
+02); font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_comment { color: rgb(179, 0, 0); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_preproc { color: rgb(0, 0, 179); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font=
+-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_url { color: rgb(102, 102, 102); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_date { color: rgb(0, 0, 179); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_time { color: rgb(0, 0, 179); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_file { color: rgb(0, 0, 179); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_ip { color: rgb(102, 102, 102); font=
+-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_name { color: rgb(102, 102, 102); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_variable { color: rgb(0, 0, 179); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_oldfile { color: rgb(102, 102, 102);=
+ font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_newfile { color: rgb(102, 102, 102);=
+ font-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_difflines { color: rgb(0, 0, 179); f=
+ont-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_selector { color: rgb(0, 0, 179); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_property { color: rgb(0, 0, 179); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_ide-codewarrior .sh_sourceCode .sh_value { color: rgb(102, 102, 102); f=
+ont-weight: normal; font-style: normal; }
+
+.sh_ide-devcpp { background: none; padding: 0px; margin: 0px; border: 0px n=
+one; }
+
+.sh_ide-devcpp .sh_sourceCode { background-color: rgb(255, 255, 255); color=
+: rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_keyword { color: rgb(0, 0, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_type { color: rgb(0, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 0); font=
+-weight: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_comment { color: rgb(0, 0, 128); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_number { color: rgb(0, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_preproc { color: rgb(0, 128, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_date { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_time { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_file { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_variable { color: rgb(0, 0, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_difflines { color: rgb(0, 0, 0); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_selector { color: rgb(0, 0, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_property { color: rgb(0, 0, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-devcpp .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-eclipse { background: none; padding: 0px; margin: 0px; border: 0px =
+none; }
+
+.sh_ide-eclipse .sh_sourceCode { background-color: rgb(255, 255, 255); colo=
+r: rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_keyword { color: rgb(127, 0, 85); font-w=
+eight: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_type { color: rgb(127, 0, 85); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_string { color: rgb(0, 0, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_regexp { color: rgb(0, 0, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 255); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_comment { color: rgb(113, 122, 179); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_preproc { color: rgb(63, 95, 191); font-=
+weight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_url { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_date { color: rgb(127, 0, 85); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_time { color: rgb(127, 0, 85); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_file { color: rgb(127, 0, 85); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_ip { color: rgb(0, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_name { color: rgb(0, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_variable { color: rgb(127, 0, 85); font-=
+weight: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_newfile { color: rgb(0, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_difflines { color: rgb(127, 0, 85); font=
+-weight: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_selector { color: rgb(127, 0, 85); font-=
+weight: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_property { color: rgb(127, 0, 85); font-=
+weight: bold; font-style: normal; }
+
+.sh_ide-eclipse .sh_sourceCode .sh_value { color: rgb(0, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-kdev { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_ide-kdev .sh_sourceCode { background-color: rgb(255, 255, 255); color: =
+rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_keyword { color: rgb(96, 0, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_type { color: rgb(96, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_comment { color: rgb(191, 191, 191); font-w=
+eight: normal; font-style: italic; }
+
+.sh_ide-kdev .sh_sourceCode .sh_number { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_preproc { color: rgb(0, 128, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_date { color: rgb(96, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_time { color: rgb(96, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_file { color: rgb(96, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_variable { color: rgb(96, 0, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_difflines { color: rgb(96, 0, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_selector { color: rgb(96, 0, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_property { color: rgb(96, 0, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_ide-kdev .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_ide-msvcpp { background: none; padding: 0px; margin: 0px; border: 0px n=
+one; }
+
+.sh_ide-msvcpp .sh_sourceCode { background-color: rgb(255, 255, 255); color=
+: rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_keyword { color: rgb(0, 0, 255); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_type { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_string { color: rgb(0, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_regexp { color: rgb(0, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_comment { color: rgb(0, 128, 0); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_preproc { color: rgb(0, 0, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_url { color: rgb(0, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_date { color: rgb(0, 0, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_time { color: rgb(0, 0, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_file { color: rgb(0, 0, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_ip { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_name { color: rgb(0, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-we=
+ight: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_newfile { color: rgb(0, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_difflines { color: rgb(0, 0, 255); font-w=
+eight: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-we=
+ight: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_property { color: rgb(0, 0, 255); font-we=
+ight: bold; font-style: normal; }
+
+.sh_ide-msvcpp .sh_sourceCode .sh_value { color: rgb(0, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_kwrite { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_kwrite .sh_sourceCode { background-color: rgb(255, 255, 255); color: rg=
+b(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_keyword { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_type { color: rgb(131, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_comment { color: rgb(131, 129, 131); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_kwrite .sh_sourceCode .sh_number { color: rgb(41, 40, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_preproc { color: rgb(0, 130, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_function { color: rgb(1, 1, 129); font-weight=
+: normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_date { color: rgb(0, 0, 0); font-weight: bold=
+; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_time { color: rgb(0, 0, 0); font-weight: bold=
+; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_file { color: rgb(0, 0, 0); font-weight: bold=
+; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_variable { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_difflines { color: rgb(0, 0, 0); font-weight:=
+ bold; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_selector { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_property { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_kwrite .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_matlab { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_matlab .sh_sourceCode { background-color: rgb(255, 255, 255); color: rg=
+b(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_keyword { color: rgb(0, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_type { color: rgb(0, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_string { color: rgb(128, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_regexp { color: rgb(128, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_url { color: rgb(128, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_date { color: rgb(0, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_time { color: rgb(0, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_file { color: rgb(0, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_ip { color: rgb(128, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_name { color: rgb(128, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_newfile { color: rgb(128, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_difflines { color: rgb(0, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_property { color: rgb(0, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_matlab .sh_sourceCode .sh_value { color: rgb(128, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_navy { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_navy .sh_sourceCode { background-color: rgb(0, 0, 53); color: rgb(0, 13=
+9, 255); font-weight: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_keyword { color: rgb(248, 197, 11); font-weight=
+: bold; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_type { color: rgb(225, 231, 47); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_string { color: rgb(255, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_regexp { color: rgb(255, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_specialchar { color: rgb(255, 255, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_comment { color: rgb(255, 187, 0); font-weight:=
+ normal; font-style: italic; }
+
+.sh_navy .sh_sourceCode .sh_number { color: rgb(248, 127, 244); font-weight=
+: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_preproc { color: rgb(187, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_symbol { color: rgb(255, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_function { color: rgb(255, 255, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_cbracket { color: rgb(255, 255, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_url { color: rgb(255, 255, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_date { color: rgb(248, 197, 11); font-weight: b=
+old; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_time { color: rgb(248, 197, 11); font-weight: b=
+old; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_file { color: rgb(248, 197, 11); font-weight: b=
+old; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_ip { color: rgb(255, 255, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_name { color: rgb(255, 255, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_variable { color: rgb(19, 216, 239); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_oldfile { color: rgb(255, 255, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_newfile { color: rgb(255, 255, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_difflines { color: rgb(248, 197, 11); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_selector { color: rgb(19, 216, 239); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_property { color: rgb(248, 197, 11); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_navy .sh_sourceCode .sh_value { color: rgb(255, 255, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_nedit { background: none; padding: 0px; margin: 0px; border: 0px none; =
+}
+
+.sh_nedit .sh_sourceCode { background-color: rgb(255, 255, 255); color: rgb=
+(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_keyword { color: rgb(0, 0, 0); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_type { color: rgb(165, 42, 42); font-weight: b=
+old; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_string { color: rgb(0, 100, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_regexp { color: rgb(0, 100, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_specialchar { color: rgb(46, 139, 87); font-we=
+ight: normal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_comment { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: italic; }
+
+.sh_nedit .sh_sourceCode .sh_number { color: rgb(0, 100, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_preproc { color: rgb(39, 64, 139); font-weight=
+: normal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_symbol { color: rgb(0, 0, 0); font-weight: bol=
+d; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_cbracket { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_url { color: rgb(0, 100, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_date { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_time { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_file { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_ip { color: rgb(0, 100, 0); font-weight: norma=
+l; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_name { color: rgb(0, 100, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_variable { color: rgb(221, 160, 221); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_oldfile { color: rgb(46, 139, 87); font-weight=
+: normal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_newfile { color: rgb(0, 100, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_difflines { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_selector { color: rgb(221, 160, 221); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_property { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_nedit .sh_sourceCode .sh_value { color: rgb(0, 100, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_neon { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_neon .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(255, 2=
+55, 255); font-weight: normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_keyword { color: rgb(0, 255, 255); font-weight:=
+ bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_type { color: rgb(255, 255, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_string { color: rgb(205, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_regexp { color: rgb(205, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_specialchar { color: rgb(205, 0, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_comment { color: rgb(0, 255, 0); font-weight: n=
+ormal; font-style: italic; }
+
+.sh_neon .sh_sourceCode .sh_number { color: rgb(255, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_preproc { color: rgb(255, 187, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_symbol { color: rgb(238, 88, 150); font-weight:=
+ bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_function { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_cbracket { color: rgb(238, 88, 150); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_url { color: rgb(205, 0, 255); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_date { color: rgb(0, 255, 255); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_time { color: rgb(0, 255, 255); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_file { color: rgb(0, 255, 255); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_ip { color: rgb(205, 0, 255); font-weight: norm=
+al; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_name { color: rgb(205, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_variable { color: rgb(239, 19, 71); font-weight=
+: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_oldfile { color: rgb(205, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_newfile { color: rgb(205, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_difflines { color: rgb(0, 255, 255); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_selector { color: rgb(239, 19, 71); font-weight=
+: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_property { color: rgb(0, 255, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_neon .sh_sourceCode .sh_value { color: rgb(205, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_night { background: none; padding: 0px; margin: 0px; border: 0px none; =
+}
+
+.sh_night .sh_sourceCode { background-color: rgb(0, 0, 68); color: rgb(221,=
+ 0, 255); font-weight: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_keyword { color: rgb(255, 255, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_type { color: rgb(241, 21, 124); font-weight: =
+bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_string { color: rgb(255, 255, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_regexp { color: rgb(255, 255, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_specialchar { color: rgb(130, 214, 109); font-=
+weight: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_comment { color: rgb(191, 191, 191); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_number { color: rgb(142, 225, 25); font-weight=
+: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_preproc { color: rgb(0, 187, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_symbol { color: rgb(231, 238, 92); font-weight=
+: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_function { color: rgb(255, 6, 205); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_cbracket { color: rgb(231, 238, 92); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_url { color: rgb(255, 255, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_date { color: rgb(255, 255, 255); font-weight:=
+ bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_time { color: rgb(255, 255, 255); font-weight:=
+ bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_file { color: rgb(255, 255, 255); font-weight:=
+ bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_ip { color: rgb(255, 255, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_name { color: rgb(255, 255, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_variable { color: rgb(122, 236, 39); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_oldfile { color: rgb(130, 214, 109); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_newfile { color: rgb(255, 255, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_difflines { color: rgb(255, 255, 255); font-we=
+ight: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_selector { color: rgb(122, 236, 39); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_property { color: rgb(255, 255, 255); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_night .sh_sourceCode .sh_value { color: rgb(255, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_pablo { background: none; padding: 0px; margin: 0px; border: 0px none; =
+}
+
+.sh_pablo .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(255, =
+255, 255); font-weight: normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_keyword { color: rgb(192, 192, 0); font-weight=
+: bold; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_type { color: rgb(0, 192, 0); font-weight: bol=
+d; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_string { color: rgb(0, 255, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_regexp { color: rgb(0, 255, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_comment { color: rgb(128, 128, 128); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_number { color: rgb(0, 255, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_preproc { color: rgb(0, 255, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_symbol { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_function { color: rgb(255, 34, 185); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_cbracket { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_url { color: rgb(0, 255, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_date { color: rgb(192, 192, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_time { color: rgb(192, 192, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_file { color: rgb(192, 192, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_ip { color: rgb(0, 255, 255); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_name { color: rgb(0, 255, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_variable { color: rgb(0, 0, 192); font-weight:=
+ bold; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_newfile { color: rgb(0, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_difflines { color: rgb(192, 192, 0); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_selector { color: rgb(0, 0, 192); font-weight:=
+ bold; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_property { color: rgb(192, 192, 0); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_pablo .sh_sourceCode .sh_value { color: rgb(0, 255, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_peachpuff { background: none; padding: 0px; margin: 0px; border: 0px no=
+ne; }
+
+.sh_peachpuff .sh_sourceCode { background-color: rgb(255, 218, 185); color:=
+ rgb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_keyword { color: rgb(165, 42, 42); font-we=
+ight: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_type { color: rgb(46, 139, 87); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_string { color: rgb(192, 0, 88); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_regexp { color: rgb(192, 0, 88); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_specialchar { color: rgb(106, 90, 205); fo=
+nt-weight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_comment { color: rgb(64, 96, 144); font-we=
+ight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_number { color: rgb(192, 0, 88); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_preproc { color: rgb(205, 0, 205); font-we=
+ight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_function { color: rgb(82, 28, 199); font-w=
+eight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_url { color: rgb(192, 0, 88); font-weight:=
+ normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_date { color: rgb(165, 42, 42); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_time { color: rgb(165, 42, 42); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_file { color: rgb(165, 42, 42); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_ip { color: rgb(192, 0, 88); font-weight: =
+normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_name { color: rgb(192, 0, 88); font-weight=
+: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_variable { color: rgb(39, 95, 236); font-w=
+eight: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_oldfile { color: rgb(106, 90, 205); font-w=
+eight: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_newfile { color: rgb(192, 0, 88); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_difflines { color: rgb(165, 42, 42); font-=
+weight: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_selector { color: rgb(39, 95, 236); font-w=
+eight: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_property { color: rgb(165, 42, 42); font-w=
+eight: bold; font-style: normal; }
+
+.sh_peachpuff .sh_sourceCode .sh_value { color: rgb(192, 0, 88); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_print { background: none; padding: 0px; margin: 0px; border: 0px none; =
+}
+
+.sh_print .sh_sourceCode { background-color: rgb(255, 255, 255); color: rgb=
+(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_keyword { color: rgb(0, 0, 0); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_type { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_string { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_regexp { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_comment { color: rgb(102, 102, 102); font-weig=
+ht: normal; font-style: italic; }
+
+.sh_print .sh_sourceCode .sh_number { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_preproc { color: rgb(0, 0, 0); font-weight: bo=
+ld; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_symbol { color: rgb(0, 0, 0); font-weight: bol=
+d; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_cbracket { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_url { color: rgb(0, 0, 0); font-weight: normal=
+; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_date { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_time { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_file { color: rgb(0, 0, 0); font-weight: bold;=
+ font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_ip { color: rgb(0, 0, 0); font-weight: normal;=
+ font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_name { color: rgb(0, 0, 0); font-weight: norma=
+l; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_variable { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_newfile { color: rgb(0, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_difflines { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_selector { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_property { color: rgb(0, 0, 0); font-weight: b=
+old; font-style: normal; }
+
+.sh_print .sh_sourceCode .sh_value { color: rgb(0, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_rand01 { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_rand01 .sh_sourceCode { background-color: rgb(255, 255, 255); color: rg=
+b(18, 27, 40); font-weight: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_keyword { color: rgb(10, 127, 109); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_type { color: rgb(196, 38, 56); font-weight: =
+bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_string { color: rgb(43, 131, 186); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_regexp { color: rgb(43, 131, 186); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_specialchar { color: rgb(167, 100, 203); font=
+-weight: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_comment { color: rgb(171, 171, 171); font-wei=
+ght: normal; font-style: italic; }
+
+.sh_rand01 .sh_sourceCode .sh_number { color: rgb(13, 163, 68); font-weight=
+: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_preproc { color: rgb(98, 10, 198); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_symbol { color: rgb(0, 0, 222); font-weight: =
+normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: =
+bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_cbracket { color: rgb(0, 0, 222); font-weight=
+: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_url { color: rgb(43, 131, 186); font-weight: =
+normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_date { color: rgb(10, 127, 109); font-weight:=
+ bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_time { color: rgb(10, 127, 109); font-weight:=
+ bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_file { color: rgb(10, 127, 109); font-weight:=
+ bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_ip { color: rgb(43, 131, 186); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_name { color: rgb(43, 131, 186); font-weight:=
+ normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_variable { color: rgb(225, 47, 118); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_oldfile { color: rgb(167, 100, 203); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_newfile { color: rgb(43, 131, 186); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_difflines { color: rgb(10, 127, 109); font-we=
+ight: bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_selector { color: rgb(225, 47, 118); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_property { color: rgb(10, 127, 109); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_rand01 .sh_sourceCode .sh_value { color: rgb(43, 131, 186); font-weight=
+: normal; font-style: normal; }
+
+.sh_the { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_the .sh_sourceCode { background-color: rgb(255, 255, 255); color: rgb(0=
+, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_keyword { color: rgb(0, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_type { color: rgb(136, 0, 136); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_string { color: rgb(0, 0, 136); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_regexp { color: rgb(0, 0, 136); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_specialchar { color: rgb(0, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_comment { color: rgb(0, 255, 0); font-weight: no=
+rmal; font-style: italic; }
+
+.sh_the .sh_sourceCode .sh_number { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_preproc { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_url { color: rgb(0, 0, 136); font-weight: normal=
+; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_date { color: rgb(0, 0, 255); font-weight: norma=
+l; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_time { color: rgb(0, 0, 255); font-weight: norma=
+l; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_file { color: rgb(0, 0, 255); font-weight: norma=
+l; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_ip { color: rgb(0, 0, 136); font-weight: normal;=
+ font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_name { color: rgb(0, 0, 136); font-weight: norma=
+l; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_variable { color: rgb(0, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_oldfile { color: rgb(0, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_newfile { color: rgb(0, 0, 136); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_difflines { color: rgb(0, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_selector { color: rgb(0, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_property { color: rgb(0, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_the .sh_sourceCode .sh_value { color: rgb(0, 0, 136); font-weight: norm=
+al; font-style: normal; }
+
+.sh_typical { background: none; padding: 0px; margin: 0px; border: 0px none=
+; }
+
+.sh_typical .sh_sourceCode { background-color: rgb(255, 255, 255); color: r=
+gb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_keyword { color: rgb(0, 0, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_type { color: rgb(0, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_specialchar { color: rgb(196, 45, 168); font=
+-weight: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_comment { color: rgb(102, 102, 102); font-we=
+ight: normal; font-style: italic; }
+
+.sh_typical .sh_sourceCode .sh_number { color: rgb(169, 0, 169); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_preproc { color: rgb(0, 184, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_symbol { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight:=
+ bold; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_cbracket { color: rgb(255, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_date { color: rgb(0, 0, 255); font-weight: b=
+old; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_time { color: rgb(0, 0, 255); font-weight: b=
+old; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_file { color: rgb(0, 0, 255); font-weight: b=
+old; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_variable { color: rgb(236, 127, 21); font-we=
+ight: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_oldfile { color: rgb(196, 45, 168); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_difflines { color: rgb(0, 0, 255); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_selector { color: rgb(236, 127, 21); font-we=
+ight: normal; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_property { color: rgb(0, 0, 255); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_typical .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_vampire { background: none; padding: 0px; margin: 0px; border: 0px none=
+; }
+
+.sh_vampire .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(255=
+, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_keyword { color: rgb(255, 255, 255); font-we=
+ight: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_type { color: rgb(243, 94, 30); font-weight:=
+ bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_string { color: rgb(187, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_regexp { color: rgb(187, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_specialchar { color: rgb(255, 255, 255); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_comment { color: rgb(171, 171, 171); font-we=
+ight: normal; font-style: italic; }
+
+.sh_vampire .sh_sourceCode .sh_number { color: rgb(187, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_preproc { color: rgb(171, 171, 171); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_symbol { color: rgb(243, 230, 81); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_function { color: rgb(123, 199, 16); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_cbracket { color: rgb(243, 230, 81); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_url { color: rgb(187, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_date { color: rgb(255, 255, 255); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_time { color: rgb(255, 255, 255); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_file { color: rgb(255, 255, 255); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_ip { color: rgb(187, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_name { color: rgb(187, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_variable { color: rgb(255, 255, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_oldfile { color: rgb(255, 255, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_newfile { color: rgb(187, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_difflines { color: rgb(255, 255, 255); font-=
+weight: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_selector { color: rgb(255, 255, 255); font-w=
+eight: normal; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_property { color: rgb(255, 255, 255); font-w=
+eight: bold; font-style: normal; }
+
+.sh_vampire .sh_sourceCode .sh_value { color: rgb(187, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim-dark { background: none; padding: 0px; margin: 0px; border: 0px non=
+e; }
+
+.sh_vim-dark .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(25=
+5, 255, 255); font-weight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_keyword { color: rgb(178, 104, 24); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_type { color: rgb(0, 255, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_specialchar { color: rgb(255, 34, 255); fon=
+t-weight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_comment { color: rgb(0, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_number { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_preproc { color: rgb(255, 34, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_function { color: rgb(255, 255, 255); font-=
+weight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_date { color: rgb(178, 104, 24); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_time { color: rgb(178, 104, 24); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_file { color: rgb(178, 104, 24); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_variable { color: rgb(178, 104, 24); font-w=
+eight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_oldfile { color: rgb(255, 34, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_difflines { color: rgb(178, 104, 24); font-=
+weight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_selector { color: rgb(178, 104, 24); font-w=
+eight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_property { color: rgb(178, 104, 24); font-w=
+eight: normal; font-style: normal; }
+
+.sh_vim-dark .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_vim { background: none; padding: 0px; margin: 0px; border: 0px none; }
+
+.sh_vim .sh_sourceCode { background-color: rgb(255, 255, 255); color: rgb(0=
+, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_keyword { color: rgb(178, 104, 24); font-weight:=
+ normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_type { color: rgb(0, 255, 0); font-weight: norma=
+l; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_string { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_regexp { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_specialchar { color: rgb(255, 34, 255); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_comment { color: rgb(0, 0, 255); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_number { color: rgb(255, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_preproc { color: rgb(255, 34, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight: nor=
+mal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_url { color: rgb(255, 0, 0); font-weight: normal=
+; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_date { color: rgb(178, 104, 24); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_time { color: rgb(178, 104, 24); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_file { color: rgb(178, 104, 24); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_ip { color: rgb(255, 0, 0); font-weight: normal;=
+ font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_name { color: rgb(255, 0, 0); font-weight: norma=
+l; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_variable { color: rgb(178, 104, 24); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_oldfile { color: rgb(255, 34, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_newfile { color: rgb(255, 0, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_difflines { color: rgb(178, 104, 24); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_selector { color: rgb(178, 104, 24); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_property { color: rgb(178, 104, 24); font-weight=
+: normal; font-style: normal; }
+
+.sh_vim .sh_sourceCode .sh_value { color: rgb(255, 0, 0); font-weight: norm=
+al; font-style: normal; }
+
+.sh_whatis { background: none; padding: 0px; margin: 0px; border: 0px none;=
+ }
+
+.sh_whatis .sh_sourceCode { background-color: rgb(0, 0, 0); color: rgb(0, 2=
+55, 0); font-weight: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_keyword { color: rgb(250, 90, 3); font-weight=
+: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_type { color: rgb(255, 255, 255); font-weight=
+: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_string { color: rgb(255, 187, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_regexp { color: rgb(255, 187, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_specialchar { color: rgb(255, 187, 0); font-w=
+eight: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_comment { color: rgb(255, 0, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_number { color: rgb(255, 255, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_preproc { color: rgb(191, 191, 191); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_symbol { color: rgb(0, 255, 255); font-weight=
+: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_function { color: rgb(231, 33, 211); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_cbracket { color: rgb(0, 255, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_url { color: rgb(255, 187, 0); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_date { color: rgb(250, 90, 3); font-weight: b=
+old; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_time { color: rgb(250, 90, 3); font-weight: b=
+old; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_file { color: rgb(250, 90, 3); font-weight: b=
+old; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_ip { color: rgb(255, 187, 0); font-weight: no=
+rmal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_name { color: rgb(255, 187, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_variable { color: rgb(239, 226, 25); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_oldfile { color: rgb(255, 187, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_newfile { color: rgb(255, 187, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_difflines { color: rgb(250, 90, 3); font-weig=
+ht: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_selector { color: rgb(239, 226, 25); font-wei=
+ght: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_property { color: rgb(250, 90, 3); font-weigh=
+t: bold; font-style: normal; }
+
+.sh_whatis .sh_sourceCode .sh_value { color: rgb(255, 187, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_whitengrey { background: none; padding: 0px; margin: 0px; border: 0px n=
+one; }
+
+.sh_whitengrey .sh_sourceCode { background-color: rgb(255, 255, 255); color=
+: rgb(105, 105, 105); font-weight: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_keyword { color: rgb(105, 105, 105); font=
+-weight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_type { color: rgb(105, 105, 105); font-we=
+ight: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_string { color: rgb(0, 136, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_regexp { color: rgb(0, 136, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_specialchar { color: rgb(0, 136, 0); font=
+-weight: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_comment { color: rgb(19, 38, 162); font-w=
+eight: normal; font-style: italic; }
+
+.sh_whitengrey .sh_sourceCode .sh_number { color: rgb(187, 0, 255); font-we=
+ight: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_preproc { color: rgb(71, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_url { color: rgb(0, 136, 0); font-weight:=
+ normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_date { color: rgb(105, 105, 105); font-we=
+ight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_time { color: rgb(105, 105, 105); font-we=
+ight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_file { color: rgb(105, 105, 105); font-we=
+ight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_ip { color: rgb(0, 136, 0); font-weight: =
+normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_name { color: rgb(0, 136, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_variable { color: rgb(105, 105, 105); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_oldfile { color: rgb(0, 136, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_newfile { color: rgb(0, 136, 0); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_difflines { color: rgb(105, 105, 105); fo=
+nt-weight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_selector { color: rgb(105, 105, 105); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_property { color: rgb(105, 105, 105); fon=
+t-weight: bold; font-style: normal; }
+
+.sh_whitengrey .sh_sourceCode .sh_value { color: rgb(0, 136, 0); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_zellner { background: none; padding: 0px; margin: 0px; border: 0px none=
+; }
+
+.sh_zellner .sh_sourceCode { background-color: rgb(255, 255, 255); color: r=
+gb(0, 0, 0); font-weight: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_keyword { color: rgb(165, 42, 42); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_type { color: rgb(0, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_string { color: rgb(255, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_regexp { color: rgb(255, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_specialchar { color: rgb(255, 0, 255); font-=
+weight: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_comment { color: rgb(255, 0, 0); font-weight=
+: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_number { color: rgb(255, 0, 255); font-weigh=
+t: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_preproc { color: rgb(160, 32, 240); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_function { color: rgb(0, 0, 0); font-weight:=
+ bold; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_url { color: rgb(255, 0, 255); font-weight: =
+normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_date { color: rgb(165, 42, 42); font-weight:=
+ normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_time { color: rgb(165, 42, 42); font-weight:=
+ normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_file { color: rgb(165, 42, 42); font-weight:=
+ normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_ip { color: rgb(255, 0, 255); font-weight: n=
+ormal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_name { color: rgb(255, 0, 255); font-weight:=
+ normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_variable { color: rgb(34, 95, 45); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_oldfile { color: rgb(255, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_newfile { color: rgb(255, 0, 255); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_difflines { color: rgb(165, 42, 42); font-we=
+ight: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_selector { color: rgb(34, 95, 45); font-weig=
+ht: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_property { color: rgb(165, 42, 42); font-wei=
+ght: normal; font-style: normal; }
+
+.sh_zellner .sh_sourceCode .sh_value { color: rgb(255, 0, 255); font-weight=
+: normal; font-style: normal; }
+
+.snippet-wrap { position: relative; }
+
+:first-child + html .snippet-wrap { display: inline-block; }
+
+* html .snippet-wrap { display: inline-block; }
+
+.snippet-reveal { text-decoration: underline; }
+
+.snippet-wrap .snippet-menu, .snippet-wrap .snippet-hide { position: absolu=
+te; top: 10px; right: 15px; font-size: 0.9em; z-index: 1; background-color:=
+ transparent; }
+
+.snippet-wrap .snippet-hide { top: auto; bottom: 10px; }
+
+:first-child + html .snippet-wrap .snippet-hide { bottom: 25px; }
+
+* html .snippet-wrap .snippet-hide { bottom: 25px; }
+
+.snippet-wrap .snippet-menu pre, .snippet-wrap .snippet-hide pre { backgrou=
+nd-color: transparent; margin: 0px; padding: 0px; }
+
+.snippet-wrap .snippet-menu a, .snippet-wrap .snippet-hide a { padding: 0px=
+ 5px; text-decoration: underline; }
+
+.snippet-wrap pre.sh_sourceCode { padding: 1em; line-height: 1.8em; overflo=
+w: auto; position: relative; border-radius: 15px; box-shadow: rgb(0, 0, 0) =
+2px 2px 5px; }
+
+.snippet-wrap pre.snippet-textonly { padding: 2em; }
+
+:first-child + html .snippet-wrap pre.snippet-formatted { padding: 2em 1em;=
+ }
+
+* html .snippet-wrap pre.snippet-formatted { padding: 2em 1em; }
+
+.snippet-reveal pre.sh_sourceCode { padding: 0.5em 1em; text-align: right; =
+}
+
+.snippet-wrap .snippet-num li { padding-left: 1.5em; }
+
+.snippet-wrap .snippet-no-num { list-style: none; padding: 0.6em 1em; margi=
+n: 0px; }
+
+.snippet-wrap .snippet-no-num li { list-style: none; padding-left: 0px; }
+
+.snippet-wrap .snippet-num { margin: 1em 0px 1em 1em; padding-left: 3em; }
+
+.snippet-wrap .snippet-num li { list-style: decimal-leading-zero outside no=
+ne; }
+
+.snippet-wrap .snippet-no-num li.box { padding: 0px 6px; margin-left: -6px;=
+ }
+
+.snippet-wrap .snippet-num li.box { border: 1px solid; list-style-position:=
+ inside; margin-left: -3em; padding-left: 6px; }
+
+:first-child + html .snippet-wrap .snippet-num li.box { margin-left: -2.4em=
+; }
+
+* html .snippet-wrap .snippet-num li.box { margin-left: -2.4em; }
+
+.snippet-wrap li.box-top { border-width: 1px 1px 0px !important; }
+
+.snippet-wrap li.box-bot { border-width: 0px 1px 1px !important; }
+
+.snippet-wrap li.box-mid { border-width: 0px 1px !important; }
+
+.snippet-wrap .snippet-num li .box-sp { width: 18px; display: inline-block;=
+ }
+
+:first-child + html .snippet-wrap .snippet-num li .box-sp { width: 27px; }
+
+* html .snippet-wrap .snippet-num li .box-sp { width: 27px; }
+
+.snippet-wrap .snippet-no-num li.box { border: 1px solid; }
+
+.snippet-wrap .snippet-no-num li .box-sp { display: none; }
+------MultipartBoundary--sRzuvbV4hRR4vWFvn6cfEBioAvo480Wq99a8Bwbh8B----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://pdf7.tarena.com.cn/tts8_source/ttsPage/JAVA/JSD_N_V06/JAVASE01/DAY03/SUPERDOC/01/index.files/table001.png
+
+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
+------MultipartBoundary--sRzuvbV4hRR4vWFvn6cfEBioAvo480Wq99a8Bwbh8B----
+Content-Type: text/html
+Content-ID: <frame-136-37457e9b-42d8-4b58-9dbd-f1e59e9168b7@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--sRzuvbV4hRR4vWFvn6cfEBioAvo480Wq99a8Bwbh8B------

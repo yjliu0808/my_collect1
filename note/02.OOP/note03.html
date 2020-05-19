@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+回顾:<br />
+1.方法的重载(Overload):<br />
+&nbsp; 1)一个类中，方法名称相同，参数列表不同<br />
+&nbsp; 2)编译器在编译时自动根据签名绑定调用不同的方法<br />
+2.构造方法:<br />
+&nbsp; 1)常常用于给成员变量赋初值<br />
+&nbsp; 2)与类同名，没有返回值类型<br />
+&nbsp; 3)在创建对象时被自动调用<br />
+&nbsp; 4)若不写，默认一个无参构造，若自己写了，则不再默认提供<br />
+&nbsp; 5)可以重载<br />
+3.this:指代当前对象，哪个对象调方法指的就是哪个对象<br />
+&nbsp; &nbsp; &nbsp; &nbsp;只能用在方法中，方法中访问成员变量之前默认有个this.<br />
+&nbsp; this.成员变量名-----访问成员变量<br />
+&nbsp; this.方法名()-------调用方法<br />
+&nbsp; this()--------------调用构造方法<br />
+4.引用类型数组:<br />
+&nbsp; &nbsp; Cell[] cells = new Cell[4];<br />
+&nbsp; &nbsp; cells[0] = new Cell(2,5);<br />
+<br />
+int[][] arr = new int[3][];<br />
+&nbsp; &nbsp; arr[0] = new int[2];<br />
+<br />
+笔记:<br />
+1.内存管理:由JVM来管理----了解<br />
+&nbsp; 1)堆:<br />
+&nbsp; &nbsp; 1.1)存储所有new出来的对象(包括成员变量)<br />
+1.2)成员变量的生命周期:<br />
+&nbsp; &nbsp; &nbsp;创建对象时存在堆中，对象被回收时一并消失<br />
+1.3)没有任何引用指向的对象就是垃圾，<br />
+&nbsp; &nbsp;垃圾回收器不定时的回收垃圾，<br />
+回收过程是透明的(看不到的)，<br />
+不一定发现垃圾就马上回收，<br />
+但是调用System.gc()可以建议快一些回收<br />
+1.4)内存泄漏:不再使用的内存没有被及时的回收<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 建议:对象不再使用时及时将引用设置为null<br />
+&nbsp; 2)栈:<br />
+&nbsp; &nbsp; 2.1)存储正在调用中的方法中的所有的局部变量(包括参数)<br />
+2.2)调用方法时在栈中为该方法分配一块对应的栈桢，<br />
+&nbsp; &nbsp;栈帧中存储方法中的所有局部变量(包括参数)，<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 方法调用结束时，栈桢被清除，局部变量一并消失<br />
+2.3)局部变量的生命周期:<br />
+&nbsp; &nbsp; &nbsp;调用方法时存在栈中，方法执行结束时与栈桢一并消失<br />
+&nbsp; 3)方法区:<br />
+&nbsp; &nbsp; 3.1)用于存储.class字节码文件(包括方法)<br />
+3.2)方法只有一份，通过this来指代调用该方法的具体的对象<br />
+2.继承:<br />
+&nbsp; 1)作用:避免代码重复，有利于代码的复用<br />
+&nbsp; 2)通过extends来实现继承<br />
+&nbsp; 3)父类:所有子类所共有的属性和行为<br />
+&nbsp; &nbsp; 子类:子类所特有的属性和行为<br />
+&nbsp; 4)子继承父后，子具有: 子+父<br />
+&nbsp; 5)一个父类可以有多个子类，<br />
+&nbsp; &nbsp; 一个子类只能有一个父类----单一继承<br />
+&nbsp; 6)继承具有传递性<br />
+&nbsp; 7)java规定:构造子类之前必须先构造父类<br />
+&nbsp; &nbsp; 在子类构造中若不调用父类的构造，则默认super()调父类的无参构造，<br />
+若子类构造中调用父类构造了，则不再默认提供<br />
+super()调用父类构造必须位于子类构造的第一句<br />
+3.super:指代当前对象的父类对象<br />
+&nbsp; super的用法:<br />
+&nbsp; &nbsp; super.成员变量名------访问父类的成员变量<br />
+super.方法名()--------调用父类的方法<br />
+super()---------------调用父类的构造方法<br />
+4.向上造型:<br />
+&nbsp; 1)父类型的引用指向子类的对象<br />
+&nbsp; 2)能点出来什么，看引用的类型<br />
+<br />
+任务:<br />
+1.完成UpDemo的练习<br />
+2.创建oo.day04的包，在包中:<br />
+&nbsp; 2.1)创建Cell类，包括:<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 成员变量:row,col<br />
+构造方法:Cell(int row,int col)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 方法:getCellInfo()<br />
+&nbsp; 2.2)创建Tetromino类，包括:<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 成员变量:cells<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 构造方法:Tetromino()<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 方法:drop(),moveLeft(),moveRight(),print()<br />
+&nbsp; 2.3)创建T类，继承Tetromino类，包括:<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 构造方法:T(int row,int col)<br />
+&nbsp; 2.4)创建J类，继承Tetromino类，包括:<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 构造方法:J(int row,int col)<br />
+&nbsp; 2.5)创建O类，继承Tetromino类，包括:<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 构造方法:O(int row,int col)<br />
+&nbsp; 2.6)创建Test类，在main()方法中:<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 方法:<br />
+public static void main(String[] args){}<br />
+public static void printWall(Tetromino t){}<br />
+<br />
+问:子类能继承父类的构造方法吗?<br />
+答:不能<br />
+<br />
+Boo o1 = new Boo(2); //不对<br />
+<br />
+class Aoo{<br />
+&nbsp; Aoo(){<br />
+&nbsp; }<br />
+&nbsp; Aoo(int a){<br />
+&nbsp; }<br />
+}<br />
+class Boo extends Aoo{<br />
+&nbsp; Boo(){<br />
+&nbsp; &nbsp; super(); //调用父类的构造方法<br />
+&nbsp; }<br />
+}<br />
+<br />
+继承要符合is a的关系，不要为了复用代码就随意继承<br />
+<br />
+class Dog{<br />
+&nbsp; String name;<br />
+&nbsp; int age;<br />
+&nbsp; String address;<br />
+&nbsp; void eat(){}<br />
+&nbsp; void sleep(){}<br />
+}<br />
+<br />
+class Person extends Dog{ //不合理，不建议<br />
+&nbsp;&nbsp;<br />
+}<br />
+<br />
+class Test{<br />
+&nbsp; public static void main(String[] args){<br />
+&nbsp; &nbsp; sayHi("zhangsan"); //String name="zhangsan"<br />
+&nbsp; }<br />
+&nbsp; public static void sayHi(String name){<br />
+&nbsp; &nbsp; System.out.println("大家好，我叫"+name);<br />
+&nbsp; }<br />
+}<br />
+<br />
+Tetromino o1 = new T(); //向上造型<br />
+Tetromino o2 = new J();<br />
+Tetromino o3 = new L();<br />
+Tetromino o3 = new O();<br />
+Tetromino o3 = new I();<br />
+Tetromino o3 = new S();<br />
+Tetromino o3 = new Z();<br />
+<br />
+Animal o1 = new Tiger();<br />
+Animal o2 = new Dog();<br />
+Animal o3 = new Cat();<br />
+Animal o4 = new Fish();<br />
+<br />
+<br />
+Person p1 = new Student();<br />
+Person p2 = new Teacher();<br />
+Person p3 = new Doctor();<br />
+<br />
+<br />
+继承要符合is a的关系<br />
+<br />
+Animal o3 = new Tiger(); //向上造型<br />
+<br />
+//动物是动物<br />
+Animal o1 = new Animal();<br />
+//老虎是老虎<br />
+Tiger o2 = new Tiger();<br />
+//老虎是动物<br />
+Animal o3 = new Tiger(); //向上造型<br />
+<br />
+//动物是老虎----语义不通<br />
+Tiger o4 = new Animal(); //编译错误<br />
+<br />
+<br />
+class Animal{<br />
+}<br />
+class Tiger extends Animal{<br />
+}<br />
+<br />
+为何要重载?<br />
+&nbsp; T型参数，只能接收T型对象<br />
+&nbsp; J型参数，只能接收J型对象<br />
+&nbsp; O型参数，只能接收O型对象<br />
+&nbsp; L型参数，只能接收L型对象<br />
+&nbsp; I型参数，只能接收I型对象<br />
+&nbsp; S型参数，只能接收S型对象<br />
+&nbsp; Z型参数，只能接收Z型对象<br />
+<br />
+如何解决?<br />
+&nbsp; 假设有一种类型???-----父类型<br />
+&nbsp; &nbsp; &nbsp;既能接收T型对象，<br />
+也能接收J型对象，<br />
+也能接收O型对象，<br />
+也能接收L型对象，<br />
+也能接收I型对象，<br />
+也能接收S型对象，<br />
+也能接收Z型对象<br />
+<br />
+尽量写出高质量的代码:<br />
+&nbsp; 复用性好、扩展性好、维护性好、<br />
+&nbsp; 可移植性好、健壮性好、效率高......<br />
+<br />
+必须数字<br />
+<br />
+程序员---------不要靠用户自觉来保证健壮性<br />
+程序员---------你不自觉我就不让你输入<br />
+<br />
+扩展性好的，并且效率高<br />
+<br />
+以前效率没有那么高的要求<br />
+现在对于效率要求越来越高<br />
+<br />
+<br />
+C/S-------------客户端/服务器<br />
+<br />
+B/S-------------浏览器/服务器<br />
+<br />
+何时打*:只要和格子行列号配上，就打*<br />
+何时打-:和4个格子行列号都未配上，才打-<br />
+<br />
+<br />
+并非一次判断得到最终结果-------开关<br />
+<br />
+质数----取余所有都不得0时<br />
+<br />
+优点:效率高<br />
+缺点:扩展性差<br />
+public static void printWall(T tt){<br />
+for(int i=0;i&lt;20;i++){<br />
+for(int j=0;j&lt;10;j++){<br />
+if(i==tt.cells[0].row &amp;&amp; j==tt.cells[0].col<br />
+&nbsp; ||<br />
+&nbsp; i==tt.cells[1].row &amp;&amp; j==tt.cells[1].col<br />
+&nbsp; ||<br />
+&nbsp; i==tt.cells[2].row &amp;&amp; j==tt.cells[2].col<br />
+&nbsp; ||<br />
+&nbsp; i==tt.cells[3].row &amp;&amp; j==tt.cells[3].col){<br />
+System.out.print("* ");<br />
+}else{<br />
+System.out.print("- ");<br />
+}<br />
+}<br />
+System.out.println();<br />
+}<br />
+}<br />
+<br />
+Tetromino<br />
+<br />
+<br />
+Coo o = new Coo();<br />
+o.c = 1;<br />
+o.b = 2;<br />
+o.a = 3;<br />
+<br />
+class Aoo{<br />
+&nbsp; int a;<br />
+}<br />
+class Boo extends Aoo{<br />
+&nbsp; int b;<br />
+}<br />
+class Coo extends Boo{<br />
+&nbsp; int c;<br />
+}<br />
+Student zs = new Student();<br />
+zs.className/study();<br />
+zs.name/age/address/eat()/sleep();<br />
+<br />
+class Aoo{<br />
+}<br />
+<br />
+class Person{ //父类<br />
+&nbsp; String name;<br />
+&nbsp; int age;<br />
+&nbsp; String address;<br />
+&nbsp; void eat(){}<br />
+&nbsp; void sleep(){}<br />
+}<br />
+class Student extends Person{ //子类<br />
+&nbsp; String className;<br />
+&nbsp; void study(){}<br />
+}<br />
+class Teacher extends Person{ //子类<br />
+&nbsp; double salary;<br />
+&nbsp; void teach(){}<br />
+}<br />
+class Doctor extends Person{ //子类<br />
+&nbsp; String level;<br />
+&nbsp; void cut(){}<br />
+}<br />
+<br />
+程序中的继承:<br />
+&nbsp; 代码不需要自己写，自己也能用<br />
+<br />
+生活中的继承:<br />
+1.继承财产:<br />
+&nbsp; &nbsp; 钱不需要自己挣，自己也能花<br />
+2.继承皇位:<br />
+&nbsp; &nbsp; 江山不需要自己打，自己也能坐<br />
+3.继承工作:<br />
+&nbsp; &nbsp; 工作不需要自己找，自己也能干<br />
+<br />
+方法区中: 一个drop()<br />
+堆中: 两个row+两个col<br />
+<br />
+Cell c1 = new Cell();<br />
+Cell c2 = new Cell();<br />
+<br />
+c1.row = 2;<br />
+c2.row = 3;<br />
+<br />
+c1.drop();-----c1.row=3(this指的是c1)<br />
+c2.drop();-----c2.row=4(this指的是c2)<br />
+<br />
+<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+&nbsp; void drop(){<br />
+&nbsp; &nbsp; row++;<br />
+&nbsp; }<br />
+}<br />
+<br />
+Aoo o = new Aoo();<br />
+<br />
+class Aoo{<br />
+&nbsp; int a;<br />
+&nbsp; void test(int b){<br />
+&nbsp; &nbsp; int c;<br />
+System.out.println(a); //0<br />
+System.out.println(c); //编译错误<br />
+&nbsp; }<br />
+}<br />
+内存泄漏:<br />
+java程序员，不需要担心内存管理<br />
+垃圾回收器<br />
+<br />
+C++<br />
+<br />
+垃圾:没有任何引用所指向的对象<br />
+System.gc();<br />
+<br />
+java程序，运行运行运行------内存不足<br />
+中关村买了4G内存条----------装到电脑上<br />
+<br />
+运行-------------------------依然内存不足<br />
+如何解决---------------------给JVM加内存才行<br />
+<br />
+class O{<br />
+&nbsp; Cell[] cells;<br />
+&nbsp; O(int row,int col){<br />
+&nbsp; &nbsp; cells = new Cell[4];<br />
+&nbsp; &nbsp; cells[0] = new Cell(row,col);<br />
+cells[1] = new Cell(row,col+1);<br />
+cells[2] = new Cell(row+1,col);<br />
+cells[3] = new Cell(row+1,col+1);<br />
+&nbsp; }<br />
+&nbsp; void drop(){<br />
+&nbsp; }<br />
+&nbsp; void moveLeft(){<br />
+&nbsp; }<br />
+&nbsp; void moveRight(){<br />
+&nbsp; }<br />
+&nbsp; void print(){<br />
+&nbsp; }<br />
+}<br />
+	</body>		
+</html>

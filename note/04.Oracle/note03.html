@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	列的别名<br />
+当一个查询语句中的字段不是表中纯粹的字段<br />
+而是一个函数或表达式时，那么查询出来的结果<br />
+集中对应的该字段名就是这个函数或表达式，<br />
+可读性差，为此可以为这样的字段添加别名。<br />
+若希望别名中出现空格或区分大小写,可以用双引<br />
+号将其括起来.<br />
+SELECT ename,sal*12 "s al"<br />
+FROM emp<br />
+<br />
+AND,OR用来连接多个条件<br />
+AND优先级高于OR<br />
+查看工资高于1000的职位是CLERK和<br />
+SALESMAN的员工<br />
+SELECT ename, sal, job&nbsp;<br />
+FROM emp &nbsp;SALESMAN<br />
+WHERE sal &gt; 1000&nbsp;<br />
+AND (job = 'SALESMAN'<br />
+OR job='CLERK')<br />
+<br />
+LIKE用于模糊匹配字符串<br />
+支持两个通配符:<br />
+%:任意个字符(0-多个)<br />
+_:单一的一个字符<br />
+<br />
+查看姓名第二个字母是"A"的员工<br />
+SELECT ename, job&nbsp;<br />
+FROM emp&nbsp;<br />
+WHERE ename LIKE '_A%';<br />
+<br />
+<br />
+IN(list)与NOT IN(list)<br />
+判断在列表中或不在列表中<br />
+IN与NOT IN也常用在子查询在中<br />
+<br />
+查看职位是CLERK或SALESMAN的员工信息<br />
+SELECT ename,job<br />
+FROM emp<br />
+WHERE job IN ('CLERK','SALESMAN')<br />
+<br />
+<br />
+ANY(list)与ALL(list)<br />
+联合&gt;,&gt;=,&lt;,&lt;=多个值时使用<br />
+&gt;ANY:大于列表之一即可(大于最小的)<br />
+&gt;ALL:大于列表所有(大于最大的)<br />
+&lt;ANY:小于最大的<br />
+&lt;ALL:小于最小的<br />
+通常被用在子查询中。<br />
+<br />
+DISTINCT关键字<br />
+用于去除重复行<br />
+<br />
+查看公司有职位？<br />
+SELECT DISTINCT job<br />
+FROM emp<br />
+<br />
+DISTINCT可以对多列去重,去重的原则<br />
+是多个字段值得组合没有重复行。<br />
+SELECT DISTINCT job,deptno<br />
+FROM emp<br />
+<br />
+ORDER BY子句<br />
+用于对结果集按照给定字段进行排序<br />
+排序分为:<br />
+升序:ASC,不写默认就是升序<br />
+降序:DESC<br />
+ORDER BY只能定义在查询的最后一个子句上<br />
+<br />
+查看公司中工资的排名<br />
+SELECT ename,sal,deptno<br />
+FROM emp<br />
+ORDER BY sal DESC<br />
+<br />
+可以按照多字段排序，每个字段都可以单独<br />
+指定排序方式，排序按照从左到右的优先级<br />
+顺序排序，即:先按照第一个字段排序结果集<br />
+当第一个字段有重复值再按照第二个字段排序<br />
+依此类推。<br />
+SELECT ename,deptno,sal<br />
+FROM emp<br />
+ORDER BY deptno DESC,sal DESC<br />
+<br />
+NULL值在排序中被认作最大值<br />
+SELECT ename,comm<br />
+FROM emp<br />
+ORDER BY comm DESC<br />
+<br />
+<br />
+聚合函数<br />
+聚合函数是对结果集进行统计使用的<br />
+对字段值的统计有:<br />
+MAX,MIN,AVG,SUM<br />
+分别求最大值，最小值，平均值和总和<br />
+<br />
+COUNT是对记录数的统计<br />
+<br />
+查看公司工资情况?<br />
+SELECT MAX(sal),MIN(sal),<br />
+&nbsp; &nbsp; &nbsp; &nbsp;AVG(sal),SUM(sal)<br />
+FROM emp<br />
+<br />
+查看公司一共多少人?<br />
+SELECT COUNT(sal)<br />
+FROM emp<br />
+<br />
+SELECT NVL(comm,0) FROM emp<br />
+<br />
+聚合函数忽略NULL值<br />
+SELECT AVG(NVL(comm,0))<br />
+FROM emp<br />
+<br />
+求表中记录总数<br />
+SELECT COUNT(*)<br />
+FROM emp<br />
+<br />
+GROUP BY子句<br />
+GROUP BY子句可以对结果集按照给定<br />
+字段值相同的记录进行分组<br />
+GROUP BY是配合聚合函数对结果集进行<br />
+分组统计使用的。<br />
+<br />
+查看每个部门的平均工资?<br />
+SELECT AVG(sal),deptno<br />
+FROM emp<br />
+GROUP BY deptno<br />
+<br />
+多字段分组<br />
+分组的几个字段值都相同的记录被看作一组<br />
+查看每个部门每种职位的最高工资?<br />
+SELECT MAX(sal),deptno,job<br />
+FROM emp<br />
+GROUP BY deptno,job<br />
+<br />
+查看部门的平均工资，前提是该部门<br />
+平均工资高于2500?<br />
+SELECT AVG(sal),deptno<br />
+FROM emp<br />
+GROUP BY deptno<br />
+HAVING AVG(sal)&gt;2500<br />
+<br />
+WHERE与HAVING<br />
+WHERE是用来过滤记录的<br />
+HAVING是用来过滤分组的<br />
+它们过滤的时机也不相同，先WHERE后HAVING<br />
+WHERE是在查询表时逐行过滤以选取满足条件的<br />
+记录。<br />
+HAVING是在数据查询后并且分完组后对分组进行<br />
+过滤的，以决定分组的取舍。<br />
+HAVING必须跟在GROUP BY后面。<br />
+<br />
+查看平均工资高于2000的那些部门的最高与<br />
+最低工资?<br />
+SELECT MAX(sal),MIN(sal),deptno<br />
+FROM emp<br />
+GROUP BY deptno<br />
+HAVING AVG(sal)&gt;2000<br />
+<br />
+SELECT deptno,dname,loc<br />
+FROM dept<br />
+<br />
+<br />
+关联查询<br />
+从多张表中关联查询数据，关键点在于<br />
+连接的条件，根据该条件数据库才知道<br />
+这些表中的数据的对应关系，从而分别<br />
+获取这些对应记录中查询的字段并构成<br />
+结果集。<br />
+<br />
+查看每个员工的名字以及其所在部门的名字?<br />
+SELECT e.ename,e.deptno,d.dname<br />
+FROM emp e,dept d<br />
+WHERE e.deptno=d.deptno<br />
+<br />
+关联要有连接条件，不添加连接条件会产生<br />
+笛卡儿积，这通常是一个无意义的结果集<br />
+原则上N张表关联查询至少要有N-1个连接条件<br />
+<br />
+查看SALESMAN所在那个城市？<br />
+SELECT e.ename,e.job,d.loc<br />
+FROM emp e,dept d<br />
+WHERE e.deptno=d.deptno<br />
+AND e.job='SALESMAN'<br />
+<br />
+SELECT e.ename,e.job,d.loc<br />
+FROM emp e,dept d<br />
+WHERE e.deptno=d.deptno<br />
+AND d.loc='NEW YORK'<br />
+<br />
+查看每个城市员工的平均工资?<br />
+SELECT AVG(e.sal),d.loc<br />
+FROM emp e,dept d<br />
+WHERE e.deptno=d.deptno<br />
+GROUP BY d.loc<br />
+<br />
+<br />
+内连接<br />
+内连接也是关联查询的一种。<br />
+<br />
+查看每个员工以及其所在部门名?<br />
+SELECT e.ename,d.dname<br />
+FROM emp e JOIN dept d<br />
+ON e.deptno=d.deptno<br />
+WHERE d.dname='SALES'<br />
+<br />
+关联查询中不满足连接条件的数据不会<br />
+被查询出来。<br />
+<br />
+外连接<br />
+外连接即可以满足连接条件的记录查询出<br />
+来之外，还可以将不满足连接条件的记录<br />
+也查询出来。<br />
+外连接分为:<br />
+左外连接:以JOIN左侧表作为驱动表，该表中<br />
+所有记录都要显示，那么来自右侧表的字段值<br />
+若不满足连接条件则为NULL。<br />
+右外连接:<br />
+全外连接:<br />
+<br />
+列出所有员工以及其所在部门名<br />
+SELECT e.ename,d.dname<br />
+FROM emp e&nbsp;<br />
+&nbsp;LEFT|RIGHT|FULL OUTER JOIN&nbsp;<br />
+&nbsp; &nbsp; &nbsp;dept d<br />
+ON e.deptno=d.deptno<br />
+<br />
+<br />
+SELECT e.ename,d.dname<br />
+FROM emp e,dept d<br />
+WHERE e.deptno=d.deptno(+)<br />
+<br />
+<br />
+<br />
+自连接<br />
+自连接是当前表的一条数据对应当前表<br />
+的多条数据<br />
+自连接用于解决相同属性的一组数据，但是<br />
+又存在上下级关系的树状结构组织时使用。<br />
+<br />
+查看每个员工以及其上司的名字?<br />
+<br />
+SELECT e.ename,m.ename<br />
+FROM emp e,emp m<br />
+WHERE e.mgr=m.empno<br />
+<br />
+SELECT e.ename,m.ename<br />
+FROM emp e JOIN emp m<br />
+ON e.mgr=m.empno<br />
+<br />
+查看FORD的上司在哪个城市?<br />
+分别列出:<br />
+FORD，上司的名字，以及上司所在城市<br />
+SELECT e.ename,m.ename,d.loc<br />
+FROM emp e,emp m,dept d<br />
+WHERE e.mgr=m.empno<br />
+AND m.deptno=d.deptno<br />
+AND e.ename='FORD'<br />
+<br />
+SELECT e.ename,m.ename,d.loc<br />
+FROM emp e JOIN emp m<br />
+ON e.mgr=m.empno<br />
+JOIN dept d<br />
+ON m.deptno=d.deptno<br />
+WHERE e.ename='FORD'<br />
+
+	</body>
+</html>
