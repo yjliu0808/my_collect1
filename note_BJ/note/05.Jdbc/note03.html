@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	JDBC中对事务的控制<br />
+&nbsp; 事务的提交与回滚是通过Connection提供的方法来调用的。本质上事务还是依靠数据库的实现，<br />
+&nbsp; Connection的方法实质上也只是调用了数据库事务机制。<br />
+<p>
+</p>
+<p>
+	批操作<br />
+&nbsp; 当大批量执行SQL语句时，会影响执行效率的因素<br />
+&nbsp; 主要有:<br />
+&nbsp; 1:网络传输(SQL从客户端发送给数据库服务端)<br />
+&nbsp; 2:执行计划的生成<br />
+&nbsp; 3:事务的提交<br />
+&nbsp;&nbsp;<br />
+&nbsp; 使用批操作可以将大量SQL语句缓存然后一口气发送<br />
+&nbsp; 给服务端，减少网络调用次数，提高传输效率。<br />
+&nbsp;&nbsp;<br />
+&nbsp; 使用PreparedStatement可以有效减少执行计划的生成<br />
+&nbsp;&nbsp;<br />
+&nbsp; 使用一次事务完成大量DML SQL的执行可以减少数据库<br />
+&nbsp; 实际对磁盘写次数从而提高DML执行效率<br />
+</p>
+<p>
+	自动返回主键<br />
+&nbsp; 在进行关联插入数据时，从表中外间字段的值要保存主表中主键字段的值，那么在插入主表数据的同时就<br />
+&nbsp; 可以返回该记录中主键字段的值就能方便的向从表中外键字段添加该值，省去单独获取主表中该主键字段<br />
+&nbsp; 值的操作提高效率。<br />
+&nbsp; 例如:<br />
+&nbsp; 插入一个新部门的同时向该部门添加员工。由于部门的主键通常有序列等方式自动生成，那么在<br />
+&nbsp; 该部门记录添加完毕后，向员工表插入员工信息时,该员工的部门号需要这个部门的部门号，那么如何获取<br />
+&nbsp; 就是自动返回主键要解决的问题。<br />
+</p>
+<p>
+	向dept表中插入数据IT,BEIJING<br />
+&nbsp;向emp表中插入一条员工信息，其所在IT部两条插入操作在一个事务中完成<br />
+</p>
+<p>
+	第二个参数的意义是在通过该PS执行SQL语句后要获取该记录中给定字段的值<br />
+PreparedStatement dps= conn.prepareStatement(deptSql,new String[]{"deptno"});<br />
+dps.setString(1, "IT");<br />
+dps.setString(2, "BEIJING");<br />
+dps.executeUpdate();<br />
+<br />
+获取执行SQL后生成数据中指定字段对应的值<br />
+ResultSet rs = dps.getGeneratedKeys();<br />
+rs.next();<br />
+int deptno = rs.getInt(1);<br />
+<br />
+DAO是数据持久层中所有类的统称，所用是将业务逻辑与数据库操作分离开。使得业务逻辑更专注，并且对<br />
+&nbsp; 数据库的操作可以完全面向对象化。DAO负责将实体类与数据库中表中数据进行映射。<br />
+</p>
+	</body>
+</html>

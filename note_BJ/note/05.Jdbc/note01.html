@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	<h2>
+	JDBC java数据库连接
+</h2>
+<h4>
+	&nbsp;1.&nbsp;JDBC是JAVA提供的一套标准连接数据库的接口<br />
+&nbsp; 规定了连接数据库的步骤和功能。
+</h4>
+&nbsp; 不同的数据库提供商都提供了一套JDBC的实现类，<br />
+<p>
+	&nbsp; 它们成为数据库驱动。
+</p>
+<h4>
+	2.JDBC的主要接口有：<br />
+&nbsp; DriverManager:用于加载驱动并建立数据库连接<br />
+&nbsp; Connection:表示与特定数据库的连接会话<br />
+&nbsp; Statement:用于执行SQL语句<br />
+&nbsp; ResultSet:表示查询结果集
+</h4>
+<p>
+	<h4>
+		3.使用JDBC连接数据库的步骤:<br />
+&nbsp;1:加载驱动包:Class.forName()<br />
+&nbsp;2:调用驱动建立连接:DriverManager<br />
+&nbsp;3:通过连接创建语句对象:Connection<br />
+&nbsp;4:执行SQL语句:Statement<br />
+&nbsp;5:若是查询语句会得到结果集:ResultSet<br />
+&nbsp;6:遍历结果集获取查询结果<br />
+&nbsp;7:关闭连接
+	</h4>
+1) 加载驱动包不同数据库传入的字符串内容不一致<br />
+&nbsp;若抛出:java.lang.ClassNotFoundException<br />
+&nbsp;通常由两种情况导致<br />
+&nbsp;1.1):没有在项目中导入驱动包<br />
+&nbsp;1.2):forName方法中字符串格式有误<br />
+Class.forName("oracle.jdbc.driver.OracleDriver");
+</p>
+<p>
+	2) 通过DriverManager与数据库建立连接使用静态方法getConnection,要传入三个参数<br />
+&nbsp;参数1:数据库地址，不同数据库格式不同<br />
+&nbsp;参数2:数据库用户名<br />
+&nbsp;参数3:数据库密码<br />
+Connection conn = DriverManager.getConnection(<br />
+"jdbc:oracle:thin:@192.168.201.210:1521:orcl",&nbsp;<br />
+"openlab", "open123");
+</p>
+<p>
+	<span>&nbsp;</span><span>Statement state = conn.createStatement();</span><span></span><br />
+3)Statement针对不同类型的SQL语句有不同的执行方法<br />
+&nbsp;3.1)ResultSet executeQuery(String sql)<br />
+&nbsp;用来执行查询语句(DQL)的方法<br />
+&nbsp;<br />
+&nbsp;3.2)int executeUpdate(String sql)<br />
+&nbsp;用来执行DML语句的方法，返回值为执行了该<br />
+&nbsp;SQL后影响了数据库表中多少条数据<br />
+&nbsp;<br />
+&nbsp;3.3)boolean execute(String sql)<br />
+&nbsp;可以执行所有类型的SQL语句，但是DQL，DML<br />
+&nbsp;都有专门的方法，所以该方法通常用来执行<br />
+&nbsp;DDL语句。当返回值为true时表示该SQL语句执行<br />
+&nbsp;后有结果集。<br />
+</p>
+<p>
+	创建一个序列:seq_userinfo_id_xxxx 从1开始，步进为1
+</p>
+String sql = "CREATE SEQUENCE seq_userinfo_id "<br />
+&nbsp; + "	START WITH 1 "<br />
+&nbsp; + " &nbsp;INCREMENT BY 1 ";<br />
+state.execute(sql);<br />
+<p>
+</p>
+<h4>
+	执行DML语句
+</h4>
+<p>
+	String sql = "INSERT INTO userinfo "<br />
+&nbsp; + "(id,username,password,email, "<br />
+&nbsp; + " nickname,account) "<br />
+&nbsp; + "VALUES "<br />
+&nbsp; + "(seq_userinfo_id.NEXTVAL, "<br />
+&nbsp; + " '"+username+"','"+password+"', "<br />
+&nbsp; + " '"+mail+"','"+nickName+"',5000) ";<br />
+int i = state.executeUpdate(sql);<br />
+if(i&gt;0){<br />
+System.out.println("插入完毕!");<br />
+}<br />
+conn.close();<br />
+</p>
+<h4>
+	执行查询语句
+</h4>
+<p>
+	遍历结果集ResultSet<br />
+&nbsp;ResultSet提供方法:<br />
+&nbsp;boolean next()<br />
+&nbsp;使结果集向下表示一条记录，当查询出的结果集<br />
+&nbsp;指针默认指向结果集第一条数据之上。当调用next<br />
+&nbsp;方法后指针向下移动到第一条，若结果集有该条记录<br />
+&nbsp;则返回true。再次调用next指针会继续向下表示下一条记录。
+</p>
+<p>
+	<br />
+</p>
+<p>
+	ResultSet提供了获取当前记录某个字段对应<br />
+&nbsp;值的一系列方法，根据字段类型不同方法名不同<br />
+&nbsp;int getInt(String colName)<br />
+&nbsp;根据给定的字段名获取该整数类型字段的值<br />
+&nbsp;<br />
+&nbsp;String getString(String colName)<br />
+&nbsp;根据给定的字段名获取该字符串类型字的值<br />
+&nbsp;对应的数据类型都有对应方法<br />
+while(rs.next()){<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;int id = rs.getInt("id");<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;String username = rs.getString("username");<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;String password = rs.getString("password");<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;String email = rs.getString("email");<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;String nickname = rs.getString("nickname");<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;double account = rs.getDouble("account");<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(id+","+username+","+password);<br />
+<br />
+}<br />
+<br />
+	<h4>
+		查看emp表中工资排名的员工信息:每页显示5条，查看第2页的内容,列出empno,ename,sal,job,deptno
+	</h4>
+String sql = "SELECT &nbsp;"+<br />
+"FROM(SELECT ROWNUM rn,t. &nbsp; &nbsp; &nbsp;"+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; " &nbsp; &nbsp; FROM(SELECT empno,ename,sal,job,deptno "+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; " &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM emp_zwz &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; " &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ORDER BY sal DESC) t "+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; " &nbsp; &nbsp; WHERE ROWNUM&lt;="+end+") &nbsp; &nbsp;"+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "WHERE rn&gt;="+start+" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;";<br />
+ResultSet rs = state.executeQuery(sql);<br />
+while(rs.next()){<br />
+int empno = rs.getInt("empno");<br />
+String ename = rs.getString("ename");<br />
+int sal = rs.getInt("sal");<br />
+String job = rs.getString("job");<br />
+int deptno = rs.getInt("deptno");<br />
+System.out.println(empno+","+ename+","+sal+","+job+","+deptno);<br />
+}<br />
+</p>
+	</body>
+</html>

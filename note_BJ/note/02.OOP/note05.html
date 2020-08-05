@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+回顾:<br />
+1.方法的重写(Override):重新写、覆盖<br />
+&nbsp; 1)发生在父子类中，方法名称相同，参数列表相同，方法体不同<br />
+&nbsp; 2)重写方法被调用时，看对象的类型<br />
+2.重载Overload与重写Override的区别:---常见面试题<br />
+&nbsp; 1)重写:发生在父子类中，方法名称相同，参数列表相同，方法体不同<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;运行期绑定，看对象调用方法<br />
+&nbsp; 2)重载:发生在同一类中，方法名称相同，参数列表不同，方法体不同<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;编译期绑定，盾引用绑定方法<br />
+3.package:<br />
+&nbsp; &nbsp; 包，避免类名冲突，可以有层次结构，小写<br />
+&nbsp; &nbsp; 包名.类名<br />
+&nbsp; import:<br />
+&nbsp; &nbsp; 同包的类可以直接访问，不同包不能直接访问:<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1)先import再直接使用<br />
+&nbsp; 2)全称<br />
+笔记:<br />
+1.访问控制修饰符:<br />
+&nbsp; 1)public:公开的，任何类<br />
+&nbsp; 2)private:私有的，本类<br />
+&nbsp; 3)protected:受保护的，本类、子类、同包类<br />
+&nbsp; 4)默认的:什么也不写，本类、同包类<br />
+&nbsp; 说明:<br />
+&nbsp; &nbsp; 1)类的访问修饰只能是public和默认的<br />
+2)类中成员访问修饰如上4种都可以<br />
+2.static:静态的<br />
+&nbsp; 1)静态变量:<br />
+&nbsp; &nbsp; 1.1)由static修饰<br />
+1.2)属于类的，存在方法区中，只有一份<br />
+1.3)常常通过类名.来访问<br />
+1.4)何时用:所有对象的数据都一样时使用<br />
+&nbsp; 2)静态方法:<br />
+&nbsp; &nbsp; 2.1)由static修饰<br />
+2.2)属于类的，存在方法区中，只有一份<br />
+2.3)常常通过类名.来访问<br />
+2.4)静态方法没有隐式this传递，<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 所以静态方法中不能直接访问实例成员<br />
+2.5)何时用:方法的操作仅与参数相关而与对象无关<br />
+&nbsp; 3)静态块:<br />
+&nbsp; &nbsp; 3.1)由static修饰<br />
+3.2)属于类的代码块，类被加载期间自动执行<br />
+&nbsp; &nbsp;因为类只被加载一次，所以静态块也只执行一次<br />
+3.3)何时用:常常用于加载/初始化静态资源(图片、音频、视频等)<br />
+3.final:最终的，单独应用的几率不大<br />
+&nbsp; 1)修饰变量:变量不能被改变<br />
+&nbsp; 2)修饰方法:方法不能被重写<br />
+&nbsp; 3)修饰类 &nbsp;:类不能被继承<br />
+4.static final:常量<br />
+&nbsp; 1)必须声明的同时初始化<br />
+&nbsp; 2)常常通过类名点来访问，不能被改变<br />
+&nbsp; 3)建议:常量名所有字母都大写<br />
+&nbsp; 4)在编译时被直接替换为具体的值，效率高<br />
+5.抽象方法:<br />
+&nbsp; 1)由abstract修饰<br />
+&nbsp; 2)只有方法的定义，没有具体的实现(连大括号都没有)<br />
+6.抽象类:<br />
+&nbsp; 1)由abstract修饰<br />
+&nbsp; 2)包含抽象方法的类必须是抽象类<br />
+&nbsp; &nbsp; 不包含抽象方法的类也可以声明为抽象类---我乐意<br />
+&nbsp; 3)抽象类不能被实例化<br />
+&nbsp; 4)抽象类是需要被继承的，子类:<br />
+&nbsp; &nbsp; 4.1)重写抽象类中的所有抽象方法----建议<br />
+4.2)也声明为抽象类----不建议<br />
+&nbsp; 5)抽象类的意义:<br />
+&nbsp; &nbsp; 5.1)封装子类所共有的属性和行为，实现代码复用<br />
+5.2)为所有子类提供一种统一的类型----向上造型<br />
+5.3)可以包含抽象方法，为所有子类提供了统一的入口,<br />
+&nbsp; &nbsp;子类的具体实现不同，但定义是一致的<br />
+7.接口:<br />
+&nbsp; 1)是一个标准、规范----制定方<br />
+&nbsp; &nbsp; 遵守了这个标准就能干某件事------API之后<br />
+任务:<br />
+1.求一组图形的最大面积-----每人至少两次<br />
+2.练习StaticDemo、FinalDemo、StaticFinalDemo小代码<br />
+<br />
+生活中的接口:<br />
+1.电脑厂商留了个USB接口--------制定标准、规范<br />
+&nbsp; 优盘、摄像头、键盘厂商-------遵守标准、规范<br />
+2.国家对开发商-----------------制定标准、规范<br />
+&nbsp; 国家对家具、家电厂商---------制定标准、规范<br />
+&nbsp; 开发商、家具/电厂商----------遵守标准、规范<br />
+3.银行-------------------------制定标准、规范<br />
+&nbsp; 银行卡-----------------------遵守标准、规范<br />
+<br />
+Shape s1 = new Square(); //向上造型<br />
+Shape s2 = new Circle();<br />
+Shape s3 = new Six();<br />
+<br />
+abstract class Shape{ //抽象类--不完整<br />
+&nbsp; double c;<br />
+&nbsp; abstract double area(); //抽象方法--不完整<br />
+}<br />
+class Square extends Shape{<br />
+&nbsp; double area(){ //重写抽象方法--变不完整为完整<br />
+&nbsp; &nbsp; return 0.0625*c*c;<br />
+&nbsp; }<br />
+}<br />
+class Circle extends Shape{<br />
+&nbsp; double area(){<br />
+&nbsp; &nbsp; return 0.0796*c*c;<br />
+&nbsp; }<br />
+}<br />
+class Six extends Shape{<br />
+&nbsp; double area(){<br />
+&nbsp; &nbsp; return 0.0721*c*c;<br />
+&nbsp; }<br />
+}<br />
+<br />
+new Tetromino(); //编译错误<br />
+<br />
+new T();<br />
+new J();<br />
+new L();<br />
+new O();<br />
+new I();<br />
+new S();<br />
+new Z();<br />
+<br />
+abstract class Tetromino{<br />
+&nbsp; Cell[] cells;<br />
+&nbsp; Tetromino(){}<br />
+&nbsp;&nbsp;<br />
+&nbsp; void drop(){}<br />
+&nbsp; void moveLeft(){}<br />
+&nbsp; void moveRight(){}<br />
+&nbsp; void print(){}<br />
+}<br />
+<br />
+求一组图形中的最大面积:<br />
+<br />
+<br />
+Square[] ss = new Square[3];<br />
+ss[0] = new Square(1);&nbsp;<br />
+ss[1] = new Square(2);&nbsp;<br />
+ss[2] = new Square(3);&nbsp;<br />
+<br />
+Circle[] cs = new Circle[3];<br />
+cs[0] = new Circle(1);<br />
+cs[1] = new Circle(2);<br />
+cs[2] = new Circle(3);<br />
+<br />
+Six[] sixes = new Six[3];<br />
+sixes[0] = new Six(1);<br />
+sixes[1] = new Six(2);<br />
+sixes[2] = new Six(3);<br />
+<br />
+1)找到ss中最大面积sMax<br />
+2)找到cs中最大面积cMax<br />
+3)找到sixes中最大面积sixMax<br />
+4)找到sMax与cMax与sixMax中的最大面积max<br />
+<br />
+Shape[] shapes = new Shape[9]; //创建Shape数组对象<br />
+shapes[0] = new Square(1); //向上造型<br />
+shapes[1] = new Square(2);<br />
+shapes[2] = new Square(3);<br />
+shapes[3] = new Circle(1);<br />
+shapes[4] = new Circle(2);<br />
+shapes[5] = new Circle(3);<br />
+shapes[6] = new Six(1);<br />
+shapes[7] = new Six(2);<br />
+shapes[8] = new Six(3);<br />
+<br />
+double max = shapes[0].area();<br />
+for(int i=1;i&lt;shapes.length;i++){<br />
+&nbsp; double area = shapes[i].area();<br />
+&nbsp; if(area&gt;max){<br />
+&nbsp; &nbsp; max=area;<br />
+&nbsp; }<br />
+}<br />
+System.out.println("max="+max);<br />
+<br />
+<br />
+abstract class Shape{ //抽象类--不完整<br />
+&nbsp; double c;<br />
+&nbsp; abstract double area(); //抽象方法--不完整<br />
+}<br />
+class Square extends Shape{<br />
+&nbsp; double area(){ //重写抽象方法--变不完整为完整<br />
+&nbsp; &nbsp; return 0.0625*c*c;<br />
+&nbsp; }<br />
+}<br />
+class Circle extends Shape{<br />
+&nbsp; double area(){<br />
+&nbsp; &nbsp; return 0.0796*c*c;<br />
+&nbsp; }<br />
+}<br />
+class Six extends Shape{<br />
+&nbsp; double area(){<br />
+&nbsp; &nbsp; return 0.0721*c*c;<br />
+&nbsp; }<br />
+}<br />
+<br />
+抽象类中有area()方法<br />
+shapes中的元素就能点出来area()<br />
+但是area()一定要被重写的，<br />
+而重写方法被调时，看对象的类型<br />
+也就意味着，实际调用的是子类重写之后的area()<br />
+<br />
+new Shape(); //编译错误<br />
+Shape s; //正确<br />
+<br />
+abstract class Shape{ //抽象类--不完整<br />
+&nbsp; double c;<br />
+&nbsp; abstract double area(); //抽象方法--不完整<br />
+}<br />
+class Square extends Shape{<br />
+&nbsp; &nbsp;double area(){ //重写抽象方法--变不完整为完整<br />
+&nbsp; &nbsp; &nbsp;return 0.0625*c*c;&nbsp;<br />
+&nbsp; &nbsp;}<br />
+}<br />
+class Circle extends Shape{<br />
+&nbsp; double area(){<br />
+&nbsp; &nbsp; &nbsp;return 0.0796*c*c;&nbsp;<br />
+&nbsp; &nbsp;}<br />
+}<br />
+class Six extends Shape{<br />
+&nbsp; double area(){&nbsp;<br />
+&nbsp; &nbsp; &nbsp;return 0.0721*c*c;&nbsp;<br />
+&nbsp; &nbsp;}<br />
+}<br />
+new Shape(); //编译错误<br />
+Shape s;&nbsp;<br />
+<br />
+new Car();<br />
+<br />
+abstract class Car{ //不完整<br />
+&nbsp; ...<br />
+&nbsp; ...<br />
+&nbsp; abstract void stop(); //不完整<br />
+}<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+drop()不适合做为静态的，<br />
+因为每个对象drop()之后的结果都是不一样的<br />
+意味着与对象有关----所以不适合做为静态的<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+&nbsp; void drop(){<br />
+&nbsp; &nbsp; row++;<br />
+&nbsp; }<br />
+&nbsp; void moveLeft(){<br />
+&nbsp; }<br />
+&nbsp; String getCellInfo(){<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; }<br />
+}<br />
+<br />
+假设sort()方法不是静态的:<br />
+<br />
+无论a1,a2,a3,...a100，<br />
+调sort()方法，只要arr一样，结果一定是一样的<br />
+说明sort()方法的操作仅与参数有关，而与对象无关<br />
+<br />
+Arrays a1 = new Arrays();<br />
+a1.sort(arr);<br />
+<br />
+Arrays a2 = new Arrays();<br />
+a2.sort(arr);<br />
+<br />
+Arrays a3 = new Arrays();<br />
+a3.sort(arr);<br />
+<br />
+假设sqrt()不是静态的:<br />
+<br />
+无论m1,m2,m3,...m100，<br />
+.sqrt()时，只要参数是25，最终结果一定是5.0<br />
+说明，sqrt()方法仅与参数有关，而与对象无关<br />
+<br />
+Math m1 = new Math();<br />
+double a = m1.sqrt(25);<br />
+<br />
+Math m2 = new Math();<br />
+double b = m2.sqrt(25);<br />
+<br />
+Math m3 = new Math();<br />
+double c = m3.sqrt(25);<br />
+<br />
+Scanner scan = new Scanner(System.in);<br />
+int a = scan.nextInt();<br />
+double b = scan.nextDouble(); //实例方法<br />
+<br />
+<br />
+double a = Math.random();<br />
+double b = Math.sqrt(25);<br />
+Arrays.sort(arr); //静态方法<br />
+<br />
+实例变量和静态变量谁多?-------实例变量多<br />
+实例方法和静态方法谁多?-------实例方法多<br />
+<br />
+静态方法没有隐式this的传递<br />
+<br />
+<br />
+静态方法没有隐式的this传递，<br />
+没有this意味着没有对象，<br />
+而实例成员必须对象来访问，<br />
+<br />
+所以静态方法中不能直接访问实例成员<br />
+<br />
+class Aoo{<br />
+&nbsp; int a; //实例变量，对象点来访问<br />
+&nbsp; static int b; //静态变量，类名点来访问<br />
+<br />
+&nbsp; void show(){ //有this<br />
+&nbsp; &nbsp; System.out.println(this.a);<br />
+System.out.println(Aoo.b);<br />
+&nbsp; }<br />
+&nbsp; static void test(){ //没有this<br />
+&nbsp; &nbsp; System.out.println(a); //编译错误<br />
+System.out.println(Aoo.b);<br />
+&nbsp; }<br />
+}<br />
+Student zs = new Student();<br />
+zs.name = "zhangsan";<br />
+zs.age = 25;<br />
+zs.stuId = "001";<br />
+<br />
+Student ls = new Student();<br />
+ls.name = "lisi";<br />
+ls.age = 26;<br />
+ls.stuId = "002";<br />
+<br />
+Student ww = new Student();<br />
+ww.name = "wangwu";<br />
+ww.age = 27;<br />
+ww.stuId = "003";<br />
+<br />
+Student.className = "JSD1610";<br />
+<br />
+<br />
+class Student{<br />
+&nbsp; String name;<br />
+&nbsp; int age;<br />
+&nbsp; static String className;<br />
+&nbsp; String stuId;<br />
+}<br />
+<br />
+class Cell{<br />
+&nbsp; int row;<br />
+&nbsp; int col;<br />
+}<br />
+<br />
+Cell c1 = new Cell();<br />
+Cell c2 = new Cell();<br />
+<br />
+成员变量:<br />
+1)实例变量:没有static修饰的<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;属于对象的，存在堆中，<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;有几个对象就有几份<br />
+&nbsp; 通过对象名.来访问<br />
+2)静态变量:由static修饰的<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;属于类的，存在方法区中，<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;只有一份<br />
+&nbsp; 通过类名.来访问<br />
+<br />
+class Aoo{<br />
+&nbsp; int a;<br />
+&nbsp; static int b;<br />
+}<br />
+<br />
+public class Aoo{<br />
+}<br />
+class Aoo{<br />
+}<br />
+<br />
+protected class Aoo{ //编译错误<br />
+}<br />
+private class Aoo{ //编译错误<br />
+}<br />
+<br />
+数据(变量)私有化，行为(方法)公开化<br />
+<br />
+让营业员给咱们开卡------调用一个方法(复杂业务逻辑)<br />
+<br />
+class Card{<br />
+&nbsp; private String cardId;<br />
+&nbsp; private String cardPwd;<br />
+&nbsp; private double balance;<br />
+<br />
+&nbsp; public boolean payMoney(double money){<br />
+&nbsp; &nbsp; if(balance&gt;=money){<br />
+&nbsp;balance-=money;<br />
+&nbsp;return true;<br />
+}else{<br />
+&nbsp;return false;<br />
+}<br />
+&nbsp; }<br />
+<br />
+&nbsp; public boolean checkPwd(String pwd){<br />
+&nbsp; &nbsp; if(pwd.equals(cardPwd)){<br />
+&nbsp;return true;<br />
+}else{<br />
+&nbsp;return false;<br />
+}<br />
+&nbsp; }<br />
+}<br />
+<br />
+Override:一个类中，名同，参数不同<br />
+Overload:父子类中，名同，参数同<br />
+<br />
+重载与重写的区别:<br />
+Override与Overload的区别:<br />
+Overriding与Overloading的区别:<br />
+	</body>		
+</html>

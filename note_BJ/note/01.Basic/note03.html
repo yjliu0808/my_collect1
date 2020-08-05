@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	回顾:<br />
+1.变量:存数的，代词，指代的就是它的存的那个数<br />
+&nbsp; &nbsp; int a; int b,c,d;<br />
+int a=250; &nbsp;int a; a=250;<br />
+int a=3.1; //错<br />
+int a = 5;<br />
+int b=a+10; System.out.println(b);<br />
+System.out.println(m); //错<br />
+int m; System.out.println(m); //错<br />
+2.基本数据类型:<br />
+&nbsp; 1)int:整型，4个，5,25,250...<br />
+&nbsp; 2)long:长整型，8个，5L,250L,10000000000L...<br />
+&nbsp; 3)double:浮点型，8个，3.14,5.678,2.0...<br />
+&nbsp; 4)boolean:布尔型，1个，true,false<br />
+&nbsp; 5)char:字符型，2个，'你','a','9'...<br />
+3.类型间的转换:<br />
+&nbsp; &nbsp; 自动类型转:小到大<br />
+强制类型转:大到小 有可能溢出，有可能精度丢失<br />
+&nbsp; &nbsp; byte s1 = 5;<br />
+byte s2 = 6;<br />
+byte s3 = (byte)(s1+s2);<br />
+<br />
+4.Scanner的用法:<br />
+&nbsp; &nbsp;import java.util.Scanner;<br />
+&nbsp; &nbsp;Scanner scan = new Scanner(System.in);<br />
+&nbsp; &nbsp;System.out.println("请输入年龄:");<br />
+&nbsp; &nbsp;int age = scan.nextInt();<br />
+&nbsp; &nbsp;System.out.println("请输入单价:");<br />
+&nbsp; &nbsp;double price = scan.nextDouble();<br />
+<br />
+笔记:<br />
+1.运算符:<br />
+&nbsp; 1)算术运算符:+-*/%,++,--<br />
+&nbsp; 2)关系运算符:&gt;,&lt;,&gt;=,&lt;=,==,!=<br />
+&nbsp; 3)逻辑运算符:&amp;&amp;,||,!<br />
+&nbsp; 4)赋值运算符:=,+=,-=,*=,/=,%=<br />
+&nbsp; 5)字符串连接运算符:+<br />
+&nbsp; 6)三目/条件运算符:boolean?数1:数2<br />
+2.分支结构:<br />
+&nbsp; 1)if:1条路<br />
+&nbsp; 2)if...else:2条路<br />
+&nbsp; 3)if...else if:多条路<br />
+&nbsp; 4)switch...case:多条路<br />
+&nbsp; &nbsp; 优点:效率高、结构清晰<br />
+缺点:整数、相等<br />
+break:跳出switch<br />
+<br />
+任务:<br />
+1.完成第2天课后作业(第11、12题)<br />
+2.完成第3天课后作业<br />
+3.完成OperDemo的小代码<br />
+<br />
+当日事当日毕<br />
+满500打8折，不满500不打折<br />
+----------if<br />
+<br />
+满500打8折，不满500打9折<br />
+----------if...else<br />
+<br />
+满1000打7折，500到999打8折，不满500打9折<br />
+----------if...else if<br />
+int a=5,b=8;<br />
+int max = a&gt;b?a:b;<br />
+<br />
+if(a&gt;b){<br />
+&nbsp; ...<br />
+&nbsp; ...<br />
+&nbsp; max = a;<br />
+}else{<br />
+&nbsp; ...<br />
+&nbsp; ...<br />
+&nbsp; max = b;<br />
+}<br />
+int num = 2;<br />
+if(num==1){<br />
+&nbsp; System.out.println(111);<br />
+}else if(num==2){<br />
+&nbsp; System.out.println(222);<br />
+}else if(num==3){<br />
+&nbsp; System.out.println(333);<br />
+}else{<br />
+&nbsp; System.out.println(666);<br />
+}<br />
+<br />
+if(score&gt;=0 &amp;&amp; score&lt;=100){<br />
+if(score&gt;=90){<br />
+System.out.println("A-优秀");<br />
+}else if(score&gt;=80){<br />
+System.out.println("B-良好");<br />
+}else if(score&gt;=60){<br />
+System.out.println("C-中等");<br />
+}else{<br />
+System.out.println("D-不及格");<br />
+}<br />
+}else{<br />
+System.out.println("成绩不合法");<br />
+}<br />
+A:成绩大于等于90<br />
+B:成绩大于等于80并且成绩小于90<br />
+C:成绩大于等于60并且成绩小于80<br />
+D:成绩小于60<br />
+<br />
+1)ABCD四个档，只有可能走其中之一<br />
+2)若没有最后的else，ABC三个档并非必走其中之一<br />
+3)若有最后的else，ABCD四个档必走其中之一<br />
+<br />
+int score = 95;<br />
+if(score&gt;=90){<br />
+&nbsp; A优秀<br />
+}else if(score&gt;=80){<br />
+&nbsp; B良好<br />
+}else if(score&gt;=60){<br />
+&nbsp; C中等<br />
+}else{<br />
+&nbsp; D不及格<br />
+}<br />
+<br />
+int score = 95;<br />
+if(score&gt;=90){<br />
+&nbsp; A优秀<br />
+}else{<br />
+&nbsp; if(score&gt;=80 &amp;&amp; score&lt;90){<br />
+&nbsp; &nbsp; B良好<br />
+&nbsp; }else{<br />
+&nbsp; &nbsp; if(score&gt;=60 &amp;&amp; score&lt;80){<br />
+&nbsp;C中等<br />
+}else{<br />
+&nbsp;if(score&lt;60){<br />
+&nbsp; &nbsp;D不及格<br />
+&nbsp;}<br />
+}<br />
+&nbsp; }<br />
+}<br />
+<br />
+任何复杂的程序逻辑都可以通过三种结构来实现:<br />
+1)顺序结构:从上往下逐行执行，每句必走<br />
+2)分支结构:有条件的执行某语句，并非每句必走<br />
+3)循环结构:<br />
+条件满足就干事，条件不满足不干事--------if<br />
+条件满足就干事，条件不满足干另一个事----if...else<br />
+打8折-------------有条件的执行<br />
+减100元-----------有条件<br />
+请单价:<br />
+100<br />
+请数量:<br />
+6<br />
+请价格:<br />
+800<br />
+<br />
+总价:600.0，找零:200.0<br />
+数量<br />
+超市系统--------------double<br />
+淘宝系统--------------int<br />
+股票系统--------------int<br />
+---------------一斤大米8.6<br />
+---------------并斤0.5<br />
+---------------8.6*0.5<br />
+数量-------------int/double<br />
+<br />
+闰年year的判断:<br />
+1.能被4整除并且不能被100整除<br />
+或者<br />
+2.能被400整除<br />
+<br />
+<br />
+1) year%4==0 &amp;&amp; year%100!=0<br />
+&nbsp; &nbsp;||<br />
+2) year%400==0<br />
+<br />
+2000是闰年<br />
+2004是闰年<br />
+2001不是闰年<br />
+<br />
+一元: !,++,--<br />
+两元:+,-,*,/,%,&gt;,&lt;,&gt;=,&lt;=,==,!=,&amp;&amp;,||<br />
+三元:<br />
+int a=18,b;<br />
+b=a%5;<br />
+System.out.println(b=a%5); //3<br />
+System.out.println(b); &nbsp; &nbsp; //3<br />
+<br />
+判断age在18到50之间<br />
+<br />
+age&gt;=18<br />
+&amp;&amp;<br />
+age&lt;=50<br />
+<br />
+若想干某件事是由一个条件控制的--------关系<br />
+若想干某件事是由多个条件控制的--------逻辑<br />
+<br />
+考试及格就能毕业-------------------关系<br />
+&nbsp; &nbsp;score&gt;=60<br />
+<br />
+考试及格并且出勤达80%才能毕业------逻辑<br />
+&nbsp; &nbsp;score&gt;=60 on&gt;=80<br />
+<br />
+我的年龄大于你的年龄-----------------对/错<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &gt;,&lt;<br />
+我的体重小于或等于你的体重-----------对/错<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;=,&gt;=<br />
+我的身高等于你的身高-----------------对/错<br />
+&nbsp; &nbsp; &nbsp; &nbsp; ==,!=<br />
+驼峰命名法: &nbsp; score,myScore,myJavaScore<br />
+帕斯卡命名法: Score,MyScore,MyJavaScore<br />
+	</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>day10</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h2>(1)ajax是什么?</h2>
+<p>ajax是一种用来改善用户体验的技术，其本质是利用浏览
+器提供的一个对象(XMLHttpRequest,也可称之为ajax对象)
+向服务器发送异步请求;服务器返回部分数据(不是一个完整
+的页面),浏览器利用这些数据对当前页面做部分更新；
+整个过程，页面无刷新，不打断用户的操作。<br/>
+注：异步请求，指的是，当ajax对象发请求时，浏览器
+不会销毁当前页面，用户仍然可以对当前页面做其它的操作。
+<br/>
+<img src="ajax.png" /></p>
+<h2>(2)如何获得ajax对象?</h2>
+<p><img src="code.png" /></p>
+<h2>(3)ajax对象的几个重要属性</h2>
+<p>a. onreadystatechange:绑订一个事件处理函数，
+该函数用来处理readystatechange事件。<br/>
+注：当ajax对象的readystate属性值发生了改变，
+比如，从0变成了1，则会产生readystatechange事件。
+<br/>
+b. readyState:有5个值(0,1,2,3,4),表示ajax对象
+与服务器通信的进展。其中，4表示ajax对象已经获得了
+服务器返回的所有的数据。<br/>
+c. responseText:获得服务器返回的文本数据。<br/>
+d. responseXML:获得服务器返回的xml数据。<br/>
+e. status:获得状态码。<br/></p>
+<h2>(4) 编程步骤</h2>
+<p>step1. 获得ajax对象。 <br/>
+ 比如  var xhr = getXhr(); <br/>
+step2. 发送请求。<br/>
+方式一:  get请求 <br/>
+	xhr.open('get',
+		'check<em>uname.do?uname=Sally',true);
+    xhr.onreadystatechange = f1;
+    xhr.send(null);
+注:<br/>
+true:异步请求。<br/>
+false:同步请求(当ajax对象发送请求时，浏览器会锁
+定当前页面，用户不能够对当前页面做任何操作）。<br/>
+方式二:  post请求 <br/>
+	xhr.open('post','check</em>uname.do');
+    xhr.setRequestHeader('content-type',
+	'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = f1;
+	xhr.send('uname=Sally');
+注：<br/>
+按照http协议要求，如果发送的是post请求，
+在请求数据包里面，应该包含有content-type消息头;
+默认情况下，ajax对象不会添加该消息头，所以需要
+调用setRequestHeader方法来添加。<br/>
+step3. 编写服务器端的程序。通过只需要返回部分
+数据（不再需要返回完整的页面）。<br/>
+step4. 写事件处理函数。<br/>
+比如: <br/>
+	function f1(){
+		if(xhr.readyState == 4 &amp;&amp;
+			xhr.status == 200){
+			//获得服务器返回的数据
+            var txt = xhr.responseText;
+            //更新页面
+			...
+		}
+	}</p>
+<h2>(5)缓存问题 (了解)</h2>
+<h3>什么是缓存问题?</h3>
+<p>当使用ie浏览器时，ajax对象如果发送的是get请求，
+会检查请求地址是否访问过，如果访问过，则不再发
+送新的请求，而且显示之前访问过的结果。(也就是
+说，第一次访问请求时，会将结果缓存下来)。<br/></p>
+<h3>如何解决?</h3>
+<p>在请求地址后面添加一个随机数。<br/></p>
+<h2>(6)编码问题</h2>
+<h3>发送get请求</h3>
+<p>产生乱码的原因: <br/>
+ie浏览器默认使用gbk对中文进行编码，其它浏览器
+默认会使用utf-8对中文进行编码。服务器端默认会
+使用iso-8859-1来解码。<br/>
+解决方式:<br/>
+step1. 服务器端统一使用utf-8来解码。比如
+  URIEncoding=&quot;utf-8&quot; <br/>
+step2. 在客户端，使用encodeURI函数对中文数据进行
+编码。<br/>
+注:encodeURI是javascript内置的函数。<br/></p>
+<h3>发送post请求</h3>
+<p>产生乱码的原因: <br/>
+浏览器默认会使用utf-8对中文进行编码，服务器使用
+iso-8859-1来解码。<br/>
+解决方式:<br/>
+request.setCharacterEncoding(&quot;utf-8&quot;);</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

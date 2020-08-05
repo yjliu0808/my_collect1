@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+回顾:<br />
+1.Linux:<br />
+&nbsp; &nbsp; 开源的操作系统、免费<br />
+&nbsp; &nbsp; 主要是服务器端系统，java主要是服务器端开发<br />
+目录、挂载点、安全级别高<br />
+pwd,ls,cd&nbsp;<br />
+绝对路径(根，以/开头) 相对路径(当前目录)<br />
+2.java开发环境:<br />
+&nbsp; 1)编译期:.java源文件，经过编译，生成.class字节码文件<br />
+&nbsp; &nbsp; 运行期:JVM加载.class并运行.class<br />
+跨平台，一次编程到处使用<br />
+&nbsp; 2)JVM:java虚拟机<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 加载并运行.class<br />
+&nbsp; &nbsp; JRE:java运行环境<br />
+&nbsp; &nbsp;除了包含JVM以外还包含运行java程序所必须的环境<br />
+JRE=JVM+java系统类库<br />
+JDK:java开发工具包<br />
+&nbsp; &nbsp;除了包含JRE以外还包含开发java程序所必须的命令工具<br />
+JDK=JRE+编译、运行等命令工具<br />
+3.eclipse<br />
+&nbsp; &nbsp;IBM、开源、免费、不需要安装<br />
+&nbsp; &nbsp;System.out.println("HelloWorld");<br />
+<br />
+<br />
+笔记:<br />
+1.变量:存数的，代词，指代的就是它所存的那个数<br />
+&nbsp; 1)声明:<br />
+&nbsp; &nbsp; &nbsp; int a; //声明一个整型变量，名为a<br />
+&nbsp;int b,c,d; //声明三个整型变量，名为b,c,d<br />
+&nbsp; 2)命名:<br />
+&nbsp; &nbsp; 2.1)只能包含字母、数字、_和$符，<br />
+&nbsp; &nbsp;并且不能以数字开头<br />
+2.2)严格区分大小写<br />
+2.3)不能使用关键字<br />
+2.4)可以中文命名，但不建议<br />
+&nbsp; &nbsp;建议"见名知意"，"驼峰命名法"<br />
+&nbsp; 3)初始化:第一次赋值<br />
+&nbsp; &nbsp; 3.1)声明的同时初始化:<br />
+&nbsp; &nbsp; &nbsp;int a = 250; //声明整型变量a并赋值为250<br />
+3.2)先声明后初始化:<br />
+&nbsp; &nbsp; &nbsp;int a; &nbsp; //声明整型变量a<br />
+&nbsp;a = 250; //给变量a赋值为250<br />
+&nbsp; 4)使用:<br />
+&nbsp; &nbsp; 4.1)必须与数据类型匹配&nbsp;<br />
+&nbsp; &nbsp; &nbsp;int a = 3.14; //编译错误<br />
+4.2)对变量的使用就是对它所存的那个数的使用<br />
+&nbsp; &nbsp; &nbsp;int a = 5;<br />
+&nbsp;int b = a+10; //取出a的值5，加10后，再赋值给变量b<br />
+&nbsp;System.out.println(b); //输出变量b的值15<br />
+&nbsp;System.out.println("b"); //b，双引号中的原样输出<br />
+&nbsp;a=a+10; //取出a的值5，加10后，再赋值给a<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//在a本身基础之上增10<br />
+4.3)变量在用之前必须声明并初始化<br />
+&nbsp; &nbsp; &nbsp;System.out.println(m); //编译错误，m未声明<br />
+&nbsp;int m;<br />
+&nbsp;System.out.println(m); //编译错误，m未初始化<br />
+<br />
+2.基本数据类型:<br />
+&nbsp; 1)int:整型，4个字节，-21个多亿到21个多亿<br />
+&nbsp; &nbsp; 1.1)整数直接量默认为int型，但不能超范围，超范围则编译错误<br />
+1.2)两个整数相除，结果还是整数，小数位无条件舍弃<br />
+1.3)整数运算时超出范围会发生溢出，溢出是需要避免的<br />
+&nbsp; 2)long:长整型，8个字节，很大很大很大<br />
+&nbsp; &nbsp; 2.1)长整型直接量需在数字后加l或L<br />
+2.2)运算时或有可能超范围，建议在第1个数字后加l或L<br />
+2.3)System.currentTimeMillis()用于获取自<br />
+&nbsp; &nbsp;1970.1.1零时到此时此刻的毫秒数<br />
+&nbsp; 3)double:浮点型，8个字节，很大很大很大<br />
+&nbsp; &nbsp; 3.1)浮点数直接量默认为double型，表示float需加f或F<br />
+3.2)浮点数运算时，有可能会出现舍入误差，所以精确场合不建议使用<br />
+&nbsp; 4)boolean:布尔型，1个字节<br />
+&nbsp; &nbsp; 4.1)只能取值为true和false<br />
+&nbsp; 5)char:字符型，2个字节<br />
+&nbsp; &nbsp; 5.1)采用Unicode编码，每个字符都对应一个码<br />
+&nbsp; &nbsp;表现的形式是char字符，但实质上是int码<br />
+5.2)字符需放在单引号中，有且仅有一个<br />
+5.3)特殊符号需通过\来转义<br />
+3.数据类型间的转换:<br />
+&nbsp; &nbsp; 数据类型从小到大依次为:<br />
+&nbsp;byte,short,int,long,float,double<br />
+&nbsp; &nbsp; &nbsp; &nbsp;char,<br />
+&nbsp; 1)两种形式:<br />
+&nbsp; &nbsp; 1.1)自动类型转换:从小类型转到大类型<br />
+1.2)强转类型转换:从大类型转到小类型<br />
+&nbsp; &nbsp; &nbsp;(要转换成的数据类型)变量<br />
+强转有可能会溢出或丢失精度<br />
+&nbsp; 2)两点规则:<br />
+&nbsp; &nbsp; 2.1)整数直接量可以直接赋值给byte,short,char，<br />
+&nbsp; &nbsp;但不能超范围<br />
+2.2)byte、short、char型数据参与运算时，<br />
+&nbsp; &nbsp;先一律转换为int再运算<br />
+4.Scanner的用法:<br />
+&nbsp; 1)在package下:<br />
+&nbsp; &nbsp; &nbsp; import java.util.Scanner;<br />
+&nbsp; 2)在main()方法中:<br />
+&nbsp; &nbsp; &nbsp; Scanner scan = new Scanner(System.in);<br />
+&nbsp; 3)在第2步之后:<br />
+&nbsp; &nbsp; &nbsp; System.out.println("请输入年龄:");<br />
+&nbsp; &nbsp; &nbsp; int age = scan.nextInt();<br />
+&nbsp;System.out.println("请输入单价:");<br />
+&nbsp;double price = scan.nextDouble();<br />
+<br />
+<br />
+<br />
+练习:----写在day03的包中<br />
+1.创建类AgeDemo，在main()方法中:<br />
+&nbsp; &nbsp; 接收用户输入的年龄age，并输出<br />
+2.创建类LeapYear，在main()方法中:<br />
+&nbsp; &nbsp; 接收用户输入的年份year，并输出<br />
+3.创建类ScoreLevel，在main()方法中:<br />
+&nbsp; &nbsp; 接收用户输入的成绩score，并输出<br />
+4.创建类CommandBySwitch，在main()方法中:<br />
+&nbsp; &nbsp; 接收用户输入的命令command，并输出<br />
+5.课后作业第13题<br />
+6.将今天的小代码重做一次----建议<br />
+<br />
+给变量赋值:<br />
+1)给一个固定的值:<br />
+&nbsp; &nbsp; int a = 250;<br />
+2)接收用户输入的一个值:----Scanner<br />
+&nbsp; &nbsp; int a = ?;<br />
+3)系统随机生成一个值:<br />
+&nbsp; &nbsp; int a = ?;<br />
+byte,short,int,long,float,double,cha<br />
+char c1 = '男';<br />
+<br />
+转义符\<br />
+char c1 = '\\'; &nbsp; &nbsp;//\<br />
+Unicode编码格式------0到65535<br />
+ASCII码:<br />
+&nbsp; 'a'-----97<br />
+&nbsp; 'A'-----65<br />
+&nbsp; '0'-----48<br />
+char(0到65535)就是int(-21个多亿到21个多亿)<br />
+表现的形式是字符char，但实际上存储的是码int<br />
+<br />
+<br />
+char字符 &nbsp; &nbsp; &nbsp;int码<br />
+敌------------1234<br />
+军------------5678<br />
+来------------1212<br />
+袭------------9898<br />
+<br />
+舍入误差，精确运算场合不能使用double<br />
+<br />
+<br />
+财务ERP---------BigDecimal(没有舍入误差)<br />
+<br />
+<br />
+ERP,CRM,GIS,MIS,OA,HR.....<br />
+<br />
+<br />
+double a=3.0,b=2.9;<br />
+System.out.println(a-b); //0.1000000000009<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//0.1<br />
+<br />
+double a=6.0,b=4.9;<br />
+System.out.println(a-b); //1.0999999999996<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//1.1<br />
+<br />
+二进制<br />
+<br />
+215,56,8945<br />
+十进制<br />
+&nbsp; 1/2-------0.5<br />
+&nbsp; 1/3-------0.33333333333...<br />
+&nbsp; 2/3-------0.66666666666...<br />
+365*24*60*60*1000----31536000000<br />
+<br />
+long a = 1000000000*2*10L;<br />
+System.out.println(a); //200亿<br />
+<br />
+long b = 1000000000*3*10L;<br />
+System.out.println(b); //一定不是300亿<br />
+<br />
+long c = 1000000000L*3*10;<br />
+System.out.println(c); //300亿<br />
+<br />
+9223372036854775807<br />
+10000000000000000000<br />
+<br />
+int a = 10000000000; &nbsp; //直接量超范围为编译错误<br />
+int b = 1000000000*10; //运算时超范围为溢出<br />
+<br />
+<br />
+3.数据类型间的转换:<br />
+4.Scanner的用法:<br />
+<br />
+溢出不是编译错误，只是一个不好的现象<br />
+<br />
+int balance = -2147483648;<br />
+balance=balance-1;<br />
+System.out.println(balance); //2147483647<br />
+<br />
+年龄----------long(空间的浪费)<br />
+<br />
+变量------存在内存中<br />
+不同的数据类型所占用的内存-------是不一样的<br />
+----------------够用就行<br />
+<br />
+1G=1024M(兆)<br />
+1M=1024KB(千字节)<br />
+1KB=1024B(字节)<br />
+1B=8Bit(位)<br />
+1G=1024*1024*1024字节======1073741824字节<br />
+<br />
+int a; &nbsp; &nbsp; &nbsp; &nbsp;//不直观不专业<br />
+int 年龄; &nbsp; &nbsp; //直观但不专业<br />
+int nianLing; //既不直观也不专业<br />
+int age; &nbsp;//直观且专业<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+I &nbsp; &nbsp; &nbsp;love &nbsp; &nbsp; You<br />
+张三 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;李四<br />
+李四 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;王五<br />
+王五 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;赵六<br />
+赵六 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;张三<br />
+<br />
+早期的计算机---------算数(数字)<br />
+现在的-计算机--------算数(数字、文字、图片、音频、视频...)<br />
+<br />
+www.taobao.com---------------一个数据<br />
+淘宝首页---------------------一堆数据<br />
+手机壳-----------------------一个数据<br />
+一堆手机壳-------------------一堆数据<br />
+详细页面---------------------一堆数据<br />
+购物车-----------------------一堆数据<br />
+结算-------------------------一堆数据<br />
+<br />
+当前在/opt/jdk下，需转到/opt/eclipse下<br />
+绝对: cd /opt/eclipse<br />
+相对: cd ../eclipse-------------/opt/eclipse<br />
+<br />
+<br />
+Linux可以命令来启动程序----完整路径写出来即可<br />
+./eclipse来启动eclipse<br />
+<br />
+pwd---------/home/soft01<br />
+cd ..-------/home<br />
+<br />
+/home/soft01/tts9/eclipse/eclipse<br />
+<br />
+假设当前在/home/soft01/tts9/eclipse<br />
+<br />
+./eclipse<br />
+Linux分两种:<br />
+1.带图形界面的:操作方便<br />
+2.不带图形界面的:真正的服务器系统<br />
+<br />
+公司中用的操作系统-------Windows系统<br />
+	</body>		
+</html>

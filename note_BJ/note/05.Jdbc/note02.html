@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	使用Statement执行含有动态信息的SQL语句时有几个不足:<br />
+&nbsp; 1:由于需要将动态数据拼接到SQL语句中，这导致程序复杂度高，容易出错<br />
+&nbsp; 2:拼接的数据若含有SQL语法内容会导致将拼接后的SQL语法含义改变而出现SQL注入攻击。<br />
+&nbsp; 3:当大批量执行语义相同，但是含有动态数据的SQL时效率很差。<br />
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;原因:当执行一条SQL语句发送到数据库时，数据库要先将该SQL解析并生成一个执行计划(消耗资源
+</p>
+&nbsp; &nbsp; 与性能)，如果多次执行一样的SQL语句，数据库会重用执行计划，但是若多次执行语义相同但是含有<br />
+&nbsp; &nbsp; 动态数据的SQL时，数据库会生成不同的执行计划,严重影响数据库开销。<br />
+&nbsp; &nbsp; 例如:<br />
+&nbsp; &nbsp; 执行:SELECT &nbsp;FROM userinfo &nbsp;<br />
+&nbsp; &nbsp; 生成一个执行计划<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; 再次执行 SELECT &nbsp;FROM userinfo&nbsp;<br />
+&nbsp; &nbsp; 重用上面的执行计划<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; 执行:<br />
+&nbsp; &nbsp; INSERT INTO userinfo VALUES(1,'jack',..)<br />
+&nbsp; &nbsp; 生成一个执行计划<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; INSERT INTO userinfo VALUES(2,'rose',..)<br />
+&nbsp; &nbsp; 由于内容不同，会再次生成一个执行计划<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; 若执行1000次上述情况的INSERT，数据库会<br />
+&nbsp; &nbsp; 产生1000个执行计划。<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; Statement适合执行静态SQL语句。<br />
+&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<br />
+&nbsp; PreparedStatement<br />
+&nbsp; 使用它执行含有动态信息的SQL语句。<br />
+&nbsp; 优点:<br />
+&nbsp; 1:没有SQL注入问题<br />
+&nbsp; 2:编写简单<br />
+<p>
+	&nbsp; 3:批量执行语义相同的SQL语句会重用执行计划
+</p>
+<p>
+	<br />
+</p>
+<p>
+	向userinfo表中插入1000条数据:预编译SQL语句将动态的数据以"?"进行占位<br />
+String sql = "INSERT INTO userinfo "<br />
+&nbsp; + "(id,username,password,email,nickname,account) "<br />
+&nbsp; + "VALUES "<br />
+&nbsp; + "(seq_userinfo_id.NEXTVAL,?,?,?,?,?)";<br />
+PreparedStatement创建的同时将预编译SQL语句传入，这时会将该SQL发送至数据库并生成执行计划
+</p>
+<p>
+	PreparedStatement ps= conn.prepareStatement(sql);<br />
+for(int i=0;i&lt;1000;i++){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;ps.setString(1, "test"+i); <br />
+&nbsp;&nbsp;&nbsp;&nbsp;int d = ps.executeUpdate();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("插入完毕!");<br />
+}
+</p>
+<h4>
+	使用预编译SQL解决SQL注入攻击问题
+</h4>
+<p>
+	该类用于维护数据库连接,并创建连接和关闭的方法<br />
+public class DBUtil {<br />
+ThreadLocal用于线程跨方法共享数据使用<br />
+ThreadLocal内部有一个Map，key为需要共享<br />
+数据的线程本身，value就是其需要共享的数据。<br />
+private static ThreadLocal&lt;Connection&gt; tl;<br />
+DBCP连接池<br />
+private static BasicDataSource dataSource;<br />
+<br />
+static{<br />
+tl = new ThreadLocal&lt;Connection&gt;();<br />
+&nbsp;properties文件<br />
+&nbsp;properties文件常被用作配置文件，结构简单。<br />
+try {<br />
+Properties prop = new Properties();<br />
+prop.load(new FileInputStream("config.properties"));<br />
+String className = prop.getProperty("classname");<br />
+String url = prop.getProperty("url");<br />
+String username = prop.getProperty("username");<br />
+String password = prop.getProperty("password");<br />
+int maxActive = Integer.parseInt(<br />
+prop.getProperty("maxactive")<br />
+);<br />
+long maxWait = Long.parseLong(<br />
+prop.getProperty("maxwait") <br />
+);<br />
+//初始化连接池<br />
+dataSource = new BasicDataSource();<br />
+//Class.forName();<br />
+dataSource.setDriverClassName(className);<br />
+//DriverManager.getConnection();<br />
+dataSource.setUrl(url);<br />
+dataSource.setUsername(username);<br />
+dataSource.setPassword(password);<br />
+//设置最大连接数<br />
+dataSource.setMaxActive(maxActive);<br />
+//设置最大等待时间<br />
+dataSource.setMaxWait(maxWait);
+</p>
+	</body>
+</html>

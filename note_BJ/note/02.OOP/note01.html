@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+<h2>
+	回顾:<br />
+1.方法:<br />
+&nbsp; &nbsp; 封装特定逻辑功能，尽可能独立，<br />
+可以被调用多次，代码复用，团队协作开发<br />
+2.方法定义:<br />
+&nbsp; &nbsp; 修饰词 返回值类型 方法名(参数列表){<br />
+&nbsp;方法体<br />
+}<br />
+3.方法调用:<br />
+&nbsp; &nbsp; 无: 方法名(有参传参);<br />
+有: 数据类型 变量 = 方法名(有参传参);<br />
+&nbsp; &nbsp;方法名(有参传参);----------不建议<br />
+4.return:<br />
+&nbsp; 1)return 值; //1)结束方法 2)返回结果给调用方<br />
+&nbsp; 2)return; &nbsp; &nbsp;//1)结束方法<br />
+<br />
+<br />
+<br />
+<br />
+笔记:<br />
+1.什么是类？什么对象？<br />
+&nbsp; 1)现实世界是由很多对象组成的<br />
+&nbsp; &nbsp; 基于对象抽出了类<br />
+&nbsp; 2)对象:真实存在的单个个体<br />
+&nbsp; &nbsp; 类:类型/类别，代表一类个体<br />
+&nbsp; 3)类中可以包含:<br />
+&nbsp; &nbsp; 3.1)所有对象所共有的属性/特征--------成员变量<br />
+3.2)所有对象所共有的行为-------------方法<br />
+&nbsp; 4)一个类可以创建多个对象<br />
+&nbsp; &nbsp; 同一类型的多个对象，结构相同，数据不同<br />
+&nbsp; 5)类是对象的模板，对象是类的具体的实例<br />
+2.如何创建类？如何创建对象？如何访问成员？<br />
+3.引用类型之间画等号:<br />
+&nbsp; 1)指向同一个对象<br />
+&nbsp; 2)对其中一个引用的修改影响另外一个<br />
+&nbsp; &nbsp; eg:房子钥匙<br />
+&nbsp; 基本类型之间画等号:<br />
+&nbsp; 1)赋值<br />
+&nbsp; 2)对其中一个变量的修改不会影响另外一个<br />
+&nbsp; &nbsp; eg:身份证复印件<br />
+4.null:空，没有指向任何对象<br />
+&nbsp; &nbsp; &nbsp; &nbsp;若引用的值为null，则该引用不能再进行任何操作了<br />
+&nbsp; 若操作则NullPointerException空指针异常<br />
+<br />
+任务:<br />
+1.完成Cell类与CellTest类: 至少做两次<br />
+&nbsp; 要求:<br />
+&nbsp; &nbsp; 1)Cell类:<br />
+&nbsp;1.1)成员变量: row,col<br />
+&nbsp;1.2)方法:void drop(){}<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void moveLeft(int n){}<br />
+&nbsp; String getCellInfo(){}<br />
+2)CellTest类:<br />
+&nbsp;2.1)main()方法:<br />
+&nbsp; &nbsp; &nbsp;要求:创建格子对象，调用printWall()方法<br />
+&nbsp; &nbsp; &nbsp; 格子下落后，调用printWall()方法<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;格子左移后，调用printWall()方法<br />
+&nbsp;2.2)printWall(Cell cc)方法:<br />
+&nbsp; &nbsp; &nbsp;要求:实现打墙+打格<br />
+<br />
+2.完成经典案例一:打印员工信息<br />
+<br />
+引用类型的默认值就是null<br />
+<br />
+房子:对象<br />
+钥匙:引用<br />
+配一把钥匙:引用<br />
+<br />
+1)找对象:一堆小格子对象<br />
+2)抽类:Cell类<br />
+3)设计类中成员变量和方法:<br />
+4)创建对象并测试:<br />
+<br />
+<br />
+类型 &nbsp;引用 &nbsp;指向 &nbsp; 对象<br />
+Cell &nbsp; c &nbsp; &nbsp; = &nbsp; &nbsp; new Cell();<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 引用<br />
+类(数据类型) &nbsp;引用类型变量 &nbsp; 指向 &nbsp; 对象<br />
+Student &nbsp; &nbsp; &nbsp; &nbsp;zs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; new Student();<br />
+<br />
+&nbsp; &nbsp; 基本类型变量(变量)<br />
+int a;<br />
+new Cell();<br />
+new Cell();<br />
+new Cell();<br />
+<br />
+Cell c = new Cell();<br />
+c.row = 2;<br />
+c.col = 5;<br />
+<br />
+new Student();<br />
+new Student();<br />
+new Student();<br />
+<br />
+Student zs = new Student();<br />
+<br />
+Cell<br />
+CellTest<br />
+<br />
+class Cell{ //格子类<br />
+&nbsp; int row; //行号<br />
+&nbsp; int col; //列号<br />
+<br />
+&nbsp; void drop(){ //下落一格<br />
+&nbsp; &nbsp; row++;<br />
+&nbsp; }<br />
+&nbsp; void moveLeft(int n){ //左移n格<br />
+&nbsp; &nbsp; col-=n;<br />
+&nbsp; }<br />
+&nbsp; String getCellInfo(){ //获取行号和列号<br />
+&nbsp; &nbsp; return row+","+col;<br />
+&nbsp; }<br />
+&nbsp;&nbsp;<br />
+}<br />
+<br />
+score,myScore,myJavaScore<br />
+Score,MyScore,MyJavaScore<br />
+<br />
+Student<br />
+StudentTest<br />
+<br />
+oo.day01<br />
+Student zs = new Student();<br />
+Student ls = new Student();<br />
+Student ww = new Student();<br />
+Student zl = new Student();<br />
+<br />
+Student zs = new Student();<br />
+zs.name = "zhangsan";<br />
+zs.age = 25;<br />
+zs.className = "JSD1610";<br />
+zs.stuId = "001";<br />
+zs.eat();<br />
+zs.sleep();<br />
+zs.study();<br />
+zs.play();<br />
+zs.abc = 250; //编译错误<br />
+<br />
+Student ls = new Student();<br />
+ls.name = "lisi";<br />
+ls.age = 26;<br />
+ls.className = "JSD1610";<br />
+ls.stuId = "002";<br />
+ls.eat();<br />
+ls.sleep();<br />
+ls.study();<br />
+ls.play();<br />
+<br />
+<br />
+类 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;对象<br />
+月饼模子 &nbsp; &nbsp; &nbsp;月饼<br />
+<br />
+class Student{<br />
+&nbsp; String name;<br />
+&nbsp; int age;<br />
+&nbsp; String className;<br />
+&nbsp; String stuId;<br />
+&nbsp; void eat(){}<br />
+&nbsp; void sleep(){}<br />
+&nbsp; void study(){}<br />
+&nbsp; void play(){}<br />
+}<br />
+<br />
+class Teacher{<br />
+&nbsp; String name;<br />
+&nbsp; int age;<br />
+&nbsp; String address;<br />
+&nbsp; double salary;<br />
+&nbsp; void eat(){}<br />
+&nbsp; void sleep(){}<br />
+&nbsp; void teach(){}<br />
+}<br />
+<br />
+<br />
+class Student{<br />
+&nbsp; String name;<br />
+&nbsp; int age;<br />
+&nbsp; String address;<br />
+&nbsp; String className;<br />
+&nbsp; String stuId;<br />
+&nbsp; void eat(){}<br />
+&nbsp; void sleep(){}<br />
+&nbsp; void study(){}<br />
+&nbsp; void play(){}<br />
+}<br />
+<br />
+<br />
+class Dog{<br />
+&nbsp; String type;<br />
+&nbsp; String color;<br />
+&nbsp; void 叫(){}<br />
+&nbsp; void 看门(){}<br />
+&nbsp; void play(){}<br />
+}<br />
+<br />
+<br />
+<br />
+class Car{<br />
+&nbsp; String type;<br />
+&nbsp; double price;<br />
+&nbsp; String color;<br />
+&nbsp; String size;<br />
+&nbsp; void start(){}<br />
+&nbsp; void run(){}<br />
+&nbsp; void stop(){}<br />
+&nbsp; void back(){}<br />
+}<br />
+<br />
+<br />
+面向过程的结构化设计缺陷:<br />
+1.缺乏对数据的封装<br />
+2.数据和方法(操作数据)的分离<br />
+<br />
+<br />
+<br />
+基本类型---------------不能的<br />
+数组类型---------------不能的<br />
+自己造类型-------------想装什么就装什么<br />
+<br />
+class Emp{ //类，自己造的数据类型<br />
+&nbsp; String name;<br />
+&nbsp; int age;<br />
+&nbsp; double salary;<br />
+&nbsp; void print(){<br />
+&nbsp; &nbsp; System.out.println("姓名:"+name);<br />
+System.out.println("年龄:"+age);<br />
+System.out.println("工资:"+salary);<br />
+&nbsp; }<br />
+}<br />
+<br />
+class Test{<br />
+&nbsp; public static void main(String[] args){<br />
+&nbsp; &nbsp; Emp e = new Emp(); //创建了一个Emp的对象<br />
+&nbsp; &nbsp; e.name = "zhangsan";<br />
+e.age = 25;<br />
+e.salary = 5000;<br />
+&nbsp; &nbsp; e.print();<br />
+&nbsp; }<br />
+}<br />
+<br />
+<br />
+语言基础:固定<br />
+1)画一个圆形<br />
+2)去银行取钱<br />
+3)猜字符游戏<br />
+<br />
+面向对象:抽象<br />
+1)画一个图形<br />
+2)向着社会主义社会发展<br />
+3)射击游戏<br />
+<br />
+OOP:面向对象编程<br />
+<br />
+public static int[] generateArray(int len,int max){<br />
+&nbsp; int[] arr = new int[len];<br />
+&nbsp; for(int i=0;i&lt;arr.length;i++){<br />
+&nbsp; &nbsp; arr[i] = (int)(Math.random()*max);<br />
+&nbsp; }<br />
+&nbsp; return arr;<br />
+}<br />
+<br />
+请输入等级(5、7、9):4<br />
+请输入等级(5、7、9):2<br />
+请输入等级(5、7、9):3<br />
+请输入等级(5、7、9):6<br />
+请输入等级(5、7、9):7<br />
+ABCDEFG<br />
+<br />
+</h2>
+	</body>		
+</html>

@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	DQL语句<br />
+SELECT语句用于查询表或视图中数据使用<br />
+基本组成部分:<br />
+SELECT 字段1,字段2,... &nbsp;FROM 表<br />
+<br />
+SELECT子句:指定要查询的字段<br />
+这里SELECT后面可以指定表中的字段，函数<br />
+或表达式，还可以使用"*"查询表中所有字段<br />
+FROM子句:指定数据来源的表（要查询的表）<br />
+<br />
+查看员工表中的所有信息<br />
+SELECT ename,job,sal,deptno&nbsp;<br />
+FROM emp<br />
+WHERE deptno=20<br />
+<br />
+查看每个员工的年薪是多少?<br />
+SELECT ename,sal,sal*12<br />
+FROM emp<br />
+<br />
+还可以使用函数<br />
+<br />
+字符串函数<br />
+1:CONCAT(c1,c2)<br />
+连接两个字符串<br />
+<br />
+SELECT&nbsp;<br />
+&nbsp;CONCAT(CONCAT(ename,','),sal)<br />
+FROM emp<br />
+<br />
+"||"也是作为连接字符串使用<br />
+SELECT ename||','||sal<br />
+FROM emp<br />
+<br />
+2:length(c)<br />
+返回给定字符串长度<br />
+<br />
+SELECT ename,LENGTH(ename)<br />
+FROM emp<br />
+<br />
+dual:伪表，不是真实存在的表，当查询的<br />
+内容与任何表没有关系的时候可以使用它<br />
+伪表只会查询出一行记录<br />
+3:UPPER,LOWER,INITCAP<br />
+将字符串转换为全大写，全小写，首字母大写<br />
+INITCAP可以使用空格分隔多个单词，那么每个<br />
+单词首字母都会大写。<br />
+SELECT UPPER('helloworld'),<br />
+&nbsp; &nbsp; &nbsp; &nbsp;LOWER('HELLOWORLD'),<br />
+&nbsp; &nbsp; &nbsp; &nbsp;INITCAP('hello world')<br />
+FROM dual<br />
+<br />
+<br />
+3:TRIM,LTRIM,RTRIM<br />
+去除字符串两边的重复指定字符，或者<br />
+仅去除左面或右面<br />
+SELECT TRIM('e' FROM 'eeeeeliteee')<br />
+FROM dual<br />
+<br />
+SELECT&nbsp;<br />
+&nbsp;LTRIM('esfefffefsLITeseseses','fes')<br />
+FROM dual<br />
+<br />
+4:LPAD,RPAD<br />
+补位函数<br />
+<br />
+SELECT ename,LPAD(sal,5,' ')<br />
+FROM emp<br />
+<br />
+<br />
+5:SUBSTR(char,index,length)<br />
+从给定位置开始截取字符串连续length个<br />
+数据库中下标都是从1开始的!<br />
+<br />
+index:可以是负数，负数则是从倒数位置开始<br />
+length:可以不指定，不指定则是截取到末尾<br />
+&nbsp; &nbsp; &nbsp; &nbsp;超过实际可截取的数字也是到末尾。<br />
+SELECT&nbsp;<br />
+&nbsp;SUBSTR('thinking in java',-7,2)<br />
+FROM<br />
+&nbsp;dual<br />
+<br />
+6:INSTR(char1,char2,n,m)<br />
+查看char2在char1中的位置<br />
+n:指定从哪里开始查找<br />
+m:第几次出现<br />
+n,m不写默认都是1<br />
+SELECT&nbsp;<br />
+&nbsp;INSTR('thinking in java','in',4,2)<br />
+FROM<br />
+&nbsp;dual<br />
+<br />
+查看scott的员工信息<br />
+SELECT ename,sal,deptno<br />
+FROM emp<br />
+WHERE UPPER(ename)=UPPER('scott')<br />
+<br />
+<br />
+<br />
+<br />
+数字函数<br />
+1:ROUND(n,m)<br />
+对n进行四舍五入<br />
+m:保留小数点后的位数。<br />
+m不写默认为0，即:保留到整数位<br />
+-1为十位，-2为百位，以此类推。<br />
+<br />
+SELECT ROUND(45.678, 2)&nbsp;<br />
+FROM DUAL&nbsp;<br />
+<br />
+SELECT ROUND(45.678, 0)&nbsp;<br />
+FROM DUAL<br />
+<br />
+SELECT ROUND(45.678, -1)&nbsp;<br />
+FROM DUAL<br />
+<br />
+2:TRUNC(n,m)<br />
+截取数字，参数意义与ROUND一致<br />
+但是不进行四舍五入<br />
+SELECT TRUNC(45.678, 2)&nbsp;<br />
+FROM DUAL&nbsp;<br />
+SELECT TRUNC(45.678, 0)&nbsp;<br />
+FROM DUAL<br />
+SELECT TRUNC(45.678, -1)&nbsp;<br />
+FROM DUAL<br />
+<br />
+3:MOD(m,n)<br />
+求余，n不能为0，为0则什么也不做直接返回m<br />
+SELECT MOD(13,4)<br />
+FROM dual<br />
+<br />
+4:CEIL(n),FLOOR(n)<br />
+向上取整和向下取整<br />
+SELECT FLOOR(45.67)<br />
+FROM dual<br />
+<br />
+日期类型相关函数<br />
+<br />
+日期相关关键字:<br />
+SYSDATE:对应一个内部函数，返回一个表示<br />
+当前系统时间的DATE类型值<br />
+SYSTIMESTAMP:对应一个内部函数，返回<br />
+一个表示当前系统时间的时间戳类型的值<br />
+<br />
+SELECT SYSDATE FROM dual<br />
+SELECT SYSTIMESTAMP FROM dual<br />
+<br />
+TO_DATE()函数<br />
+将一个字符串按照给定的日期格式解析为<br />
+一个DATE类型数据<br />
+SELECT<br />
+&nbsp;TO_DATE('2008-08-08','YYYY-MM-DD')<br />
+FROM&nbsp;<br />
+&nbsp;dual<br />
+<br />
+查看1982年以后入职的员工?<br />
+SELECT ename,hiredate<br />
+FROM emp<br />
+WHERE hiredate &gt;=&nbsp;<br />
+&nbsp;TO_DATE('1982-01-01','YYYY-MM-DD')<br />
+<br />
+对日期加减一个数字，等同于加减了相应的天数<br />
+两个日期之间做减法，差表示相差的天数。<br />
+<br />
+查看每个员工到今天为止入职了多少天?<br />
+SELECT ename,SYSDATE-hiredate<br />
+FROM emp<br />
+<br />
+TO_CHAR()<br />
+可以使用TO_CHAR将DATE按照给定的日期<br />
+格式转换为字符串<br />
+<br />
+SELECT ename,<br />
+&nbsp;TO_CHAR(hiredate,'YYYY"年"MM"月"DD"日"')<br />
+FROM emp<br />
+<br />
+RR:日期格式中是2位数字表示年<br />
+与YY的区别在于，RR在将字符串解析为年的时<br />
+候会根据系统时间自行判定世纪<br />
+<br />
+SELECT<br />
+&nbsp; TO_CHAR(<br />
+&nbsp; &nbsp;TO_DATE('51-01-01','RR-MM-DD'),<br />
+&nbsp; &nbsp;'YYYY-MM-DD'<br />
+&nbsp; )<br />
+FROM<br />
+&nbsp; dual<br />
+<br />
+LAST_DAY(date)<br />
+返回给定日期所在月的月底日期<br />
+<br />
+SELECT LAST_DAY(SYSDATE)<br />
+FROM dual<br />
+<br />
+<br />
+ADD_MONTHS(date,i)<br />
+对给定日期加上给定的月，若i为负数<br />
+则是减去<br />
+查看每个员工入职20周年纪念日:<br />
+SELECT&nbsp;<br />
+&nbsp;ename,ADD_MONTHS(hiredate,12*20)<br />
+FROM<br />
+&nbsp;emp<br />
+<br />
+<br />
+MONTHS_BETWEEN(date1,date2)<br />
+计算两个日期之间相差的月<br />
+<br />
+查看每个员工入职至今多少个月?<br />
+SELECT<br />
+&nbsp;ename,MONTHS_BETWEEN(SYSDATE,hiredate)<br />
+FROM&nbsp;<br />
+&nbsp;emp<br />
+<br />
+<br />
+NEXT_DAY(date,i)<br />
+返回给定日期之后一周内的周几<br />
+<br />
+SELECT NEXT_DAY(SYSDATE,5)<br />
+FROM dual<br />
+<br />
+LEAST、GREATEST<br />
+求最小值与最大值<br />
+<br />
+SELECT<br />
+&nbsp; LEAST(SYSDATE,TO_DATE('2008-08-09','YYYY-MM-DD'))<br />
+FROM<br />
+&nbsp; dual<br />
+<br />
+EXTRACT():查看给定日期中指定时间分量的值<br />
+SELECT<br />
+&nbsp;EXTRACT(YEAR FROM SYSDATE)<br />
+FROM DUAL<br />
+<br />
+查看81年入职的员工?<br />
+SELECT&nbsp;<br />
+&nbsp;ename,hiredate<br />
+FROM<br />
+&nbsp;emp<br />
+WHERE&nbsp;<br />
+&nbsp;EXTRACT(YEAR FROM hiredate)=1981&nbsp;<br />
+<br />
+<br />
+<br />
+NULL值操作<br />
+CREATE TABLE student<br />
+&nbsp; &nbsp; (id NUMBER(4), name CHAR(20), gender CHAR(1));<br />
+<br />
+INSERT INTO student VALUES(1000, '李莫愁', 'F');<br />
+<br />
+INSERT INTO student VALUES(1001, '林平之', NULL);<br />
+<br />
+INSERT INTO student(id, name) VALUES(1002, '张无忌');<br />
+<br />
+SELECT * FROM student<br />
+<br />
+更新成NULL<br />
+UPDATE student<br />
+SET gender=NULL<br />
+<br />
+判断NULL值<br />
+使用IS NULL 或IS NOT NULL<br />
+DELETE FROM student<br />
+WHERE gender IS NULL<br />
+<br />
+<br />
+CREATE TABLE student(<br />
+&nbsp; id NUMBER(4),&nbsp;<br />
+&nbsp; name CHAR(20),&nbsp;<br />
+&nbsp; gender CHAR(1) NOT NULL<br />
+)<br />
+<br />
+NULL值的运算<br />
+NULL与字符串连接等于什么都没干<br />
+NULL与数字运算结果为NULL<br />
+<br />
+SELECT&nbsp;<br />
+&nbsp;ename,sal,comm,sal+comm<br />
+FROM<br />
+&nbsp;emp<br />
+<br />
+空值函数<br />
+NVL(arg1,arg2)<br />
+NVL函数会将一个NULL值替换为非NULL值<br />
+即:当arg1为NULL，函数返回arg2的值<br />
+&nbsp; &nbsp;若arg1不为NULL，则返回arg1自身<br />
+<br />
+SELECT&nbsp;<br />
+&nbsp;ename,sal,comm,sal+NVL(comm,0)<br />
+FROM<br />
+&nbsp;emp<br />
+<br />
+查看绩效情况<br />
+若该员工有绩效，则显示为"有绩效"<br />
+没有的则显示为"没有绩效"<br />
+NVL2(arg1,arg2,arg3)<br />
+当arg1不为NULL，函数返回arg2<br />
+为NULL则函数返回arg3<br />
+SELECT&nbsp;<br />
+&nbsp;ename,comm,<br />
+&nbsp;NVL2(comm,'有绩效','没有绩效')<br />
+FROM<br />
+&nbsp;emp<br />
+<br />
+SELECT&nbsp;<br />
+&nbsp;ename,NVL2(comm,sal+comm,sal)<br />
+FROM<br />
+&nbsp;emp<br />
+
+	</body>
+</html>

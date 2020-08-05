@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的笔记</title>
+       
+    </head>
+    <body >
+	回顾:<br />
+1.循环:反复执行一段相同或相似的代码<br />
+2.循环三要素:<br />
+&nbsp; 1)循环变量的初始化<br />
+&nbsp; 2)循环的条件<br />
+&nbsp; 3)循环变量的改变<br />
+&nbsp; 循环变量:在循环过程中所改变的那个量<br />
+3.循环结构:<br />
+&nbsp; 1)while:先判断后执行，有可能一次都不执行<br />
+&nbsp; 2)do...while:先执行后判断，至少会执行一次<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;第1要素与第3要素相同时首选<br />
+&nbsp; 3)for:固定次数循环<br />
+<br />
+笔记:<br />
+1.三种循环结构的更佳适用情况:<br />
+&nbsp; 1)while:"当..."循环<br />
+&nbsp; 2)do...while:"直到..."循环<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;第1要素与第3要素相同时首选<br />
+&nbsp; 3)for:固定次数循环，应用率最高<br />
+2.嵌套循环:<br />
+&nbsp; 1)循环中套循环，一般多行多列时使用，外层控制行，内层控制列<br />
+&nbsp; 2)执行规则:外层循环走一次，内层循环走所有次<br />
+&nbsp; 3)建议:层数越少越好，能用一层就不用两层，能用两层就不用三层<br />
+&nbsp; &nbsp; 若需要必须通过三层以上才能实现，说明设计有问题<br />
+&nbsp; 4)break只能跳出一层循环<br />
+3.程序=算法+数据结构<br />
+&nbsp; 1)算法:解决问题的流程/步骤(顺序、分支、循环结构)<br />
+&nbsp; 2)数据结构:将数据按照某种特定的结构来保存<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;数怎么存<br />
+&nbsp; &nbsp; 设计良好的数据结构会导致好的算法<br />
+4.数组:<br />
+&nbsp; 1)相同数据类型元素的集合<br />
+&nbsp; 2)数组也是数据类型(引用类型)<br />
+&nbsp; 3)数组的定义:<br />
+&nbsp; &nbsp; &nbsp; int[] arr = new int[4];<br />
+&nbsp; 4)数组的初始化:<br />
+&nbsp; &nbsp; &nbsp; int[] arr = new int[3]; &nbsp; &nbsp; &nbsp; //0,0,0<br />
+&nbsp;int[] arr = {1,4,7}; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//1,4,7<br />
+&nbsp;int[] arr = new int[]{1,4,7}; //1,4,7<br />
+&nbsp;int[] arr;<br />
+&nbsp;arr = {1,4,7}; //编译错误<br />
+&nbsp; &nbsp; &nbsp; arr = new int[]{1,4,7}; //正确<br />
+&nbsp; 5)数组的访问:<br />
+&nbsp; &nbsp; 5.1)通过(数组名.length)获取数组的长度<br />
+&nbsp; &nbsp; &nbsp;int[] arr = new int[3];<br />
+&nbsp;System.out.println(arr.length); //3<br />
+5.2)通过下标来访问数组中的元素<br />
+&nbsp; &nbsp;从0开始，最大到(数组的长度-1)<br />
+&nbsp;int[] arr = new int[3];<br />
+&nbsp;arr[0] = 100; //给第1个元素赋值为100<br />
+&nbsp;arr[1] = 200;<br />
+&nbsp;arr[2] = 300;<br />
+&nbsp;arr[3] = 400; //数组下标越界异常<br />
+&nbsp;System.out.println(arr[arr.length-1]);<br />
+&nbsp; 6)数组的遍历:<br />
+&nbsp; &nbsp; &nbsp; int[] arr = new int[5];<br />
+&nbsp;for(int i=0;i&lt;arr.length;i++){<br />
+&nbsp; &nbsp;arr[i] = 100;<br />
+&nbsp;}<br />
+&nbsp;for(int i=0;i&lt;arr.length;i++){ //正序输出<br />
+&nbsp; &nbsp;System.out.println(arr[i]);<br />
+&nbsp;}<br />
+&nbsp; &nbsp; &nbsp; for(int i=arr.length-1;i&gt;=0;i--){ //倒序输出<br />
+&nbsp; &nbsp;System.out.println(arr[i]);<br />
+&nbsp;}<br />
+&nbsp; 7)数组的复制:<br />
+&nbsp; &nbsp; &nbsp; System.arraycopy(a,1,a1,0,4);<br />
+&nbsp;int[] a1 = Arrays.copyOf(a,6);<br />
+&nbsp;a = Arrays.copyOf(a,a.length+1);<br />
+&nbsp; 8)数组的排序:<br />
+&nbsp; &nbsp; &nbsp; Arrays.sort(arr); //升序<br />
+&nbsp; &nbsp; &nbsp; 冒泡原理:<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 1)四个数冒三轮<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 2)每一轮都是从第1个元素开始冒<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 每一次都是和它的下一个元素比<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 3)冒出来的就不带它玩了<br />
+<br />
+任务:<br />
+1.将今天的4个经典案例，至少重写一次<br />
+<br />
+今天晚上或明天，项目经理给大家发每周一做<br />
+<br />
+BubbleSort<br />
+int[] arr = {23,5,89,1}; //升序<br />
+<br />
+for(int i=0;i&lt;arr.length-1;i++){ //控制轮<br />
+&nbsp; for(int j=0;j&lt;arr.length-1-i;j++){ //控制次<br />
+&nbsp; &nbsp; if(arr[j]&gt;arr[j+1]){ //每次和它的下一个元素比<br />
+&nbsp;int t = arr[j];<br />
+&nbsp;arr[j] = arr[j+1];<br />
+&nbsp;arr[j+1] = t;<br />
+}<br />
+&nbsp; }<br />
+}<br />
+&nbsp; &nbsp;&nbsp;<br />
+arr.length-1-i<br />
+i=0 比3次<br />
+i=1 比2次<br />
+i=2 比1次<br />
+<br />
+第一轮:<br />
+&nbsp; 23和5比，换，5,23,89,1<br />
+&nbsp; 23和89比，不换<br />
+&nbsp; 89和1比，换，5,23,1,89-----------89冒出来了<br />
+第二轮:<br />
+&nbsp; 5和23比，不换<br />
+&nbsp; 23和1比，换，5,1,23,89-----------23冒出来了<br />
+第三轮:<br />
+&nbsp; 5和1比，换，1,5,23,89------------5冒出来了<br />
+不同的数据，不同的排序方式效率是不同的<br />
+<br />
+30万个数据--------------插入排序最快<br />
+30万个数据--------------冒泡排序最快<br />
+30万个数据--------------快速排序最快<br />
+<br />
+long a = System.currentTimeMillis();<br />
+......<br />
+long b = System.currentTimeMillis();<br />
+<br />
+System.out.println(b-a); //500<br />
+<br />
+int[] a = {10,20,30,40,50};<br />
+int[] b = new int[6]; //0,0,0,0,0,0<br />
+<br />
+for(int i=0;i&lt;a.length;i++){<br />
+&nbsp; b[i] = a[i];<br />
+}<br />
+<br />
+b[0] = a[0];<br />
+b[1] = a[1];<br />
+b[2] = a[2];<br />
+b[3] = a[3];<br />
+b[4] = a[4];<br />
+<br />
+int[] arr = {2,23,56,4};<br />
+找最大值算法:<br />
+1.假设第一个数为最大值<br />
+&nbsp; &nbsp; int max = arr[0];<br />
+2.遍历剩余元素，用剩余元素与max对比，<br />
+&nbsp; 若大于max，则修改max的值为较大的<br />
+&nbsp; &nbsp; for(int i=1;i&lt;arr.length;i++){<br />
+&nbsp;if(arr[i]&gt;max){<br />
+&nbsp; &nbsp;max=arr[i];<br />
+&nbsp;}<br />
+}<br />
+<br />
+max=2/23/56<br />
+<br />
+int a = 8; //4个字节<br />
+<br />
+int[] arr = new int[10]; //40个字节<br />
+<br />
+<br />
+0-----------char的默认值为码0<br />
+'0'<br />
+<br />
+<br />
+ArrayDemo<br />
+<br />
+int[] arr = new int[5];<br />
+for(int i=0;i&lt;arr.length;i++){<br />
+&nbsp; arr[i] = 100;<br />
+}<br />
+<br />
+for(int i=0;i&lt;arr.length;i++){<br />
+&nbsp; System.out.println(arr[i]);<br />
+}<br />
+<br />
+for(int i=arr.length-1;i&gt;=0;i--){<br />
+&nbsp; System.out.println(arr[i]);<br />
+}<br />
+<br />
+<br />
+System.out.println(arr[4]);<br />
+System.out.println(arr[3]);<br />
+System.out.println(arr[2]);<br />
+System.out.println(arr[1]);<br />
+System.out.println(arr[0]);<br />
+<br />
+arr[0] = 100;<br />
+arr[1] = 100;<br />
+arr[2] = 100;<br />
+arr[3] = 100;<br />
+arr[4] = 100;<br />
+<br />
+int[] arr = new int[3]; //0,0,0<br />
+arr[0] = 100; //给arr中第一个元素赋值为100<br />
+arr[1] = 200;<br />
+arr[2] = 300;<br />
+arr[3] = 400; //运行时异常----数组下标越界异常<br />
+System.out.println(arr[arr.length-1]); //输出最后一个元素<br />
+<br />
+int a=0;<br />
+int b=0;<br />
+int c=0;<br />
+a=100;<br />
+b=200;<br />
+c=300;<br />
+<br />
+arr[0]-------代表arr中的第1个元素<br />
+arr[1]------- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2<br />
+arr[2]------- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3<br />
+//声明布尔型数组b，包含26个元素<br />
+//每个元素都是boolean型，默认值为false<br />
+boolean[] b = new boolean[26];<br />
+<br />
+//声明浮点型数组d，包含10个元素<br />
+//每个元素都是double型，默认值为0.0<br />
+double[] d = new double[10];<br />
+<br />
+//声明整型数组a，包含5个元素<br />
+//每个元素都是int型，默认值为0<br />
+int[] a = new int[5]; //0,0,0,0,0<br />
+<br />
+int &nbsp; a; //声明整型变量a<br />
+int[] a; //声明整型数组变量a<br />
+<br />
+将1万本书按照图书类别存储------设计数据结构<br />
+找java编程思想------------------算法简单<br />
+<br />
+将1万本书按照出版社来存储------设计数据结构<br />
+找java编程思想------------------算法不简单<br />
+<br />
+跳出多层循环------这个需求几乎没有<br />
+<br />
+for(int i=1;i&lt;=100;i++){<br />
+&nbsp; for(int j=1;j&lt;=200;j++){<br />
+&nbsp; &nbsp; for(int k=1;k&lt;=300;k++){<br />
+&nbsp; &nbsp; &nbsp; System.out.println("aaa");<br />
+&nbsp;if(){break};<br />
+}<br />
+&nbsp; }<br />
+}<br />
+<br />
+i=1<br />
+&nbsp; j=1<br />
+&nbsp; &nbsp; k走30次<br />
+&nbsp; j=2<br />
+&nbsp; &nbsp; k走30次<br />
+&nbsp; ...<br />
+&nbsp; j=20<br />
+<br />
+<br />
+1*9=9 &nbsp; 2*9=18 &nbsp;3*9=27 &nbsp;<br />
+选择循环结构的规则:<br />
+1.先看是否是固定次数循环?<br />
+&nbsp; 1)固定次数时，选择for循环<br />
+&nbsp; 2)不固定次数时，再看要素1与要素3是否相同?<br />
+&nbsp; &nbsp; 2.1)相同时，首选do...while<br />
+2.1)不同时，首选while<br />
+<br />
+int i = 0;<br />
+while(i&lt;10){<br />
+&nbsp; i++;<br />
+}<br />
+System.out.println(i); //10<br />
+<br />
+int i;<br />
+for(i=0;i&lt;10;i++){<br />
+}<br />
+System.out.println(i); //1<br />
+	</body>
+</html>
